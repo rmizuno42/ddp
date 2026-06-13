@@ -1,130 +1,47 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
-\documentclass[
-  11pt,
-]{article}
-\usepackage{xcolor}
+\documentclass[11pt]{article}
+
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{iftex}
-\ifPDFTeX
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
-\fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\newenvironment{Shaded}{}{}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
-\usepackage{longtable,booktabs,array}
-\newcounter{none} % for unnumbered tables
-\usepackage{calc} % for calculating minipage widths
-% Correct order of tables after \paragraph or \subparagraph
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
-\makeatother
-% Allow footnotes in longtable head/foot
-\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
-\makesavenoteenv{longtable}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}   % only the two large list tables (interventions, base)
+\usepackage{microtype}
+\usepackage[numbers]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[capitalize]{cleveref}
+
+% theorem environments (numbered within sections; Remark unnumbered)
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% notation
+\newcommand{\F}{\mathbb F}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\GL}{GL}
+
+% overfull-box guards carried over from the pandoc preamble:
+% breakable underscores in \texttt file paths, tighter matrix spacing for the
+% 5x5 chart matrices of A.6, and emergency stretch for long inline math/URLs.
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \renewcommand{\_}{\textunderscore\allowbreak}
 \setlength{\arraycolsep}{3pt}
-\sloppy
-\AtBeginEnvironment{longtable}{\small}
-\usepackage{fvextra}
-\fvset{fontsize=\small,breaklines=true}
-% Make displayed block quotes stand out: extra vertical space + italic.
-\BeforeBeginEnvironment{quote}{\vspace{0.7\baselineskip}}
-\AfterEndEnvironment{quote}{\vspace{0.7\baselineskip}}
-\AtBeginEnvironment{quote}{\itshape}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={blue},
-  urlcolor={blue},
-  pdfcreator={LaTeX via pandoc}}
+\setlength{\emergencystretch}{3em}
 
-\title{New lower bounds for the degree/diameter problem via interaction
-with a browser-accessible LLM}
-\author{Ryosuke Mizuno\\
-\small A.I.System Research Co., Ltd.\\
-\small \texttt{mizuno@aisr.dev}}
+\title{New lower bounds for the degree/diameter problem\\
+       via interaction with a browser-accessible LLM}
+\author{Ryosuke Mizuno\thanks{A.I.System Research Co., Ltd.\quad
+        \texttt{mizuno@aisr.dev}}}
 \date{11 June 2026}
 
 \begin{document}
 \maketitle
 
-\section{Abstract}\label{abstract}
-
+\begin{abstract}
 Let \(N(\Delta,D)\) denote the maximum number of vertices in a simple
 undirected connected graph with maximum degree at most \(\Delta\) and
 diameter at most \(D\). Determining \(N(\Delta,D)\) is known as the
@@ -142,42 +59,42 @@ loop, problem-specific search engine, or formal proof assistant was set
 up in advance by the author. As far as the visible
 transcript shows, the author did not prompt the model with the concrete
 components or candidate families of the construction.
-
 After presenting the mathematical result, we describe the discovery
 process on the basis of the visible transcript. We focus on the
 meta-level interventions made during the approximately six-day search,
 and we identify the stage at which the abstraction underlying the
 construction first appeared.
+\end{abstract}
 
-\textbf{MSC 2020:} 05C12, 05C25, 05C76.\\
+\medskip
+\noindent\textbf{MSC 2020:} 05C12, 05C25, 05C76.\\
 \textbf{Keywords:} degree/diameter problem, graph theory, LLM-assisted
 mathematical discovery, mathematical reasoning, human--AI collaboration,
 ChatGPT, transcript analysis.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{1. Introduction}\label{introduction}
+\section{Introduction}\label{introduction}
 
 Recent work has rapidly expanded the use of large language models
 (LLMs), neural language models, and systems built around them for
 mathematical construction search, theorem proving, problem generation,
 and formalization support. Representative peer-reviewed examples include
-FunSearch {[}RomeraParedes2024{]}, which obtains mathematical
+FunSearch \cite{RomeraParedes2024}, which obtains mathematical
 constructions by combining a pretrained LLM with a systematic evaluator
-in a program-search loop, and AlphaGeometry {[}Trinh2024{]}, which
+in a program-search loop, and AlphaGeometry \cite{Trinh2024}, which
 combines a neural language model with a symbolic deduction engine for
-olympiad geometry. Other examples include AlphaProof {[}Hubert2026{]}, a
+olympiad geometry. Other examples include AlphaProof \cite{Hubert2026}, a
 reinforcement-learning approach to formal proof search using Lean as a
-verifiable environment, and TongGeometry {[}Zhang2026{]}, which
+verifiable environment, and TongGeometry \cite{Zhang2026}, which
 addresses the proposal and proof of olympiad geometry problems by guided
 tree search and a fine-tuned LLM.
 
 From late 2025 through May 2026, preprints, technical reports, and
 public reports from research institutions have also described the use of
-AI/LLMs in mathematical discovery {[}Bubeck2025, Woodruff2026,
+AI/LLMs in mathematical discovery \cite{Bubeck2025, Woodruff2026,
 NagdaRaghavanThakurta2026, BhanNobiliLanger2026, JuEtAl2026,
 PrzybockiMackeyHeuleSubercaseaux2026, TsoukalasEtAl2026, OpenAI2026,
-AlonEtAl2026{]}. Many of these examples rely on dedicated evaluators,
+AlonEtAl2026}. Many of these examples rely on dedicated evaluators,
 evolutionary search, tree search, formalizers, symbolic reasoning
 engines, theorem retrieval, SAT solvers, the Lean prover, or
 problem-specific evaluation loops. The present paper considers a
@@ -217,12 +134,12 @@ including depth \(D\). This gives the Moore upper bound \[
   \qquad(\Delta\ge3).
 \] For many pairs \((\Delta,D)\) there is no Moore graph attaining this
 bound, and the construction of large explicit examples has long been
-studied {[}HoffmanSingleton1960, Damerell1973, Bannai1973,
-MillerSiran2013{]}. Known constructions include Cayley graphs, voltage
+studied \cite{HoffmanSingleton1960, Damerell1973, Bannai1973,
+MillerSiran2013}. Known constructions include Cayley graphs, voltage
 graphs, compound graphs, and other computational and algebraic
 constructions, which have played an important role in setting records
-for fixed parameters {[}BermondDelormeFarhi1984,
-BermondDelormeQuisquater1986, LozSiran2008, Comellas2026{]}.
+for fixed parameters \cite{BermondDelormeFarhi1984,
+BermondDelormeQuisquater1986, LozSiran2008, Comellas2026}.
 
 The mathematical contribution of this paper is a construction, obtained
 by integrating existing tools for the degree/diameter problem, that
@@ -254,9 +171,9 @@ the verification procedures that check them, all of which are given in
 the main text and in Appendix A.
 A cleaned, runnable version of the construction package, sharing the same graph
 and certificate data, is also included in the supplementary materials so that the verification can be
-reproduced directly, as described in §A.8 of Appendix A.
+reproduced directly, as described in \S\ref{a.8-verification-and-reproducibility} of Appendix A.
 
-\subsection{1.1 Contributions of this
+\subsection{Contributions of this
 paper}\label{contributions-of-this-paper}
 
 This paper makes two contributions.
@@ -292,17 +209,25 @@ observational report of a single case concerning the process that led to
 the discovery, and its outline can be understood without referring to
 Appendix A.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{2. The degree/diameter problem and the main
+\section{The degree/diameter problem and the main
 result}\label{the-degreediameter-problem-and-the-main-result}
 
-\subsection{2.1 Basic graph-theoretic terminology and the
+\subsection{Basic graph-theoretic terminology and the
 degree/diameter
 problem}\label{basic-graph-theoretic-terminology-and-the-degreediameter-problem}
 
-The graphs considered in this paper consist of finitely many vertices
-and edges joining pairs of vertices. A graph whose edges are oriented is
+Throughout, all graphs are finite. For integers \(\Delta,D\ge1\), define \[N(\Delta,D)\] to be the maximum number of vertices in a simple undirected connected
+graph with maximum degree at most \(\Delta\) and diameter at most \(D\).
+The degree/diameter problem is the problem of determining
+\(N(\Delta,D)\). In the diameter-\(5\) case treated here, the goal is to
+make the number of vertices as large as possible under the constraint
+that any two vertices are joined by a path of length at most \(5\). 
+
+We recall the underlying terminology, since this paper is intended to be
+readable outside graph theory as well. The graphs considered here consist
+of finitely many vertices and edges joining pairs of vertices.
+ A graph whose edges are oriented is
 called a \textbf{directed graph}, and a graph whose edges are not
 oriented is called an \textbf{undirected graph}. An undirected graph
 with no loops and no multiple edges is called a \textbf{simple
@@ -316,47 +241,40 @@ which all vertices have the same degree is called \textbf{regular}. The
 \textbf{distance} between two vertices \(u,v\) is the minimum length of
 a path from \(u\) to \(v\). The \textbf{diameter} of a graph is the
 maximum distance over all pairs of vertices.
-
-For integers \(\Delta,D\ge1\), define \[
-  N(\Delta,D)
-\] to be the maximum number of vertices in a simple undirected connected
-graph with maximum degree at most \(\Delta\) and diameter at most \(D\).
-The degree/diameter problem is the problem of determining
-\(N(\Delta,D)\). In the diameter-\(5\) case treated here, the goal is to
-make the number of vertices as large as possible under the constraint
-that any two vertices are joined by a path of length at most \(5\). For
-example, constructing a \(12\)-regular graph of diameter \(5\) means
+For example, constructing a \(12\)-regular graph of diameter \(5\) means
 explicitly giving a large graph in which every vertex has degree \(12\)
 and every pair of vertices is joined within \(5\) steps.
 
-\subsection{2.2 Recorded lower bounds and the improvement in this
+\subsection{Recorded lower bounds and the improvement in this
 paper}\label{recorded-lower-bounds-and-the-improvement-in-this-paper}
 
 Comellas's Mendeley Data V11 collects the largest known
-\((\Delta,D)\)-graphs as of January 2026 {[}Comellas2026,
-ComellasData2026{]}. In the related web table, checked on 10 June 2026,
+\((\Delta,D)\)-graphs as of January 2026 \cite{Comellas2026,
+ComellasData2026}. In the related web table, checked on 10 June 2026,
 the entries relevant to this paper had the same lower-bound values. The
 recorded lower bounds for diameter \(5\) relevant to this paper are as
 follows.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}rrl@{}}
-\toprule\noalign{}
+\begin{table}[ht]
+\centering
+\caption{Recorded lower bounds for diameter~5 relevant to this paper.}
+\label{tab:records}
+\begin{tabular}{rrl}
+\toprule
 \((\Delta,D)\) & Recorded lower bound & Source \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\((12,5)\) & \(29{,}621\) & {[}Comellas2025{]} \\
 \midrule
-\((16,5)\) & \(132{,}496\) & {[}DelormeBipartite1985{]} \\
-\end{longtable}
-}
+\((12,5)\) & \(29{,}621\) & \cite{Comellas2025} \\
+\midrule
+\((16,5)\) & \(132{,}496\) & \cite{DelormeBipartite1985} \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 This paper improves these to \(34{,}992\) and \(147{,}456\),
 respectively.
 
-\textbf{Theorem 2.1.} There exist explicit connected simple undirected graphs
+\begin{theorem}\label{thm:main}
+There exist explicit connected simple undirected graphs
 \(G_3,G_4\) satisfying the following.
 
 \begin{enumerate}
@@ -369,8 +287,9 @@ respectively.
   \(G_4\) is \(16\)-regular, \(|V(G_4)|=147{,}456\), and
   \(\operatorname{diam}(G_4)=5\).
 \end{enumerate}
+\end{theorem}
 
-Theorem 2.1 immediately implies \[
+\cref{thm:main} immediately implies \[
   N(12,5)\ge34{,}992,
   \qquad
   N(16,5)\ge147{,}456 .
@@ -378,44 +297,25 @@ Theorem 2.1 immediately implies \[
 
 The improvements are summarized below.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1169}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3117}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedleft
-Parameter
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Previous LB
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-This paper
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Improvement
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Moore UB
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Moore ratio
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-\((12,5)\) & \(29{,}621\) & \(34{,}992\) & \(+5{,}371\) (\(+18.13\%\)) &
-\(193{,}261\) & \(18.11\%\) \\
+\begin{table}[ht]
+\centering
+\caption{Lower-bound improvements obtained in this paper, compared with the previously recorded lower bounds, together with the Moore upper bound and the resulting Moore ratio.}
+\label{tab:known}
+\begin{tabular}{crrrrr}
+\toprule
+Parameter & Previous LB & This paper & Improvement & Moore UB & Moore ratio \\
 \midrule
-\((16,5)\) & \(132{,}496\) & \(147{,}456\) & \(+14{,}960\)
-(\(+11.29\%\)) & \(867{,}857\) & \(16.99\%\) \\
-\end{longtable}
-}
+\((12,5)\) & \(29{,}621\) & \(34{,}992\) & \(+5{,}371\) (\(+18.13\%\)) & \(193{,}261\) & \(18.11\%\) \\
+\midrule
+\((16,5)\) & \(132{,}496\) & \(147{,}456\) & \(+14{,}960\) (\(+11.29\%\)) & \(867{,}857\) & \(16.99\%\) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 Here the Moore ratio is the lower bound obtained in this paper divided
 by the corresponding Moore upper bound.
 
-\subsection{2.3 Outline of the construction: controller and
+\subsection{Outline of the construction: controller and
 fiber}\label{outline-of-the-construction-controller-and-fiber}
 
 The precise construction and proofs are given in Appendix A. This
@@ -505,7 +405,8 @@ diameter at most \(5\).
 If the controller and fiber data satisfy these conditions, the following
 proposition shows that the resulting graph has diameter at most \(5\).
 
-\textbf{Proposition 2.2 (route-chart lift principle).} Let \(q\) be a prime
+\begin{proposition}[route-chart lift principle]\label{prop:lift}
+Let \(q\) be a prime
 power and \(s\ge1\) an integer. Let \(C\) be a
 \(\rho\)-regular simple undirected graph and let \(S\) be a symmetric
 alphabet with \(|S|=\rho\). Suppose that the directed edges of \(C\) are
@@ -517,6 +418,7 @@ and \[
   \qquad
   \operatorname{diam}(G)\le s .
 \]
+\end{proposition}
 
 The proof is given in Appendix A. The key point is that the
 controller-side condition and the fiber-side condition are independent.
@@ -527,41 +429,29 @@ route chart over the symbol set \(S\), independent of the controller.
 Thus the problem of constructing a large graph with fixed degree and
 diameter is reduced to two independent finite design problems.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1818}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4182}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Component
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Role
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-What to verify
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-controller & a small graph determining the coarse routing of the final
-graph & every pair of controller vertices is joined by a length-\(5\)
-nonbacktracking walk \\
+\begin{table}[ht]
+\centering
+\caption{The two independent design problems in the route-chart lift construction.}
+\label{tab:construction}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}}
+\toprule
+Component & Role & What to verify \\
 \midrule
-fiber chart & linear-algebraic data moving fiber coordinates along
-controller routes & \(M_w\) is nonsingular for every reduced word of
-length \(5\) \\
-\end{longtable}
-}
+controller & a small graph determining the coarse routing of the final graph & every pair of controller vertices is joined by a length-\(5\) nonbacktracking walk \\
+\midrule
+fiber chart & linear-algebraic data moving fiber coordinates along controller routes & \(M_w\) is nonsingular for every reduced word of length \(5\) \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 In the construction of this paper, the controller, the fiber chart, and
 the final graph are built as follows.
 
 First, from the \(6\)-vertex \(4\)-regular loopless multigraph \(B\) in
-Appendix A.5, together with a voltage assignment with values in \[
+Appendix~\ref{a.5-the-144-vertex-controller}, together with a voltage assignment with values in \[
   H=C_4\times C_6,
 \] we obtain a \(144\)-vertex simple \(4\)-regular connected graph \(C\)
-by the standard voltage lift defined in Appendix A.2. For this \(C\),
+by the standard voltage lift defined in Appendix~\ref{a.2-voltage-lifts-and-the-controller}. For this \(C\),
 finite computation verifies that every ordered pair of vertices
 \((c,d)\) is joined by a nonbacktracking walk of length exactly \(5\).
 This graph \(C\) is the controller.
@@ -574,7 +464,7 @@ by \[
 controllability matrix is nonsingular for every reduced word of length
 \(5\).
 
-Applying Proposition 2.2 with \(q=3\) gives a \(12\)-regular graph on \[
+Applying \cref{prop:lift} with \(q=3\) gives a \(12\)-regular graph on \[
   144\cdot3^5=34{,}992
 \] vertices. Applying it with \(q=4\) gives a \(16\)-regular graph on \[
   144\cdot4^5=147{,}456
@@ -582,19 +472,18 @@ Applying Proposition 2.2 with \(q=3\) gives a \(12\)-regular graph on \[
 
 Finally, each of these vertex counts exceeds the corresponding Moore
 upper bound for diameter \(4\). Hence each of the two obtained graphs
-has diameter exactly \(5\), and Theorem 2.1 follows.
+has diameter exactly \(5\), and \cref{thm:main} follows.
 
 The construction is closely related to the existing theory of graph
-lifts and voltage graphs. The controller in §A.5 is an ordinary
+lifts and voltage graphs. The controller in \S\ref{a.5-the-144-vertex-controller} is an ordinary
 group-valued voltage lift. The final route-chart lift can also be
 described as a lift by a permutation voltage assignment after each
 directed edge of the controller is expanded into \(q\) directed edges
 indexed by \(\lambda\in\mathbb F_q\). The relation between the present
-construction and existing methods is discussed in §7.
+construction and existing methods is discussed in \S\ref{discussion}.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{3. Dialogue environment}\label{dialogue-environment}
+\section{Dialogue environment}\label{dialogue-environment}
 
 The search was conducted by the author through ordinary dialogue in the
 standard ChatGPT web interface. The author did not build or use an
@@ -619,7 +508,7 @@ on the service side are not observable. The paper therefore makes no
 claim that these mechanisms were simple.
 
 All dialogue was conducted in Japanese. The user prompts quoted in
-§4--§5 are the author's English translations. The original Japanese
+\S\ref{the-discovery-process}--\S\ref{transcript-based-observations-on-the-discovery-process} are the author's English translations. The original Japanese
 messages are preserved in the supplementary visible transcript (Appendix
 B).
 
@@ -650,13 +539,12 @@ author, the situation was as follows.
 \item
   Neither separate session reached either the ideas that appeared in
   Rounds 049--050 of the released main session or the final lower bounds
-  shown in §2. The released main session was the first to reach the
+  shown in \S\ref{the-degreediameter-problem-and-the-main-result}. The released main session was the first to reach the
   present result.
 \end{itemize}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{4. The discovery process}\label{the-discovery-process}
+\section{The discovery process}\label{the-discovery-process}
 
 The observations below concern Rounds 001--052 of the ChatGPT session,
 conducted from 22 to 27 May 2026. These are the rounds relevant to the
@@ -675,7 +563,7 @@ round of the transcript. The full visible transcript of Rounds 001--052
 is included in the supplementary materials. The structure of the
 supplementary materials is summarized in Appendix B.
 
-\subsection{4.1 The initial prompt}\label{the-initial-prompt}
+\subsection{The initial prompt}\label{the-initial-prompt}
 
 The dialogue began in Round 001 with the author giving a high-level goal
 of roughly the following form.
@@ -718,7 +606,7 @@ suppression of web search, withdrawal from local repair, stopping and
 reorganization, and requests to explain prospects of success in advance.
 Candidate generation itself was left mainly to the LLM.
 
-\subsection{4.2 Initial exploration}\label{initial-exploration}
+\subsection{Initial exploration}\label{initial-exploration}
 
 In the initial exploration from Round 001 to Round 021, many ideas were
 examined, including what the transcript labeled as non-regular
@@ -727,12 +615,12 @@ Hashimoto / de Bruijn type constructions, rank-controller type
 constructions, random regular graphs, and affine Schreier cover type
 constructions. Most of these did not ultimately lead to a certificate.
 
-\subsection{4.3 The first essential transition: route as coordinate
+\subsection{The first essential transition: route as coordinate
 chart}\label{the-first-essential-transition-route-as-coordinate-chart}
 
 The first substantive progress occurred in Round 023, when the principle
 of the controllable route-chart lift appeared. This principle is the
-core of the final construction outlined in §2.3. In Rounds 022 and 023,
+core of the final construction outlined in \S\ref{outline-of-the-construction-controller-and-fiber}. In Rounds 022 and 023,
 the user requested ``an a priori mathematical reason to expect success''
 and asked the LLM ``to devise a new principle.'' In Round 023, the LLM
 presented the following view.
@@ -744,7 +632,7 @@ of length \(k\) should be a coordinate chart that covers all of
 \end{quote}
 
 To explain this abstraction, we first recall the standard group-valued
-voltage-lift point of view (§A.2). In an ordinary voltage lift, one attaches a
+voltage-lift point of view (\S\ref{a.2-voltage-lifts-and-the-controller}). In an ordinary voltage lift, one attaches a
 group element to each edge of the base graph. Choosing a single path on
 the base graph from a start vertex to an end vertex determines a single
 product or sum of group elements along that path, and hence a single
@@ -784,7 +672,7 @@ directly guessing the whole final graph, the LLM reformulated the task
 as the separate construction of a small controller-side graph design and
 a finite list of fiber-side linear-algebraic conditions.
 
-\subsection{4.4 Success of the fiber chart and the controller
+\subsection{Success of the fiber chart and the controller
 bottleneck}\label{success-of-the-fiber-chart-and-the-controller-bottleneck}
 
 In the proof of concept in Round 024, affine control data were found
@@ -803,7 +691,7 @@ The important observation at this stage was the identification of a
 bottleneck. For the shortest \((16,4)\) target, the controller-side
 constraints were too tight.
 
-\subsection{4.5 Transition to diameter 5 and the first complete
+\subsection{Transition to diameter 5 and the first complete
 candidate}\label{transition-to-diameter-5-and-the-first-complete-candidate}
 
 In response to this bottleneck, the search moved to \(s=5\) from Round
@@ -820,7 +708,7 @@ candidate was obtained by combining a universal chart on
 \] This was the first candidate graph produced from the route-chart
 principle to improve a degree/diameter lower bound.
 
-\subsection{4.6 Post-completion generalization search and the update to
+\subsection{Post-completion generalization search and the update to
 the final
 controller}\label{post-completion-generalization-search-and-the-update-to-the-final-controller}
 
@@ -858,9 +746,8 @@ generalization search encountered a controller bottleneck, the stopping
 and reorganization in Rounds 047--050 led to the final \(C_4\times C_6\)
 controller.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{5. Transcript-based observations on the discovery
+\section{Transcript-based observations on the discovery
 process}\label{transcript-based-observations-on-the-discovery-process}
 
 The analysis in this section is process tracing: it describes changes of
@@ -869,7 +756,7 @@ they are observable in the visible transcript. This paper contains no
 controlled experiment. Accordingly, this section does not claim how much
 any single element contributed to the discovery.
 
-\subsection{5.1 Record of unsuccessful approaches and changes of
+\subsection{Record of unsuccessful approaches and changes of
 direction}\label{record-of-unsuccessful-approaches-and-changes-of-direction}
 
 The dialogue log contains many unsuccessful search intervals. These
@@ -912,7 +799,7 @@ searches, appeared to prioritize approaches with a provable covering
 principle or a finite certificate over the policy of repairing a nearby
 candidate.
 
-\subsection{5.2 Constraints contained in the initial
+\subsection{Constraints contained in the initial
 prompt}\label{constraints-contained-in-the-initial-prompt}
 
 The initial prompt in Round 001 contained three kinds of constraints.
@@ -932,16 +819,16 @@ The initial prompt in Round 001 contained three kinds of constraints.
 
 In the transcript, this combination appears as pressure toward the
 search for a new representation rather than a mere re-implementation of
-known constructions. As noted in §2.3, however, each element of the
+known constructions. As noted in \S\ref{outline-of-the-construction-controller-and-fiber}, however, each element of the
 final construction is clearly connected to existing methods. Relative to
 existing lift and voltage constructions, the difference emphasized in
 this paper does not lie in the individual tools themselves. It lies in
 decomposing those tools into controller-side exact-NB-5 coverage and a
 fiber-side universal route chart, and then integrating the two parts
 into a finite certificate for a diameter proof in the degree/diameter
-problem. This point is discussed in detail in §7.
+problem. This point is discussed in detail in \S\ref{discussion}.
 
-\subsection{5.3 The user's meta-level interventions and representative
+\subsection{The user's meta-level interventions and representative
 exchanges}\label{the-users-meta-level-interventions-and-representative-exchanges}
 
 In the visible transcript, the author's meta-level interventions
@@ -963,80 +850,37 @@ The following table summarizes exchanges that are especially important
 for reading the discovery process. User utterances are quoted briefly,
 while the GPT side is summarized.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1121}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3084}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3551}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2243}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedleft
-Round
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-User prompt (excerpt)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Summary of GPT response
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Author's comment
-\end{minipage} \\
-\midrule\noalign{}
+{\small
+\setlength{\LTleft}{0pt}\setlength{\LTright}{\fill}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.06\textwidth}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.33\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}}
+\caption{Representative exchanges illustrating the user's meta-level interventions during the search (Section~5.3). User utterances are quoted briefly; the GPT side is summarized.}\label{tab:interventions}\\
+\toprule
+Round & User prompt (excerpt) & Summary of GPT response & Author's comment \\
+\midrule
+\endfirsthead
+\toprule
+Round & User prompt (excerpt) & Summary of GPT response & Author's comment \\
+\midrule
 \endhead
-\bottomrule\noalign{}
+\bottomrule
 \endlastfoot
-001 & ``an idea not essentially contained in the literature''; ``do not
-use web search, in principle'' & After surveying the table of known
-records, states that it will try a construction that is not an extension
-of existing methods & Gave general constraints on the search as an
-initial condition \\
+001 & ``an idea not essentially contained in the literature''; ``do not use web search, in principle'' & After surveying the table of known records, states that it will try a construction that is not an extension of existing methods & Gave general constraints on the search as an initial condition \\
 \midrule
-003 & ``I do not feel that a good graph can be obtained by local
-improvement'' & Acknowledges that random lift repair is weak as the main
-strategy for a large new record, and switches to a construction whose
-diameter proof closes without repair & Appears to have curbed the drift
-toward local repair \\
+003 & ``I do not feel that a good graph can be obtained by local improvement'' & Acknowledges that random lift repair is weak as the main strategy for a large new record, and switches to a construction whose diameter proof closes without repair & Appears to have curbed the drift toward local repair \\
 \midrule
-017 & also prohibits ``simply trying constructions from methods or
-concepts a mathematician would think of immediately'' & States that it
-will ``rebuild the construction principle itself, rather than improving
-candidates,'' and makes the waste of the distance itself the object of
-design & A point at which the novelty constraint was explicitly
-strengthened \\
+017 & also prohibits ``simply trying constructions from methods or concepts a mathematician would think of immediately'' & States that it will ``rebuild the construction principle itself, rather than improving candidates,'' and makes the waste of the distance itself the object of design & A point at which the novelty constraint was explicitly strengthened \\
 \midrule
-022 & requests concentration on ``ideas with a reason to expect
-efficient connectivity in advance'' & Discards the ``projective
-rank-controller direction'' as lacking an a priori basis, and says that
-a new principle with an explicit covering identity is needed & A point
-at which the evaluation axis moved from mere near misses to a provable
-covering principle \\
+022 & requests concentration on ``ideas with a reason to expect efficient connectivity in advance'' & Discards the ``projective rank-controller direction'' as lacking an a priori basis, and says that a new principle with an explicit covering identity is needed & A point at which the evaluation axis moved from mere near misses to a provable covering principle \\
 \midrule
-023 & ``please devise a new principle'' & Proposes the controllable
-route-chart lift, explaining that a single route together with \(q^5\)
-controls covers the whole fiber & The point at which the abstraction
-underlying the final construction was first made explicit \\
+023 & ``please devise a new principle'' & Proposes the controllable route-chart lift, explaining that a single route together with \(q^5\) controls covers the whole fiber & The point at which the abstraction underlying the final construction was first made explicit \\
 \midrule
-026 & ``For the current 58-vertex controller problem, existing ideas may
-be used, provided that there is a mathematical reason to expect
-success.'' & Treats existing voltage-lift ideas as admissible for the
-isolated controller subproblem, but only under an a-priori-success
-criterion & Clarified the boundary between the novelty constraint and
-the controlled use of existing tools \\
+026 & ``For the current 58-vertex controller problem, existing ideas may be used, provided that there is a mathematical reason to expect success.'' & Treats existing voltage-lift ideas as admissible for the isolated controller subproblem, but only under an a-priori-success criterion & Clarified the boundary between the novelty constraint and the controlled use of existing tools \\
 \midrule
-036 & ``please continue'' & From a \(132\)-vertex exact-NB-5 controller
-and an \(\mathbb F_4^5\) chart, obtains the first complete candidate
-\((16,5,135{,}168)\) & A cautionary example showing that large progress
-can occur even after a simple continuation instruction \\
+036 & ``please continue'' & From a \(132\)-vertex exact-NB-5 controller and an \(\mathbb F_4^5\) chart, obtains the first complete candidate \((16,5,135{,}168)\) & A cautionary example showing that large progress can occur even after a simple continuation instruction \\
 \midrule
-047 & ``please pause and review the direction'' & Summarizes that the
-generalization search is drifting toward trial-and-error controller
-search, and proposes a ``sumset-certified controller'' & A point at
-which the search after the first complete candidate was re-abstracted \\
+047 & ``please pause and review the direction'' & Summarizes that the generalization search is drifting toward trial-and-error controller search, and proposes a ``sumset-certified controller'' & A point at which the search after the first complete candidate was re-abstracted \\
 \midrule
-049--050 & A renewed request in Round 049 to avoid ``methods with no
-mathematical reason to expect success,'' followed by a brief
-continuation instruction in Round 050 & Focuses the controller search on
-a \(C_4\times C_6\)-based voltage-lift design, and in Round 050 obtains
-the final \(144\)-vertex exact-NB-5 controller, yielding the
-\(147{,}456\)-vertex construction & The final controller update \\
+049--050 & A renewed request in Round 049 to avoid ``methods with no mathematical reason to expect success,'' followed by a brief continuation instruction in Round 050 & Focuses the controller search on a \(C_4\times C_6\)-based voltage-lift design, and in Round 050 obtains the final \(144\)-vertex exact-NB-5 controller, yielding the \(147{,}456\)-vertex construction & The final controller update \\
 \end{longtable}
 }
 
@@ -1094,9 +938,8 @@ meta-interventions involving the addition, modification, or relaxation
 of constraints. The counts are based on the author's classification of
 the visible user prompts.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{6. Limitations}\label{limitations}
+\section{Limitations}\label{limitations}
 
 This paper reports a single case. It does not show that ChatGPT can in
 general perform similar mathematical discovery with high probability,
@@ -1121,11 +964,10 @@ graph edge lists in the supplementary materials. It does not
 include the later process of organizing the mathematical justification
 of that construction into the proof exposition given in Appendix A.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{7. Discussion}\label{discussion}
+\section{Discussion}\label{discussion}
 
-\subsection{7.1 Novelty of the graph construction
+\subsection{Novelty of the graph construction
 method}\label{novelty-of-the-graph-construction-method}
 
 The existing framework closest to the present construction is that of
@@ -1134,7 +976,7 @@ a group element to each directed edge of the base graph, and the product
 or sum along a walk describes the movement of the fiber coordinate in
 the lift. In the degree/diameter problem as well, voltage-assignment
 methods for constructing a large lift from a small base graph have been
-widely used {[}BrankovicEtAl1998a, LozSiran2008{]}. The controller
+widely used \cite{BrankovicEtAl1998a, LozSiran2008}. The controller
 certificate in this paper belongs to the same lineage as this standard
 voltage-lift idea. Indeed, the \(144\)-vertex controller is the
 \(C_4\times C_6\) voltage lift of a \(6\)-vertex multibase, and its
@@ -1150,7 +992,7 @@ with the \(q\) affine maps \[
   x\mapsto A_t x+\lambda b_t\qquad(\lambda\in\mathbb F_q).
 \] Formally, this can be regarded as a permutation voltage lift over the
 multigraph obtained by expanding each edge of the controller into \(q\)
-control-indexed parallel edges {[}GrossTucker2001, DalfoEtAl2021{]}.
+control-indexed parallel edges \cite{GrossTucker2001, DalfoEtAl2021}.
 From this point of view, the novelty of the construction lies in
 choosing the affine permutation voltages so that every reduced route of
 length \(5\) parametrizes the entire fiber, and in verifying this fact
@@ -1167,7 +1009,7 @@ diameter check for the huge final graph into the controller-side exact
 route coverage and the fiber-side rank condition over all reduced words.
 This separation is central to the certificate design in this paper.
 
-\subsection{7.2 Decomposition of search execution and search
+\subsection{Decomposition of search execution and search
 control}\label{decomposition-of-search-execution-and-search-control}
 
 The search strategy used by the author was to have the LLM carry out
@@ -1184,15 +1026,15 @@ instances, including Round 023 and Rounds 049--050, where control-type
 interventions and increases in the level of abstraction occur in close
 proximity.
 
-\subsection{7.3 Relation to recent
+\subsection{Relation to recent
 cases}\label{relation-to-recent-cases}
 
-Apart from the system-oriented methods listed in §1, there have recently
+Apart from the system-oriented methods listed in \S\ref{introduction}, there have recently
 been reports of research-level mathematical results obtained solely
 through dialogue with a browser-accessible LLM ordinarily available to
 researchers, without a dedicated search engine, formalizer, or
-orchestration {[}Bubeck2025, Salim2025, Verbeken2026, Gowers2026,
-Howlett2026{]}. In particular, {[}Verbeken2026{]} is a single-case study
+orchestration \cite{Bubeck2025, Salim2025, Verbeken2026, Gowers2026,
+Howlett2026}. In particular, \cite{Verbeken2026} is a single-case study
 that recorded and analyzed the resolution of an open conjecture by a
 consumer LLM across multiple dialogue sessions. It also released the
 related artifacts. Methodologically, it is closest to Contribution 2 of
@@ -1204,11 +1046,11 @@ of human involvement. These reports are not uniform in the role assigned
 to the human participant. At least within the released and recorded
 materials, some describe processes in which mathematically concrete
 directions or pointers were supplied through prompts before the final
-result was reached {[}Salim2025, Verbeken2026{]}. Others explicitly
+result was reached \cite{Salim2025, Verbeken2026}. Others explicitly
 state that the human made no essential mathematical contribution, and
 that the human role was limited to guidance such as posing the problem,
 continuing the search, and requesting confirmation of correctness
-{[}Gowers2026{]}. The materials released in {[}Gowers2026{]}, however,
+\cite{Gowers2026}. The materials released in \cite{Gowers2026}, however,
 consist mainly of artifacts and a narrative record, rather than a long
 transcript of the kind released with this paper. Moreover, that
 case is described as a relatively short exchange on the order of an hour or two, so the time scale of the record differs from the \(52\)-round
@@ -1219,9 +1061,9 @@ is closer to the latter type than to the former. The author's
 contribution was concentrated on controlling the search process rather
 than on supplying concrete components of the construction. This control
 included demanding novelty, stopping and re-abstracting, and requesting
-explanations of the prospects of success in advance (§4, §5).
+explanations of the prospects of success in advance (\S\ref{the-discovery-process}, \S\ref{transcript-based-observations-on-the-discovery-process}).
 
-The difference from {[}Gowers2026{]} lies instead in the form and time
+The difference from \cite{Gowers2026} lies instead in the form and time
 scale of the record. This paper releases a visible transcript spanning
 \(52\) rounds, including unsuccessful search intervals. It also records,
 as process tracing, how structured meta-level interventions corresponded
@@ -1233,7 +1075,7 @@ Thus, beyond the absence of concrete construction hints
 from the author, the distinctive features of this paper are its time
 scale and its mode of recording the interaction.
 
-\subsection{7.4 Future work}\label{future-work}
+\subsection{Future work}\label{future-work}
 
 This work suggests three perspectives to consider when LLM agents are
 used for automatic search on general problems. The first concerns the
@@ -1254,7 +1096,7 @@ dedicated systems. When a powerful foundation model is guided only by a
 lightweight control loop, either a human controller or a second LLM, it
 is natural to ask how close such a workflow can come to the level
 attainable by dedicated systems such as FunSearch
-{[}RomeraParedes2024{]} or AlphaProof {[}Hubert2026{]}. It also remains
+\cite{RomeraParedes2024} or AlphaProof \cite{Hubert2026}. It also remains
 to understand in which situations the lightweight-control approach and
 the dedicated-system approach are respectively preferable.
 
@@ -1264,9 +1106,8 @@ search system. It also remains unclear how far the observations
 generalize to other fields requiring exploratory thinking. These
 questions are left for future work.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{8. Conclusion}\label{conclusion}
+\section{Conclusion}\label{conclusion}
 
 This paper presented a construction proving the new lower bounds \[
   N(12,5)\ge34{,}992,
@@ -1283,30 +1124,31 @@ the effectiveness of such control and constraints, and the extent to
 which similar methods can handle difficult problems more broadly,
 remains a topic for future work.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Acknowledgments}\label{acknowledgments}
+\section*{Acknowledgments}\label{acknowledgments}
 
 The author thanks Jaeseung Han, Yawara Ishida, and Daisuke Takahashi for
 helpful discussions and comments on an earlier draft of this paper, and
 for valuable comments on the direction of this work.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Appendix A. Mathematical construction and
+\appendix
+
+\section{Mathematical construction and
 proofs}\label{appendix-a.-mathematical-construction-and-proofs}
 
 This appendix collects the mathematical constructions needed to prove
-Theorem 2.1.
+\cref{thm:main}.
 
-\subsection{A.1 Multigraphs and nonbacktracking
+\subsection{Multigraphs and nonbacktracking
 walks}\label{a.1-multigraphs-and-nonbacktracking-walks}
 
 For a finite set \(V\), write \[
   \binom{V}{2}:=\bigl\{\{u,v\}:u,v\in V,\ u\ne v\bigr\} .
 \] This is the set of all two-element subsets of \(V\).
 
-\textbf{Definition A.1.} A \emph{loopless multigraph} is a triple
+\begin{definition}\label{def:multigraph}
+A \emph{loopless multigraph} is a triple
 \(B=(V,E,\partial)\) where \(V\) and \(E\) are finite sets and
 \(\partial:E\to\binom{V}{2}\) is a map. When \(\partial(e)=\{u,v\}\) for
 \(e\in E\), we say that \(e\) is an edge joining \(u\) and \(v\).
@@ -1314,8 +1156,10 @@ Distinct edges \(e,e'\in E\) with the same endpoint set \(\{u,v\}\) are
 allowed. On the other hand, by the definition of \(\binom{V}{2}\),
 \(\partial(e)\) always consists of two distinct vertices, so there are
 no loops.
+\end{definition}
 
-\textbf{Definition A.2.} A walk of length \(\ell\) in
+\begin{definition}\label{def:walk}
+A walk of length \(\ell\) in
 \(B=(V,E,\partial)\) is a sequence \[
   P=(v_0,e_1,v_1,e_2,\ldots,e_\ell,v_\ell)
 \] with \(v_i\in V\), \(e_i\in E\) and \(\partial(e_i)=\{v_{i-1},v_i\}\)
@@ -1324,17 +1168,18 @@ for all \(1\le i\le\ell\). This walk is \emph{nonbacktracking} (NB) if
   e_{i+1}\ne e_i\qquad(1\le i<\ell)
 \] is satisfied. For simple graphs, this coincides with the usual
 condition \(v_{i+1}\ne v_{i-1}\).
+\end{definition}
 
-\subsection{A.2 Voltage lifts and the
+\subsection{Voltage lifts and the
 controller}\label{a.2-voltage-lifts-and-the-controller}
 
 Voltage graphs and regular coverings are standard construction tools. In
 this paper we use voltage assignments with values in a finite abelian
-group {[}GrossTucker2001{]}. In the degree/diameter problem, the
+group \cite{GrossTucker2001}. In the degree/diameter problem, the
 method of giving a voltage assignment to a small base graph to build a
 large lift, and reducing the diameter condition to a condition on walks
-in the base graph and net voltages, has been used {[}BrankovicEtAl1998a,
-LozSiran2008{]}.
+in the base graph and net voltages, has been used \cite{BrankovicEtAl1998a,
+LozSiran2008}.
 
 Let \(B=(V,E,\partial)\) be a loopless multigraph. For each edge
 \(e\in E\), with \(\partial(e)=\{u,v\}\), consider the two orientations
@@ -1343,13 +1188,15 @@ and write \(\overrightarrow E(B)\) for the set of all directed edges. We
 write the reverse of a directed edge \(\vec e=(u,e,v)\) as
 \(\overline{\vec e}=(v,e,u)\).
 
-\textbf{Definition A.3.} Let \(H\) be a finite abelian group. An
+\begin{definition}\label{def:voltage}
+Let \(H\) be a finite abelian group. An
 \(H\)-valued voltage assignment is a map \[
   \gamma:\overrightarrow E(B)\to H
 \] satisfying, for every directed edge \(\vec e\), \[
   \gamma(\overline{\vec e})=-\gamma(\vec e) .
 \] The group element \(\gamma(\vec e)\) assigned to a directed edge
 \(\vec e\) is called the voltage of that directed edge.
+\end{definition}
 
 The regular lift \(B^\gamma\) of a voltage-equipped multigraph
 \((B,\gamma)\) is the following, not necessarily simple, undirected
@@ -1373,7 +1220,8 @@ value \(h_0\in H\), let the directed edge of the \(i\)-th step be
 \] Then \(h_\ell-h_0=\sum_{i=1}^\ell \gamma(\vec e_i)\) is called the
 voltage sum of \(P\).
 
-\textbf{Lemma A.4.} Let \((B,\gamma)\) be an \(H\)-valued
+\begin{lemma}\label{lem:coset}
+Let \((B,\gamma)\) be an \(H\)-valued
 voltage-equipped loopless multigraph, and set \(C=B^\gamma\). Assume
 that for some \(s\ge1\) the following holds. \[
 \tag{A.0}
@@ -1381,28 +1229,33 @@ that for some \(s\ge1\) the following holds. \[
   \text{there is a length-}s\text{ NB walk }i\to j\text{ in }B\text{ with voltage sum }h.
 \] Then, for any \((c,d)\in V(C)^2\), there exists a nonbacktracking
 walk of length exactly \(s\) from \(c\) to \(d\) in \(C\).
+\end{lemma}
 
-\textbf{Proof.} Write \(c=(i,h_1)\), \(d=(j,h_2)\). Applying (A.0) to
+\begin{proof}
+Write \(c=(i,h_1)\), \(d=(j,h_2)\). Applying (A.0) to
 \(h=h_2-h_1\), there is a length-\(s\) NB walk \(P\) in \(B\) from \(i\)
 to \(j\) whose voltage sum is \(h_2-h_1\). Lifting \(P\) from the
 initial value \(h_1\) by the rule above, the second component of the
 endpoint is \(h_1+(h_2-h_1)=h_2\). The NB condition is the condition of
 not immediately returning along the same edge id, and is therefore
 preserved after lifting. Hence a length-\(s\) NB walk from \(c\) to
-\(d\) is obtained in \(C\). \(\square\)
+\(d\) is obtained in \(C\).
+\end{proof}
 
 A simple graph \(C\) with the above property is called an
 \textbf{exact-NB-\(s\) controller}.
 
-\subsection{A.3 Symmetric alphabets and inverse-consistent
+\subsection{Symmetric alphabets and inverse-consistent
 labelings}\label{a.3-symmetric-alphabets-and-inverse-consistent-labelings}
 
-\textbf{Definition A.5.} When a map \(\iota:S\to S\) on a finite set
+\begin{definition}\label{def:symmalpha}
+When a map \(\iota:S\to S\) on a finite set
 \(S\) satisfies \(\iota(\iota(t))=t\) for all \(t\in S\), \(\iota\) is
 called an involution. If furthermore \(\iota(t)\ne t\) holds for all
 \(t\in S\), then \(\iota\) is said to be fixed-point-free. In this
 paper, a finite set \(S\) equipped with a fixed-point-free involution is
 called a symmetric alphabet, and we write \(\iota(t)\) as \(t^{-1}\).
+\end{definition}
 
 A word \(w=t_1\cdots t_s\) of length \(s\) is \emph{reduced} if \[
   t_{i+1}\ne t_i^{-1}\qquad(1\le i<s).
@@ -1433,7 +1286,7 @@ leaving \(c_i\) with label \(t^{-1}\), so if the next label is
 \(t^{-1}\) then \(c_i\to c_{i+1}\) is the directed edge that reverses
 the previous edge. This contradicts the NB condition.
 
-By Petersen's 2-factor theorem {[}Petersen1891{]}, an even-regular
+By Petersen's 2-factor theorem \cite{Petersen1891}, an even-regular
 simple undirected graph admits a 2-factor decomposition. Assign a
 distinct inverse pair \(\{t,t^{-1}\}\) of \(S\) to each 2-factor. Choose
 an orientation of each cycle, and assign \(t\) to the forward directed
@@ -1447,17 +1300,18 @@ deterministic for the \(4\)-regular controller used below. An Euler
 circuit is used to two-color the controller edges by parity along the
 circuit, giving two \(2\)-factors, and each cycle in the two factors is
 then oriented. This produces the inverse-consistent labeling used by the
-bundled edge-list generator. The proof of Lemma A.8, however, only needs
+bundled edge-list generator. The proof of \cref{lem:lift}, however, only needs
 the inverse-consistency property and does not depend on this particular
 choice of labeling.
 
-\subsection{A.4 Route charts and chart
+\subsection{Route charts and chart
 lifts}\label{a.4-route-charts-and-chart-lifts}
 
 Let \(S\) be a symmetric alphabet, \(\mathbb F_q\) a finite field, and
 \(s\ge1\).
 
-\textbf{Definition A.6.} A \emph{route chart} on \(\mathbb F_q^s\) is an
+\begin{definition}\label{def:chart}
+A \emph{route chart} on \(\mathbb F_q^s\) is an
 assignment, to each \(t\in S\), of \[
   A_t\in\operatorname{GL}_s(\mathbb F_q),
   \qquad
@@ -1485,8 +1339,10 @@ controllability matrix by \[
   \tag{A.2}
 \] A route chart is \emph{universal} if \(M_w\) is nonsingular for every
 reduced word \(w\) of length \(s\).
+\end{definition}
 
-\textbf{Definition A.7.} Let \(C\) be a \(\rho\)-regular simple
+\begin{definition}\label{def:lift}
+Let \(C\) be a \(\rho\)-regular simple
 undirected graph, \(S\) a symmetric alphabet with \(|S|=\rho\),
 \(\ell:\overrightarrow E(C)\to S\) an inverse-consistent labeling, and
 \((A_t,b_t)_{t\in S}\) a route chart on \(\mathbb F_q^s\). Define the
@@ -1499,6 +1355,7 @@ for each \(x\in\mathbb F_q^s\) and each \(\lambda\in\mathbb F_q\), add
 the undirected edge joining the two vertices \[
   (u,x),\qquad (v,A_tx+\lambda b_t) .
 \]
+\end{definition}
 
 We show that this rule is independent of the orientation chosen for the
 undirected edge \(\{u,v\}\). Let the label of the direction \(u\to v\)
@@ -1524,7 +1381,8 @@ edge \(u\to v\) of \(C\) (label \(t\)), \[
   \exists\lambda\in\mathbb F_q:\ y=A_tx+\lambda b_t .
 \]
 
-\textbf{Lemma A.8.} With the above notation, suppose the route chart is
+\begin{lemma}\label{lem:lift}
+With the above notation, suppose the route chart is
 universal. Then the following hold.
 
 \begin{enumerate}
@@ -1540,8 +1398,10 @@ universal. Then the following hold.
 \item
   \(|V(G)|=|V(C)|q^s\).
 \end{enumerate}
+\end{lemma}
 
-\textbf{Proof.} The graph is undirected by Definition A.7. We first
+\begin{proof}
+The graph is undirected by \cref{def:lift}. We first
 prove simplicity and the degree. Since \(C\) is simple, for a directed
 edge \(u\to v\) of \(C\) we always have \(u\ne v\). Hence \(G\) has no
 loops. By universality, each \(b_t\) is nonzero. Indeed, the word
@@ -1552,7 +1412,7 @@ Consider a fixed vertex \((u,x)\in V(G)\). There are \(\rho\) directed
 edges leaving \(u\), and for each, choosing \(\lambda\in\mathbb F_q\)
 yields the candidate neighbor \[
   (v,A_tx+\lambda b_t) .
-\] By the argument at the end of Definition A.7, these are all the
+\] By the argument at the end of \cref{def:lift}, these are all the
 neighbors of \((u,x)\in V(G)\). Distinct directed edges go to distinct
 controller vertices \(v\) because \(C\) is simple. For the same directed
 edge, if \[
@@ -1582,9 +1442,11 @@ along this walk. Starting the fiber coordinate at \(x_0=x\) and setting
   =y-A_wx
 \] has a solution. Using this solution, we obtain a walk of length \(s\)
 from \((c,x)\) to \((d,y)\). In particular \(G\) is connected, and \(\operatorname{diam}(G)\le s\). The
-vertex count follows immediately from the definition. \(\square\)
+vertex count follows immediately from the definition.
+\end{proof}
 
-\textbf{Remark.} The route-chart lift of Definition A.7 can also be
+\begin{remark}
+The route-chart lift of \cref{def:lift} can also be
 described as a permutation voltage lift over the expanded base
 multigraph. That is, replace each directed edge of \(C\) with label
 \(t\) by \(q\) directed edges indexed by \(\lambda\in\mathbb F_q\), and
@@ -1593,30 +1455,34 @@ assign to that directed edge the permutation of \(\mathbb F_q^s\) \[
 \] By condition (A.1), replacing the control parameter \(\lambda\) by
 \(-\lambda\) makes the affine map on the reverse directed edge the
 inverse permutation. Hence the route-chart lift is an instance of a
-graph lift by a permutation voltage assignment {[}GrossTucker2001,
-DalfoEtAl2021{]}. In this paper, in addition to this permutation lift,
+graph lift by a permutation voltage assignment \cite{GrossTucker2001,
+DalfoEtAl2021}. In this paper, in addition to this permutation lift,
 we impose the nonsingularity of the controllability matrix for all
 reduced routes of length \(s\), thereby reducing the diameter proof to a
 finite list of rank certificates.
+\end{remark}
 
-\subsection{A.5 The 144-vertex
+\subsection{The 144-vertex
 controller}\label{a.5-the-144-vertex-controller}
 
 Let the vertex set of \(B\) be \(\{0,1,2,3,4,5\}\) and the voltage group
 be \[
   H=C_4\times C_6=\mathbb Z/4\mathbb Z\times\mathbb Z/6\mathbb Z .
-\] Each edge is as in Table A.1, with the orientation \(u\to v\) in the
+\] Each edge is as in \cref{tab:base}, with the orientation \(u\to v\) in the
 table taken as the forward direction.
 
-\textbf{Table A.1.} Base multigraph \(B\) and voltage assignment.
-
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}rrrrr@{}}
-\toprule\noalign{}
+{\centering
+\begin{longtable}{rrrrr}
+\caption{Base multigraph \(B\) and voltage assignment.}\label{tab:base}\\
+\toprule
 edge id & \(u\) & \(v\) & \(C_4\) component & \(C_6\) component \\
-\midrule\noalign{}
+\midrule
+\endfirsthead
+\toprule
+edge id & \(u\) & \(v\) & \(C_4\) component & \(C_6\) component \\
+\midrule
 \endhead
-\bottomrule\noalign{}
+\bottomrule
 \endlastfoot
 0 & 0 & 2 & 1 & 0 \\
 \midrule
@@ -1644,16 +1510,19 @@ edge id & \(u\) & \(v\) & \(C_4\) component & \(C_6\) component \\
 \end{longtable}
 }
 
-Each vertex occurs four times in Table A.1, and there are no loops.
+Each vertex occurs four times in \cref{tab:base}, and there are no loops.
 Hence \(B\) is a loopless \(4\)-regular multigraph. Setting
 \(C:=B^\gamma\), \[
   V(C)=\{0,1,2,3,4,5\}\times C_4\times C_6 ,
 \] so \(|V(C)|=6\cdot4\cdot6=144\).
 
-\textbf{Proposition A.9.} \(C\) is a simple \(4\)-regular connected
+\begin{proposition}\label{prop:controller}
+\(C\) is a simple \(4\)-regular connected
 graph and an exact-NB-5 controller.
+\end{proposition}
 
-\textbf{Proof.} Regularity follows from the definition of the regular
+\begin{proof}
+Regularity follows from the definition of the regular
 lift and the \(4\)-regularity of \(B\). As for simplicity, since \(B\)
 has no loop, the lift has no loop. The only parallel pairs of base edges
 are edges \(2\) and \(3\), and edges \(6\) and \(7\); in each pair, the
@@ -1661,7 +1530,7 @@ voltages are different. For two base edges joining the same two base
 vertices to give the same lift edge, their voltages must be equal, so no
 multiple edge arises.
 
-The base multigraph \(B\) is connected by inspection of Table A.1.
+The base multigraph \(B\) is connected by inspection of \cref{tab:base}.
 Connectivity of the lift follows from the fact that the closed-walk
 voltages of the base generate all of \(H=C_4\times C_6\). For example,
 the voltage of \[
@@ -1672,7 +1541,7 @@ Also, the voltage of \[
 \] is \((1,0)+(2,2)-(2,0)=(1,2)\). Together with \((0,5)\), this
 generates all of \(H\). Hence \(C\) is connected.
 
-For the exact-NB-5 property, by Lemma A.4 it suffices to verify that,
+For the exact-NB-5 property, by \cref{lem:coset} it suffices to verify that,
 for any \(i,j\in\{0,\ldots,5\}\) and any \(h\in C_4\times C_6\), there
 is a length-\(5\) NB walk \(i\to j\) in \(B\) with voltage sum \(h\).
 The number of length-\(5\) NB walks from each starting vertex of \(B\)
@@ -1681,9 +1550,10 @@ most \(6\cdot324=1944\), so a complete enumeration is possible.
 The supplementary \texttt{scripts/*/verify\_candidate.py} enumerates these
 by DFS and verifies that, for each of the \(36\) ordered base pairs, all
 \(24\) voltages of \(H\) are realized, i.e.\ all \(36\cdot24=864\)
-pair--voltage combinations of condition (A.0). \(\square\)
+pair--voltage combinations of condition (A.0).
+\end{proof}
 
-\subsection{\texorpdfstring{A.6 Universal route charts for
+\subsection{\texorpdfstring{Universal route charts for
 \(s=5\)}{A.6 Universal route charts for s=5}}\label{a.6-universal-route-charts-for-s5}
 
 In this section we set \(S=\{0,1,2,3\}\) with the correspondence
@@ -1691,7 +1561,7 @@ In this section we set \(S=\{0,1,2,3\}\) with the correspondence
 \(0\leftrightarrow1\), \(2\leftrightarrow3\). There are
 \(4\cdot3^4=324\) reduced words of length \(5\).
 
-\subsubsection{\texorpdfstring{A.6.1 Chart on
+\subsubsection{\texorpdfstring{Chart on
 \(\mathbb F_3^5\)}{A.6.1 Chart on \textbackslash mathbb F\_3\^{}5}}\label{a.6.1-chart-on-mathbb-f_35}
 
 Let \(\mathbb F_3=\{0,1,2\}\). We use the following matrices and
@@ -1734,10 +1604,13 @@ b_2=\begin{pmatrix}2\\1\\2\\0\\2\end{pmatrix},\quad
 b_3=\begin{pmatrix}1\\0\\1\\0\\2\end{pmatrix}.
 \]
 
-\textbf{Proposition A.10.} The correspondence \((A_t,b_t)_{t\in S}\) is
+\begin{proposition}\label{prop:a10}
+The correspondence \((A_t,b_t)_{t\in S}\) is
 a universal route chart on \(\mathbb F_3^5\).
+\end{proposition}
 
-\textbf{Proof.} The supplementary
+\begin{proof}
+The supplementary
 \texttt{scripts/12\_5\_34992/verify\_candidate.py} verifies the
 following with arithmetic over \(\mathbb F_3\).
 
@@ -1753,10 +1626,10 @@ following with arithmetic over \(\mathbb F_3\).
   \(M_w\) of (A.2) has rank \(5\).
 \end{enumerate}
 
-These are exactly the conditions of Definition A.6 and universality.
-\(\square\)
+These are exactly the conditions of \cref{def:chart} and universality.
+\end{proof}
 
-\subsubsection{\texorpdfstring{A.6.2 Chart on
+\subsubsection{\texorpdfstring{Chart on
 \(\mathbb F_4^5\)}{A.6.2 Chart on \textbackslash mathbb F\_4\^{}5}}\label{a.6.2-chart-on-mathbb-f_45}
 
 Let \(\mathbb F_4=\mathbb F_2[\alpha]/(\alpha^2+\alpha+1)\), with the
@@ -1800,32 +1673,39 @@ b_2=\begin{pmatrix}2\\1\\0\\2\\2\end{pmatrix},\quad
 b_3=\begin{pmatrix}2\\1\\1\\3\\2\end{pmatrix}.
 \]
 
-\textbf{Proposition A.11.} The correspondence \((A_t,b_t)_{t\in S}\) is
+\begin{proposition}\label{prop:a11}
+The correspondence \((A_t,b_t)_{t\in S}\) is
 a universal route chart on \(\mathbb F_4^5\).
+\end{proposition}
 
-\textbf{Proof.} The supplementary
+\begin{proof}
+The supplementary
 \texttt{scripts/16\_5\_147456/verify\_candidate.py} verifies, with
 \(\mathbb F_4\) arithmetic using the above encoding, the same three
-kinds of conditions as in Proposition A.10. That is, the inverse
+kinds of conditions as in \cref{prop:a10}. That is, the inverse
 relations (A.1) and the rank-\(5\) condition for all \(324\)
-controllability matrices hold. \(\square\)
+controllability matrices hold.
+\end{proof}
 
-\subsection{A.7 Proof of the main
+\subsection{Proof of the main
 theorem}\label{a.7-proof-of-the-main-theorem}
 
-\textbf{Theorem A.12.} The following inequalities hold: \[
+\begin{theorem}\label{thm:bounds}
+The following inequalities hold: \[
   N(12,5)\ge34{,}992,
   \qquad
   N(16,5)\ge147{,}456 .
 \]
+\end{theorem}
 
-\textbf{Proof.} Fix the \(144\)-vertex controller \(C\) of §A.5 and an
+\begin{proof}
+Fix the \(144\)-vertex controller \(C\) of \S\ref{a.5-the-144-vertex-controller} and an
 inverse-consistent labeling of its directed edges, which exists by
-§A.3.
+\S\ref{a.3-symmetric-alphabets-and-inverse-consistent-labelings}.
 
-First let \(q=3\) and use the universal route chart of §A.6.1. By
-Proposition A.9, \(C\) is exact-NB-5, and by Proposition A.10 the chart
-is universal. By Lemma A.8, \[
+First let \(q=3\) and use the universal route chart of \S\ref{a.6.1-chart-on-mathbb-f_35}. By
+\cref{prop:controller}, \(C\) is exact-NB-5, and by \cref{prop:a10} the chart
+is universal. By \cref{lem:lift}, \[
   G_3=G(C,S,\ell,A,b)
 \] is simple connected \(4q=12\)-regular with \(\operatorname{diam}(G_3)\le5\),
 and satisfies \[
@@ -1833,7 +1713,7 @@ and satisfies \[
 \]
 
 Similarly, letting \(q=4\) and using the universal route chart of
-§A.6.2, by Lemma A.8, \[
+\S\ref{a.6.2-chart-on-mathbb-f_45}, by \cref{lem:lift}, \[
   G_4=G(C,S,\ell,A,b)
 \] is simple connected \(16\)-regular with \(\operatorname{diam}(G_4)\le5\), and
 satisfies \[
@@ -1843,9 +1723,10 @@ satisfies \[
 Furthermore, \(34{,}992\) exceeds the \((12,4)\) Moore upper bound
 \(17{,}569\), and \(147{,}456\) exceeds the \((16,4)\) Moore upper bound
 \(57{,}857\). Hence the diameters of these graphs cannot be at most
-\(4\), and in both cases the diameter is exactly \(5\). \(\square\)
+\(4\), and in both cases the diameter is exactly \(5\).
+\end{proof}
 
-\subsection{A.8 Verification and
+\subsection{Verification and
 reproducibility}\label{a.8-verification-and-reproducibility}
 
 Every computer-dependent part of the proof in this paper consists of
@@ -1871,9 +1752,9 @@ data and scripts in two packages, which record the same graphs.
   the package to execute. For each parameter set, the construction data
   are collected in a single machine-readable certificate,
   \texttt{certificates/*/certificate.json}. This certificate records the
-  voltage assignment on the base multigraph, given in Table A.1,
+  voltage assignment on the base multigraph, given in \cref{tab:base},
   together with the universal route chart on \(\mathbb F_q^5\) defined
-  in §A.6, namely the transition matrices \(A_t\) and vectors \(b_t\).
+  in \S\ref{a.6-universal-route-charts-for-s5}, namely the transition matrices \(A_t\) and vectors \(b_t\).
   The corresponding edge list is bundled as
   \texttt{graphs/*/final\_graph\_edges.tsv.gz}, and the step-by-step
   procedure is given in \texttt{route\_chart\_clean\_package/VERIFY.md}.
@@ -1908,14 +1789,17 @@ commands are run from the root of
   rank-\(5\) condition of the controllability matrix for all \(324\) reduced
   words of length \(5\). The expected output has the following form.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Base voltage coverage over C4 x C6: OK}
-\NormalTok{Controller: OK; 144 vertices, simple 4{-}regular, exact labeled NB length{-}5 coverage}
-\NormalTok{GF(3)\^{}5 universal chart: OK; 324 reduced words checked, min rank 5; inverse{-}symbol data verified}
-\NormalTok{Certificate complete: degree 12, diameter \textless{}=5, vertices = 144*3\^{}5 = 34992}
-\end{Highlighting}
-\end{Shaded}
+{\small
+\begin{verbatim}
+Base voltage coverage over C4 x C6: OK
+Controller: OK; 144 vertices, simple 4-regular,
+  exact labeled NB length-5 coverage
+GF(3)^5 universal chart: OK; 324 reduced words checked,
+  min rank 5; inverse-symbol data verified
+Certificate complete: degree 12, diameter <=5,
+  vertices = 144*3^5 = 34992
+\end{verbatim}
+}
 
   This is the output for \((12,5)\). The \((16,5)\) case prints
   \texttt{GF(4)\^{}5}, \texttt{degree\ 16}, and
@@ -1950,9 +1834,8 @@ Check 2 verifies that the bundled edge lists are exactly the graphs
 generated from those data. Check 3 is an additional, construction-free
 verification of the bundled edge lists.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Appendix B. Structure of the supplementary
+\section{Structure of the supplementary
 materials}\label{appendix-b.-structure-of-the-supplementary-materials}
 
 The supplementary materials contain the
@@ -1981,11 +1864,11 @@ checking, and independent graph-level verification.
   \texttt{route\_chart\_verified\_graphs\_package/}: the construction
   package produced by the LLM during the dialogue, preserved as a
   provenance artifact rather than as the runnable verification package.
-  Details are given in §A.8 of Appendix A.
+  Details are given in \S\ref{a.8-verification-and-reproducibility} of Appendix A.
 \item
   \texttt{route\_chart\_clean\_package/}: a cleaned, runnable version of
   \texttt{route\_chart\_verified\_graphs\_package/}, intended to be
-  executed by verifiers. Details are given in §A.8 of Appendix A.
+  executed by verifiers. Details are given in \S\ref{a.8-verification-and-reproducibility} of Appendix A.
 \item
   \texttt{verify\_provenance\_equivalence.py}: a script that confirms that
   the clean package describes the same construction as the provenance
@@ -2006,157 +1889,8 @@ checking, and independent graph-level verification.
   and the diameter-\(5\) proof of this paper does not depend on this script.
 \end{itemize}
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{References}\label{references}
-
-{[}AlonEtAl2026{]} N. Alon, T. F. Bloom, W. T. Gowers, D. Litt, W.
-Sawin, A. Shankar, J. Tsimerman, V. Wang, and M. Matchett Wood. Remarks
-on the disproof of the unit distance conjecture. arXiv:2605.20695, 2026.
-DOI: 10.48550/arXiv.2605.20695.
-
-{[}Bannai1973{]} E. Bannai and T. Ito. On finite Moore graphs.
-\emph{Journal of the Faculty of Science, University of Tokyo, Section
-IA, Mathematics} 20 (1973), 191--208.
-
-{[}BermondDelormeFarhi1984{]} J.-C. Bermond, C. Delorme, and G. Farhi.
-Large graphs with given degree and diameter II. \emph{Journal of
-Combinatorial Theory, Series B} 36 (1984), 32--48. DOI:
-10.1016/0095-8956(84)90012-1.
-
-{[}BermondDelormeQuisquater1986{]} J.-C. Bermond, C. Delorme, and J.-J.
-Quisquater. Strategies for interconnection networks: some methods from
-graph theory. \emph{Journal of Parallel and Distributed Computing} 3
-(1986), 433--449. DOI: 10.1016/0743-7315(86)90008-0.
-
-{[}BhanNobiliLanger2026{]} J. Bhan, N. Nobili, and P. Langer. New bounds
-for Zarankiewicz numbers via reinforced LLM evolutionary search.
-arXiv:2605.01120, 2026. DOI: 10.48550/arXiv.2605.01120.
-
-{[}BrankovicEtAl1998a{]} L. Branković, M. Miller, J. Plesník, J. Ryan,
-and J. Širáň. Large graphs with small degree and diameter: A voltage
-assignment approach. \emph{Australasian Journal of Combinatorics} 18
-(1998), 65--76.
-
-{[}Bubeck2025{]} S. Bubeck, C. Coester, R. Eldan, T. Gowers, Y. T. Lee,
-A. Lupsasca, M. Sawhney, R. Scherrer, M. Sellke, B. K. Spears, D.
-Unutmaz, K. Weil, S. Yin, and N. Zhivotovskiy. Early science
-acceleration experiments with GPT-5. arXiv:2511.16072, 2025. DOI:
-10.48550/arXiv.2511.16072.
-
-{[}Comellas2025{]} F. Comellas. New results on the degree-diameter
-problem for undirected graphs. \emph{Electronic Journal of Graph Theory
-and Applications} 13(1) (2025), 211--215. DOI:
-10.5614/ejgta.2025.13.1.14.
-
-{[}Comellas2026{]} F. Comellas. Table of large graphs with given degree
-and diameter. arXiv:2406.18994v2, 2026. DOI:
-10.48550/arXiv.2406.18994.
-
-{[}ComellasData2026{]} F. Comellas. Table of Large Degree/Diameter
-Graphs. Mendeley Data, Version 11, published 28 January 2026. DOI:
-10.17632/d75dzbjd4k.11.
-
-{[}DalfoEtAl2021{]} C. Dalfó, M. A. Fiol, S. Pavlíková, and J. Širáň.
-Spectra and eigenspaces of arbitrary lifts of graphs. \emph{Journal of
-Algebraic Combinatorics} 54 (2021), 651--672. DOI:
-10.1007/s10801-021-01049-3.
-
-{[}Damerell1973{]} R. M. Damerell. On Moore graphs. \emph{Mathematical
-Proceedings of the Cambridge Philosophical Society} 74(2) (1973),
-227--236. DOI: 10.1017/S0305004100048015.
-
-{[}DelormeBipartite1985{]} C. Delorme. Large bipartite graphs with given
-degree and diameter. \emph{Journal of Graph Theory} 9(3) (1985),
-325--334. DOI: 10.1002/jgt.3190090304.
-
-{[}Gowers2026{]} T. Gowers. A recent experience with ChatGPT 5.5 Pro.
-Gowers's Weblog, 8 May 2026.
-\url{https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/}
-
-{[}GrossTucker2001{]} J. L. Gross and T. W. Tucker. \emph{Topological
-Graph Theory}. Dover, 2001.
-
-{[}HoffmanSingleton1960{]} A. J. Hoffman and R. R. Singleton. On Moore
-graphs with diameters two and three. \emph{IBM Journal of Research and
-Development} 4(5) (1960), 497--504. DOI: 10.1147/rd.45.0497.
-
-{[}Howlett2026{]} J. Howlett. An amateur just solved a 60-year-old math
-problem---by asking AI. Scientific American, 24 April 2026.
-
-{[}Hubert2026{]} T. Hubert, R. Mehta, L. Sartran, M. Z. Horváth, G.
-Žužić, E. Wieser, A. Huang, J. Schrittwieser, Y. Schroecker, H. Masoom,
-et al.~Olympiad-level formal mathematical reasoning with reinforcement
-learning. \emph{Nature} 651 (2026), 607--613. DOI:
-10.1038/s41586-025-09833-y.
-
-{[}JuEtAl2026{]} H. Ju, G. Gao, J. Jiang, B. Wu, Z. Sun, S. Liu, L.
-Chen, Y. Wang, Y. Wang, Z. Wang, W. He, P. Wu, L. Xiao, R. Liu, B. Dai,
-and B. Dong. Automated conjecture resolution with formal verification.
-arXiv:2604.03789, 2026. DOI: 10.48550/arXiv.2604.03789.
-
-{[}LozSiran2008{]} E. Loz and J. Širáň. New record graphs in the
-degree-diameter problem. \emph{Australasian Journal of Combinatorics} 41
-(2008), 63--80.
-
-{[}MillerSiran2013{]} M. Miller and J. Širáň. Moore graphs and beyond: A
-survey of the degree/diameter problem. \emph{Electronic Journal of
-Combinatorics}, Dynamic Survey DS14, 2nd edition, 2013. DOI:
-10.37236/35.
-
-{[}NagdaRaghavanThakurta2026{]} A. Nagda, P. Raghavan, and A. Thakurta.
-Reinforced generation of combinatorial structures: Ramsey numbers.
-arXiv:2603.09172, 2026. DOI: 10.48550/arXiv.2603.09172.
-
-{[}OpenAI2026{]} OpenAI. An OpenAI model has disproved a central
-conjecture in discrete geometry. 2026.
-\url{https://openai.com/index/model-disproves-discrete-geometry-conjecture/}
-
-{[}Petersen1891{]} J. Petersen. Die Theorie der regulären Graphs.
-\emph{Acta Mathematica} 15 (1891), 193--220.
-
-{[}PrzybockiMackeyHeuleSubercaseaux2026{]} B. Przybocki, J. Mackey, M.
-J. H. Heule, and B. Subercaseaux. Doubly saturated Ramsey graphs: A case
-study in computer-assisted mathematical discovery. arXiv:2604.21187,
-2026. DOI: 10.48550/arXiv.2604.21187.
-
-{[}RomeraParedes2024{]} B. Romera-Paredes, M. Barekatain, A. Novikov, M.
-Balog, M. P. Kumar, E. Dupont, F. J. R. Ruiz, J. S. Ellenberg, P. Wang,
-O. Fawzi, P. Kohli, and A. Fawzi. Mathematical discoveries from program
-search with large language models. \emph{Nature} 625 (2024), 468--475.
-DOI: 10.1038/s41586-023-06924-6.
-
-{[}Salim2025{]} A. Salim. Accelerating mathematical research with
-language models: A case study of an interaction with GPT-5-Pro on a
-convex analysis problem. arXiv:2510.26647, 2025. DOI:
-10.48550/arXiv.2510.26647.
-
-{[}Trinh2024{]} T. H. Trinh, Y. Wu, Q. V. Le, H. He, and T. Luong.
-Solving olympiad geometry without human demonstrations. \emph{Nature}
-625 (2024), 476--482. DOI: 10.1038/s41586-023-06747-5.
-
-{[}TsoukalasEtAl2026{]} G. Tsoukalas, A. Kovsharov, S. Shirobokov, A.
-Surina, M. Firsching, G. Bérczi, F. J. R. Ruiz, A. Suggala, A. Z.
-Wagner, E. Wieser, L. Yu, A. Huang, M. Z. Horváth, A. Ferrauiolo, H.
-Michalewski, C. Grosu, T. Hubert, M. Balog, P. Kohli, and S. Chaudhuri.
-Advancing mathematics research with AI-driven formal proof search.
-arXiv:2605.22763, 2026. DOI: 10.48550/arXiv.2605.22763.
-
-{[}Verbeken2026{]} B. Verbeken, B. Vagenende, M.-A. Guerry, A. Algaba,
-and V. Ginis. Early Evidence of Vibe-Proving with Consumer LLMs: A Case
-Study on Spectral Region Characterization with ChatGPT-5.2 (Thinking).
-arXiv:2602.18918, 2026. DOI: 10.48550/arXiv.2602.18918.
-
-{[}Woodruff2026{]} D. P. Woodruff, V. Cohen-Addad, L. Jain, J. Mao, S.
-Zuo, M.-H. Bateni, S. Branzei, M. P. Brenner, L. Chen, Y. Feng, L.
-Fortnow, G. Fu, Z. Guan, Z. Hadizadeh, M. T. Hajiaghayi, et
-al.~Accelerating scientific research with Gemini: Case studies and
-common techniques. arXiv:2602.03837, 2026. DOI:
-10.48550/arXiv.2602.03837.
-
-{[}Zhang2026{]} C. Zhang, J. Song, S. Li, Y. Liang, Y. Ma, W. Wang, Y.
-Zhu, and S.-C. Zhu. Proposing and solving olympiad geometry with guided
-tree search. \emph{Nature Machine Intelligence} 8 (2026), 84--95. DOI:
-10.1038/s42256-025-01164-x.
+\bibliographystyle{abbrvnat}
+\bibliography{references}
 
 \end{document}

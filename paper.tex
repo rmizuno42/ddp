@@ -94,8 +94,6 @@
 \renewcommand{\_}{\textunderscore\allowbreak}
 \setlength{\arraycolsep}{3pt}
 \sloppy
-\setlength{\emergencystretch}{3em}
-\usepackage{etoolbox}
 \AtBeginEnvironment{longtable}{\small}
 \usepackage{fvextra}
 \fvset{fontsize=\small,breaklines=true}
@@ -120,7 +118,7 @@ with a browser-accessible LLM}
 \author{Ryosuke Mizuno\\
 \small A.I.System Research Co., Ltd.\\
 \small \texttt{mizuno@aisr.dev}}
-\date{5 June 2026}
+\date{11 June 2026}
 
 \begin{document}
 \maketitle
@@ -133,24 +131,23 @@ diameter at most \(D\). Determining \(N(\Delta,D)\) is known as the
 degree/diameter problem. Although the problem has been studied for many
 years, the exact value of \(N(\Delta,D)\) is unknown for most pairs
 \((\Delta,D)\). In this paper we construct explicit graphs, using a
-route-chart lift construction discovered through interaction with
+construction discovered through interaction with
 ChatGPT via its standard web interface, showing that \[
   N(12,5)\ge 34{,}992,\qquad
   N(16,5)\ge 147{,}456 .
 \] These improve the corresponding recorded lower bounds \(29{,}621\)
-and \(132{,}496\). The search was conducted through ordinary dialogue in
-the standard ChatGPT web interface, without a dedicated agentic system,
-external orchestration, problem-specific search engine, or formal proof
-assistant set up in advance by the author. As far as the visible
+and \(132{,}496\). The search was conducted without an external orchestration layer around
+ChatGPT: no custom agent framework, automated evaluator-driven search
+loop, problem-specific search engine, or formal proof assistant was set
+up in advance by the author. As far as the visible
 transcript shows, the author did not prompt the model with the concrete
-components of the construction, nor with a problem-specific proof or
-construction strategy.
+components or candidate families of the construction.
 
 After presenting the mathematical result, we describe the discovery
-process on the basis of the visible transcript. We focus on the general,
-problem-independent prompts and meta-level interventions under which the
-approximately six-day search proceeded, and we identify the stage at
-which the abstraction underlying the construction first appeared.
+process on the basis of the visible transcript. We focus on the
+meta-level interventions made during the approximately six-day search,
+and we identify the stage at which the abstraction underlying the
+construction first appeared.
 
 \textbf{MSC 2020:} 05C12, 05C25, 05C76.\\
 \textbf{Keywords:} degree/diameter problem, graph theory, LLM-assisted
@@ -177,9 +174,7 @@ tree search and a fine-tuned LLM.
 
 From late 2025 through May 2026, preprints, technical reports, and
 public reports from research institutions have also described the use of
-AI/LLMs in mathematical discovery. These reports include examples of
-counterexample discovery, lower-bound improvement, construction search,
-and formal-verification support {[}Bubeck2025, Woodruff2026,
+AI/LLMs in mathematical discovery {[}Bubeck2025, Woodruff2026,
 NagdaRaghavanThakurta2026, BhanNobiliLanger2026, JuEtAl2026,
 PrzybockiMackeyHeuleSubercaseaux2026, TsoukalasEtAl2026, OpenAI2026,
 AlonEtAl2026{]}. Many of these examples rely on dedicated evaluators,
@@ -201,8 +196,8 @@ useful to understand what kind of control is possible over a readily
 available LLM, and how far that baseline can reach. As a case study in
 this setting, this paper documents a new lower-bound construction for
 the degree/diameter problem. The construction was obtained through a
-long dialogue with ChatGPT in its standard web interface, under general,
-problem-independent prompts and meta-level interventions.
+long dialogue with ChatGPT in its standard web interface, during which
+the author made meta-level interventions.
 
 The degree/diameter problem asks for the maximum number of vertices in a
 simple undirected graph with bounded maximum degree and bounded
@@ -237,7 +232,7 @@ establishes the new lower bounds \[
   N(16,5)\ge 147{,}456 .
 \]
 
-The main text first states the theorem, compares it with the known lower
+The main text first states the theorem, compares it with the recorded lower
 bounds, and outlines the construction principle. Precise definitions,
 proofs, and verification procedures are in Appendix A. We then describe
 how the construction principle emerged during the dialogue, and how its
@@ -257,6 +252,9 @@ construction. The mathematical claims of the paper are supported by the
 explicit construction, the finite list of certificate conditions, and
 the verification procedures that check them, all of which are given in
 the main text and in Appendix A.
+A cleaned, runnable version of the construction package, sharing the same graph
+and certificate data, is also included in the supplementary materials so that the verification can be
+reproduced directly, as described in §A.8 of Appendix A.
 
 \subsection{1.1 Contributions of this
 paper}\label{contributions-of-this-paper}
@@ -274,11 +272,12 @@ This paper makes two contributions.
   \textbf{A record and analysis of a discovery process involving a
   browser-accessible LLM.} We describe a long dialogue with ChatGPT in
   its standard web interface, including unsuccessful search intervals.
-  The dialogue was conducted without a dedicated agentic system, custom
-  orchestration, systematic evaluator, problem-specific search engine,
-  or formal proof assistant set up in advance by the author. We also
+  The dialogue was conducted without an external orchestration layer around
+  ChatGPT: no custom agent framework, automated evaluator-driven search
+  loop, problem-specific search engine, or formal proof assistant was set
+  up in advance by the author. We also
   record, as process tracing rather than as a causal claim, that the
-  author's problem-independent meta-level interventions occurred near
+  author's meta-level interventions occurred near
   several junctures at which the search moved toward abstraction and
   finite certificate design. These interventions adjusted the
   constraints and acceptance criteria of the search.
@@ -330,25 +329,25 @@ example, constructing a \(12\)-regular graph of diameter \(5\) means
 explicitly giving a large graph in which every vertex has degree \(12\)
 and every pair of vertices is joined within \(5\) steps.
 
-\subsection{2.2 Known lower bounds and the improvement in this
-paper}\label{known-lower-bounds-and-the-improvement-in-this-paper}
+\subsection{2.2 Recorded lower bounds and the improvement in this
+paper}\label{recorded-lower-bounds-and-the-improvement-in-this-paper}
 
 Comellas's Mendeley Data V11 collects the largest known
 \((\Delta,D)\)-graphs as of January 2026 {[}Comellas2026,
-ComellasData2026{]}. In the related web table, checked on 31 May 2026,
+ComellasData2026{]}. In the related web table, checked on 10 June 2026,
 the entries relevant to this paper had the same lower-bound values. The
-known lower bounds for diameter \(5\) relevant to this paper are as
+recorded lower bounds for diameter \(5\) relevant to this paper are as
 follows.
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}rrl@{}}
 \toprule\noalign{}
-\((\Delta,D)\) & Known lower bound & Source \\
+\((\Delta,D)\) & Recorded lower bound & Source \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\((12,5)\) & \(29{,}621\) & {[}Comellas2026{]} \\
+\((12,5)\) & \(29{,}621\) & {[}Comellas2025{]} \\
 \midrule
 \((16,5)\) & \(132{,}496\) & {[}DelormeBipartite1985{]} \\
 \end{longtable}
@@ -357,7 +356,7 @@ follows.
 This paper improves these to \(34{,}992\) and \(147{,}456\),
 respectively.
 
-\textbf{Theorem 2.1.} There exist explicit simple undirected graphs
+\textbf{Theorem 2.1.} There exist explicit connected simple undirected graphs
 \(G_3,G_4\) satisfying the following.
 
 \begin{enumerate}
@@ -499,20 +498,20 @@ diameter at most \(5\).
     b_{t_5}
     \bigr]
     \in M_5(\mathbb F_q)
-  \] is nonsingular.
+  \] is nonsingular. A route chart with
+  this property is called a \textbf{universal route chart}.
 \end{enumerate}
 
 If the controller and fiber data satisfy these conditions, the following
 proposition shows that the resulting graph has diameter at most \(5\).
 
-\textbf{Proposition 2.2 (route-chart lift principle).} Let \(C\) be a
+\textbf{Proposition 2.2 (route-chart lift principle).} Let \(q\) be a prime
+power and \(s\ge1\) an integer. Let \(C\) be a
 \(\rho\)-regular simple undirected graph and let \(S\) be a symmetric
 alphabet with \(|S|=\rho\). Suppose that the directed edges of \(C\) are
 given an inverse-consistent labeling. Suppose also that a universal
-route chart on \(\mathbb F_q^s\) is given, meaning that the
-controllability matrix is nonsingular for every reduced word of length
-\(s\). If \(C\) is an exact-NB-\(s\) controller, then this data defines
-a simple \(\rho q\)-regular graph \(G\) on \(V(C)\times\mathbb F_q^s\),
+route chart on \(\mathbb F_q^s\) is given. If \(C\) is an exact-NB-\(s\) controller, then this data defines
+a connected simple \(\rho q\)-regular route-chart lift graph \(G\) on \(V(C)\times\mathbb F_q^s\),
 and \[
   |V(G)|=|V(C)|q^s,
   \qquad
@@ -598,10 +597,11 @@ construction and existing methods is discussed in §7.
 \section{3. Dialogue environment}\label{dialogue-environment}
 
 The search was conducted by the author through ordinary dialogue in the
-standard ChatGPT web interface. The author did not use proprietary
-external orchestration, a custom agent framework, a problem-specific
-search engine prepared in advance, or a formal proof assistant. The
-setup was as follows.
+standard ChatGPT web interface. The author did not build or use an
+external orchestration layer around ChatGPT: no custom agent framework,
+automated evaluator-driven search loop, problem-specific search engine,
+or formal proof assistant was set up in advance by the author. The setup
+was as follows.
 
 \begin{itemize}
 \tightlist
@@ -615,19 +615,19 @@ In this paper, ``browser-accessible'' means that the external workflow
 built and used by the author was limited to the standard ChatGPT web
 interface. The internal implementation of the LLM, its inference
 process, and any context-management mechanisms that may have been used
-on the service side are not observable; the paper therefore makes no
+on the service side are not observable. The paper therefore makes no
 claim that these mechanisms were simple.
 
 All dialogue was conducted in Japanese. The user prompts quoted in
-§4--§5 are the author's English translations; the original Japanese
+§4--§5 are the author's English translations. The original Japanese
 messages are preserved in the supplementary visible transcript (Appendix
 B).
 
-Because the ChatGPT account appeared to have access to information from
-other sessions in the same account, this paper does not claim that the
-main transcript released here was, by itself, the sole source of
-information for the search. To the extent verified by the author, the
-situation was as follows.
+Because the author could not rule out account-level memory,
+personalization, or other cross-session context effects, this paper does
+not claim that the main transcript released here was, by itself, the
+sole source of information for the search. To the extent verified by the
+author, the situation was as follows.
 
 \begin{itemize}
 \tightlist
@@ -658,7 +658,7 @@ situation was as follows.
 
 \section{4. The discovery process}\label{the-discovery-process}
 
-The observations below concern Rounds 001--052 of the ChatGPT sessions,
+The observations below concern Rounds 001--052 of the ChatGPT session,
 conducted from 22 to 27 May 2026. These are the rounds relevant to the
 present discovery and verification. They include the initial literature
 survey, construction attempts, failure reports, changes of direction,
@@ -744,7 +744,7 @@ of length \(k\) should be a coordinate chart that covers all of
 \end{quote}
 
 To explain this abstraction, we first recall the standard group-valued
-voltage-lift point of view. In an ordinary voltage lift, one attaches a
+voltage-lift point of view (§A.2). In an ordinary voltage lift, one attaches a
 group element to each edge of the base graph. Choosing a single path on
 the base graph from a start vertex to an end vertex determines a single
 product or sum of group elements along that path, and hence a single
@@ -782,8 +782,7 @@ design problems.
 This decomposition is central to the discovery process. Rather than
 directly guessing the whole final graph, the LLM reformulated the task
 as the separate construction of a small controller-side graph design and
-a finite list of fiber-side linear-algebraic conditions, followed by
-their composition through a linear-algebra lemma.
+a finite list of fiber-side linear-algebraic conditions.
 
 \subsection{4.4 Success of the fiber chart and the controller
 bottleneck}\label{success-of-the-fiber-chart-and-the-controller-bottleneck}
@@ -801,7 +800,7 @@ cyclic voltage lifts, direct searches, and near-controller repairs were
 tried, but none reached a certificate.
 
 The important observation at this stage was the identification of a
-bottleneck: for the shortest \((16,4)\) target, the controller-side
+bottleneck. For the shortest \((16,4)\) target, the controller-side
 constraints were too tight.
 
 \subsection{4.5 Transition to diameter 5 and the first complete
@@ -876,10 +875,9 @@ direction}\label{record-of-unsuccessful-approaches-and-changes-of-direction}
 The dialogue log contains many unsuccessful search intervals. These
 intervals include the Round 002 attempt to repair reachability by
 changing one of the maps assigned to an edge, attempts to modify highly
-structured candidate graphs (roughly Rounds 004--015), the direction
+structured candidate graphs (roughly Rounds 004--015), and the direction
 that the LLM tentatively called the ``Hashimoto--de Bruijn packet
-construction'' (Rounds 017--018), and the post-completion generalization
-search (around Rounds 040--046). None of these unsuccessful searches is
+construction'' (Rounds 017--018). None of these unsuccessful searches is
 directly contained in the final construction. We cannot go so far as to
 say that these failures were exploited and produced the final
 construction. However, the interpretations the LLM gave of those
@@ -898,11 +896,8 @@ modifies it in a small or uniform way. In several such attempts, the
 reported candidates were close in a numerical sense, but the remaining
 obstructions were not localized. The point recorded here is not the
 specific structure of those candidates, but the reported failure
-pattern: the obstruction did not appear as a small number of defects
-that could be removed by a minor adjustment. This observation is
-recorded only as transcript-level background preceding the later
-emphasis on explicit covering identities and finite certificate-like
-conditions.
+pattern. The obstruction did not appear as a small number of defects
+that could be removed by a minor adjustment.
 
 In the ``Hashimoto / de Bruijn type packet'' ideas, the obstacle was
 formulated as the question of how to carry, within a limited number of
@@ -910,12 +905,6 @@ steps, enough information to distinguish each target. In Round 018, the
 LLM stated that rather than continuing to repair this direction, one
 needed first to design how all targets would be distinguished, as in a
 coded multi-window packet or a covering-array quotient.
-
-In Rounds 040--046, several universal charts were found, but no
-corresponding controller was found. In Round 047, the LLM stated that
-one should separate the route-chart principle itself from the ad hoc
-search for a controller, and withdraw from the latter. In the subsequent
-Rounds 049--050, the final \(144\)-vertex controller was obtained.
 
 Thus the transcript contains statements in which the LLM verbalized
 missing conditions in several unsuccessful approaches and, in later
@@ -955,13 +944,12 @@ problem. This point is discussed in detail in §7.
 \subsection{5.3 The user's meta-level interventions and representative
 exchanges}\label{the-users-meta-level-interventions-and-representative-exchanges}
 
-In the visible transcript, the author's general, problem-independent
-interventions occurred near several junctures at which the level of
-abstraction of the search changed. The interventions referred to here
-did not supply components of the final construction. They were general
-instructions about how to proceed with the search, when to stop, novelty
-requirements, and requests to explain the prospects of success in
-advance.
+In the visible transcript, the author's meta-level interventions
+occurred near several junctures at which the level of abstraction of the
+search changed. The interventions referred to here did not supply
+components of the final construction. They were instructions about how
+to proceed with the search, when to stop, novelty requirements, and
+requests to explain the prospects of success in advance.
 
 The interventions can be divided broadly into three types. The first is
 a stop-and-organize type intervention, such as asking the LLM to pause
@@ -969,8 +957,7 @@ and reconsider the direction. The second is a new-principle-focused
 intervention, such as asking it to devise a new principle or to
 concentrate on mathematically new ideas. The third is an
 a-priori-prospect intervention, such as asking it to adopt a direction
-for which there is a mathematical reason to expect success. All are
-general research instructions transferable to other search problems.
+for which there is a mathematical reason to expect success.
 
 The following table summarizes exchanges that are especially important
 for reading the discovery process. User utterances are quoted briefly,
@@ -1057,7 +1044,9 @@ For Rounds 049--050, the constraint introduced in Round 049 was to
 narrow the search to directions with an a priori prospect of success.
 This constraint was continued by the brief continuation instruction in
 Round 050. For this reason, the paper treats Rounds 049--050 as a single
-unit of progress. The analysis treats Round 023, Round 036, and Rounds
+unit of progress.
+
+The analysis treats Round 023, Round 036, and Rounds
 049--050, together with their surrounding exchanges, as focal points.
 These are the rounds in which the route-chart principle, the first
 complete candidate, and the final controller update respectively
@@ -1102,7 +1091,8 @@ prompted continuation of the current search with phrases such as
 029, 030, 031, 032, 033, 034, 035, 036, 040, 041, 043, 044, 045, 046,
 048, and 050. The remaining \(13\) continuation requests added
 meta-interventions involving the addition, modification, or relaxation
-of constraints.
+of constraints. The counts are based on the author's classification of
+the visible user prompts.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1110,7 +1100,7 @@ of constraints.
 
 This paper reports a single case. It does not show that ChatGPT can in
 general perform similar mathematical discovery with high probability,
-nor that the present method is generally effective. Evaluating success
+nor that the present method is generally effective. Evaluating the success
 rate of this strategy or the effectiveness of meta-level interventions
 would require multiple independent runs and ablation studies.
 
@@ -1122,13 +1112,12 @@ from its output proposals, code, and changes of direction.
 
 Finally, the scope of the process analyzed in this paper should be
 distinguished from the preparation of Appendix A. Appendix A was not
-generated solely by the LLM used in the session analyzed here. It was
-prepared by the author from files generated in the observed session,
-together with later LLM-assisted drafts produced using Claude Code Opus
-4.7, Claude Code Opus 4.8, and ChatGPT Pro, and was then edited by the
-author. The process analyzed in this paper is the process leading to the
+generated solely by the LLM used in the session analyzed here. It was prepared by the author from files generated in the observed
+session, together with later LLM-assisted drafts produced using Claude
+Opus 4.7 and Claude Opus 4.8 through Claude Code, and using ChatGPT Pro.
+The author then edited this material. The process analyzed in this paper is the process leading to the
 construction of the solution, including the generation of the concrete
-graph edge lists included in the supplementary materials. It does not
+graph edge lists in the supplementary materials. It does not
 include the later process of organizing the mathematical justification
 of that construction into the proof exposition given in Appendix A.
 
@@ -1221,18 +1210,16 @@ that the human role was limited to guidance such as posing the problem,
 continuing the search, and requesting confirmation of correctness
 {[}Gowers2026{]}. The materials released in {[}Gowers2026{]}, however,
 consist mainly of artifacts and a narrative record, rather than a long
-verbatim transcript of the kind released with this paper. Moreover, that
-case is described as a relatively short exchange on the order of
-minutes, so the time scale of the record differs from the \(52\)-round
+transcript of the kind released with this paper. Moreover, that
+case is described as a relatively short exchange on the order of an hour or two, so the time scale of the record differs from the \(52\)-round
 search treated in this paper.
 
 With respect to the nature of human involvement, the case reported here
 is closer to the latter type than to the former. The author's
-contribution was concentrated on general control not specific to the
-degree/diameter problem. This control included demanding novelty,
-stopping and re-abstracting, and requesting explanations of the
-prospects of success in advance. It did not consist in supplying
-concrete components of the construction (§4, §5).
+contribution was concentrated on controlling the search process rather
+than on supplying concrete components of the construction. This control
+included demanding novelty, stopping and re-abstracting, and requesting
+explanations of the prospects of success in advance (§4, §5).
 
 The difference from {[}Gowers2026{]} lies instead in the form and time
 scale of the record. This paper releases a visible transcript spanning
@@ -1242,7 +1229,7 @@ in time to changes in the level of abstraction. These interventions
 include stopping and re-abstracting, requesting novelty, and asking for
 prospects of success in advance.
 
-Thus, beyond the absence of problem-specific proof or construction hints
+Thus, beyond the absence of concrete construction hints
 from the author, the distinctive features of this paper are its time
 scale and its mode of recording the interaction.
 
@@ -1289,13 +1276,20 @@ This paper presented a construction proving the new lower bounds \[
 approximately six-day search process through which the construction was
 discovered in dialogue with ChatGPT via its standard web interface.
 
-The transcript contains several points at which the LLM's responses
-verbalize lessons drawn from unsuccessful approaches. It also contains
+The transcript contains
 several points at which the level of abstraction of the search appears
 to change after user prompts imposing general constraints. Evaluating
 the effectiveness of such control and constraints, and the extent to
 which similar methods can handle difficult problems more broadly,
 remains a topic for future work.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Acknowledgments}\label{acknowledgments}
+
+The author thanks Jaeseung Han, Yawara Ishida, and Daisuke Takahashi for
+helpful discussions and comments on an earlier draft of this paper, and
+for valuable comments on the direction of this work.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1336,7 +1330,7 @@ controller}\label{a.2-voltage-lifts-and-the-controller}
 
 Voltage graphs and regular coverings are standard construction tools. In
 this paper we use voltage assignments with values in a finite abelian
-group {[}GrossTucker2001{]}. In the degree/diameter problem too, the
+group {[}GrossTucker2001{]}. In the degree/diameter problem, the
 method of giving a voltage assignment to a small base graph to build a
 large lift, and reducing the diameter condition to a condition on walks
 in the base graph and net voltages, has been used {[}BrankovicEtAl1998a,
@@ -1448,6 +1442,15 @@ vertex, the pair \(\{t,t^{-1}\}\) appears once from each 2-factor, and
 an inverse-consistent labeling is obtained. In this paper we take two
 inverse pairs, namely \(S=\{a,a^{-1},b,b^{-1}\}\).
 
+In the cleaned verification scripts, this step is made completely
+deterministic for the \(4\)-regular controller used below. An Euler
+circuit is used to two-color the controller edges by parity along the
+circuit, giving two \(2\)-factors, and each cycle in the two factors is
+then oriented. This produces the inverse-consistent labeling used by the
+bundled edge-list generator. The proof of Lemma A.8, however, only needs
+the inverse-consistency property and does not depend on this particular
+choice of labeling.
+
 \subsection{A.4 Route charts and chart
 lifts}\label{a.4-route-charts-and-chart-lifts}
 
@@ -1462,7 +1465,7 @@ assignment, to each \(t\in S\), of \[
 \] satisfying, for all \(t\in S\), \[
   A_{t^{-1}}=A_t^{-1},
   \qquad
-  b_{t^{-1}}=A_t^{-1}b_t
+  b_{t^{-1}}=A_t^{-1}b_t .
   \tag{A.1}
 \]
 
@@ -1478,7 +1481,7 @@ controllability matrix by \[
   A_{t_s}b_{t_{s-1}}\mid
   b_{t_s}
   \bigr]
-  \in M_s(\mathbb F_q)
+  \in M_s(\mathbb F_q) .
   \tag{A.2}
 \] A route chart is \emph{universal} if \(M_w\) is nonsingular for every
 reduced word \(w\) of length \(s\).
@@ -1532,7 +1535,7 @@ universal. Then the following hold.
 \item
   \(G\) is \(\rho q\)-regular.
 \item
-  If \(C\) is an exact-NB-\(s\) controller then
+  If \(C\) is an exact-NB-\(s\) controller then \(G\) is connected and
   \(\operatorname{diam}(G)\le s\).
 \item
   \(|V(G)|=|V(C)|q^s\).
@@ -1578,7 +1581,7 @@ along this walk. Starting the fiber coordinate at \(x_0=x\) and setting
   \begin{pmatrix}\lambda_1\\ \vdots\\ \lambda_s\end{pmatrix}
   =y-A_wx
 \] has a solution. Using this solution, we obtain a walk of length \(s\)
-from \((c,x)\) to \((d,y)\). Hence \(\operatorname{diam}(G)\le s\). The
+from \((c,x)\) to \((d,y)\). In particular \(G\) is connected, and \(\operatorname{diam}(G)\le s\). The
 vertex count follows immediately from the definition. \(\square\)
 
 \textbf{Remark.} The route-chart lift of Definition A.7 can also be
@@ -1665,19 +1668,20 @@ the voltage of \[
   0\xrightarrow{e_3}4\xrightarrow{e_2^{-1}}0
 \] is \((2,5)-(2,0)=(0,5)\), which generates the \(C_6\) component.
 Also, the voltage of \[
-  5\xrightarrow{e_6^{-1}}1\xrightarrow{e_4}2\xrightarrow{e_9}5
-\] is \(-(1,1)+(1,2)+(1,5)=(1,0)\), which generates the \(C_4\)
-component. Hence \(C\) is connected.
+  0\xrightarrow{e_0}2\xrightarrow{e_8}4\xrightarrow{e_2^{-1}}0
+\] is \((1,0)+(2,2)-(2,0)=(1,2)\). Together with \((0,5)\), this
+generates all of \(H\). Hence \(C\) is connected.
 
 For the exact-NB-5 property, by Lemma A.4 it suffices to verify that,
 for any \(i,j\in\{0,\ldots,5\}\) and any \(h\in C_4\times C_6\), there
 is a length-\(5\) NB walk \(i\to j\) in \(B\) with voltage sum \(h\).
 The number of length-\(5\) NB walks from each starting vertex of \(B\)
 is at most \(4\cdot3^4=324\), and over all starting vertices it is at
-most \(6\cdot324=1944\), so a complete enumeration is possible. The
-supplementary \texttt{scripts/*/verify\_candidate.py} enumerates these
-by DFS and verifies that all \(36\) ordered base pairs and all \(24\)
-voltage classes are covered. \(\square\)
+most \(6\cdot324=1944\), so a complete enumeration is possible.
+The supplementary \texttt{scripts/*/verify\_candidate.py} enumerates these
+by DFS and verifies that, for each of the \(36\) ordered base pairs, all
+\(24\) voltages of \(H\) are realized, i.e.\ all \(36\cdot24=864\)
+pair--voltage combinations of condition (A.0). \(\square\)
 
 \subsection{\texorpdfstring{A.6 Universal route charts for
 \(s=5\)}{A.6 Universal route charts for s=5}}\label{a.6-universal-route-charts-for-s5}
@@ -1815,14 +1819,15 @@ theorem}\label{a.7-proof-of-the-main-theorem}
   N(16,5)\ge147{,}456 .
 \]
 
-\textbf{Proof.} Fix the \(144\)-vertex controller \(C\) of §A.5 and the
-inverse-consistent labeling \(\ell\) of §A.3.
+\textbf{Proof.} Fix the \(144\)-vertex controller \(C\) of §A.5 and an
+inverse-consistent labeling of its directed edges, which exists by
+§A.3.
 
 First let \(q=3\) and use the universal route chart of §A.6.1. By
 Proposition A.9, \(C\) is exact-NB-5, and by Proposition A.10 the chart
 is universal. By Lemma A.8, \[
   G_3=G(C,S,\ell,A,b)
-\] is simple \(4q=12\)-regular with \(\operatorname{diam}(G_3)\le5\),
+\] is simple connected \(4q=12\)-regular with \(\operatorname{diam}(G_3)\le5\),
 and satisfies \[
   |V(G_3)|=|V(C)|q^5=144\cdot3^5=34{,}992 .
 \]
@@ -1830,7 +1835,7 @@ and satisfies \[
 Similarly, letting \(q=4\) and using the universal route chart of
 §A.6.2, by Lemma A.8, \[
   G_4=G(C,S,\ell,A,b)
-\] is simple \(16\)-regular with \(\operatorname{diam}(G_4)\le5\), and
+\] is simple connected \(16\)-regular with \(\operatorname{diam}(G_4)\le5\), and
 satisfies \[
   |V(G_4)|=144\cdot4^5=147{,}456 .
 \] Hence the two claimed lower bounds follow.
@@ -1844,156 +1849,161 @@ Furthermore, \(34{,}992\) exceeds the \((12,4)\) Moore upper bound
 reproducibility}\label{a.8-verification-and-reproducibility}
 
 Every computer-dependent part of the proof in this paper consists of
-verifying finitely many conditions. The supplementary materials preserve
-the construction package produced by the LLM during the dialogue as
-\texttt{route\_chart\_verified\_graphs\_package/}. This directory is a
-frozen provenance artifact, not a cleaned software release. It preserves
-the process by which the construction was obtained.
-
-Some generating scripts therefore contain unstandardized elements. These
-include default output paths from the execution environment used during
-the dialogue and minor differences in the format of the edge-list
-header. These elements are not part of the mathematical claims of this
-paper.
-
-The objects used in the mathematical proof are the construction data
-made explicit in Appendix A and the corresponding finite list of
-certificate conditions. The natural-language description files inside
-\texttt{route\_chart\_verified\_graphs\_package/} are kept as
-provenance, but the proof is based on the definitions and lemmas of
-Appendix A and on the verification procedures below.
-
-This package has two parameter directories, \texttt{12\_5\_34992} and
-\texttt{16\_5\_147456}, and mainly contains the following.
+verifying finitely many conditions. The supplementary materials provide the
+data and scripts in two packages, which record the same graphs.
 
 \begin{itemize}
 \tightlist
 \item
-  \texttt{construction\_details.md}: the LLM-generated explanation of
-  the route-chart lift construction.
+  \texttt{route\_chart\_verified\_graphs\_package/} is a frozen
+  provenance artifact, not a cleaned software release. It preserves the
+  process by which the construction was obtained. Some generating
+  scripts contain unstandardized elements, including default output
+  paths from the execution environment used during the dialogue and
+  minor differences in the format of the edge-list header. The
+  natural-language description files are kept as provenance only and are
+  not parsed by the certificate-level or generation-level verification.
+  This package is not used in Checks 1--3 below. The optional Check 0
+  only compares the clean package against it in order to record
+  provenance equivalence.
 \item
-  \texttt{certificates/*/controller\_c4xc6\_multibase.txt}: the base
-  data of Table A.1.
-\item
-  \texttt{certificates/12\_5\_34992/gf3\_s5\_universal.txt} and
-  \texttt{certificates/16\_5\_147456/gf4\_s5\_universal.txt}: the chart
-  data of §A.6.
-\item
-  \texttt{scripts/*/verify\_candidate.py}: a script that verifies the
-  finite conditions of base voltage coverage,
-  simplicity/regularity/connectivity of the controller, the labeling,
-  and chart universality.
-\item
-  \texttt{scripts/*/generate\_final\_graph.py}: a script that generates
-  the edge list.
-\item
-  \texttt{graphs/*/final\_graph\_edges.tsv.gz}: the generated edge list.
-\item
-  \texttt{SHA256SUMS.txt}: SHA-256 checksums of the main files inside
-  \texttt{route\_chart\_verified\_graphs\_package/}.
+  \texttt{route\_chart\_clean\_package/} is cleaned and runnable, and is
+  the package to execute. For each parameter set, the construction data
+  are collected in a single machine-readable certificate,
+  \texttt{certificates/*/certificate.json}. This certificate records the
+  voltage assignment on the base multigraph, given in Table A.1,
+  together with the universal route chart on \(\mathbb F_q^5\) defined
+  in §A.6, namely the transition matrices \(A_t\) and vectors \(b_t\).
+  The corresponding edge list is bundled as
+  \texttt{graphs/*/final\_graph\_edges.tsv.gz}, and the step-by-step
+  procedure is given in \texttt{route\_chart\_clean\_package/VERIFY.md}.
 \end{itemize}
 
-\texttt{certificates/*/original\_README.txt} and
-\texttt{certificates/12\_5\_34992/original\_phase35\_report.md} are kept
-as provenance for explanations produced by the LLM during the process
-leading to the construction. These descriptions are not a substitute for
-the proofs in Appendix A.
-
-The verification is divided into three layers.
+The objects used in the mathematical proof are the construction data made
+explicit in Appendix A and the corresponding finite list of certificate
+conditions.
+The runnable verification is organized as the following four checks. The
+commands are run from the root of
+\texttt{route\_chart\_clean\_package/}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{-1}
 \item
-  \textbf{Certificate-level verification.} Each
-  \texttt{scripts/*/verify\_candidate.py} verifies the voltage coverage
-  of length-\(5\) nonbacktracking walks on the base multigraph, the
-  simplicity / \(4\)-regularity / connectivity of the regular lift
-  controller, the inverse-consistent labeling, and the rank-\(5\)
-  condition of the controllability matrix for all \(324\) reduced words
-  of length \(5\). The expected output has the following form.
+  \textbf{Provenance equivalence (optional).}
+  \texttt{verify\_provenance\_equivalence.py} confirms that the certificate
+  and the edge list in the clean package describe the same construction as
+  the provenance package. The comparison of certificates is semantic, since
+  the clean package uses a unified JSON format while the provenance package
+  keeps the original text files. This ties the runnable artifact to the recorded
+  discovery.
+\item
+  \textbf{Certificate-level verification.}
+  \texttt{scripts/*/verify\_candidate.py} loads the certificate and verifies
+  the voltage coverage of length-\(5\) nonbacktracking walks on the base
+  multigraph, the simplicity, \(4\)-regularity, and connectivity of the
+  regular lift controller, the inverse-consistent labeling, the direct
+  exact length-\(5\) nonbacktracking coverage of all ordered vertex
+  pairs on the \(144\)-vertex controller, and the
+  rank-\(5\) condition of the controllability matrix for all \(324\) reduced
+  words of length \(5\). The expected output has the following form.
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{Base voltage coverage over C4 x C6: OK}
 \NormalTok{Controller: OK; 144 vertices, simple 4{-}regular, exact labeled NB length{-}5 coverage}
-\NormalTok{GF(q)\^{}5 universal chart: OK; 324 reduced words checked, min rank 5; inverse{-}symbol data verified}
-\NormalTok{Certificate complete: degree 4q, diameter \textless{}=5, vertices = 144*q\^{}5}
+\NormalTok{GF(3)\^{}5 universal chart: OK; 324 reduced words checked, min rank 5; inverse{-}symbol data verified}
+\NormalTok{Certificate complete: degree 12, diameter \textless{}=5, vertices = 144*3\^{}5 = 34992}
 \end{Highlighting}
 \end{Shaded}
+
+  This is the output for \((12,5)\). The \((16,5)\) case prints
+  \texttt{GF(4)\^{}5}, \texttt{degree\ 16}, and
+  \texttt{144*4\^{}5\ =\ 147456} in the corresponding positions.
+
 \item
   \textbf{Generation-level identity check.}
-  \texttt{scripts/*/generate\_final\_graph.py} generates the final edge
-  list. To preserve provenance, these generating scripts are, in
-  principle, kept in the form obtained during the dialogue. Thus, at run
-  time, one should make a working copy and explicitly specify the output
-  path for the generated edge list before comparing it with the bundled
-  file. The top-level \texttt{verify\_graphs\_identical.py} in the
-  supplementary materials verifies that the graph obtained from the
-  generating script and the graph bundled in
-  \texttt{route\_chart\_verified\_graphs\_package/graphs/*/final\_graph\_edges.tsv.gz}
-  are identical. The check has two parts. First, it compares the SHA-256
-  hash of the edge rows, excluding the header. Second, it checks
-  agreement of the edge sets after normalizing the orientation of each
-  edge. The first part verifies agreement of the edge rows in the same
-  order. The second verifies graph-theoretic identity independently of
-  file format or row order.
+  \texttt{scripts/*/generate\_final\_graph.py} rebuilds the edge list from
+  the certificate, writing it to a path specified on the command line. The
+  top-level \texttt{verify\_graphs\_identical.py} then checks that this graph
+  and the bundled
+  \texttt{route\_chart\_clean\_package/graphs/*/final\_graph\_edges.tsv.gz}
+  are identical, in two parts: it compares the SHA-256 hash of the edge rows,
+  excluding the header, and it checks agreement of the edge sets after
+  normalizing the orientation of each edge. The first part verifies agreement
+  of the edge rows in the same order. The second verifies graph-theoretic
+  identity independently of file format or row order.
 \item
-  \textbf{Graph-level independent check.}
-  \texttt{verify\_with\_networkx.py} is an optional independent
-  verification script that directly reads the bundled edge list and
-  checks the absence of self-loops, the absence of multiple edges, the
-  number of vertices, the number of edges, the regular degree, the
-  handshake equality, and the exact diameter computed by NetworkX. This
-  script does not depend on the natural-language descriptions or the
-  generating scripts inside the LLM-generated package, and uses the edge
-  list itself as its target. Note that the exact diameter computation is
-  an additional check that may take time for large graphs, and the
-  diameter-\(5\) proof of this paper does not depend on this script.
+  \textbf{Graph-level independent check.} \texttt{verify\_with\_igraph.py}
+  reads the bundled edge list directly and checks the absence of self-loops,
+  the absence of multiple edges, the number of vertices, the number of edges,
+  the regular degree, the handshake equality, the connectivity, and the exact
+  diameter computed by igraph. This script uses only the edge list,
+  and depends on neither the certificate nor the generating scripts. The exact
+  diameter computation is an additional check. The diameter-\(5\) proof of this paper does not depend on
+  it.
 \end{enumerate}
+
+In summary, the mathematical proof relies on the explicit data in
+Appendix A and on the finite certificate conditions checked in Check 1.
+Check 2 verifies that the bundled edge lists are exactly the graphs
+generated from those data. Check 3 is an additional, construction-free
+verification of the bundled edge lists.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Appendix B. Structure of the supplementary
 materials}\label{appendix-b.-structure-of-the-supplementary-materials}
 
-The supplementary materials contain four types of files. These are the
-visible transcript of the discovery process, the script that converts
-the conversation log into the visible transcript, the construction
-package produced by the LLM and preserved as provenance, and the scripts
-for collation and independent verification.
+The supplementary materials contain the
+visible transcript of the discovery process, the script that produces
+that transcript from the conversation log, the construction package
+preserved as provenance, a cleaned and runnable version of that package,
+and the scripts for provenance comparison, identity
+checking, and independent graph-level verification.
 
 \begin{itemize}
 \tightlist
 \item
   \texttt{dump\_ddp\_visible.py}: a script that extracts, from the
   conversation log obtained via the official ChatGPT download function,
-  only the messages that appear in the browser UI as ordinary user
-  prompt bubbles or assistant answer bubbles. Chain-of-thought, tool
-  calls, tool outputs, reasoning recaps, and system messages are
-  excluded.
+  the ordinary user prompt bubbles and assistant answer bubbles visible
+  in the browser UI. Other non-chat records in the export, such as hidden
+  reasoning, tool calls, tool outputs, and system messages, are not
+  included in the released transcript. The only export metadata retained
+  are per-message timestamps and model identifiers, together with a brief
+  conversation-level header, kept as annotations.
 \item
   \texttt{extracted/DDP\_visible\_transcript.md}: the visible transcript
-  extracted by \texttt{dump\_ddp\_visible.py}. It targets Rounds
-  001--052 relevant to the present discovery and verification.
+  extracted by \texttt{dump\_ddp\_visible.py}. It targets Rounds 001--052
+  relevant to the present discovery and verification.
 \item
   \texttt{route\_chart\_verified\_graphs\_package/}: the construction
-  package produced by the LLM during the dialogue, included, in
-  principle, as raw files for provenance preservation. Details are given
-  in A.8 of Appendix A.
+  package produced by the LLM during the dialogue, preserved as a
+  provenance artifact rather than as the runnable verification package.
+  Details are given in §A.8 of Appendix A.
+\item
+  \texttt{route\_chart\_clean\_package/}: a cleaned, runnable version of
+  \texttt{route\_chart\_verified\_graphs\_package/}, intended to be
+  executed by verifiers. Details are given in §A.8 of Appendix A.
+\item
+  \texttt{verify\_provenance\_equivalence.py}: a script that confirms that
+  the clean package describes the same construction as the provenance
+  package, by a semantic comparison of the certificates and a content
+  comparison of the bundled edge lists.
 \item
   \texttt{verify\_graphs\_identical.py}: a script that verifies that the
-  graph generated from \texttt{generate\_final\_graph.py} and the graph
-  bundled under \texttt{route\_chart\_verified\_graphs\_package/graphs/}
-  are identical. It checks the SHA-256 of the edge rows excluding the
-  header, and the agreement of the normalized edge set.
+  graph generated by \texttt{generate\_final\_graph.py} and the graph bundled
+  under \texttt{route\_chart\_clean\_package/graphs/} are identical. It checks
+  the SHA-256 of the edge rows excluding the header, and the agreement of the
+  normalized edge set.
 \item
-  \texttt{verify\_with\_networkx.py}: an independent verification
-  script. It checks the bundled graph for the absence of self-loops, the
-  absence of multiple edges, the number of vertices, the number of
-  edges, the regular degree, and the handshake equality, and also
-  computes the exact diameter with NetworkX. The diameter computation of
-  this script is an optional additional check, and the diameter-\(5\)
-  proof of this paper does not depend on this script.
+  \texttt{verify\_with\_igraph.py}:
+  independent verification script. It checks the bundled graph for the
+  absence of self-loops, the absence of multiple edges, the number of
+  vertices, the number of edges, the regular degree, the handshake
+  equality, and the connectivity, and computes the exact diameter with igraph. The diameter computation is an optional additional check,
+  and the diameter-\(5\) proof of this paper does not depend on this script.
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -2005,9 +2015,9 @@ Sawin, A. Shankar, J. Tsimerman, V. Wang, and M. Matchett Wood. Remarks
 on the disproof of the unit distance conjecture. arXiv:2605.20695, 2026.
 DOI: 10.48550/arXiv.2605.20695.
 
-{[}Bannai1973{]} E. Bannai and T. Ito. On finite Moore graphs. Journal
-of the Faculty of Science, University of Tokyo, Section IA, Mathematics
-20 (1973), 191--208.
+{[}Bannai1973{]} E. Bannai and T. Ito. On finite Moore graphs.
+\emph{Journal of the Faculty of Science, University of Tokyo, Section
+IA, Mathematics} 20 (1973), 191--208.
 
 {[}BermondDelormeFarhi1984{]} J.-C. Bermond, C. Delorme, and G. Farhi.
 Large graphs with given degree and diameter II. \emph{Journal of
@@ -2025,8 +2035,8 @@ arXiv:2605.01120, 2026. DOI: 10.48550/arXiv.2605.01120.
 
 {[}BrankovicEtAl1998a{]} L. Branković, M. Miller, J. Plesník, J. Ryan,
 and J. Širáň. Large graphs with small degree and diameter: A voltage
-assignment approach. Australasian Journal of Combinatorics 18 (1998),
-65--76.
+assignment approach. \emph{Australasian Journal of Combinatorics} 18
+(1998), 65--76.
 
 {[}Bubeck2025{]} S. Bubeck, C. Coester, R. Eldan, T. Gowers, Y. T. Lee,
 A. Lupsasca, M. Sawhney, R. Scherrer, M. Sellke, B. K. Spears, D.
@@ -2034,26 +2044,31 @@ Unutmaz, K. Weil, S. Yin, and N. Zhivotovskiy. Early science
 acceleration experiments with GPT-5. arXiv:2511.16072, 2025. DOI:
 10.48550/arXiv.2511.16072.
 
+{[}Comellas2025{]} F. Comellas. New results on the degree-diameter
+problem for undirected graphs. \emph{Electronic Journal of Graph Theory
+and Applications} 13(1) (2025), 211--215. DOI:
+10.5614/ejgta.2025.13.1.14.
+
 {[}Comellas2026{]} F. Comellas. Table of large graphs with given degree
 and diameter. arXiv:2406.18994v2, 2026. DOI:
-10.48550/arXiv.2406.18994v2.
+10.48550/arXiv.2406.18994.
 
 {[}ComellasData2026{]} F. Comellas. Table of Large Degree/Diameter
 Graphs. Mendeley Data, Version 11, published 28 January 2026. DOI:
 10.17632/d75dzbjd4k.11.
 
 {[}DalfoEtAl2021{]} C. Dalfó, M. A. Fiol, S. Pavlíková, and J. Širáň.
-Spectra and eigenspaces of arbitrary lifts of graphs. Journal of
-Algebraic Combinatorics 54 (2021), 651--672. DOI:
+Spectra and eigenspaces of arbitrary lifts of graphs. \emph{Journal of
+Algebraic Combinatorics} 54 (2021), 651--672. DOI:
 10.1007/s10801-021-01049-3.
+
+{[}Damerell1973{]} R. M. Damerell. On Moore graphs. \emph{Mathematical
+Proceedings of the Cambridge Philosophical Society} 74(2) (1973),
+227--236. DOI: 10.1017/S0305004100048015.
 
 {[}DelormeBipartite1985{]} C. Delorme. Large bipartite graphs with given
 degree and diameter. \emph{Journal of Graph Theory} 9(3) (1985),
 325--334. DOI: 10.1002/jgt.3190090304.
-
-{[}Damerell1973{]} R. M. Damerell. On Moore graphs. Mathematical
-Proceedings of the Cambridge Philosophical Society 74(2) (1973),
-227--236. DOI: 10.1017/S0305004100048015.
 
 {[}Gowers2026{]} T. Gowers. A recent experience with ChatGPT 5.5 Pro.
 Gowers's Weblog, 8 May 2026.
@@ -2097,8 +2112,8 @@ arXiv:2603.09172, 2026. DOI: 10.48550/arXiv.2603.09172.
 conjecture in discrete geometry. 2026.
 \url{https://openai.com/index/model-disproves-discrete-geometry-conjecture/}
 
-{[}Petersen1891{]} J. Petersen. Die Theorie der regulären Graphs. Acta
-Mathematica 15 (1891), 193--220.
+{[}Petersen1891{]} J. Petersen. Die Theorie der regulären Graphs.
+\emph{Acta Mathematica} 15 (1891), 193--220.
 
 {[}PrzybockiMackeyHeuleSubercaseaux2026{]} B. Przybocki, J. Mackey, M.
 J. H. Heule, and B. Subercaseaux. Doubly saturated Ramsey graphs: A case

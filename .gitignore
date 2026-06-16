@@ -1,0 +1,17 @@
+# arXiv submission bundle — duplicates the repository contents; not tracked
+arxiv.zip
+
+# Compiled PDF — distributed via GitHub Releases, not committed
+paper.pdf
+
+# LaTeX build intermediates (paper.bbl is intentionally tracked and NOT ignored)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bcf
+*.run.xml
+*.blg

@@ -1,0 +1,234 @@
+\begin{thebibliography}{32}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alon et~al.(2026)Alon, Bloom, Gowers, Litt, Sawin, Shankar, Tsimerman,
+  Wang, and Wood]{AlonEtAl2026}
+N.~Alon, T.~F. Bloom, W.~T. Gowers, D.~Litt, W.~Sawin, A.~Shankar,
+  J.~Tsimerman, V.~Wang, and M.~M. Wood.
+\newblock Remarks on the disproof of the unit distance conjecture, 2026.
+\newblock arXiv:2605.20695.
+
+\bibitem[Bannai and Ito(1973)]{Bannai1973}
+E.~Bannai and T.~Ito.
+\newblock On finite {M}oore graphs.
+\newblock \emph{J. Fac. Sci. Univ. Tokyo Sect. IA Math.}, 20:\penalty0
+  191--208, 1973.
+
+\bibitem[Bermond et~al.(1984)Bermond, Delorme, and
+  Farhi]{BermondDelormeFarhi1984}
+J.-C. Bermond, C.~Delorme, and G.~Farhi.
+\newblock Large graphs with given degree and diameter. {II}.
+\newblock \emph{J. Combin. Theory Ser. B}, 36:\penalty0 32--48, 1984.
+\newblock \doi{10.1016/0095-8956(84)90012-1}.
+
+\bibitem[Bermond et~al.(1986)Bermond, Delorme, and
+  Quisquater]{BermondDelormeQuisquater1986}
+J.-C. Bermond, C.~Delorme, and J.-J. Quisquater.
+\newblock Strategies for interconnection networks: some methods from graph
+  theory.
+\newblock \emph{J. Parallel Distrib. Comput.}, 3:\penalty0 433--449, 1986.
+\newblock \doi{10.1016/0743-7315(86)90008-0}.
+
+\bibitem[Bhan et~al.(2026)Bhan, Nobili, and Langer]{BhanNobiliLanger2026}
+J.~Bhan, N.~Nobili, and P.~Langer.
+\newblock New bounds for {Z}arankiewicz numbers via reinforced {LLM}
+  evolutionary search, 2026.
+\newblock arXiv:2605.01120.
+
+\bibitem[Brankovi{\'c} et~al.(1998)Brankovi{\'c}, Miller, Plesn{\'i}k, Ryan,
+  and {\v S}ir{\'a}{\v n}]{BrankovicEtAl1998a}
+L.~Brankovi{\'c}, M.~Miller, J.~Plesn{\'i}k, J.~Ryan, and J.~{\v S}ir{\'a}{\v
+  n}.
+\newblock Large graphs with small degree and diameter: a voltage assignment
+  approach.
+\newblock \emph{Australas. J. Combin.}, 18:\penalty0 65--76, 1998.
+
+\bibitem[Bubeck et~al.(2025)Bubeck, Coester, Eldan, Gowers, Lee, Lupsasca,
+  Sawhney, Scherrer, Sellke, Spears, Unutmaz, Weil, Yin, and
+  Zhivotovskiy]{Bubeck2025}
+S.~Bubeck, C.~Coester, R.~Eldan, T.~Gowers, Y.~T. Lee, A.~Lupsasca, M.~Sawhney,
+  R.~Scherrer, M.~Sellke, B.~K. Spears, D.~Unutmaz, K.~Weil, S.~Yin, and
+  N.~Zhivotovskiy.
+\newblock Early science acceleration experiments with {GPT-5}, 2025.
+\newblock arXiv:2511.16072.
+
+\bibitem[Comellas(2025)]{Comellas2025}
+F.~Comellas.
+\newblock New results on the degree-diameter problem for undirected graphs.
+\newblock \emph{Electron. J. Graph Theory Appl.}, 13\penalty0 (1):\penalty0
+  211--215, 2025.
+\newblock \doi{10.5614/ejgta.2025.13.1.14}.
+
+\bibitem[Comellas(2026{\natexlab{a}})]{Comellas2026}
+F.~Comellas.
+\newblock Table of large graphs with given degree and diameter,
+  2026{\natexlab{a}}.
+\newblock arXiv:2406.18994v2.
+
+\bibitem[Comellas(2026{\natexlab{b}})]{ComellasData2026}
+F.~Comellas.
+\newblock Table of large degree/diameter graphs.
+\newblock Mendeley Data, Version 11, published 28 January 2026,
+  2026{\natexlab{b}}.
+
+\bibitem[Dalf{\'o} et~al.(2021)Dalf{\'o}, Fiol, Pavl{\'i}kov{\'a}, and {\v
+  S}ir{\'a}{\v n}]{DalfoEtAl2021}
+C.~Dalf{\'o}, M.~A. Fiol, S.~Pavl{\'i}kov{\'a}, and J.~{\v S}ir{\'a}{\v n}.
+\newblock Spectra and eigenspaces of arbitrary lifts of graphs.
+\newblock \emph{J. Algebraic Combin.}, 54:\penalty0 651--672, 2021.
+\newblock \doi{10.1007/s10801-021-01049-3}.
+
+\bibitem[Damerell(1973)]{Damerell1973}
+R.~M. Damerell.
+\newblock On {M}oore graphs.
+\newblock \emph{Math. Proc. Cambridge Philos. Soc.}, 74\penalty0 (2):\penalty0
+  227--236, 1973.
+\newblock \doi{10.1017/S0305004100048015}.
+
+\bibitem[Delorme(1985)]{DelormeBipartite1985}
+C.~Delorme.
+\newblock Large bipartite graphs with given degree and diameter.
+\newblock \emph{J. Graph Theory}, 9\penalty0 (3):\penalty0 325--334, 1985.
+\newblock \doi{10.1002/jgt.3190090304}.
+
+\bibitem[Gowers(2026)]{Gowers2026}
+T.~Gowers.
+\newblock A recent experience with {ChatGPT 5.5 Pro}.
+\newblock Gowers's Weblog, 8 May 2026, 2026.
+\newblock URL
+  \url{https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/}.
+
+\bibitem[Gross and Tucker(2001)]{GrossTucker2001}
+J.~L. Gross and T.~W. Tucker.
+\newblock \emph{Topological Graph Theory}.
+\newblock Dover, 2001.
+
+\bibitem[Hoffman and Singleton(1960)]{HoffmanSingleton1960}
+A.~J. Hoffman and R.~R. Singleton.
+\newblock On {M}oore graphs with diameters two and three.
+\newblock \emph{IBM J. Res. Develop.}, 4\penalty0 (5):\penalty0 497--504, 1960.
+\newblock \doi{10.1147/rd.45.0497}.
+
+\bibitem[Howlett(2026)]{Howlett2026}
+J.~Howlett.
+\newblock An amateur just solved a 60-year-old math problem---by asking {AI}.
+\newblock Scientific American, 24 April 2026, 2026.
+
+\bibitem[Hubert et~al.(2026)Hubert, Mehta, Sartran, Horv{\'a}th, {\v Z}u{\v
+  z}i{\'c}, Wieser, Huang, Schrittwieser, Schroecker, Masoom,
+  et~al.]{Hubert2026}
+T.~Hubert, R.~Mehta, L.~Sartran, M.~Z. Horv{\'a}th, G.~{\v Z}u{\v z}i{\'c},
+  E.~Wieser, A.~Huang, J.~Schrittwieser, Y.~Schroecker, H.~Masoom, et~al.
+\newblock Olympiad-level formal mathematical reasoning with reinforcement
+  learning.
+\newblock \emph{Nature}, 651:\penalty0 607--613, 2026.
+\newblock \doi{10.1038/s41586-025-09833-y}.
+
+\bibitem[Ju et~al.(2026)Ju, Gao, Jiang, Wu, Sun, Liu, Chen, Wang, Wang, Wang,
+  He, Wu, Xiao, Liu, Dai, and Dong]{JuEtAl2026}
+H.~Ju, G.~Gao, J.~Jiang, B.~Wu, Z.~Sun, S.~Liu, L.~Chen, Y.~Wang, Y.~Wang,
+  Z.~Wang, W.~He, P.~Wu, L.~Xiao, R.~Liu, B.~Dai, and B.~Dong.
+\newblock Automated conjecture resolution with formal verification, 2026.
+\newblock arXiv:2604.03789.
+
+\bibitem[Loz and {\v S}ir{\'a}{\v n}(2008)]{LozSiran2008}
+E.~Loz and J.~{\v S}ir{\'a}{\v n}.
+\newblock New record graphs in the degree-diameter problem.
+\newblock \emph{Australas. J. Combin.}, 41:\penalty0 63--80, 2008.
+
+\bibitem[Miller and {\v S}ir{\'a}{\v n}(2013)]{MillerSiran2013}
+M.~Miller and J.~{\v S}ir{\'a}{\v n}.
+\newblock Moore graphs and beyond: a survey of the degree/diameter problem.
+\newblock \emph{Electron. J. Combin.}, 2013.
+\newblock \doi{10.37236/35}.
+\newblock Dynamic Survey DS14, 2nd edition.
+
+\bibitem[Nagda et~al.(2026)Nagda, Raghavan, and
+  Thakurta]{NagdaRaghavanThakurta2026}
+A.~Nagda, P.~Raghavan, and A.~Thakurta.
+\newblock Reinforced generation of combinatorial structures: {R}amsey numbers,
+  2026.
+\newblock arXiv:2603.09172.
+
+\bibitem[{OpenAI}(2026)]{OpenAI2026}
+{OpenAI}.
+\newblock An {OpenAI} model has disproved a central conjecture in discrete
+  geometry, 2026.
+\newblock URL
+  \url{https://openai.com/index/model-disproves-discrete-geometry-conjecture/}.
+
+\bibitem[Petersen(1891)]{Petersen1891}
+J.~Petersen.
+\newblock Die {T}heorie der regul{\"a}ren {G}raphs.
+\newblock \emph{Acta Math.}, 15:\penalty0 193--220, 1891.
+
+\bibitem[Przybocki et~al.(2026)Przybocki, Mackey, Heule, and
+  Subercaseaux]{PrzybockiMackeyHeuleSubercaseaux2026}
+B.~Przybocki, J.~Mackey, M.~J.~H. Heule, and B.~Subercaseaux.
+\newblock Doubly saturated {R}amsey graphs: a case study in computer-assisted
+  mathematical discovery, 2026.
+\newblock arXiv:2604.21187.
+
+\bibitem[Romera-Paredes et~al.(2024)Romera-Paredes, Barekatain, Novikov, Balog,
+  Kumar, Dupont, Ruiz, Ellenberg, Wang, Fawzi, Kohli, and
+  Fawzi]{RomeraParedes2024}
+B.~Romera-Paredes, M.~Barekatain, A.~Novikov, M.~Balog, M.~P. Kumar, E.~Dupont,
+  F.~J.~R. Ruiz, J.~S. Ellenberg, P.~Wang, O.~Fawzi, P.~Kohli, and A.~Fawzi.
+\newblock Mathematical discoveries from program search with large language
+  models.
+\newblock \emph{Nature}, 625:\penalty0 468--475, 2024.
+\newblock \doi{10.1038/s41586-023-06924-6}.
+
+\bibitem[Salim(2025)]{Salim2025}
+A.~Salim.
+\newblock Accelerating mathematical research with language models: a case study
+  of an interaction with {GPT-5-Pro} on a convex analysis problem, 2025.
+\newblock arXiv:2510.26647.
+
+\bibitem[Trinh et~al.(2024)Trinh, Wu, Le, He, and Luong]{Trinh2024}
+T.~H. Trinh, Y.~Wu, Q.~V. Le, H.~He, and T.~Luong.
+\newblock Solving olympiad geometry without human demonstrations.
+\newblock \emph{Nature}, 625:\penalty0 476--482, 2024.
+\newblock \doi{10.1038/s41586-023-06747-5}.
+
+\bibitem[Tsoukalas et~al.(2026)Tsoukalas, Kovsharov, Shirobokov, Surina,
+  Firsching, B{\'e}rczi, Ruiz, Suggala, Wagner, Wieser, Yu, Huang, Horv{\'a}th,
+  Ferrauiolo, Michalewski, Grosu, Hubert, Balog, Kohli, and
+  Chaudhuri]{TsoukalasEtAl2026}
+G.~Tsoukalas, A.~Kovsharov, S.~Shirobokov, A.~Surina, M.~Firsching,
+  G.~B{\'e}rczi, F.~J.~R. Ruiz, A.~Suggala, A.~Z. Wagner, E.~Wieser, L.~Yu,
+  A.~Huang, M.~Z. Horv{\'a}th, A.~Ferrauiolo, H.~Michalewski, C.~Grosu,
+  T.~Hubert, M.~Balog, P.~Kohli, and S.~Chaudhuri.
+\newblock Advancing mathematics research with {AI}-driven formal proof search,
+  2026.
+\newblock arXiv:2605.22763.
+
+\bibitem[Verbeken et~al.(2026)Verbeken, Vagenende, Guerry, Algaba, and
+  Ginis]{Verbeken2026}
+B.~Verbeken, B.~Vagenende, M.-A. Guerry, A.~Algaba, and V.~Ginis.
+\newblock Early evidence of vibe-proving with consumer {LLMs}: a case study on
+  spectral region characterization with {ChatGPT-5.2 (Thinking)}, 2026.
+\newblock arXiv:2602.18918.
+
+\bibitem[Woodruff et~al.(2026)Woodruff, Cohen-Addad, Jain, Mao, Zuo, Bateni,
+  Branzei, Brenner, Chen, Feng, Fortnow, Fu, Guan, Hadizadeh, Hajiaghayi,
+  et~al.]{Woodruff2026}
+D.~P. Woodruff, V.~Cohen-Addad, L.~Jain, J.~Mao, S.~Zuo, M.-H. Bateni,
+  S.~Branzei, M.~P. Brenner, L.~Chen, Y.~Feng, L.~Fortnow, G.~Fu, Z.~Guan,
+  Z.~Hadizadeh, M.~T. Hajiaghayi, et~al.
+\newblock Accelerating scientific research with {G}emini: case studies and
+  common techniques, 2026.
+\newblock arXiv:2602.03837.
+
+\bibitem[Zhang et~al.(2026)Zhang, Song, Li, Liang, Ma, Wang, Zhu, and
+  Zhu]{Zhang2026}
+C.~Zhang, J.~Song, S.~Li, Y.~Liang, Y.~Ma, W.~Wang, Y.~Zhu, and S.-C. Zhu.
+\newblock Proposing and solving olympiad geometry with guided tree search.
+\newblock \emph{Nat. Mach. Intell.}, 8:\penalty0 84--95, 2026.
+\newblock \doi{10.1038/s42256-025-01164-x}.
+
+\end{thebibliography}

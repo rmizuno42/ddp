@@ -36,6 +36,8 @@ Everything else in this repository — the visible ChatGPT transcript and the sc
 
 ## Citation
 
+If you use or refer to this work, please cite the arXiv preprint.
+
 ```bibtex
 @misc{Mizuno2026DegreeDiameter,
   title         = {New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM},
@@ -47,3 +49,42 @@ Everything else in this repository — the visible ChatGPT transcript and the sc
   url           = {https://arxiv.org/abs/2606.15860},
 }
 ```
+
+<details>
+<summary>Plain text</summary>
+
+Ryosuke Mizuno. *New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM.* arXiv:2606.15860 (2026). <https://arxiv.org/abs/2606.15860>
+
+</details>
+
+<details>
+<summary>BibLaTeX</summary>
+
+```bibtex
+@online{Mizuno2026DegreeDiameter,
+  title       = {New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM},
+  author      = {Ryosuke Mizuno},
+  year        = {2026},
+  eprinttype  = {arXiv},
+  eprint      = {2606.15860},
+  eprintclass = {math.GM},
+  url         = {https://arxiv.org/abs/2606.15860},
+}
+```
+
+</details>
+
+<details>
+<summary>RIS (EndNote, Zotero, Mendeley)</summary>
+
+```text
+TY  - GEN
+AU  - Mizuno, Ryosuke
+TI  - New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
+PY  - 2026
+UR  - https://arxiv.org/abs/2606.15860
+ID  - 2606.15860
+ER  -
+```
+
+</details>

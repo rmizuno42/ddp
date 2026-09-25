@@ -1,90 +1,121 @@
-# New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
+# Degree/diameter graph constructions
 
-This repository accompanies the paper *"New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM"*.
+Explicit graphs, construction certificates, and verification code for the
+degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of a
+simple undirected connected graph with maximum degree at most $\Delta$ and
+diameter at most $D$.
 
-📄 **[Download the paper (PDF)](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)** · 📚 **[arXiv:2606.15860](https://arxiv.org/abs/2606.15860)**
+The materials for [arXiv:2606.15860](results/diameter5-paper/) and the new results
+are sibling packages under [`results/`](results/). Each package has its own
+summary and data. The new packages contain concise documentation and
+verification materials.
 
-## Overview
+## Results at a glance
 
-Let $N(\Delta, D)$ be the maximum number of vertices in a simple undirected connected graph with maximum degree at most $\Delta$ and diameter at most $D$ — the **degree/diameter problem**. This paper gives explicit graph constructions establishing two new lower bounds for diameter $5$:
+Comparison source: [Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
+accessed **2026-09-25**, with the page reporting its last change as **2026-09-24**.
+Differences below are relative to that dated table, not to earlier candidates.
 
-$$N(12,5) \ge 34{,}992, \qquad N(16,5) \ge 147{,}456,$$
+| Package | $(\Delta,D)$ | Vertices | Table order | Difference | Increase |
+|---|---:|---:|---:|---:|---:|
+| [Degree 12, diameter 4](results/degree12-diameter4/) | (12,4) | **5,832** | 5,184 | +648 | +12.50% |
+| [Degree 14, diameter 5](results/degree14-diameter5/) | (14,5) | **88,452** | 61,887 | +26,565 | +42.93% |
+| [Degree 15, diameter 3](results/degree15-diameter3/) | (15,3) | **1,458** | 1,224 | +234 | +19.12% |
+| [Degree 15, diameter 5](results/degree15-diameter5/) | (15,5) | **100,000** | 82,684 | +17,316 | +20.94% |
+| [Degree 16, diameter 3](results/degree16-diameter3/) | (16,3) | **1,920** | 1,610 | +310 | +19.25% |
 
-improving the previously recorded lower bounds of $29{,}621$ and $132{,}496$.
+These comparisons do not imply acceptance into the public table or optimality.
+See [verification performed during this repository update](VERIFICATION.md)
+and the [machine-readable result index](results.json).
 
-The construction was discovered through a long dialogue with ChatGPT via its standard web interface, **without any external orchestration layer** — no custom agent framework, automated evaluator-driven search loop, problem-specific search engine, or formal proof assistant was set up in advance. The motivating question is how far mathematical search and discovery can proceed using only an LLM available through a standard browser.
+All seven indexed graphs, including the two from arXiv:2606.15860, passed
+[final verification directly from their edge lists](verification/README.md):
+vertex counts, degrees, connectivity, and exact diameters were checked over
+every ordered pair of vertices.
 
-The paper makes two contributions that can be read independently:
+All five new constructions use variants of the
+controller/fiber affine route-chart framework described in
+[arXiv:2606.15860](results/diameter5-paper/). Their adaptations include
+state-dependent translations, edge-dependent maps, and subspace covers that
+combine several routes to reach an entire fiber.
 
-1. **Improved mathematical lower bounds.** Explicit simple-graph constructions and finite certificates for $N(12,5)$ and $N(16,5)$ (Appendix A). Their correctness can be verified from the construction alone, independently of how they were discovered.
-2. **A record and analysis of the discovery process.** A description of the roughly six-day dialogue — including unsuccessful intervals — and of the author's meta-level interventions near the junctures at which the search moved toward abstraction and finite-certificate design, based on the visible transcript.
+### (12,4): 5,832 vertices
 
-## The paper
+A 12-regular lift of a 72-state controller over $\mathbb F_3^4$, with 34,992
+edges and diameter exactly 4. This extends the affine route-chart method in
+[arXiv:2606.15860](results/diameter5-paper/) by combining full-rank routes with subspace covers for short
+routes and pairs in the same fiber. A finite certificate and all-source BFS
+verify the construction. [Construction, proof, and certificates](results/degree12-diameter4/).
 
-- **[paper.pdf](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)** — the compiled paper, attached to the latest [GitHub Release](https://github.com/rmizuno42/ddp/releases/latest). Also available on [arXiv](https://arxiv.org/abs/2606.15860).
-- **[paper.tex](paper.tex)** — LaTeX source. It compiles with [Tectonic](https://tectonic-typesetting.github.io/) in one command:
+### (14,5): 88,452 vertices
 
-  ```bash
-  tectonic paper.tex
-  ```
+A lift of a 364-state controller over $\mathbb F_3^5$, with additional
+state-dependent translations inside each fiber. The graph has maximum degree
+14 and diameter exactly 5; 756 vertices have degree 13 and 87,696 have degree
+14. [Construction, proof, and certificates](results/degree14-diameter5/).
 
-  The bibliography source is `references.bib`; the compiled `paper.bbl` is also included (as submitted to arXiv) so the source builds without a separate BibTeX run.
+### (15,3): 1,458 vertices
 
-## Other materials
+A 15-regular affine lift of a 54-state Cayley controller over
+$\mathbb F_3^3$. Short routes and finite subspace covers certify diameter 3.
+[Construction, proof, and certificates](results/degree15-diameter3/).
 
-Everything else in this repository — the visible ChatGPT transcript and the script that produces it, the construction packages (the provenance package and a cleaned, runnable version), and the independent verification scripts — is **described in the paper**. See **Appendix B, "Structure of the supplementary materials,"** and the verification and reproducibility notes in §A.8.
+### (15,5): 100,000 vertices
 
-## Citation
+A 15-regular lift of a 32-state cubic controller over $\mathbb F_5^5$.
+Two finite-certificate implementations verify coverage of all 1,024 controller
+pairs and the diameter-5 bound.
+[Construction, proof, and certificates](results/degree15-diameter5/).
 
-If you use or refer to this work, please cite the arXiv preprint.
+### (16,3): 1,920 vertices
 
-```bibtex
-@misc{Mizuno2026DegreeDiameter,
-  title         = {New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM},
-  author        = {Ryosuke Mizuno},
-  year          = {2026},
-  eprint        = {2606.15860},
-  archivePrefix = {arXiv},
-  primaryClass  = {math.GM},
-  url           = {https://arxiv.org/abs/2606.15860},
-}
-```
+A 16-regular lift of a 30-state controller over $\mathbb F_4^3$, using
+edge-dependent linear maps and local subspace covers. All-source verification
+confirms diameter 3. [Construction, proof, and certificates](results/degree16-diameter3/).
 
-<details>
-<summary>Plain text</summary>
+### arXiv:2606.15860: (12,5) and (16,5)
 
-Ryosuke Mizuno. *New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM.* arXiv:2606.15860 (2026). <https://arxiv.org/abs/2606.15860>
+[arXiv:2606.15860](https://arxiv.org/abs/2606.15860) established $N(12,5)\ge34{,}992$ and
+$N(16,5)\ge147{,}456$, improving the then-recorded orders 29,621 and 132,496.
+It also documents the discovery process through a browser-based ChatGPT
+dialogue. The paper, bibliography, transcript, and supplementary packages are
+preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 
-</details>
+| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-09-25 | Current status |
+|---|---:|---:|---|
+| (12,5) | 34,992 | 38,167 | Historical result; the table now has a larger graph |
+| (16,5) | 147,456 | 147,456 | Matches the table |
 
-<details>
-<summary>BibLaTeX</summary>
+[Paper PDF](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)
+· [arXiv:2606.15860](https://arxiv.org/abs/2606.15860)
+· [LaTeX source](results/diameter5-paper/paper.tex)
+· [Citation formats](results/diameter5-paper/README.md#citation)
 
-```bibtex
-@online{Mizuno2026DegreeDiameter,
-  title       = {New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM},
-  author      = {Ryosuke Mizuno},
-  year        = {2026},
-  eprinttype  = {arXiv},
-  eprint      = {2606.15860},
-  eprintclass = {math.GM},
-  url         = {https://arxiv.org/abs/2606.15860},
-}
-```
-
-</details>
-
-<details>
-<summary>RIS (EndNote, Zotero, Mendeley)</summary>
+## Layout and selection
 
 ```text
-TY  - GEN
-AU  - Mizuno, Ryosuke
-TI  - New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
-PY  - 2026
-UR  - https://arxiv.org/abs/2606.15860
-ID  - 2606.15860
-ER  -
+README.md                       summaries and dated comparisons
+results.json                    machine-readable index
+VERIFICATION.md                 checks performed and reproduction notes
+verification/                   final edge-list verifier and all-pairs reports
+results/
+  diameter5-paper/              arXiv:2606.15860 and its supplementary materials
+  degree12-diameter4/           summary, certificate package, and direct verifier
+  degree14-diameter5/           summary and original certificate package
+  degree15-diameter3/           summary and original certificate package
+  degree15-diameter5/           summary and original certificate package
+  degree16-diameter3/           summary and original certificate package
 ```
 
-</details>
+For the September import, keep the largest new graph for each parameter pair,
+then retain it here if its order exceeds the dated table by at least **5%**.
+The results in arXiv:2606.15860 are retained independently of this filter. Smaller
+improvements, results below the table, and superseded candidates were moved to
+the local-only `legacy/` directory, which is excluded from Git. Original import
+ZIPs are also kept there as local backups; the extracted certificate packages
+are published under `results/`.
+
+The five imported `certificate/` directories preserve their source bytes,
+including the Japanese proof notes, manifests, and verification/search logs.
+Their original notes describe the status at package creation. Use the package
+summaries and `VERIFICATION.md` for the checks performed in this repository.

@@ -1,0 +1,79 @@
+{
+  "implementation": "standard-library Python: Leibniz determinants + explicit image sets",
+  "field": 5,
+  "dimension": 5,
+  "controller_order": 32,
+  "simple_cubic_controller": true,
+  "full_rank_length5_words": 48,
+  "length5_determinant_histogram": {
+    "1": 10,
+    "2": 14,
+    "3": 16,
+    "4": 8
+  },
+  "length3_union_sizes": {
+    "000": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "002": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "020": {
+      "reachable_points": 2625,
+      "routes": 10
+    },
+    "021": {
+      "reachable_points": 2625,
+      "routes": 10
+    },
+    "111": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "112": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "120": {
+      "reachable_points": 2625,
+      "routes": 10
+    },
+    "121": {
+      "reachable_points": 2625,
+      "routes": 10
+    },
+    "200": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "202": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "211": {
+      "reachable_points": 3125,
+      "routes": 10
+    },
+    "212": {
+      "reachable_points": 3125,
+      "routes": 10
+    }
+  },
+  "complete_length3_repair_words": [
+    "000",
+    "002",
+    "111",
+    "112",
+    "200",
+    "202",
+    "211",
+    "212"
+  ],
+  "controller_pairs_full_rank": 968,
+  "controller_pairs_repaired": 56,
+  "certified_graph_order": 100000,
+  "certified_regular_degree": 15,
+  "certified_diameter_upper_bound": 5
+}

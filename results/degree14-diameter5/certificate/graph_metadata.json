@@ -1,0 +1,12 @@
+{
+  "vertices": 88452,
+  "edges": 618786,
+  "maximum_degree": 14,
+  "degree_distribution": {
+    "13": 756,
+    "14": 87696
+  },
+  "sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a",
+  "vertex_encoding": "243*u + x0 + 3*x1 + 9*x2 + 27*x3 + 81*x4",
+  "simple": true
+}

@@ -1,0 +1,31 @@
+{
+  "implementation": "standard-library Python: explicit finite sets + all-source bitset BFS",
+  "controller_vertices": 54,
+  "controller_edges": 135,
+  "controller_directed_pencils_checked": 270,
+  "number_of_planes_per_pencil": {
+    "4": 270
+  },
+  "three_step_image_cardinalities": {
+    "27": 4104,
+    "9": 216
+  },
+  "controller_pair_counts": {
+    "full_rank": 2646,
+    "edge_pencil": 270
+  },
+  "vertices": 1458,
+  "edges": 10935,
+  "min_degree": 15,
+  "max_degree": 15,
+  "diameter": 3,
+  "sources_checked": 1458,
+  "distance_histogram": [
+    1458,
+    21870,
+    274104,
+    1828332
+  ],
+  "all_pairs_reached": true,
+  "sha256": "85182ecb372ce24b3fdc1912ca0c14a6cec5353400ef3a6f4bd94b4520113546"
+}

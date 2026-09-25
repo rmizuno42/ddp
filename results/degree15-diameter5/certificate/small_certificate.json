@@ -1,0 +1,25 @@
+{
+  "q": 5,
+  "fiber_dimension": 5,
+  "controller_order": 32,
+  "lift_order": 100000,
+  "maximum_degree_upper_bound": 15,
+  "diameter_upper_bound": 5,
+  "rank5_hist": {
+    "5": 48
+  },
+  "bad_five_letter_words": [],
+  "complete_pencil_words": [
+    "000",
+    "002",
+    "111",
+    "112",
+    "200",
+    "202",
+    "211",
+    "212"
+  ],
+  "ordered_pairs_with_full_rank_route": 968,
+  "ordered_pairs_repaired_by_pencil": 56,
+  "controller_fixed_points_b": 0
+}

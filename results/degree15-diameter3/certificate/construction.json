@@ -1,0 +1,16 @@
+{
+  "field": "F3",
+  "dimension": 3,
+  "controller_group": {"coordinates": [6,9], "action": 2, "law": "(i,j)*(k,l)=((i+k)%6,(j+2^i*l)%9)"},
+  "generators": [[2,1],[4,2],[2,6],[4,3],[3,0]],
+  "inverse_ports": [1,0,3,2,4],
+  "return_directions": [[1,0,0],[0,1,0],[1,1,0],[1,2,0],[0,0,1]],
+  "A": [[0,1,1],[1,0,0],[0,1,2]],
+  "B": [[1,0,1],[0,2,0],[1,2,2]],
+  "T": [[1,2,0],[2,2,0],[0,0,1]],
+  "ordinary_matrix_rule": ["A","inverse(A)","B","inverse(B)"],
+  "special_matrix_rule": "T when the controller i coordinate is 0,1,2; inverse(T) otherwise",
+  "edge_rule": "(u,x) adjacent to (u*g[t], M(u,t)*x + lambda*return_directions[inverse_ports[t]]) for lambda in F3",
+  "vertex_numbering": "27*(9*i+j)+x0+3*x1+9*x2",
+  "parameters": {"vertices":1458,"degree":15,"diameter":3,"edges":10935}
+}

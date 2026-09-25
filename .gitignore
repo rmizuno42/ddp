@@ -15,3 +15,14 @@ paper.pdf
 *.bcf
 *.run.xml
 *.blg
+
+# Local-only historical candidates and original import archives
+/legacy/
+.DS_Store
+
+# Python execution artifacts
+__pycache__/
+*.py[cod]
+
+# Imported verification/search logs belong to the certificate provenance.
+!results/**/certificate/**/*.log

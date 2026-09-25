@@ -1,0 +1,26 @@
+{
+  "source": "primitive_c30_30086_edge_local.json",
+  "q": 4,
+  "fibre_dimension": 3,
+  "controller_vertices": 30,
+  "controller_edges": 60,
+  "vertices": 1920,
+  "edges": 15360,
+  "regular_degree": 16,
+  "diameter": 3,
+  "pair_certificate_counts": {
+    "full_rank": 780,
+    "edge_pencil": 120
+  },
+  "every_directed_edge_has_complete_pencil": true,
+  "all_sources_bitset_distance_histogram": [
+    1920,
+    30720,
+    387840,
+    3265920
+  ],
+  "all_sources_checked": 1920,
+  "all_pairs_reached_in_three_steps": true,
+  "edge_file": "primitive_c30_30086_d16_D3.edges",
+  "edge_sha256": "dbdd15deead3c83b7e07f9e056846dd9a478feaa437385841ef36971c0af9a8a"
+}

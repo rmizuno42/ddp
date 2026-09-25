@@ -1,0 +1,30 @@
+{
+  "claim": {
+    "degree": 14,
+    "diameter": 5,
+    "order": 88452
+  },
+  "degree_distribution": {
+    "13": 756,
+    "14": 87696
+  },
+  "edges": 618786,
+  "small_finite_certificate_verified": true,
+  "all_source_ordinary_BFS_verified": true,
+  "all_pair_bitset_verified": true,
+  "distance_distributions_identical": true,
+  "Python_CPP_generators_byte_identical": true,
+  "public_comparison": {
+    "old": 61887,
+    "new": 88452,
+    "difference": 26565,
+    "percent": 42.925008483203264
+  },
+  "session_comparison": {
+    "old": 66430,
+    "new": 88452,
+    "difference": 22022,
+    "percent": 33.15068493150686
+  },
+  "published_or_third_party_verified": false
+}

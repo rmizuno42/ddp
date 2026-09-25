@@ -1,0 +1,11 @@
+{
+  "method": "ordinary BFS from every vertex",
+  "vertices": 5832,
+  "edges": 34992,
+  "degree": 12,
+  "diameter": 4,
+  "simple": true,
+  "connected": true,
+  "all_sources_checked": 5832,
+  "distance_histogram": [5832, 69984, 676512, 6342300, 26917596]
+}

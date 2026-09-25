@@ -1,0 +1,1 @@
+{"implementation":"ordinary queue BFS from all sources, radius 3","vertices":1458,"edges":10935,"min_degree":15,"max_degree":15,"all_sources_checked":1458,"distance_histogram":[1458,21870,274104,1828332],"failed_sources":0,"diameter":3}

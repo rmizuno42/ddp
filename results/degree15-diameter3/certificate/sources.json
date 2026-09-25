@@ -1,0 +1,27 @@
+{
+  "retrieved_date": "2026-09-25",
+  "comparison_cell": [
+    15,
+    3
+  ],
+  "listed_lower_bound": 1224,
+  "constructed_order": 1458,
+  "increase": 234,
+  "increase_percent": 19.11764705882353,
+  "public_sources": [
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+      "used_for": "Public table value and maximum-degree convention"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html",
+      "used_for": "Existing construction description; not used to generate the new graph"
+    }
+  ],
+  "status": {
+    "third_party_reexecution": false,
+    "table_submission": false,
+    "historical_priority_search_complete": false
+  },
+  "method_origin": "This session: ternary edge-local affine lift with four collinear projective directions and a 54-state semidirect-product controller."
+}

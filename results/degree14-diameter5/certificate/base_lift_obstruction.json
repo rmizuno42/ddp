@@ -1,0 +1,11 @@
+{
+  "controller_source": 0,
+  "label": 0,
+  "controller_target": 318,
+  "all_length_at_most_5_routes_reduce_to": [
+    0
+  ],
+  "target_fiber_reachable_points_without_extra_translations": 135,
+  "fiber_size": 243,
+  "note": "The count 135 is checked independently by verify_small.py, base_one_letter_covered_points."
+}

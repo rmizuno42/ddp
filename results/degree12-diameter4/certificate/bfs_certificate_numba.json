@@ -1,0 +1,44 @@
+{
+  "order": 5832,
+  "degree": 12,
+  "edges": 34992,
+  "diameter": 4,
+  "connected": true,
+  "all_sources_checked": 5832,
+  "ordered_pairs_checked": 34012224,
+  "distance_histogram_ordered_pairs": [
+    5832,
+    69984,
+    676512,
+    6342300,
+    26917596
+  ],
+  "eccentricity_4_witness": [
+    0,
+    36
+  ],
+  "distance_distribution_classes": [
+    {
+      "counts": [
+        1,
+        12,
+        116,
+        1086,
+        4617
+      ],
+      "vertices": 2916
+    },
+    {
+      "counts": [
+        1,
+        12,
+        116,
+        1089,
+        4614
+      ],
+      "vertices": 2916
+    }
+  ],
+  "edge_file_sha256": "ea0846865021f05f38825ac03ca96a387815b50634a9117f9f42533080dbd05b",
+  "elapsed_seconds": 2.498847007751465
+}

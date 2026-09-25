@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "method": "exact bit-parallel BFS; all sources in batches",
+  "vertices": 1458,
+  "edges": 10935,
+  "maximum_degree": 15,
+  "degree_histogram": {
+    "15": 1458
+  },
+  "simple": true,
+  "connected": true,
+  "diameter": 3,
+  "all_sources_checked": 1458,
+  "ordered_pairs_checked": 2125764,
+  "unreachable_within_claimed_diameter": 0,
+  "distance_histogram_ordered_pairs": [
+    1458,
+    21870,
+    274104,
+    1828332
+  ],
+  "claimed_diameter_witness": [
+    10,
+    0
+  ],
+  "threads": 8,
+  "source_batch_size": 16384,
+  "elapsed_seconds": 0.00871054,
+  "result_id": "degree15-diameter3",
+  "edge_file": "results/degree15-diameter3/certificate/graph_d15_D3_n1458.edges",
+  "edge_file_sha256": "85182ecb372ce24b3fdc1912ca0c14a6cec5353400ef3a6f4bd94b4520113546",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "verified_at_utc": "2026-09-25T05:48:16.444496+00:00"
+}

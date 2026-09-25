@@ -1,0 +1,30 @@
+{
+  "implementation": "standard-library Python, explicit finite-field point sets and all-source bitset BFS",
+  "field": "F2[a]/(a^2+a+1)",
+  "controller_vertices": 30,
+  "controller_edges": 60,
+  "pair_certificate_counts": {
+    "full_rank": 780,
+    "edge_pencil": 120
+  },
+  "directed_pencils_verified": 120,
+  "local_three_step_image_size_counts": {
+    "64": 960,
+    "16": 120
+  },
+  "vertices": 1920,
+  "edges": 15360,
+  "min_degree": 16,
+  "max_degree": 16,
+  "diameter": 3,
+  "all_sources_checked": 1920,
+  "distance_histogram": [
+    1920,
+    30720,
+    387840,
+    3265920
+  ],
+  "all_pairs_reached_in_three_steps": true,
+  "edge_sha256": "dbdd15deead3c83b7e07f9e056846dd9a478feaa437385841ef36971c0af9a8a",
+  "reference_edge_file_byte_identical": true
+}

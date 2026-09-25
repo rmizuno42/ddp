@@ -1,0 +1,24 @@
+{
+  "vertices": 32,
+  "edges": 48,
+  "degree": 3,
+  "diameter": 5,
+  "girth": 4,
+  "ordered_distance_histogram": {
+    "0": 32,
+    "1": 96,
+    "2": 164,
+    "3": 204,
+    "4": 272,
+    "5": 256
+  },
+  "pencil_assignment_histogram": {
+    "000": 6,
+    "002": 13,
+    "111": 6,
+    "112": 9,
+    "200": 13,
+    "202": 3,
+    "211": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "incidence_vertices": 728,
+  "incidence_degree": 4,
+  "incidence_diameter": 6,
+  "incidence_girth": 12,
+  "incidence_distance_layers": {
+    "0": 728,
+    "4": 78624,
+    "6": 176904,
+    "2": 8736,
+    "5": 235872,
+    "1": 2912,
+    "3": 26208
+  },
+  "polarity_involution_and_incidence_preservation": true,
+  "quotient_matches_controller_after_edge_colouring": true,
+  "controller_semiloops": 28
+}

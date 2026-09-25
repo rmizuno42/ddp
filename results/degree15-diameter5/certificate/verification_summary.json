@@ -1,0 +1,24 @@
+{
+  "vertices": 100000,
+  "degree": 15,
+  "regular": true,
+  "edges": 750000,
+  "diameter": 5,
+  "ordered_pairs_checked": 10000000000,
+  "BFS_bitset_histograms_identical": true,
+  "two_small_certificate_methods_passed": true,
+  "standard_library_regeneration_matches_numpy": true,
+  "edge_file_sha256": "ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271",
+  "public_table_comparison": {
+    "record": 82684,
+    "increase": 17316,
+    "percent_increase": 20.942383048715584
+  },
+  "previous_session_comparison": {
+    "record": 87500,
+    "increase": 12500,
+    "percent_increase": 14.28571428571428
+  },
+  "third_party_validation": false,
+  "submitted_to_table": false
+}

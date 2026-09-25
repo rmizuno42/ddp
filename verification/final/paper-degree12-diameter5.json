@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "method": "exact bit-parallel BFS; all sources in batches",
+  "vertices": 34992,
+  "edges": 209952,
+  "maximum_degree": 12,
+  "degree_histogram": {
+    "12": 34992
+  },
+  "simple": true,
+  "connected": true,
+  "diameter": 5,
+  "all_sources_checked": 34992,
+  "ordered_pairs_checked": 1224440064,
+  "unreachable_within_claimed_diameter": 0,
+  "distance_histogram_ordered_pairs": [
+    34992,
+    419904,
+    4059072,
+    35155296,
+    269555040,
+    915215760
+  ],
+  "claimed_diameter_witness": [
+    1,
+    0
+  ],
+  "threads": 8,
+  "source_batch_size": 16384,
+  "elapsed_seconds": 0.288546,
+  "result_id": "paper-degree12-diameter5",
+  "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/12_5_34992/final_graph_edges.tsv.gz",
+  "edge_file_sha256": "7f3ee329f7a8b2e9fcc4f42186da60639556bf31cfb7f1db8e68c7f7ca10d42a",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "verified_at_utc": "2026-09-25T05:48:20.152410+00:00"
+}

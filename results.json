@@ -1,0 +1,150 @@
+{
+  "comparison_source": {
+    "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
+    "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+    "accessed_on": "2026-09-25",
+    "page_last_changed": "2026-09-24"
+  },
+  "selection": {
+    "scope": "September 2026 import; results from arXiv:2606.15860 are retained separately",
+    "minimum_increase_percent": 5,
+    "keep_largest_per_parameter_pair": true
+  },
+  "results": [
+    {
+      "id": "degree12-diameter4",
+      "category": "new_result",
+      "degree": 12,
+      "diameter": 4,
+      "vertices": 5832,
+      "edges": 34992,
+      "degree_histogram": {
+        "12": 5832
+      },
+      "table_order": 5184,
+      "difference": 648,
+      "increase_percent": 12.5,
+      "summary": "results/degree12-diameter4/README.md",
+      "edge_file": "results/degree12-diameter4/certificate/graph_12_4_5832.edges",
+      "edge_file_format": "headerless u v",
+      "edge_file_sha256": "ea0846865021f05f38825ac03ca96a387815b50634a9117f9f42533080dbd05b",
+      "certificate_directory": "results/degree12-diameter4/certificate",
+      "construction": "results/degree12-diameter4/certificate/construction.json",
+      "proof": "results/degree12-diameter4/certificate/proof_ja.md",
+      "construction_verifier": "results/degree12-diameter4/certificate/verify_certificate.py"
+    },
+    {
+      "id": "degree14-diameter5",
+      "category": "new_result",
+      "degree": 14,
+      "diameter": 5,
+      "vertices": 88452,
+      "edges": 618786,
+      "degree_histogram": {
+        "13": 756,
+        "14": 87696
+      },
+      "table_order": 61887,
+      "difference": 26565,
+      "increase_percent": 42.92500848,
+      "summary": "results/degree14-diameter5/README.md",
+      "edge_file": "results/degree14-diameter5/certificate/graph_d14_D5_n88452.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a"
+    },
+    {
+      "id": "degree15-diameter3",
+      "category": "new_result",
+      "degree": 15,
+      "diameter": 3,
+      "vertices": 1458,
+      "edges": 10935,
+      "degree_histogram": {
+        "15": 1458
+      },
+      "table_order": 1224,
+      "difference": 234,
+      "increase_percent": 19.11764706,
+      "summary": "results/degree15-diameter3/README.md",
+      "edge_file": "results/degree15-diameter3/certificate/graph_d15_D3_n1458.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "85182ecb372ce24b3fdc1912ca0c14a6cec5353400ef3a6f4bd94b4520113546"
+    },
+    {
+      "id": "degree15-diameter5",
+      "category": "new_result",
+      "degree": 15,
+      "diameter": 5,
+      "vertices": 100000,
+      "edges": 750000,
+      "degree_histogram": {
+        "15": 100000
+      },
+      "table_order": 82684,
+      "difference": 17316,
+      "increase_percent": 20.94238305,
+      "summary": "results/degree15-diameter5/README.md",
+      "edge_file": "results/degree15-diameter5/certificate/graph_d15_D5_n100000.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271"
+    },
+    {
+      "id": "degree16-diameter3",
+      "category": "new_result",
+      "degree": 16,
+      "diameter": 3,
+      "vertices": 1920,
+      "edges": 15360,
+      "degree_histogram": {
+        "16": 1920
+      },
+      "table_order": 1610,
+      "difference": 310,
+      "increase_percent": 19.25465839,
+      "summary": "results/degree16-diameter3/README.md",
+      "edge_file": "results/degree16-diameter3/certificate/graph_d16_D3_n1920.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "dbdd15deead3c83b7e07f9e056846dd9a478feaa437385841ef36971c0af9a8a"
+    },
+    {
+      "id": "paper-degree12-diameter5",
+      "category": "paper_result",
+      "arxiv_id": "2606.15860",
+      "degree": 12,
+      "diameter": 5,
+      "vertices": 34992,
+      "edges": 209952,
+      "degree_histogram": {
+        "12": 34992
+      },
+      "table_order": 38167,
+      "difference": -3175,
+      "increase_percent": -8.31870464,
+      "status": "historical_result",
+      "summary": "results/diameter5-paper/README.md",
+      "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/12_5_34992/final_graph_edges.tsv.gz",
+      "edge_file_format": "gzip; n m header, then tab-separated u v",
+      "edge_file_sha256": "7f3ee329f7a8b2e9fcc4f42186da60639556bf31cfb7f1db8e68c7f7ca10d42a"
+    },
+    {
+      "id": "paper-degree16-diameter5",
+      "category": "paper_result",
+      "arxiv_id": "2606.15860",
+      "degree": 16,
+      "diameter": 5,
+      "vertices": 147456,
+      "edges": 1179648,
+      "degree_histogram": {
+        "16": 147456
+      },
+      "table_order": 147456,
+      "difference": 0,
+      "increase_percent": 0.0,
+      "status": "matches_table",
+      "summary": "results/diameter5-paper/README.md",
+      "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/16_5_147456/final_graph_edges.tsv.gz",
+      "edge_file_format": "gzip; n m header, then tab-separated u v",
+      "edge_file_sha256": "236861298499c6db76a047ca0109c55de8b18a7075a95a443cbe6e4423c3f9ad"
+    }
+  ]
+}

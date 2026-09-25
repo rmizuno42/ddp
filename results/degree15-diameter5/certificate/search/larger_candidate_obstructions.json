@@ -1,0 +1,200 @@
+[
+  {
+    "candidate": "insert33_0",
+    "controller_order": 33,
+    "hypothetical_graph_order": 103125,
+    "missing_pairs_in_small_sufficient_certificate": 22,
+    "capacity_obstruction": {
+      "controller_pair": [
+        2,
+        32
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 0,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "insert33_1",
+    "controller_order": 33,
+    "hypothetical_graph_order": 103125,
+    "missing_pairs_in_small_sufficient_certificate": 22,
+    "capacity_obstruction": {
+      "controller_pair": [
+        7,
+        8
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 0,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "chart530_c34",
+    "controller_order": 34,
+    "hypothetical_graph_order": 106250,
+    "missing_pairs_in_small_sufficient_certificate": 26,
+    "capacity_obstruction": {
+      "controller_pair": [
+        0,
+        15
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 625,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "beam34",
+    "controller_order": 34,
+    "hypothetical_graph_order": 106250,
+    "missing_pairs_in_small_sufficient_certificate": 26,
+    "capacity_obstruction": {
+      "controller_pair": [
+        0,
+        15
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 625,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "ideal5_c34_3401",
+    "controller_order": 34,
+    "hypothetical_graph_order": 106250,
+    "missing_pairs_in_small_sufficient_certificate": 43,
+    "capacity_obstruction": {
+      "controller_pair": [
+        2,
+        13
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 0,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "ideal5_c36_3601",
+    "controller_order": 36,
+    "hypothetical_graph_order": 112500,
+    "missing_pairs_in_small_sufficient_certificate": 69,
+    "capacity_obstruction": {
+      "controller_pair": [
+        3,
+        27
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 0,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "matching3414",
+    "controller_order": 34,
+    "hypothetical_graph_order": 106250,
+    "missing_pairs_in_small_sufficient_certificate": 41,
+    "capacity_obstruction": {
+      "controller_pair": [
+        2,
+        22
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 0,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "matching3614",
+    "controller_order": 36,
+    "hypothetical_graph_order": 112500,
+    "missing_pairs_in_small_sufficient_certificate": 82,
+    "capacity_obstruction": {
+      "controller_pair": [
+        5,
+        15
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 1250,
+      "required": 3125
+    }
+  },
+  {
+    "candidate": "matching3624",
+    "controller_order": 36,
+    "hypothetical_graph_order": 112500,
+    "missing_pairs_in_small_sufficient_certificate": 80,
+    "capacity_obstruction": {
+      "controller_pair": [
+        0,
+        19
+      ],
+      "walk_counts_length_0_to_5": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "upper_bound_reachable_fiber_points": 1250,
+      "required": 3125
+    }
+  }
+]

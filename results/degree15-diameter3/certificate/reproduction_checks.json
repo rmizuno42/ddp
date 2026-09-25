@@ -1,0 +1,13 @@
+{
+  "python_algebra_and_all_source_bitset_passed": true,
+  "cpp_queue_bfs_all_1458_sources_passed": true,
+  "distance_histograms_identical": true,
+  "cpp_forward_formula_edges_identical_to_python_inverse_port_edges": true,
+  "graph_sha256": "85182ecb372ce24b3fdc1912ca0c14a6cec5353400ef3a6f4bd94b4520113546",
+  "verification_does_not_use_search_solver": true,
+  "fresh_zip_extraction_verified": true,
+  "fresh_python_certificate_and_bitset_passed": true,
+  "fresh_cpp_regeneration_passed": true,
+  "fresh_cpp_queue_bfs_passed": true,
+  "fresh_checksum_manifest_passed_after_reexecution": true
+}

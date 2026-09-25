@@ -1,0 +1,2925 @@
+{
+  "cyclic_symmetry": "(g,i)->(g,i+k), all g, k in Z9; fiber coordinate unchanged",
+  "representatives": [
+    {
+      "source": 0,
+      "targets": [
+        {
+          "target": 0,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 1,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 8,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 10,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "DBDC"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "DBDD"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "CACD"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 18,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 19,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 26,
+          "type": "pencil",
+          "word": "CD"
+        },
+        {
+          "target": 27,
+          "type": "full-rank",
+          "word": "BAAC"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 29,
+          "type": "pencil",
+          "word": "DC"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 36,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 37,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "DBAB"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 40,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "BDDD"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "CCCA"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 45,
+          "type": "full-rank",
+          "word": "CCAC"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "DCDC"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "BACD"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "CACA"
+        },
+        {
+          "target": 54,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "BBDC"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 59,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "CCDC"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 63,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "DCDD"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 67,
+          "type": "pencil",
+          "word": "AB"
+        },
+        {
+          "target": 68,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "CABA"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "ACCC"
+        }
+      ]
+    },
+    {
+      "source": 9,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "CACD"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "DBDC"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "DBDD"
+        },
+        {
+          "target": 9,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 10,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 17,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 18,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 19,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "BAAC"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 23,
+          "type": "pencil",
+          "word": "DC"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 27,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 35,
+          "type": "pencil",
+          "word": "CD"
+        },
+        {
+          "target": 36,
+          "type": "full-rank",
+          "word": "BACD"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "CACA"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "CCAC"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "DCDC"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 45,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 46,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "DBAB"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 49,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "BDDD"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "CCCA"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 54,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "CABA"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 57,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "DCDD"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 61,
+          "type": "pencil",
+          "word": "AB"
+        },
+        {
+          "target": 62,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 63,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "BBDC"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 68,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "CCDC"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "CDDD"
+        }
+      ]
+    },
+    {
+      "source": 18,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 1,
+          "type": "pencil",
+          "word": "AB"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "BBDD"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "CCAA"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "CCDD"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "DCDD"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 10,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "DDCD"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 13,
+          "type": "pencil",
+          "word": "BA"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 18,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 19,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 26,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 27,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "CDBD"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "DDBD"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "CCAC"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "DCAC"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 36,
+          "type": "pencil",
+          "word": "DC"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "DBDC"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 40,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 44,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 45,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "BABA"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 53,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 54,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "DBDD"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "BABB"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 60,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 63,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "DBAC"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "AABA"
+        }
+      ]
+    },
+    {
+      "source": 27,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "DDCD"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 7,
+          "type": "pencil",
+          "word": "BA"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 10,
+          "type": "pencil",
+          "word": "AB"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "BBDD"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "CCAA"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "CCDD"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "DCDD"
+        },
+        {
+          "target": 18,
+          "type": "full-rank",
+          "word": "CCAC"
+        },
+        {
+          "target": 19,
+          "type": "full-rank",
+          "word": "DCAC"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "CDBD"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "DDBD"
+        },
+        {
+          "target": 27,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 28,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 35,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 36,
+          "type": "full-rank",
+          "word": "BABA"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 38,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 45,
+          "type": "pencil",
+          "word": "DC"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "DBDC"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 49,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 53,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 54,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "DBAC"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 63,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "DBDD"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "BABB"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 69,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "ACDC"
+        }
+      ]
+    },
+    {
+      "source": 36,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "DDBD"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "DBBB"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 5,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "CCAB"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 8,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 10,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "BABA"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 18,
+          "type": "pencil",
+          "word": "BA"
+        },
+        {
+          "target": 19,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 23,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "DDCD"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 27,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 34,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 36,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "BBDC"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "BABB"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 45,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "CABA"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "DCDB"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "DDDB"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "BABD"
+        },
+        {
+          "target": 54,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "CCDD"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "BBAA"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 63,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 66,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "DDCC"
+        }
+      ]
+    },
+    {
+      "source": 45,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "BDBB"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 4,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "BABA"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "DDBD"
+        },
+        {
+          "target": 10,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "DBBB"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 14,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "CCAB"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 17,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 18,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 19,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "CDCC"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "CDBA"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 27,
+          "type": "pencil",
+          "word": "BA"
+        },
+        {
+          "target": 28,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 32,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "DDCD"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "BACA"
+        },
+        {
+          "target": 36,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "BABD"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "CABA"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "DCDB"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "DDDB"
+        },
+        {
+          "target": 45,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "BBDC"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "BABB"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 54,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "DDCC"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 60,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 63,
+          "type": "pencil",
+          "word": "BD"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "CCDD"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "BBAA"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "ABDB"
+        }
+      ]
+    },
+    {
+      "source": 54,
+      "targets": [
+        {
+          "target": 0,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 4,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 5,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 10,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 11,
+          "type": "pencil",
+          "word": "CD"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "CDBD"
+        },
+        {
+          "target": 13,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 15,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 18,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 19,
+          "type": "full-rank",
+          "word": "BABD"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 21,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "CAAC"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "CCDC"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 27,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 30,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "DCAB"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 36,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "CDDB"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 42,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 45,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "BBDD"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 48,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "BBAA"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 54,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "DCDC"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "AACD"
+        },
+        {
+          "target": 63,
+          "type": "full-rank",
+          "word": "DBBB"
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "BDDD"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "CCCA"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "DBAB"
+        }
+      ]
+    },
+    {
+      "source": 63,
+      "targets": [
+        {
+          "target": 0,
+          "type": "pencil",
+          "word": "BB"
+        },
+        {
+          "target": 1,
+          "type": "full-rank",
+          "word": "BBBD"
+        },
+        {
+          "target": 2,
+          "type": "full-rank",
+          "word": "CAAA"
+        },
+        {
+          "target": 3,
+          "type": "full-rank",
+          "word": "ACCA"
+        },
+        {
+          "target": 4,
+          "type": "pencil",
+          "word": "CC"
+        },
+        {
+          "target": 5,
+          "type": "pencil",
+          "word": "CD"
+        },
+        {
+          "target": 6,
+          "type": "full-rank",
+          "word": "CDBD"
+        },
+        {
+          "target": 7,
+          "type": "full-rank",
+          "word": "AABA"
+        },
+        {
+          "target": 8,
+          "type": "full-rank",
+          "word": "ABBA"
+        },
+        {
+          "target": 9,
+          "type": "full-rank",
+          "word": "DCCD"
+        },
+        {
+          "target": 10,
+          "type": "full-rank",
+          "word": "AAAB"
+        },
+        {
+          "target": 11,
+          "type": "full-rank",
+          "word": "ABAB"
+        },
+        {
+          "target": 12,
+          "type": "full-rank",
+          "word": "BDBA"
+        },
+        {
+          "target": 13,
+          "type": "pencil",
+          "word": "DB"
+        },
+        {
+          "target": 14,
+          "type": "full-rank",
+          "word": "ACAA"
+        },
+        {
+          "target": 15,
+          "type": "full-rank",
+          "word": "BACC"
+        },
+        {
+          "target": 16,
+          "type": "full-rank",
+          "word": "ACDC"
+        },
+        {
+          "target": 17,
+          "type": "full-rank",
+          "word": "DCCC"
+        },
+        {
+          "target": 18,
+          "type": "full-rank",
+          "word": "BDDB"
+        },
+        {
+          "target": 19,
+          "type": "full-rank",
+          "word": "ACAC"
+        },
+        {
+          "target": 20,
+          "type": "full-rank",
+          "word": "CACC"
+        },
+        {
+          "target": 21,
+          "type": "full-rank",
+          "word": "CCCD"
+        },
+        {
+          "target": 22,
+          "type": "full-rank",
+          "word": "CDCD"
+        },
+        {
+          "target": 23,
+          "type": "full-rank",
+          "word": "BAAA"
+        },
+        {
+          "target": 24,
+          "type": "full-rank",
+          "word": "BAAB"
+        },
+        {
+          "target": 25,
+          "type": "full-rank",
+          "word": "BDCA"
+        },
+        {
+          "target": 26,
+          "type": "full-rank",
+          "word": "DCAB"
+        },
+        {
+          "target": 27,
+          "type": "pencil",
+          "word": "AA"
+        },
+        {
+          "target": 28,
+          "type": "full-rank",
+          "word": "BABD"
+        },
+        {
+          "target": 29,
+          "type": "full-rank",
+          "word": "ABDB"
+        },
+        {
+          "target": 30,
+          "type": "pencil",
+          "word": "DD"
+        },
+        {
+          "target": 31,
+          "type": "full-rank",
+          "word": "CAAC"
+        },
+        {
+          "target": 32,
+          "type": "full-rank",
+          "word": "ACCC"
+        },
+        {
+          "target": 33,
+          "type": "full-rank",
+          "word": "CCDC"
+        },
+        {
+          "target": 34,
+          "type": "full-rank",
+          "word": "CDDC"
+        },
+        {
+          "target": 35,
+          "type": "full-rank",
+          "word": "AACA"
+        },
+        {
+          "target": 36,
+          "type": "full-rank",
+          "word": "CDDD"
+        },
+        {
+          "target": 37,
+          "type": "full-rank",
+          "word": "BBAA"
+        },
+        {
+          "target": 38,
+          "type": "full-rank",
+          "word": "BBBA"
+        },
+        {
+          "target": 39,
+          "type": "full-rank",
+          "word": "ABBD"
+        },
+        {
+          "target": 40,
+          "type": "full-rank",
+          "word": "BBDD"
+        },
+        {
+          "target": 41,
+          "type": "full-rank",
+          "word": "ACAB"
+        },
+        {
+          "target": 42,
+          "type": "pencil",
+          "word": "CA"
+        },
+        {
+          "target": 43,
+          "type": "full-rank",
+          "word": "ACCD"
+        },
+        {
+          "target": 44,
+          "type": "full-rank",
+          "word": "BDDC"
+        },
+        {
+          "target": 45,
+          "type": "pencil",
+          "word": "AC"
+        },
+        {
+          "target": 46,
+          "type": "full-rank",
+          "word": "ABDC"
+        },
+        {
+          "target": 47,
+          "type": "full-rank",
+          "word": "CDDB"
+        },
+        {
+          "target": 48,
+          "type": "full-rank",
+          "word": "DDDC"
+        },
+        {
+          "target": 49,
+          "type": "full-rank",
+          "word": "AABB"
+        },
+        {
+          "target": 50,
+          "type": "full-rank",
+          "word": "ABBB"
+        },
+        {
+          "target": 51,
+          "type": "full-rank",
+          "word": "BBDB"
+        },
+        {
+          "target": 52,
+          "type": "full-rank",
+          "word": "BDBD"
+        },
+        {
+          "target": 53,
+          "type": "full-rank",
+          "word": "AACC"
+        },
+        {
+          "target": 54,
+          "type": "full-rank",
+          "word": "CCCA"
+        },
+        {
+          "target": 55,
+          "type": "full-rank",
+          "word": "CDCA"
+        },
+        {
+          "target": 56,
+          "type": "full-rank",
+          "word": "DBAB"
+        },
+        {
+          "target": 57,
+          "type": "full-rank",
+          "word": "DBBB"
+        },
+        {
+          "target": 58,
+          "type": "full-rank",
+          "word": "AAAC"
+        },
+        {
+          "target": 59,
+          "type": "full-rank",
+          "word": "ABAC"
+        },
+        {
+          "target": 60,
+          "type": "full-rank",
+          "word": "ACDB"
+        },
+        {
+          "target": 61,
+          "type": "full-rank",
+          "word": "BDCD"
+        },
+        {
+          "target": 62,
+          "type": "full-rank",
+          "word": "BDDD"
+        },
+        {
+          "target": 63,
+          "type": "self-repair",
+          "word": ""
+        },
+        {
+          "target": 64,
+          "type": "full-rank",
+          "word": "ABDD"
+        },
+        {
+          "target": 65,
+          "type": "full-rank",
+          "word": "DCDC"
+        },
+        {
+          "target": 66,
+          "type": "full-rank",
+          "word": "DDDD"
+        },
+        {
+          "target": 67,
+          "type": "full-rank",
+          "word": "BBAB"
+        },
+        {
+          "target": 68,
+          "type": "full-rank",
+          "word": "BBBB"
+        },
+        {
+          "target": 69,
+          "type": "full-rank",
+          "word": "AAAA"
+        },
+        {
+          "target": 70,
+          "type": "full-rank",
+          "word": "ABAA"
+        },
+        {
+          "target": 71,
+          "type": "full-rank",
+          "word": "AACD"
+        }
+      ]
+    }
+  ]
+}

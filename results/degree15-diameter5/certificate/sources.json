@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Comellas, The (Degree, Diameter) Problem for Graphs",
+    "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+    "accessed_JST": "2026-09-25",
+    "observed_entry": {
+      "degree": 15,
+      "diameter": 5,
+      "order": 82684
+    },
+    "page_last_changed": "2026-09-24"
+  },
+  {
+    "title": "Ryosuke Mizuno, New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM",
+    "url": "https://arxiv.org/abs/2606.15860",
+    "accessed_JST": "2026-09-25",
+    "role": "Background: affine route-chart lift. The present matrices and 32-state controller are obtained in this session."
+  },
+  {
+    "title": "Previous 87,500-vertex construction in this session",
+    "artifact": "degree15_diameter5_87500_certificate_20260924.zip",
+    "role": "Previous session-best for comparison; not the same matrix or controller."
+  }
+]

@@ -1,0 +1,3 @@
+sigma order4 True
+tested 603 subgroup explored 2303 found True
+loops 28 odd5count histogram Counter({1: 117936, 13: 13104, 58: 1456})

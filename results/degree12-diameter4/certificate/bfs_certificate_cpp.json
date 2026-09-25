@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "order": 5832,
+  "edges": 34992,
+  "degree": 12,
+  "diameter": 4,
+  "all_sources_checked": 5832,
+  "ordered_pairs_checked": 34012224,
+  "distance_histogram_ordered_pairs": [5832, 69984, 676512, 6342300, 26917596],
+  "distance_four_witness": [0, 4]
+}

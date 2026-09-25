@@ -1,0 +1,114 @@
+{
+  "result": "PASS",
+  "order": 5832,
+  "degree": 12,
+  "diameter_upper_bound": 4,
+  "full_rank_reduced_words_length4": 100,
+  "exceptional_words": [
+    "AABD",
+    "ACDD",
+    "BBAC",
+    "BDCC",
+    "CABB",
+    "CCDB",
+    "DBAA",
+    "DDCA"
+  ],
+  "self_repair_distinct_planes": 18,
+  "self_repair_union_size": 81,
+  "pencils": [
+    {
+      "word": "AA",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "AB",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "AC",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "BA",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "BB",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "BD",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "CA",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "CC",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "CD",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "DB",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "DC",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    },
+    {
+      "word": "DD",
+      "routes": 11,
+      "distinct_hyperplanes": 4,
+      "hyperplane_size": 27,
+      "core_size": 9
+    }
+  ],
+  "controller_pairs_checked": 5184,
+  "single_route_controller_pairs": 4464,
+  "pencil_controller_pairs": 648,
+  "self_repair_controller_pairs": 72,
+  "missing_nb4_per_source_histogram": {
+    "9": 36,
+    "11": 36
+  },
+  "edge_sha256": "ea0846865021f05f38825ac03ca96a387815b50634a9117f9f42533080dbd05b"
+}

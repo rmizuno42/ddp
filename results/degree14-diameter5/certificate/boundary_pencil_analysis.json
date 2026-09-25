@@ -1,0 +1,10 @@
+{
+  "note": "Optional narrower proof family; the main certificate uses all insertion positions and is valid for all pairs.",
+  "pairs_with_complete_boundary_pencil": 0,
+  "histogram": {
+    "(3, 1, 81)": 344,
+    "(3, 2, 135)": 1108,
+    "(3, 0, 27)": 2,
+    "(2, 0, 45)": 2
+  }
+}

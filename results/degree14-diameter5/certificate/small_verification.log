@@ -1,0 +1,55 @@
+controller bijection and 324 ranks: PASS
+13104 triple routes with two translations: PASS
+1456 one-letter routes, each all 243 points: PASS
+{
+  "method": "independent direct row reduction and explicit finite-set unions; standard-library Python",
+  "q": 3,
+  "s": 5,
+  "controller_states": 364,
+  "controller_labels": 4,
+  "inverse_labels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "semiloops": 28,
+  "rank5_histogram": {
+    "5": 324
+  },
+  "controller_odd_route_pair_counts": {
+    "1": 1456,
+    "3": 13104,
+    "5": 117936
+  },
+  "controller_self_pair_route_lengths": {
+    "5": 252,
+    "3": 84,
+    "1": 28
+  },
+  "triple_routes_verified": 13104,
+  "one_letter_routes_verified": 1456,
+  "one_letter_covered_points_min": 243,
+  "base_one_letter_covered_points": [
+    135,
+    135,
+    135,
+    135
+  ],
+  "one_letter_plane_tests_histogram": {
+    "30": 199,
+    "12": 254,
+    "18": 241,
+    "24": 357,
+    "36": 231,
+    "42": 127,
+    "6": 47
+  },
+  "distinct_translation_directions": 114,
+  "lift_order": 88452,
+  "maximum_degree_bound": 14,
+  "diameter_bound": 5,
+  "moore_bound_degree14_D4": 33321,
+  "therefore_diameter": 5,
+  "seconds": 1.04560406399969
+}

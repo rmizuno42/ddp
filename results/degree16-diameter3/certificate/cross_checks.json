@@ -1,0 +1,18 @@
+{
+  "python_and_cpp_distance_histograms_equal": true,
+  "all_3686400_pairs_checked": true,
+  "source_and_regenerated_edge_files_identical": true,
+  "vertices": 1920,
+  "edges": 15360,
+  "degree": 16,
+  "diameter": 3,
+  "public_table_comparison": {
+    "checked_on": "2026-09-25",
+    "previous_order": 1610,
+    "new_order": 1920,
+    "absolute_increase": 310,
+    "relative_increase": 0.19254658385093168
+  },
+  "third_party_verification": false,
+  "submitted_to_table": false
+}

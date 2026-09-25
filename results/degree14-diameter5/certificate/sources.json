@@ -1,0 +1,18 @@
+{
+  "accessed": "2026-09-25",
+  "public_table": {
+    "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+    "published_bound_d14_D5": 61887,
+    "table_last_changed": "2026-09-24"
+  },
+  "polarity_quotient_origin": {
+    "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html",
+    "description": "Delorme, (4,5)=364, polarity quotient of generalized hexagon incidence graph"
+  },
+  "route_chart_background": {
+    "url": "https://arxiv.org/abs/2606.15860",
+    "author": "Ryosuke Mizuno"
+  },
+  "this_session_prior_d14_D5": 66430,
+  "no_third_party_validation_or_submission": true
+}

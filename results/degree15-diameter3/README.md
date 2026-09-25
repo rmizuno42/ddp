@@ -1,13 +1,25 @@
 # Degree 15, diameter 3: 1,458 vertices
 
-**$N(15,3)\ge 1,458$.** Simple undirected connected graph; 10,935 edges,
-maximum degree 15, diameter exactly 3.
+**$N(15,3)\ge 1{,}458$.** Simple undirected connected 15-regular graph;
+10,935 edges, diameter exactly 3.
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **1,224 → 1,458**, an increase of **234 vertices (19.12%)**.
 
-A 54-state Cayley controller is lifted over $\mathbb F_3^3$. Inverse-compatible linear maps, full-rank three-step routes, and four-plane covers establish the diameter bound.
+The vertex set is $V(C)\times\mathbb F_3^3$, where the controller $C$ is a
+54-vertex simple 5-regular Cayley graph. This generalizes the route-chart lift
+construction in §A.4 of [arXiv:2606.15860](../diameter5-paper/) by allowing a
+self-inverse label and transition matrices that depend on the directed
+controller edge. The reverse-edge conditions ensure that the adjacency
+relation is symmetric. The Cayley graph here is the controller; no Cayley
+property of the final graph is asserted.
 
-This shares the controller/fiber affine-lift framework of [arXiv:2606.15860](../diameter5-paper/), adapted to diameter 3 with edge-dependent maps and subspace covers.
+For 2,646 ordered pairs of controller vertices, the certificate supplies a
+length-3 walk whose controllability matrix has rank 3. The remaining 270 pairs
+are adjacent controller vertices. For each such pair and each starting fiber
+coordinate, reachable affine planes form a pencil of four planes containing a
+common affine line; their union is $\mathbb F_3^3$. This proves diameter at
+most 3. The Moore bound for maximum degree 15 and diameter at most 2 is 226,
+less than 1,458, so the diameter is exactly 3.
 
 ## Materials
 

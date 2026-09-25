@@ -1,17 +1,29 @@
 # Degree 12, diameter 4: 5,832 vertices
 
-**$N(12,4)\ge 5,832$.** Simple undirected connected 12-regular graph,
+**$N(12,4)\ge 5{,}832$.** Simple undirected connected 12-regular graph,
 34,992 edges, diameter exactly 4.
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **5,184 → 5,832**, an increase of **648 vertices (12.50%)**.
 
-A 72-state 4-regular controller is lifted over $\mathbb F_3^4$, giving
-$72\cdot3^4=5,832$ vertices. The controller is a cyclic lift of an eight-state
-base, with voltages modulo 9.
+The controller $C$ is a 72-vertex simple 4-regular graph, obtained as a voltage
+lift of an eight-vertex loopless multigraph with voltages in $\mathbb Z/9\mathbb Z$.
+The final graph is a **route-chart lift graph** in the sense of §A.4 of
+[arXiv:2606.15860](../diameter5-paper/), with vertex set
+$V(C)\times\mathbb F_3^4$ and order $72\cdot3^4=5{,}832$.
 
-This extends the affine route-chart method in [arXiv:2606.15860](../diameter5-paper/)
-by combining full-rank routes with subspace covers: four-hyperplane covers handle
-short routes, and 18 planes cover pairs within the same fiber.
+The route chart is not universal: the controllability matrix $M_w$ is
+nonsingular for 100 of the 108 reduced words of length 4. The controller also
+does not satisfy the exact-NB-4 condition. The diameter certificate instead
+checks the affine reachable sets for every ordered pair of controller vertices.
+Walks corresponding to the 100 words handle 4,464 pairs. For the remaining
+648 pairs with distinct endpoints, four affine hyperplanes with a common
+two-dimensional affine subspace cover the target fiber coordinates. For the
+72 pairs with equal endpoints, the translates by the starting coordinate of
+18 two-dimensional subspaces cover $\mathbb F_3^4$.
+
+Every walk used has length at most 4, proving $\operatorname{diam}(G)\le4$.
+The Moore bound for maximum degree 12 and diameter at most 3 is 1,597, less
+than 5,832, so $\operatorname{diam}(G)=4$.
 
 ## Materials
 
@@ -44,9 +56,11 @@ c++ -O3 -std=c++17 verify_bfs.cpp -o verify_bfs
 ./verify_bfs graph_12_4_5832.edges > bfs-rerun.json
 ```
 
-The Python verifier checks inverse consistency, 100 full-rank length-4 words,
-all 12 pencils, the 18-plane same-fiber cover, and all 5,184 ordered controller
-pairs. It also regenerates the edge list and checks its expected SHA-256.
+The Python verifier checks the inverse-symbol conditions, nonsingularity of
+the controllability matrices for 100 reduced words of length 4, all 12 pencils
+of hyperplanes, the union of 18 two-dimensional subspaces used for equal
+controller endpoints, and all 5,184 ordered pairs of controller vertices.
+It also regenerates the edge list and checks its expected SHA-256.
 Both commands passed on 2026-09-25: the regenerated edges matched the supplied
 file, and C++ BFS reproduced the repository's existing all-pairs distance
 distribution. The package also includes a saved Python/Numba BFS report;

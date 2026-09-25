@@ -19,6 +19,13 @@ $$N(12,5) \ge 34{,}992, \qquad N(16,5) \ge 147{,}456,$$
 
 improving the previously recorded lower bounds of $29{,}621$ and $132{,}496$.
 
+Both graphs are **route-chart lift graphs** as defined in §A.4. They use the
+same 144-vertex simple 4-regular **exact-NB-5 controller**, together with
+**universal route charts** on $\mathbb F_3^5$ and $\mathbb F_4^5$, respectively.
+For every reduced word of length 5, the corresponding **controllability
+matrix** is nonsingular. These conditions give diameter at most 5; the Moore
+bounds for diameter at most 4 then give diameter exactly 5 in both cases.
+
 The construction was discovered through a long dialogue with ChatGPT via its standard web interface, **without any external orchestration layer** — no custom agent framework, automated evaluator-driven search loop, problem-specific search engine, or formal proof assistant was set up in advance. The motivating question is how far mathematical search and discovery can proceed using only an LLM available through a standard browser.
 
 The paper makes two contributions that can be read independently:

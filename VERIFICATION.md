@@ -45,8 +45,10 @@ manifest entries across the five imported certificate packages matched.
 | [(16,3), 1,920](results/degree16-diameter3/) | `verify.py`; byte comparison with supplied edge list | Finite certificates and all-source distances passed; regenerated graph identical |
 
 For (12,4), the subsequently supplied package verifies inverse consistency,
-100 full-rank length-4 words, all 12 projective pencils, an 18-plane same-fiber
-cover, and all 5,184 ordered controller pairs. Regeneration reproduced the
+nonsingularity of the controllability matrices for 100 reduced words of length 4,
+all 12 pencils of hyperplanes, the union of 18 two-dimensional subspaces used
+for equal controller endpoints, and all 5,184 ordered pairs of controller
+vertices. Regeneration reproduced the
 existing edge list byte for byte. The supplied C++ BFS was rerun and agreed
 with both the original package report and the repository's earlier BFS report.
 The saved Python/Numba BFS report was preserved but that implementation was
@@ -54,9 +56,11 @@ not rerun. The canonical edge file now lives in
 `results/degree12-diameter4/certificate/`; the repository's original verifier
 and report remain one directory above it.
 
-For (14,5), the finite checker covers all 324 reduced length-5 words, 13,104
-three-step routes with inserted translations, and 1,456 one-letter routes.
-For (15,5), both finite checkers cover all 1,024 ordered controller pairs.
+For (14,5), the finite checker verifies the rank-5 controllability matrices
+for all 324 reduced words of length 5, and reachability using inserted
+translations for all 13,104 state/length-3-word pairs and 1,456
+state/length-1-word pairs. For (15,5), both finite checkers verify the diameter
+upper bound for all 1,024 ordered pairs of controller vertices.
 These checks prove the diameter upper bounds without traversing every pair of
 vertices in the large graphs. Their orders exceed the degree-specific Moore
 bounds for diameter 4, so both diameters are exactly 5.

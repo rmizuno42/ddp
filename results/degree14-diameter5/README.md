@@ -1,13 +1,30 @@
-# Degree 14, diameter 5: 88,452 vertices
+# Maximum degree 14, diameter 5: 88,452 vertices
 
-**$N(14,5)\ge 88,452$.** Simple undirected connected graph; 618,786 edges,
+**$N(14,5)\ge 88{,}452$.** Simple undirected connected graph; 618,786 edges,
 maximum degree 14, diameter exactly 5.
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **61,887 → 88,452**, an increase of **26,565 vertices (42.93%)**.
 
-A 364-state controller is lifted over $\mathbb F_3^5$. State-dependent translations inside each fiber supply the missing short routes. The graph is not regular: 756 vertices have degree 13 and 87,696 have degree 14.
+The vertex set is $C\times\mathbb F_3^5$, where $C$ is a set of 364 states
+equipped with four labeled involutions $\sigma_t$. The controller data contain
+28 pairs $(u,t)$ with $\sigma_t(u)=u$; this is a generalization of the simple
+regular controller graph used in [arXiv:2606.15860](../diameter5-paper/).
+All four labels are self-inverse.
 
-This builds on the affine route-chart method in [arXiv:2606.15860](../diameter5-paper/), adding state-dependent translations to cover short controller routes.
+The construction uses edges of the form
+$(u,x)\sim(\sigma_t(u),A_tx+\lambda b_t)$ for $\lambda\in\mathbb F_3$,
+together with edges $(u,x)\sim(u,x\pm c_u)$ within each fiber. The nonzero
+translation vector $c_u$ depends on the controller state. Loops and repeated
+edges are removed. The resulting simple graph has 756 vertices of degree 13
+and 87,696 vertices of degree 14.
+
+The certificate verifies controllability matrices of rank 5 for all 324
+reduced words of length 5. Translations inserted along shorter controller
+walks give additional reachable sets whose unions cover the target fiber
+coordinates from every starting coordinate. These walks have length at most 5
+in the final graph, proving $\operatorname{diam}(G)\le5$. The Moore bound for
+maximum degree 14 and diameter at most 4 is 33,321, less than 88,452, so the
+diameter is exactly 5.
 
 ## Materials
 

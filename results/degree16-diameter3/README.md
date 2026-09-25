@@ -1,13 +1,25 @@
 # Degree 16, diameter 3: 1,920 vertices
 
-**$N(16,3)\ge 1,920$.** Simple undirected connected graph; 15,360 edges,
-maximum degree 16, diameter exactly 3.
+**$N(16,3)\ge 1{,}920$.** Simple undirected connected 16-regular graph;
+15,360 edges, diameter exactly 3.
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **1,610 → 1,920**, an increase of **310 vertices (19.25%)**.
 
-A 30-state 4-regular controller is lifted over $\mathbb F_4^3$. Edge-dependent matrices and five-plane covers establish the diameter bound. Here $\mathbb F_4$ is the field with four elements, not integers modulo 4.
+The vertex set is $V(C)\times\mathbb F_4^3$, where $C$ is a 30-vertex simple
+4-regular controller. Here $\mathbb F_4=\mathbb F_2[\alpha]/(\alpha^2+\alpha+1)$.
+This generalizes the route-chart lift construction in §A.4 of
+[arXiv:2606.15860](../diameter5-paper/) by assigning transition matrices $T_e$
+to directed controller edges $e$, with $T_{\bar e}=T_e^{-1}$, rather than
+assigning one matrix to each label.
 
-This uses an edge-dependent variant of the affine route-chart framework in [arXiv:2606.15860](../diameter5-paper/), with local subspace covers adapted to diameter 3.
+For 780 ordered pairs of controller vertices, including all equal-endpoint
+pairs, the certificate supplies a length-3 walk whose controllability matrix
+has rank 3. The other 120 pairs are adjacent controller vertices. For each
+such pair and each starting fiber coordinate, reachable affine planes form a
+pencil of five planes containing a common affine line; their union is
+$\mathbb F_4^3$. This proves diameter at most 3. The Moore bound for maximum
+degree 16 and diameter at most 2 is 257, less than 1,920, so the diameter is
+exactly 3.
 
 ## Materials
 

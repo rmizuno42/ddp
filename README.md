@@ -41,7 +41,7 @@ regular graph $C$. A **route-chart lift graph** has vertex set
 $V(C)\times\mathbb F_q^s$, and the **fiber** over $u\in V(C)$ is
 $\{u\}\times\mathbb F_q^s$. The directed edges of $C$ carry an
 **inverse-consistent labeling**. A **route chart** assigns an invertible matrix
-$A_t\in\operatorname{GL}_s(\mathbb F_q)$ and a vector $b_t\in\mathbb F_q^s$
+$A_t\in\mathrm{GL}_s(\mathbb F_q)$ and a vector $b_t\in\mathbb F_q^s$
 to each label $t$, with the inverse-symbol conditions specified in §A.4.
 The edge rule is
 
@@ -61,7 +61,7 @@ The constructions below use the same controller-and-fiber approach, with the
 modifications specified in each summary. Their diameter bounds are established
 by the accompanying certificates. Rank statements refer to **controllability
 matrices**. For a fixed controller walk with label word $w$, the paper's edge
-rule gives reachable fiber coordinates $A_wx+\operatorname{im}M_w$, using the
+rule gives reachable fiber coordinates $A_wx+\mathrm{im}(M_w)$, using the
 same matrix formula with one column per step. In the generalizations with
 matrices depending on directed edges, these products and controllability
 matrices depend on the directed-edge sequence. When several walks are needed,

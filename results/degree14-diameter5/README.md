@@ -22,7 +22,7 @@ The certificate verifies controllability matrices of rank 5 for all 324
 reduced words of length 5. Translations inserted along shorter controller
 walks give additional reachable sets whose unions cover the target fiber
 coordinates from every starting coordinate. These walks have length at most 5
-in the final graph, proving $\operatorname{diam}(G)\le5$. The Moore bound for
+in the final graph, proving $\mathrm{diam}(G)\le5$. The Moore bound for
 maximum degree 14 and diameter at most 4 is 33,321, less than 88,452, so the
 diameter is exactly 5.
 

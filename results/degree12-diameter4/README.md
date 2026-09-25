@@ -21,9 +21,9 @@ two-dimensional affine subspace cover the target fiber coordinates. For the
 72 pairs with equal endpoints, the translates by the starting coordinate of
 18 two-dimensional subspaces cover $\mathbb F_3^4$.
 
-Every walk used has length at most 4, proving $\operatorname{diam}(G)\le4$.
+Every walk used has length at most 4, proving $\mathrm{diam}(G)\le4$.
 The Moore bound for maximum degree 12 and diameter at most 3 is 1,597, less
-than 5,832, so $\operatorname{diam}(G)=4$.
+than 5,832, so $\mathrm{diam}(G)=4$.
 
 ## Materials
 

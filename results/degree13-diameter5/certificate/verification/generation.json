@@ -1,0 +1,15 @@
+{
+  "vertices": 88452,
+  "edges": 574938,
+  "degree": 13,
+  "simple": true,
+  "undirected": true,
+  "ordinary_degree_histogram": {
+    "12": 87696,
+    "11": 756
+  },
+  "main_matching_edges": 44226,
+  "spare_matching_edges": 378,
+  "edge_file_sha256": "b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b",
+  "seconds": 2.114149332046509
+}

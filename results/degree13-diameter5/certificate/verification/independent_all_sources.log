@@ -1,0 +1,47 @@
+VERIFIER_INPUT 88452 574938 threads 2
+DEGREE 13 88452
+PROGRESS 2000 / 88452 missing 0 seconds 1.92405
+PROGRESS 4000 / 88452 missing 0 seconds 3.636
+PROGRESS 6000 / 88452 missing 0 seconds 5.33536
+PROGRESS 8000 / 88452 missing 0 seconds 6.95405
+PROGRESS 10000 / 88452 missing 0 seconds 8.56771
+PROGRESS 12000 / 88452 missing 0 seconds 10.0328
+PROGRESS 14000 / 88452 missing 0 seconds 11.5027
+PROGRESS 16000 / 88452 missing 0 seconds 13.0162
+PROGRESS 18000 / 88452 missing 0 seconds 14.7588
+PROGRESS 20000 / 88452 missing 0 seconds 16.3372
+PROGRESS 22000 / 88452 missing 0 seconds 16.9488
+PROGRESS 24000 / 88452 missing 0 seconds 17.5596
+PROGRESS 26000 / 88452 missing 0 seconds 18.2145
+PROGRESS 28000 / 88452 missing 0 seconds 18.8317
+PROGRESS 30000 / 88452 missing 0 seconds 19.3759
+PROGRESS 32000 / 88452 missing 0 seconds 20.0013
+PROGRESS 34000 / 88452 missing 0 seconds 20.6016
+PROGRESS 36000 / 88452 missing 0 seconds 21.2406
+PROGRESS 38000 / 88452 missing 0 seconds 21.8968
+PROGRESS 40000 / 88452 missing 0 seconds 22.462
+PROGRESS 42000 / 88452 missing 0 seconds 23.0501
+PROGRESS 44000 / 88452 missing 0 seconds 23.6794
+PROGRESS 46000 / 88452 missing 0 seconds 24.3398
+PROGRESS 48000 / 88452 missing 0 seconds 25.0356
+PROGRESS 50000 / 88452 missing 0 seconds 25.6558
+PROGRESS 52000 / 88452 missing 0 seconds 26.3505
+PROGRESS 54000 / 88452 missing 0 seconds 26.9907
+PROGRESS 56000 / 88452 missing 0 seconds 27.579
+PROGRESS 58000 / 88452 missing 0 seconds 28.1533
+PROGRESS 60000 / 88452 missing 0 seconds 28.796
+PROGRESS 62000 / 88452 missing 0 seconds 29.3624
+PROGRESS 64000 / 88452 missing 0 seconds 29.9679
+PROGRESS 66000 / 88452 missing 0 seconds 30.5604
+PROGRESS 68000 / 88452 missing 0 seconds 31.1257
+PROGRESS 70000 / 88452 missing 0 seconds 31.712
+PROGRESS 72000 / 88452 missing 0 seconds 32.322
+PROGRESS 74000 / 88452 missing 0 seconds 32.8892
+PROGRESS 76000 / 88452 missing 0 seconds 33.4614
+PROGRESS 78000 / 88452 missing 0 seconds 34.0734
+PROGRESS 80000 / 88452 missing 0 seconds 34.7696
+PROGRESS 82000 / 88452 missing 0 seconds 35.4316
+PROGRESS 84000 / 88452 missing 0 seconds 36.04
+PROGRESS 86000 / 88452 missing 0 seconds 36.7076
+PROGRESS 88000 / 88452 missing 0 seconds 37.3289
+FINAL sources 88452 vertices 88452 edges 574938 ordered_distance_gt5 0 max_missing 0 seconds 37.4866

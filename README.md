@@ -5,33 +5,59 @@ degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of 
 simple undirected connected graph with maximum degree at most $\Delta$ and
 diameter at most $D$.
 
-The materials for [arXiv:2606.15860](results/diameter5-paper/) and the new results
-are sibling packages under [`results/`](results/). Each package has its own
-summary and data. The new packages contain concise documentation and
-verification materials.
+## Records in the published table — 2026-10-13
 
-## Results at a glance
+The following repository constructions match the record orders in
+[Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
+accessed **2026-10-13** (page last changed **2026-10-11**).
+This dated overview does not assert optimality. See the
+[saved comparison and incoming links](verification/table-snapshot-2026-10-13.json).
 
-Comparison source: [Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
-accessed **2026-09-25**, with the page reporting its last change as **2026-09-24**.
-Differences below are relative to that dated table, not to earlier candidates.
+| $(\Delta,D)$ | Vertices = table order | Construction and data |
+|---|---:|---|
+| (12,4) | **5,832** | [Degree 12, diameter 4](results/degree12-diameter4/) |
+| (14,5) | **88,452** | [Degree 14, diameter 5](results/degree14-diameter5/) |
+| (15,5) | **100,000** | [Degree 15, diameter 5](results/degree15-diameter5/) |
+| (16,3) | **1,920** | [Degree 16, diameter 3](results/degree16-diameter3/) |
+| (16,5) | **147,456** | [arXiv:2606.15860](results/diameter5-paper/) |
 
-| Package | $(\Delta,D)$ | Vertices | Table order | Difference | Increase |
-|---|---:|---:|---:|---:|---:|
-| [Degree 12, diameter 4](results/degree12-diameter4/) | (12,4) | **5,832** | 5,184 | +648 | +12.50% |
-| [Degree 14, diameter 5](results/degree14-diameter5/) | (14,5) | **88,452** | 61,887 | +26,565 | +42.93% |
-| [Degree 15, diameter 3](results/degree15-diameter3/) | (15,3) | **1,458** | 1,224 | +234 | +19.12% |
-| [Degree 15, diameter 5](results/degree15-diameter5/) | (15,5) | **100,000** | 82,684 | +17,316 | +20.94% |
-| [Degree 16, diameter 3](results/degree16-diameter3/) | (16,3) | **1,920** | 1,610 | +310 | +19.25% |
+## Added in this update — 2026-10-13
 
-These comparisons do not imply acceptance into the public table or optimality.
-See [verification performed during this repository update](VERIFICATION.md)
-and the [machine-readable result index](results.json).
+**New: [degree 13, diameter 5, 88,452 vertices](results/degree13-diameter5/).**
+The graph is simple and 13-regular, with diameter exactly 5. It has the same
+order and diameter as the existing (14,5) graph, with a smaller maximum degree.
 
-All seven indexed graphs, including the two from arXiv:2606.15860, passed
-[final verification directly from their edge lists](verification/README.md):
+| $(\Delta,D)$ | New order | Published table order | Difference | Increase |
+|---|---:|---:|---:|---:|
+| (13,5) | **88,452** | 51,417 | +37,035 | +72.03% |
+
+This result **exceeds the table entry and is not yet reflected in the table**
+as accessed on 2026-10-13. Only this package is newly imported in this update.
+Its finite construction data, proof, edge list, and verification programs are
+in [the certificate directory](results/degree13-diameter5/certificate/).
+
+## Complete result index
+
+All comparisons below use the same **2026-10-13** table snapshot.
+The package locations remain stable when their record status changes.
+
+| $(\Delta,D)$ | Repository order | Table order | Status | Package |
+|---|---:|---:|---|---|
+| (12,4) | 5,832 | 5,832 | Matches table | [Summary](results/degree12-diameter4/) |
+| (12,5) | 34,992 | 42,342 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
+| (13,5) | 88,452 | 51,417 | **New; exceeds table** | [Summary](results/degree13-diameter5/) |
+| (14,5) | 88,452 | 88,452 | Matches table | [Summary](results/degree14-diameter5/) |
+| (15,3) | 1,458 | 1,539 | Below table | [Summary](results/degree15-diameter3/) |
+| (15,5) | 100,000 | 100,000 | Matches table | [Summary](results/degree15-diameter5/) |
+| (16,3) | 1,920 | 1,920 | Matches table | [Summary](results/degree16-diameter3/) |
+| (16,5) | 147,456 | 147,456 | Matches table | [arXiv:2606.15860](results/diameter5-paper/) |
+
+All eight indexed graphs passed
+[verification directly from their edge lists](verification/README.md):
 vertex counts, degrees, connectivity, and exact diameters were checked over
-every ordered pair of vertices.
+every ordered pair of vertices. See the [verification record](VERIFICATION.md)
+and [machine-readable index](results.json), which also preserves the dated
+September comparisons.
 
 ## Construction terminology
 
@@ -57,17 +83,19 @@ by a nonbacktracking walk of length exactly $s$) and a **universal route chart**
 (the controllability matrix $M_w$ is nonsingular for every reduced word $w$ of
 length $s$). The inverse map on labels is fixed-point-free in the paper.
 
-The constructions below use the same controller-and-fiber approach, with the
-modifications specified in each summary. Their diameter bounds are established
-by the accompanying certificates. Rank statements refer to **controllability
-matrices**. For a fixed controller walk with label word $w$, the paper's edge
-rule gives reachable fiber coordinates $A_wx+\mathrm{im}(M_w)$, using the
+The constructions below extend this controller-and-fiber approach as specified
+in each summary. The (13,5) construction also uses matching maps that are not
+all affine in the given fiber coordinates. Their diameter bounds are established
+by the accompanying certificates. Rank statements for the affine parts refer
+to **controllability matrices**. For a fixed controller walk with label word
+$w$, the paper's edge rule gives reachable fiber coordinates
+$A_wx+\mathrm{im}(M_w)$, using the
 same matrix formula with one column per step. In the generalizations with
 matrices depending on directed edges, these products and controllability
-matrices depend on the directed-edge sequence. When several walks are needed,
-the certificate verifies that
-their affine reachable sets cover all target fiber coordinates for every
-initial coordinate $x$. The new proof notes also use **pencils of hyperplanes**:
+matrices depend on the directed-edge sequence. In affine diameter certificates
+using several walks, their affine reachable sets are verified to cover all
+target fiber coordinates for every initial coordinate $x$. Some of these
+certificates use **pencils of hyperplanes**:
 the $q+1$ hyperplanes containing a fixed subspace of codimension two. These
 hyperplanes, and their translates by a common vector, cover $\mathbb F_q^s$.
 
@@ -83,6 +111,19 @@ certificate: nonsingular controllability matrices for selected length-4 walks,
 pencils of affine hyperplanes, and unions of affine planes establish the upper
 bound 4. [Construction, proof, and certificates](results/degree12-diameter4/).
 
+### (13,5): 88,452 vertices — added 2026-10-13
+
+A simple 13-regular graph on $C\times\mathbb F_3^5$ with 574,938 edges
+and diameter exactly 5. Its 364-state, four-port controller has the same
+transitions as the (14,5) construction below. The graph combines affine
+edges, a perfect matching between paired fibers, and a matching on 756
+remaining vertices of degree 12. Some maps defining the main matching are
+not affine. This develops the controller-and-fiber approach of
+[arXiv:2606.15860](results/diameter5-paper/) through matching completion;
+the complete graph is not asserted to be a route-chart lift as defined there.
+The explicit edge list has been checked from every source.
+[Construction, proof, and certificates](results/degree13-diameter5/).
+
 ### (14,5): 88,452 vertices
 
 A graph on $C\times\mathbb F_3^5$, where $C$ is a set of 364 states with four
@@ -94,6 +135,9 @@ exactly 5; 756 vertices have degree 13 and 87,696 have degree 14.
 [Construction, proof, and certificates](results/degree14-diameter5/).
 
 ### (15,3): 1,458 vertices
+
+This result is below the table order 1,539 as of 2026-10-13; its published
+package path and all certificates are retained.
 
 A simple 15-regular graph on $V(C)\times\mathbb F_3^3$, where $C$ is a
 54-vertex simple 5-regular Cayley graph. The route-chart lift construction of
@@ -131,41 +175,42 @@ It also documents the discovery process through a browser-based ChatGPT
 dialogue. The paper, bibliography, transcript, and supplementary packages are
 preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 
-| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-09-25 | Current status |
+| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-10-13 | Status on that date |
 |---|---:|---:|---|
-| (12,5) | 34,992 | 38,167 | Historical result; the table now has a larger graph |
-| (16,5) | 147,456 | 147,456 | Matches the table |
+| (12,5) | 34,992 | 42,342 | Below the table order |
+| (16,5) | 147,456 | 147,456 | Matches the table order |
 
 [Paper PDF](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)
 · [arXiv:2606.15860](https://arxiv.org/abs/2606.15860)
 · [LaTeX source](results/diameter5-paper/paper.tex)
 · [Citation formats](results/diameter5-paper/README.md#citation)
 
-## Layout and selection
+## Layout and stable links
 
 ```text
-README.md                       summaries and dated comparisons
-results.json                    machine-readable index
+README.md                       current table status, updates, and summaries
+results.json                    machine-readable index and dated comparisons
 VERIFICATION.md                 checks performed and reproduction notes
-verification/                   final edge-list verifier and all-pairs reports
+verification/                   direct verifier, reports, and table snapshot
 results/
   diameter5-paper/              arXiv:2606.15860 and its supplementary materials
-  degree12-diameter4/           summary, certificate package, and direct verifier
-  degree14-diameter5/           summary and original certificate package
-  degree15-diameter3/           summary and original certificate package
-  degree15-diameter5/           summary and original certificate package
-  degree16-diameter3/           summary and original certificate package
+  degree12-diameter4/           summary and certificate package
+  degree13-diameter5/           added 2026-10-13: summary and certificate package
+  degree14-diameter5/           summary and certificate package
+  degree15-diameter3/           summary and certificate package
+  degree15-diameter5/           summary and certificate package
+  degree16-diameter3/           summary and certificate package
 ```
 
-For the September import, keep the largest new graph for each parameter pair,
-then retain it here if its order exceeds the dated table by at least **5%**.
-The results in arXiv:2606.15860 are retained independently of this filter. Smaller
-improvements, results below the table, and superseded candidates were moved to
-the local-only `legacy/` directory, which is excluded from Git. Original import
-ZIPs are also kept there as local backups; the extracted certificate packages
-are published under `results/`.
+Existing result directories and graph files keep their published paths,
+including the five directories linked from the Comellas detail pages.
+Results that fall below later table entries remain alongside the other
+packages; the overview and index identify their status.
 
-The five imported `certificate/` directories preserve their source bytes,
-including the Japanese proof notes, manifests, and verification/search logs.
-Their original notes describe the status at package creation. Use the package
-summaries and `VERIFICATION.md` for the checks performed in this repository.
+The six imported `certificate/` directories preserve their source bytes,
+including proof notes, manifests, and verification/search logs. Their source
+notes describe the status at package creation; use the maintained summaries
+and dated table snapshot for the status at this update. The September 2026
+selection rule is retained as historical metadata in `results.json`.
+Local-only archives and previously excluded candidates remain under the
+Git-ignored `legacy/` directory.

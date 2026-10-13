@@ -5,8 +5,8 @@ This package accompanies [arXiv:2606.15860](https://arxiv.org/abs/2606.15860), *
 This directory preserves arXiv:2606.15860 and its complete
 supplementary materials. Return to the [repository result index](../../README.md)
 for later constructions. The bounds below were improvements at the time of the
-paper: on 2026-09-25, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
-lists 38,167 for (12,5) and 147,456 for (16,5), so the former is now a historical
+paper: on 2026-10-13, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
+lists 42,342 for (12,5) and 147,456 for (16,5), so the former is now a historical
 result and the latter matches the table.
 
 📄 **[Download the paper (PDF)](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)** · 📚 **[arXiv:2606.15860](https://arxiv.org/abs/2606.15860)**
@@ -48,7 +48,7 @@ The paper makes two contributions that can be read independently:
 
 Everything else in this package — the visible ChatGPT transcript and the script that produces it, the construction packages (the provenance package and a cleaned, runnable version), and the independent verification scripts — is **described in the paper**. See **Appendix B, "Structure of the supplementary materials,"** and the verification and reproducibility notes in §A.8.
 
-Both graph edge lists passed [final direct verification](../../VERIFICATION.md#final-direct-verification-of-all-seven-graphs)
+Both graph edge lists passed [final direct verification](../../VERIFICATION.md#final-direct-verification-of-all-eight-graphs)
 of every vertex degree and all-pairs distances. The exact diameters are 5 in
 both cases; [reproduction commands](../../verification/README.md) are available.
 

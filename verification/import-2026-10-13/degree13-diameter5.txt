@@ -1,0 +1,51 @@
+$ /opt/homebrew/opt/python@3.13/bin/python3.13 verify_checksums.py
+PASS: 19 packaged file hashes verified
+
+$ /opt/homebrew/opt/python@3.13/bin/python3.13 generate_graph.py
+{
+  "vertices": 88452,
+  "edges": 574938,
+  "degree": 13,
+  "simple": true,
+  "undirected": true,
+  "ordinary_degree_histogram": {
+    "12": 87696,
+    "11": 756
+  },
+  "main_matching_edges": 44226,
+  "spare_matching_edges": 378,
+  "edge_file_sha256": "b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b",
+  "seconds": 1.6198532581329346
+}
+
+$ /opt/homebrew/opt/python@3.13/bin/python3.13 verify_checksums.py --graph graph.edges
+PASS: 19 packaged file hashes verified; canonical edge-list hash verified
+
+$ c++ -O3 -std=c++17 -pthread verify_graph.cpp -o /var/folders/cz/7krkp9hx0dq4glkjdtdfgz8w0000gn/T/ddp-import-check-wlq_zhbw/verify
+
+$ /var/folders/cz/7krkp9hx0dq4glkjdtdfgz8w0000gn/T/ddp-import-check-wlq_zhbw/verify graph.edges 8
+INPUT vertices=88452 edges=574938 degree=13 threads=8
+PROGRESS sources=4000 missing=0
+PROGRESS sources=8000 missing=0
+PROGRESS sources=12000 missing=0
+PROGRESS sources=16000 missing=0
+PROGRESS sources=20000 missing=0
+PROGRESS sources=24000 missing=0
+PROGRESS sources=28000 missing=0
+PROGRESS sources=32000 missing=0
+PROGRESS sources=36000 missing=0
+PROGRESS sources=40000 missing=0
+PROGRESS sources=44000 missing=0
+PROGRESS sources=48000 missing=0
+PROGRESS sources=52000 missing=0
+PROGRESS sources=56000 missing=0
+PROGRESS sources=60000 missing=0
+PROGRESS sources=64000 missing=0
+PROGRESS sources=68000 missing=0
+PROGRESS sources=72000 missing=0
+PROGRESS sources=76000 missing=0
+PROGRESS sources=80000 missing=0
+PROGRESS sources=84000 missing=0
+PROGRESS sources=88000 missing=0
+FINAL sources=88452 ordered_pairs_at_distance_gt5=0 seconds=7.14805
+PASS: simple undirected 13-regular graph; order 88452; diameter exactly 5.

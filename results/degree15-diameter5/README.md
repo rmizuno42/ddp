@@ -3,6 +3,8 @@
 **$N(15,5)\ge 100{,}000$.** Simple undirected connected 15-regular graph;
 750,000 edges, diameter exactly 5.
 
+**Table status on 2026-10-13:** 100,000 vertices, matching the published (15,5) record order. See the [dated repository comparison](../../verification/table-snapshot-2026-10-13.json).
+
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **82,684 → 100,000**, an increase of **17,316 vertices (20.94%)**.
 
 The vertex set is $V(C)\times\mathbb F_5^5$, where $C$ is a 32-vertex simple
@@ -57,8 +59,9 @@ Edge-file SHA-256:
 ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271
 ```
 
-The imported package is preserved without edits. This result is compared with
-the dated public table; listing here does not assert table acceptance,
-independent peer review, or optimality. This package has no separate paper.
+The imported package is preserved without edits. The September comparison
+above is historical; the table status is dated at the start of this summary.
+The verification does not assert independent peer review or optimality.
+This package has no separate paper.
 
 [All results](../../README.md)

@@ -3,6 +3,8 @@
 **$N(14,5)\ge 88{,}452$.** Simple undirected connected graph; 618,786 edges,
 maximum degree 14, diameter exactly 5.
 
+**Table status on 2026-10-13:** 88,452 vertices, matching the published (14,5) record order. The [new (13,5) construction](../degree13-diameter5/) has the same order and diameter with a smaller maximum degree. See the [dated repository comparison](../../verification/table-snapshot-2026-10-13.json).
+
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **61,887 → 88,452**, an increase of **26,565 vertices (42.93%)**.
 
 The vertex set is $C\times\mathbb F_3^5$, where $C$ is a set of 364 states
@@ -62,8 +64,9 @@ Edge-file SHA-256:
 ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a
 ```
 
-The imported package is preserved without edits. This result is compared with
-the dated public table; listing here does not assert table acceptance,
-independent peer review, or optimality. This package has no separate paper.
+The imported package is preserved without edits. The September comparison
+above is historical; the table status is dated at the start of this summary.
+The verification does not assert independent peer review or optimality.
+This package has no separate paper.
 
 [All results](../../README.md)

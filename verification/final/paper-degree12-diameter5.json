@@ -27,12 +27,12 @@
   ],
   "threads": 8,
   "source_batch_size": 16384,
-  "elapsed_seconds": 0.288546,
+  "elapsed_seconds": 0.304091,
   "result_id": "paper-degree12-diameter5",
   "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/12_5_34992/final_graph_edges.tsv.gz",
   "edge_file_sha256": "7f3ee329f7a8b2e9fcc4f42186da60639556bf31cfb7f1db8e68c7f7ca10d42a",
   "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
   "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
   "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
-  "verified_at_utc": "2026-09-25T05:48:20.152410+00:00"
+  "verified_at_utc": "2026-10-13T02:05:01.592141+00:00"
 }

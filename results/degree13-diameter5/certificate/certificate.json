@@ -1,0 +1,33 @@
+{
+  "status": "verified finite construction",
+  "vertices": 88452,
+  "edges": 574938,
+  "degree": 13,
+  "diameter": 5,
+  "simple": true,
+  "undirected": true,
+  "all_sources_checked": 88452,
+  "ordered_pairs_at_distance_greater_than_5": 0,
+  "moore_bound_degree13_diameter4": 24506,
+  "canonical_edge_file_sha256": "b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b",
+  "table_comparison": {
+    "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+    "checked_utc": "2026-10-09T17:25:56Z",
+    "degree": 13,
+    "diameter": 5,
+    "listed_lower_bound": 51417,
+    "constructed_lower_bound": 88452,
+    "additional_vertices": 37035,
+    "percentage_increase": 72.02870645895328
+  },
+  "submission_status": "No external submission has been made.",
+  "ordered_distance_histogram_including_diagonal": [
+    88452,
+    1149876,
+    12381390,
+    123020534,
+    1157788198,
+    6529327854
+  ],
+  "clean_archive_extraction_replay": "passed: checksums, regeneration, canonical edge hash, portable compilation, all 88452 sources"
+}

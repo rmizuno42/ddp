@@ -1,0 +1,17 @@
+{
+  "imported_on": "2026-10-13",
+  "packages": [
+    {
+      "archive": "degree13_diameter5_order88452_verified.zip",
+      "archive_sha256": "357619182e51b49d74d7da68c19f0dbac8199194daf953c7c74a7f3e972239ef",
+      "archive_root": "graph_88452_degree13_diameter5",
+      "certificate_directory": "results/degree13-diameter5/certificate",
+      "files": 20,
+      "manifest_entries_checked": 19,
+      "source_bytes_preserved": true,
+      "reproduction_status": "PASS",
+      "reproduction_log": "verification/import-2026-10-13/degree13-diameter5.txt",
+      "local_archive_backup": "legacy/source-archives/degree13_diameter5_order88452_verified.zip"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
 **$N(16,3)\ge 1{,}920$.** Simple undirected connected 16-regular graph;
 15,360 edges, diameter exactly 3.
 
+**Table status on 2026-10-13:** 1,920 vertices, matching the published (16,3) record order. See the [dated repository comparison](../../verification/table-snapshot-2026-10-13.json).
+
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **1,610 → 1,920**, an increase of **310 vertices (19.25%)**.
 
 The vertex set is $V(C)\times\mathbb F_4^3$, where $C$ is a 30-vertex simple
@@ -56,8 +58,9 @@ Edge-file SHA-256:
 dbdd15deead3c83b7e07f9e056846dd9a478feaa437385841ef36971c0af9a8a
 ```
 
-The imported package is preserved without edits. This result is compared with
-the dated public table; listing here does not assert table acceptance,
-independent peer review, or optimality. This package has no separate paper.
+The imported package is preserved without edits. The September comparison
+above is historical; the table status is dated at the start of this summary.
+The verification does not assert independent peer review or optimality.
+This package has no separate paper.
 
 [All results](../../README.md)

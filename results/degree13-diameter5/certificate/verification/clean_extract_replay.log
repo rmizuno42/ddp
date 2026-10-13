@@ -1,0 +1,42 @@
+PASS: 18 packaged file hashes verified
+{
+  "vertices": 88452,
+  "edges": 574938,
+  "degree": 13,
+  "simple": true,
+  "undirected": true,
+  "ordinary_degree_histogram": {
+    "12": 87696,
+    "11": 756
+  },
+  "main_matching_edges": 44226,
+  "spare_matching_edges": 378,
+  "edge_file_sha256": "b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b",
+  "seconds": 2.265702486038208
+}
+PASS: 18 packaged file hashes verified; canonical edge-list hash verified
+INPUT vertices=88452 edges=574938 degree=13 threads=2
+PROGRESS sources=4000 missing=0
+PROGRESS sources=8000 missing=0
+PROGRESS sources=12000 missing=0
+PROGRESS sources=16000 missing=0
+PROGRESS sources=20000 missing=0
+PROGRESS sources=24000 missing=0
+PROGRESS sources=28000 missing=0
+PROGRESS sources=32000 missing=0
+PROGRESS sources=36000 missing=0
+PROGRESS sources=40000 missing=0
+PROGRESS sources=44000 missing=0
+PROGRESS sources=48000 missing=0
+PROGRESS sources=52000 missing=0
+PROGRESS sources=56000 missing=0
+PROGRESS sources=60000 missing=0
+PROGRESS sources=64000 missing=0
+PROGRESS sources=68000 missing=0
+PROGRESS sources=72000 missing=0
+PROGRESS sources=76000 missing=0
+PROGRESS sources=80000 missing=0
+PROGRESS sources=84000 missing=0
+PROGRESS sources=88000 missing=0
+FINAL sources=88452 ordered_pairs_at_distance_gt5=0 seconds=27.1871
+PASS: simple undirected 13-regular graph; order 88452; diameter exactly 5.

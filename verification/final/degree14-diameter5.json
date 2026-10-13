@@ -28,12 +28,12 @@
   ],
   "threads": 8,
   "source_batch_size": 16384,
-  "elapsed_seconds": 2.48801,
+  "elapsed_seconds": 1.97862,
   "result_id": "degree14-diameter5",
   "edge_file": "results/degree14-diameter5/certificate/graph_d14_D5_n88452.edges",
   "edge_file_sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a",
   "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
   "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
   "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
-  "verified_at_utc": "2026-09-25T05:48:16.425740+00:00"
+  "verified_at_utc": "2026-10-13T02:05:04.985729+00:00"
 }

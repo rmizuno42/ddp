@@ -1,9 +1,9 @@
 # Final verification from edge lists
 
-All seven graphs in [results.json](../results.json) passed a direct check of
+All eight graphs in [results.json](../results.json) passed a direct check of
 their vertex count, edge count, maximum degree, degree distribution, simplicity,
 connectivity, and exact diameter. The [summary](final/summary.json) lists the
-seven reports. Each report includes the input file hash, verifier hash,
+eight reports. Each report includes the input file hash, verifier hash,
 execution time, ordered-pair distance histogram, and a pair of vertices at the
 claimed diameter.
 
@@ -44,11 +44,13 @@ connectivity and the exact diameter, without construction data or symmetry
 assumptions. The maximum degree and full degree distribution must also match
 the index; in particular, the (14,5) graph has degrees 13 and 14.
 
-Before the final run, the verifier was compared with ordinary Python queue BFS
+Before the September run, the verifier was compared with ordinary Python queue BFS
 on 16 combinations of graphs, batch sizes, and thread counts, including partial
 batches and 64-bit boundaries. Eight malformed-input or false-claim cases were
-rejected. The final diameter witnesses were additionally checked by ordinary
-Python BFS, and the five new graphs' complete distance distributions matched
-their supplied BFS reports.
+rejected. The September diameter witnesses were additionally checked by ordinary
+Python BFS, and the five imported graphs' complete distance distributions
+matched their supplied BFS reports. On 2026-10-13, the unchanged verifier was
+rerun for all eight graphs, including the newly imported (13,5) graph; its
+distance histogram matched its supplied certificate.
 
 [Repository verification record](../VERIFICATION.md)

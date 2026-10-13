@@ -3,6 +3,8 @@
 **$N(12,4)\ge 5{,}832$.** Simple undirected connected 12-regular graph,
 34,992 edges, diameter exactly 4.
 
+**Table status on 2026-10-13:** 5,832 vertices, matching the published (12,4) record order. See the [dated repository comparison](../../verification/table-snapshot-2026-10-13.json).
+
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **5,184 → 5,832**, an increase of **648 vertices (12.50%)**.
 
 The controller $C$ is a 72-vertex simple 4-regular graph, obtained as a voltage
@@ -99,7 +101,6 @@ ea0846865021f05f38825ac03ca96a387815b50634a9117f9f42533080dbd05b
 ```
 
 See [the repository verification record](../../VERIFICATION.md). This package
-has no separate paper and does not assert acceptance into the public table or
-optimality.
+has no separate paper and does not assert optimality.
 
 [All results](../../README.md)

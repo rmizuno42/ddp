@@ -46,6 +46,20 @@ records the completed commands. The additional source-package verification
 logs are preserved; the order-seven orbit verifier and the 77-spare-edge
 subgraph check were not rerun in this update.
 
+## Additional independent verification of the new graph
+
+A [separately written ordinary BFS implementation](verification/independent-2026-10-13/)
+reads only the edge list and measures distances without a depth limit. It
+confirmed order 88,452, degree 13 at all vertices, and diameter exactly 5,
+checking all 7,823,756,304 ordered pairs. Every vertex has eccentricity 5.
+The measured distance histogram also agrees with the earlier bit-parallel run.
+
+The implementation passed 16 comparisons with a separate Floyd–Warshall
+reference, including a graph of diameter 8 and a disconnected graph, and
+rejected eight malformed inputs. A separate Python BFS verified that vertices
+0 and 40,562 have distance exactly 5. The [saved report](verification/independent-2026-10-13/result.json)
+records all measurements and hashes of the input and verification programs.
+
 ## Public-table status and link preservation
 
 The [table snapshot](verification/table-snapshot-2026-10-13.json) records the
@@ -61,9 +75,9 @@ All five linked directories are preserved:
 
 All previously tracked files remain at their existing paths. The old
 certificate files and paper sources retain their bytes. The root overview
-lists the five constructions matching the current table orders. The added
-(13,5) result exceeds its entry and is shown separately as not yet reflected
-in the table. The (12,5) and (15,3) packages remain available at their published
+lists the five constructions matching the current table orders together with
+the added (13,5) result, explicitly marked as exceeding its entry and not yet
+reflected in the table. The (12,5) and (15,3) packages remain available at their published
 locations although their orders are now below the table entries.
 
 The index preserves the September comparison values as historical data.

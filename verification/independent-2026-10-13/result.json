@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "method": "independent ordinary queue BFS from every source; no depth limit",
+  "claimed_parameters": {
+    "vertices": 88452,
+    "degree": 13,
+    "diameter": 5
+  },
+  "measured": {
+    "vertices": 88452,
+    "distinct_vertex_labels_in_edges": 88452,
+    "edges": 574938,
+    "simple": true,
+    "undirected": true,
+    "minimum_degree": 13,
+    "maximum_degree": 13,
+    "degree_histogram": {
+      "13": 88452
+    },
+    "connected": true,
+    "diameter": 5,
+    "all_sources_checked": 88452,
+    "ordered_pairs_reached": 7823756304,
+    "unreachable_ordered_pairs": 0,
+    "distance_histogram_ordered_pairs": [
+      88452,
+      1149876,
+      12381390,
+      123020534,
+      1157788198,
+      6529327854
+    ],
+    "eccentricity_histogram": {
+      "5": 88452
+    },
+    "largest_finite_distance_witness": [
+      0,
+      40562
+    ],
+    "elapsed_seconds": 10.4353
+  },
+  "diameter_witness": {
+    "source": 0,
+    "target": 40562,
+    "distance": 5,
+    "shortest_path": [
+      0,
+      27702,
+      3,
+      40402,
+      163,
+      40562
+    ],
+    "method": "separate Python queue BFS"
+  },
+  "implementation_checks": {
+    "reference_algorithm": "Floyd-Warshall",
+    "reference_graphs": 8,
+    "reference_comparisons_passed": 16,
+    "tested_thread_counts": [
+      1,
+      3
+    ],
+    "malformed_inputs_rejected": 8,
+    "random_seed": 20261013
+  },
+  "edge_file": "results/degree13-diameter5/certificate/graph.edges.gz",
+  "compressed_edge_sha256": "5d580c37abb8e072e409366668f7ceee355c0becd8869495a69e0d03ca8087b3",
+  "uncompressed_edge_sha256": "b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b",
+  "verifier_source_sha256": "39acbf3c7e14c6dba64b5d00f96fca28082866a7abaea85ba07144ac3537f699",
+  "runner_source_sha256": "daf7c3436125bec781d7519e3b2fd504bd64bcec2e731421e8ac94009351d548",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "threads": 8,
+  "input_repository_commit": "5bd7aebefa738a635bc73a764b5364568a4a1782",
+  "completed_at_utc": "2026-10-13T02:20:21.475464+00:00"
+}

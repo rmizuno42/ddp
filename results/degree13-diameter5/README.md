@@ -78,6 +78,8 @@ search. No infinite parameter family or optimality claim is made.
   [source-file checksums](certificate/SHA256SUMS.json).
 - [Repository import checks](../../verification/import-2026-10-13.json) and
   [final edge-list report](../../verification/final/degree13-diameter5.json).
+- [Additional independent verification](../../verification/independent-2026-10-13/)
+  — ordinary BFS from every source, without a depth limit.
 
 ## Reproduce the verification
 
@@ -100,6 +102,10 @@ edge list matched the decompressed supplied file byte for byte. The repository's
 [common verifier](../../verification/README.md) also checked all 88,452 sources
 and all 7,823,756,304 ordered pairs, reproducing the supplied exact distance
 histogram. See the [verification record](../../VERIFICATION.md).
+
+A subsequent [independent ordinary-BFS check](../../verification/independent-2026-10-13/)
+also measured order 88,452, degree 13 at every vertex, and diameter exactly 5.
+It used only the edge list and confirmed that every vertex has eccentricity 5.
 
 Uncompressed edge-file SHA-256:
 

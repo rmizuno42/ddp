@@ -53,4 +53,9 @@ matched their supplied BFS reports. On 2026-10-13, the unchanged verifier was
 rerun for all eight graphs, including the newly imported (13,5) graph; its
 distance histogram matched its supplied certificate.
 
+The (13,5) graph also passed a [separately written ordinary-BFS verifier](independent-2026-10-13/)
+that computes distances without a depth limit and reads no construction data
+or prior reports. Its measurements confirm order 88,452, regular degree 13,
+and diameter exactly 5.
+
 [Repository verification record](../VERIFICATION.md)

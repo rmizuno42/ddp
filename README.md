@@ -5,21 +5,23 @@ degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of 
 simple undirected connected graph with maximum degree at most $\Delta$ and
 diameter at most $D$.
 
-## Records in the published table — 2026-10-13
+## Published records and new graph — 2026-10-13
 
-The following repository constructions match the record orders in
+The following repository constructions match or exceed the record orders in
 [Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
 accessed **2026-10-13** (page last changed **2026-10-11**).
+The new (13,5) graph exceeds its entry and is not yet reflected in that table.
 This dated overview does not assert optimality. See the
 [saved comparison and incoming links](verification/table-snapshot-2026-10-13.json).
 
-| $(\Delta,D)$ | Vertices = table order | Construction and data |
-|---|---:|---|
-| (12,4) | **5,832** | [Degree 12, diameter 4](results/degree12-diameter4/) |
-| (14,5) | **88,452** | [Degree 14, diameter 5](results/degree14-diameter5/) |
-| (15,5) | **100,000** | [Degree 15, diameter 5](results/degree15-diameter5/) |
-| (16,3) | **1,920** | [Degree 16, diameter 3](results/degree16-diameter3/) |
-| (16,5) | **147,456** | [arXiv:2606.15860](results/diameter5-paper/) |
+| $(\Delta,D)$ | Vertices | Published table order | Status | Construction and data |
+|---|---:|---:|---|---|
+| (12,4) | **5,832** | 5,832 | Matches table | [Degree 12, diameter 4](results/degree12-diameter4/) |
+| **(13,5)** | **88,452** | 51,417 | **New; exceeds table** | [Degree 13, diameter 5](results/degree13-diameter5/) |
+| (14,5) | **88,452** | 88,452 | Matches table | [Degree 14, diameter 5](results/degree14-diameter5/) |
+| (15,5) | **100,000** | 100,000 | Matches table | [Degree 15, diameter 5](results/degree15-diameter5/) |
+| (16,3) | **1,920** | 1,920 | Matches table | [Degree 16, diameter 3](results/degree16-diameter3/) |
+| (16,5) | **147,456** | 147,456 | Matches table | [arXiv:2606.15860](results/diameter5-paper/) |
 
 ## Added in this update — 2026-10-13
 
@@ -27,9 +29,10 @@ This dated overview does not assert optimality. See the
 The graph is simple and 13-regular, with diameter exactly 5. It has the same
 order and diameter as the existing (14,5) graph, with a smaller maximum degree.
 
-| $(\Delta,D)$ | New order | Published table order | Difference | Increase |
-|---|---:|---:|---:|---:|
-| (13,5) | **88,452** | 51,417 | +37,035 | +72.03% |
+The new graph exceeds the published order by **37,035 vertices (+72.03%)**.
+A [separate ordinary-BFS verification](verification/independent-2026-10-13/)
+measured its order, every vertex degree, and exact diameter from the edge list,
+without a search-depth limit or any construction data.
 
 This result **exceeds the table entry and is not yet reflected in the table**
 as accessed on 2026-10-13. Only this package is newly imported in this update.

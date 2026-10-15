@@ -118,13 +118,20 @@ bound 4. [Construction, proof, and certificates](results/degree12-diameter4/).
 
 A simple 13-regular graph on $C\times\mathbb F_3^5$ with 574,938 edges
 and diameter exactly 5. Its 364-state, four-port controller has the same
-transitions as the (14,5) construction below. The graph combines affine
-edges, a perfect matching between paired fibers, and a matching on 756
-remaining vertices of degree 12. Some maps defining the main matching are
-not affine. This develops the controller-and-fiber approach of
-[arXiv:2606.15860](results/diameter5-paper/) through matching completion;
-the complete graph is not asserted to be a route-chart lift as defined there.
-The explicit edge list has been checked from every source.
+transitions as the (14,5) construction below, including transitions from a
+state to itself. It uses different affine data, a perfect matching between
+paired fibers, and a further matching on the 756 vertices whose degree is
+still 12 after the first matching is added. The affine part alone has vertex
+pairs at distance greater than 5; the added edges also provide paths needed
+to achieve the diameter bound.
+
+This construction develops the controller-and-fiber approach of
+[arXiv:2606.15860](results/diameter5-paper/) by changing both the controller
+and the fiber connections. Some maps defining the main matching are not
+affine in the given fiber coordinates. The resulting graph is not asserted
+to be a route-chart lift graph as defined in that paper. Its diameter is
+certified by exhaustive BFS from every vertex, rather than by applying the
+paper's route-chart lift principle.
 [Construction, proof, and certificates](results/degree13-diameter5/).
 
 ### (14,5): 88,452 vertices

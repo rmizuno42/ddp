@@ -13,11 +13,12 @@ The dated comparison is recorded in the [repository snapshot](../../verification
 The vertex set is $C\times\mathbb F_3^5$, where $C$ has 364 states and four
 ports at each state. The controller transitions agree with those in the
 [degree-14, diameter-5 package](../degree14-diameter5/). Some ports return to
-the same state. The supplied affine maps and additional edges specify a new
-graph on the same vertex set.
+the same state. Both the affine data and the additional edges differ from
+those in the degree-14 construction, giving a new graph on the same vertex
+set.
 
 For the record $(v_{u,p},A_{u,p},b_{u,p})$ at state $u$ and port $p$, the
-ordinary edges are
+ordinary affine edges are
 
 $$
 (u,x)\sim(v_{u,p},A_{u,p}x+\lambda b_{u,p}),\qquad \lambda\in\mathbb F_3.
@@ -33,17 +34,29 @@ G=B\cup M\cup P
 $$
 
 is 13-regular. The main matching pairs distinct fibers by bijections of their
-243 coordinates. Some of these bijections are not affine.
+243 vectors. Some of these bijections are not affine in the given fiber
+coordinates.
 
-This construction develops the controller-and-fiber approach of
-[arXiv:2606.15860](../diameter5-paper/) by using matching completion.
-In the given fiber coordinates, the full construction includes non-affine
-matching maps and is not asserted to be a route-chart lift graph as defined
-in §A.4. The degree-14 construction uses translations within each fiber;
-here the affine data and matching edges give the same order and diameter
-with maximum degree 13.
+This construction retains the controller-and-fiber organization of
+[arXiv:2606.15860](../diameter5-paper/), while changing both the controller
+and the fiber connections. The $q=3$ construction in that paper uses a
+144-vertex simple 4-regular controller and a universal route chart on
+$\mathbb F_3^5$. Here the controller has 364 states and permits transitions
+from a state to itself; the affine maps depend on the state and port, and
+the added matchings include non-affine maps. The resulting graph is not
+asserted to be a route-chart lift graph as defined in §A.4, and the diameter
+certificate below does not apply the paper's route-chart lift principle.
+
+The degree-14 construction uses translations within each fiber. The present
+construction uses different affine data and the matchings $M$ and $P$ to
+obtain the same order and diameter with maximum degree 13.
 
 ## Diameter certificate
+
+The ordinary affine graph $B$ alone does not meet the diameter bound. Using
+the supplied integer vertex labels, BFS in $B$ gives distance 6 between
+vertices 0 and 1,953. Thus the added matching edges provide paths needed for
+diameter at most 5, as well as completing the degrees to 13.
 
 An exact breadth-first search from every vertex verifies diameter at most 5.
 The supplied package also contains a separate construction-and-verification

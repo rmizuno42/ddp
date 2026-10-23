@@ -2,9 +2,9 @@
   "comparison_source": {
     "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
     "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
-    "accessed_on": "2026-10-13",
-    "page_last_changed": "2026-10-11",
-    "snapshot": "verification/table-snapshot-2026-10-13.json"
+    "accessed_on": "2026-10-23",
+    "page_last_changed": "2026-10-22",
+    "snapshot": "verification/table-snapshot-2026-10-23.json"
   },
   "results": [
     {
@@ -34,6 +34,13 @@
           "table_order": 5184,
           "difference": 648,
           "increase_percent": 12.5
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 5832,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -65,6 +72,13 @@
           "table_order": 38167,
           "difference": -3175,
           "increase_percent": -8.31870464
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 42342,
+          "difference": -7350,
+          "increase_percent": -17.35865098,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -94,7 +108,16 @@
       "difference": 37035,
       "increase_percent": 72.02870646,
       "status": "exceeds_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135",
+      "historical_comparisons": [
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 51417,
+          "difference": 37035,
+          "increase_percent": 72.02870646,
+          "status": "exceeds_table"
+        }
+      ]
     },
     {
       "id": "degree14-diameter5",
@@ -107,9 +130,9 @@
         "13": 756,
         "14": 87696
       },
-      "table_order": 88452,
-      "difference": 0,
-      "increase_percent": 0.0,
+      "table_order": 94186,
+      "difference": -5734,
+      "increase_percent": -6.08795362,
       "summary": "results/degree14-diameter5/README.md",
       "edge_file": "results/degree14-diameter5/certificate/graph_d14_D5_n88452.edges",
       "edge_file_format": "n m header, then u v",
@@ -120,10 +143,17 @@
           "table_order": 61887,
           "difference": 26565,
           "increase_percent": 42.92500848
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 88452,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
-      "status": "matches_table",
+      "status": "below_table",
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145"
     },
     {
@@ -149,6 +179,13 @@
           "table_order": 1224,
           "difference": 234,
           "increase_percent": 19.11764706
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 1539,
+          "difference": -81,
+          "increase_percent": -5.26315789,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -165,9 +202,9 @@
       "degree_histogram": {
         "15": 100000
       },
-      "table_order": 100000,
-      "difference": 0,
-      "increase_percent": 0.0,
+      "table_order": 100132,
+      "difference": -132,
+      "increase_percent": -0.13182599,
       "summary": "results/degree15-diameter5/README.md",
       "edge_file": "results/degree15-diameter5/certificate/graph_d15_D5_n100000.edges",
       "edge_file_format": "n m header, then u v",
@@ -178,10 +215,17 @@
           "table_order": 82684,
           "difference": 17316,
           "increase_percent": 20.94238305
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 100000,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
-      "status": "matches_table",
+      "status": "below_table",
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155"
     },
     {
@@ -207,6 +251,13 @@
           "table_order": 1610,
           "difference": 310,
           "increase_percent": 19.25465839
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 1920,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -238,6 +289,13 @@
           "table_order": 147456,
           "difference": 0,
           "increase_percent": 0.0
+        },
+        {
+          "accessed_on": "2026-10-13",
+          "table_order": 147456,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -250,10 +308,19 @@
     "keep_largest_per_parameter_pair": true
   },
   "latest_update": {
-    "date": "2026-10-13",
-    "added_result_ids": [
-      "degree13-diameter5"
-    ],
-    "preserve_published_paths": true
-  }
+    "date": "2026-10-23",
+    "added_result_ids": [],
+    "preserve_published_paths": true,
+    "scope": "Refresh table comparisons and document external records based on the (14,5) and (15,5) repository graphs",
+    "external_record_comparison": "verification/external-records-2026-10-23/comparison.json"
+  },
+  "update_history": [
+    {
+      "date": "2026-10-13",
+      "added_result_ids": [
+        "degree13-diameter5"
+      ],
+      "preserve_published_paths": true
+    }
+  ]
 }

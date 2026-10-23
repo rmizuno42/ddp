@@ -4,9 +4,9 @@
 574,938 edges, diameter exactly 5. **Added to this repository on 2026-10-13.**
 
 The [Comellas table entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135)
-is **51,417** as accessed on **2026-10-13**: this construction has **37,035
+is **51,417** as accessed on **2026-10-23**: this construction has **37,035
 more vertices (+72.03%)**. Its order is not yet reflected in that table.
-The dated comparison is recorded in the [repository snapshot](../../verification/table-snapshot-2026-10-13.json).
+The dated comparison is recorded in the [repository snapshot](../../verification/table-snapshot-2026-10-23.json).
 
 ## Construction and relation to arXiv:2606.15860
 
@@ -128,6 +128,6 @@ b95760a4cf5c009694d099f62613ea932a6d64b539b7c9c6cc9812ca19835c2b
 
 The 20 files in `certificate/` preserve the supplied package bytes. Its source
 notes compare against the table accessed on 2026-10-09; the maintained summary
-above uses 2026-10-13. This package has no separate paper.
+above uses 2026-10-23. This package has no separate paper.
 
 [All results](../../README.md)

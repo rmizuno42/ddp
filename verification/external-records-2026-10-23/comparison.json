@@ -1,0 +1,120 @@
+{
+  "accessed_on": "2026-10-23",
+  "method": "literal undirected edge-set comparison; # prefixes on headers are ignored",
+  "scope": "checks identity of the former graphs and record orders/degrees; the detail-page attribution is reviewed separately; no relabeling map or diameter proof for the external records",
+  "program_sha256": "ddad165cf06806bb1d3d97abed71fda35e23224421fa71a66d46354cab60157a",
+  "comparisons": [
+    {
+      "degree": 14,
+      "reported_diameter": 5,
+      "detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145",
+      "record_name": "SamSar_94186",
+      "record_authors": [
+        "Sami Hani Badaoui",
+        "Sarah Ellen Mary Vaughan"
+      ],
+      "communicated_on": "2026-10-22",
+      "repository_graph": {
+        "path": "results/degree14-diameter5/certificate/graph_d14_D5_n88452.edges",
+        "vertices": 88452,
+        "edges": 618786,
+        "simple": true,
+        "degree_histogram": {
+          "13": 756,
+          "14": 87696
+        },
+        "maximum_degree": 14,
+        "file_sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a",
+        "normalized_edge_sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a"
+      },
+      "published_former_graph": {
+        "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/adjacencies/adjD5/graph_d14_D5_n88452.edges",
+        "vertices": 88452,
+        "edges": 618786,
+        "simple": true,
+        "degree_histogram": {
+          "13": 756,
+          "14": 87696
+        },
+        "maximum_degree": 14,
+        "file_sha256": "1930eb09c2513db2b20c03d47af2ced0e59a654bba10c977481ffbf3e3c1910c",
+        "normalized_edge_sha256": "ae192f45dc5cfb5a44530f520fe258610ff5a46e720e2cb739cca9fbc929b39a"
+      },
+      "published_record_graph": {
+        "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/adjacencies/adjD5/N14_D5_94186_FINAL.edges",
+        "vertices": 94186,
+        "edges": 657452,
+        "simple": true,
+        "degree_histogram": {
+          "12": 15,
+          "13": 3670,
+          "14": 90501
+        },
+        "maximum_degree": 14,
+        "file_sha256": "7e9d7e71438d787241d3ea741e7c5593332bfe0dc56200d08554558f90a88438",
+        "normalized_edge_sha256": "694af6ddff008b5b93d6ef8e65f17de801a56f1f1e996e66c644ac923808d0f3"
+      },
+      "order_increase_over_repository": 5734,
+      "former_graph_equals_repository_with_same_labels": true,
+      "record_edges_equal_to_repository_edges_with_same_integer_labels": 111,
+      "relationship_basis": "explicit attribution in the published detail page, whose former graph matches the repository",
+      "vertex_correspondence_to_record_reconstructed": false,
+      "independent_record_diameter_verification": false
+    },
+    {
+      "degree": 15,
+      "reported_diameter": 5,
+      "detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155",
+      "record_name": "SamSar_100132",
+      "record_authors": [
+        "Sami Hani Badaoui",
+        "Sarah Ellen Mary Vaughan"
+      ],
+      "communicated_on": "2026-10-22",
+      "repository_graph": {
+        "path": "results/degree15-diameter5/certificate/graph_d15_D5_n100000.edges",
+        "vertices": 100000,
+        "edges": 750000,
+        "simple": true,
+        "degree_histogram": {
+          "15": 100000
+        },
+        "maximum_degree": 15,
+        "file_sha256": "ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271",
+        "normalized_edge_sha256": "ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271"
+      },
+      "published_former_graph": {
+        "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/adjacencies/adjD5/graph_d15_D5_n100000.edges",
+        "vertices": 100000,
+        "edges": 750000,
+        "simple": true,
+        "degree_histogram": {
+          "15": 100000
+        },
+        "maximum_degree": 15,
+        "file_sha256": "87cba117abdf2a464a8af51d65e03ec2ee8963bfeeb08769381cf9800ccf3c2f",
+        "normalized_edge_sha256": "ed2b9ad5303034e7875d369c6915b0dd8e84c3bded60b821f7720966fb1ef271"
+      },
+      "published_record_graph": {
+        "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/adjacencies/adjD5/N15_D5_100132_FINAL.edges",
+        "vertices": 100132,
+        "edges": 749732,
+        "simple": true,
+        "degree_histogram": {
+          "13": 18,
+          "14": 2480,
+          "15": 97634
+        },
+        "maximum_degree": 15,
+        "file_sha256": "d325c23b85a13c8e887331a9c3cd3b4f93bde15643cfb0ec295cda1a48e1cbbc",
+        "normalized_edge_sha256": "ab1e0a9cbfc7b2a2504aba3157899ad1bb62a8895796778b32e2381e773027f3"
+      },
+      "order_increase_over_repository": 132,
+      "former_graph_equals_repository_with_same_labels": true,
+      "record_edges_equal_to_repository_edges_with_same_integer_labels": 113,
+      "relationship_basis": "explicit attribution in the published detail page, whose former graph matches the repository",
+      "vertex_correspondence_to_record_reconstructed": false,
+      "independent_record_diameter_verification": false
+    }
+  ]
+}

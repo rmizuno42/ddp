@@ -5,25 +5,23 @@ degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of 
 simple undirected connected graph with maximum degree at most $\Delta$ and
 diameter at most $D$.
 
-## Published records and new graph — 2026-10-13
+## Published records and new graph — 2026-10-23
 
 The following repository constructions match or exceed the record orders in
 [Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
-accessed **2026-10-13** (page last changed **2026-10-11**).
+accessed **2026-10-23** (page last changed **2026-10-22**).
 The new (13,5) graph exceeds its entry and is not yet reflected in that table.
 This dated overview does not assert optimality. See the
-[saved comparison and incoming links](verification/table-snapshot-2026-10-13.json).
+[saved comparison and incoming links](verification/table-snapshot-2026-10-23.json).
 
 | $(\Delta,D)$ | Vertices | Published table order | Status | Construction and data |
 |---|---:|---:|---|---|
 | (12,4) | **5,832** | 5,832 | Matches table | [Degree 12, diameter 4](results/degree12-diameter4/) |
 | **(13,5)** | **88,452** | 51,417 | **New; exceeds table** | [Degree 13, diameter 5](results/degree13-diameter5/) |
-| (14,5) | **88,452** | 88,452 | Matches table | [Degree 14, diameter 5](results/degree14-diameter5/) |
-| (15,5) | **100,000** | 100,000 | Matches table | [Degree 15, diameter 5](results/degree15-diameter5/) |
 | (16,3) | **1,920** | 1,920 | Matches table | [Degree 16, diameter 3](results/degree16-diameter3/) |
 | (16,5) | **147,456** | 147,456 | Matches table | [arXiv:2606.15860](results/diameter5-paper/) |
 
-## Added in this update — 2026-10-13
+## Latest added graph — 2026-10-13
 
 **New: [degree 13, diameter 5, 88,452 vertices](results/degree13-diameter5/).**
 The graph is simple and 13-regular, with diameter exactly 5. It has the same
@@ -35,13 +33,31 @@ measured its order, every vertex degree, and exact diameter from the edge list,
 without a search-depth limit or any construction data.
 
 This result **exceeds the table entry and is not yet reflected in the table**
-as accessed on 2026-10-13. Only this package is newly imported in this update.
+as accessed on 2026-10-23. This package was added on 2026-10-13.
 Its finite construction data, proof, edge list, and verification programs are
 in [the certificate directory](results/degree13-diameter5/certificate/).
 
+## Subsequent records based on repository graphs
+
+The table now lists two larger graphs by Sami Hani Badaoui and Sarah Ellen
+Mary Vaughan, communicated on 2026-10-22. The linked descriptions explicitly
+identify them as modifications and extensions of the corresponding Mizuno
+graphs below.
+
+| $(\Delta,D)$ | Repository graph | Current table record | Increase in order |
+|---|---:|---|---:|
+| (14,5) | [88,452](results/degree14-diameter5/) | [SamSar_94186: 94,186](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145) | 5,734 |
+| (15,5) | [100,000](results/degree15-diameter5/) | [SamSar_100132: 100,132](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155) | 132 |
+
+The former edge lists linked on that site have exactly the same labeled edge
+sets as the repository graphs. The attribution above follows the published
+descriptions; a vertex correspondence to the new graphs has not been
+reconstructed. See the [source review and edge-file comparison](verification/external-records-2026-10-23/).
+Both repository packages retain their published paths as former records.
+
 ## Complete result index
 
-All comparisons below use the same **2026-10-13** table snapshot.
+All comparisons below use the same **2026-10-23** table snapshot.
 The package locations remain stable when their record status changes.
 
 | $(\Delta,D)$ | Repository order | Table order | Status | Package |
@@ -49,9 +65,9 @@ The package locations remain stable when their record status changes.
 | (12,4) | 5,832 | 5,832 | Matches table | [Summary](results/degree12-diameter4/) |
 | (12,5) | 34,992 | 42,342 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
 | (13,5) | 88,452 | 51,417 | **New; exceeds table** | [Summary](results/degree13-diameter5/) |
-| (14,5) | 88,452 | 88,452 | Matches table | [Summary](results/degree14-diameter5/) |
+| (14,5) | 88,452 | 94,186 | Below table; basis of the current record | [Summary](results/degree14-diameter5/) |
 | (15,3) | 1,458 | 1,539 | Below table | [Summary](results/degree15-diameter3/) |
-| (15,5) | 100,000 | 100,000 | Matches table | [Summary](results/degree15-diameter5/) |
+| (15,5) | 100,000 | 100,132 | Below table; basis of the current record | [Summary](results/degree15-diameter5/) |
 | (16,3) | 1,920 | 1,920 | Matches table | [Summary](results/degree16-diameter3/) |
 | (16,5) | 147,456 | 147,456 | Matches table | [arXiv:2606.15860](results/diameter5-paper/) |
 
@@ -59,8 +75,8 @@ All eight indexed graphs passed
 [verification directly from their edge lists](verification/README.md):
 vertex counts, degrees, connectivity, and exact diameters were checked over
 every ordered pair of vertices. See the [verification record](VERIFICATION.md)
-and [machine-readable index](results.json), which also preserves the dated
-September comparisons.
+and [machine-readable index](results.json), which also preserves the earlier
+dated comparisons.
 
 ## Construction terminology
 
@@ -146,7 +162,7 @@ exactly 5; 756 vertices have degree 13 and 87,696 have degree 14.
 
 ### (15,3): 1,458 vertices
 
-This result is below the table order 1,539 as of 2026-10-13; its published
+This result is below the table order 1,539 as of 2026-10-23; its published
 package path and all certificates are retained.
 
 A simple 15-regular graph on $V(C)\times\mathbb F_3^3$, where $C$ is a
@@ -185,7 +201,7 @@ It also documents the discovery process through a browser-based ChatGPT
 dialogue. The paper, bibliography, transcript, and supplementary packages are
 preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 
-| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-10-13 | Status on that date |
+| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-10-23 | Status on that date |
 |---|---:|---:|---|
 | (12,5) | 34,992 | 42,342 | Below the table order |
 | (16,5) | 147,456 | 147,456 | Matches the table order |

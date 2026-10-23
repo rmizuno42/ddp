@@ -5,7 +5,7 @@ This package accompanies [arXiv:2606.15860](https://arxiv.org/abs/2606.15860), *
 This directory preserves arXiv:2606.15860 and its complete
 supplementary materials. Return to the [repository result index](../../README.md)
 for later constructions. The bounds below were improvements at the time of the
-paper: on 2026-10-13, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
+paper: on 2026-10-23, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
 lists 42,342 for (12,5) and 147,456 for (16,5), so the former is now a historical
 result and the latter matches the table.
 

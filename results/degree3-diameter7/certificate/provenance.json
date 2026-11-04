@@ -1,0 +1,11 @@
+{
+  "source_archive": "n37_208_construction_2026-09-26.zip",
+  "source_archive_sha256": "f6d792d5fec991e278ace58aa0214075d853c3234f8c7f21a990a75f931096ad",
+  "published_copy": "results/degree3-diameter7/certificate/archive/n37_208_construction_2026-09-26.zip",
+  "archive_preserved_byte_for_byte": true,
+  "archive_members": 233,
+  "published_edge_format": "n m header, then sorted undirected edges u v",
+  "published_edge_sha256": "647216e9b06ed4a2be0431522ed00393c7201fcccc93b28d52bd9c53d22ad3eb",
+  "package_notes": "The source ZIP is preserved unchanged. Maintained construction and verification programs are outside the archive.",
+  "graph_relation_to_source": "Same vertex IDs and same edge rows; only the header changes from n to n m."
+}

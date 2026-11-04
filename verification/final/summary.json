@@ -1,7 +1,9 @@
 {
   "status": "PASS",
-  "graphs_checked": 8,
+  "graphs_checked": 10,
   "reports": [
+    "degree3-diameter7.json",
+    "degree5-diameter5.json",
     "degree12-diameter4.json",
     "paper-degree12-diameter5.json",
     "degree13-diameter5.json",
@@ -11,8 +13,8 @@
     "degree16-diameter3.json",
     "paper-degree16-diameter5.json"
   ],
-  "results_index_sha256": "35a9af2bdc3833a9be7cb60902863654b7c95dd6f565fed8345f9191b31f7124",
+  "results_index_sha256": "8783e7bac68780bc71102492619ea5f8b8072c3578e49f6a668b2afa008a995f",
   "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
   "runner_source_sha256": "3b118ace6d404510a7972a941455d4fe77ffdec4296eb4e4c9a99381d6775e6e",
-  "completed_at_utc": "2026-10-13T02:05:17.930673+00:00"
+  "completed_at_utc": "2026-11-04T03:40:34.061080+00:00"
 }

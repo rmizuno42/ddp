@@ -1,0 +1,11 @@
+{
+  "source_archive": "n55_660_construction_2026-09-25.zip",
+  "source_archive_sha256": "f7bdabd9a54527530a738d6b233b48848f06d08b061e1754d5cf6e1e73a9db44",
+  "published_copy": "results/degree5-diameter5/certificate/archive/n55_660_construction_2026-09-25.zip",
+  "archive_preserved_byte_for_byte": true,
+  "archive_members": 32,
+  "published_edge_format": "n m header, then sorted undirected edges u v",
+  "published_edge_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+  "package_notes": "The source ZIP is preserved unchanged. Maintained construction and verification programs are outside the archive.",
+  "graph_relation_to_source": "Same PSL(2,11) labels and base edges. The main graph replaces the September regular completion by the invariant matching obtained on 2026-11-03."
+}

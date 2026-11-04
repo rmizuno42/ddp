@@ -1,0 +1,164 @@
+{
+  "accessed_on": "2026-11-03",
+  "table_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+  "page_last_changed": "2026-11-02",
+  "comparison_policy": "Use the main table for current orders; linked detail pages can lag behind.",
+  "source_pages": [
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+      "sha256": "d3b00f1cdb4ec57af18d6b1b27e28e1f32abc79b673040771e39612ef72f88fa"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html",
+      "sha256": "a722dbbe8179b0a63cb947b1d2e8bb3ad7c8bd2396ca4357bcc82ccb03593eeb"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html",
+      "sha256": "24c26925430949eb56ab5e91e3b2b4cf3ecfd46ce493024132f5e7c1c4f973b2"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html",
+      "sha256": "f24eb6c51ce41264b2e7862ad05688812d8bfb7d17a04ca44ceb9bd62a70e919"
+    }
+  ],
+  "entries": [
+    {
+      "degree": 12,
+      "diameter": 4,
+      "table_order": 6156,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124",
+      "result_id": "degree12-diameter4"
+    },
+    {
+      "degree": 12,
+      "diameter": 5,
+      "table_order": 42342,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#125",
+      "result_id": "paper-degree12-diameter5"
+    },
+    {
+      "degree": 13,
+      "diameter": 5,
+      "table_order": 51417,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135",
+      "result_id": "degree13-diameter5"
+    },
+    {
+      "degree": 14,
+      "diameter": 5,
+      "table_order": 94186,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145",
+      "result_id": "degree14-diameter5"
+    },
+    {
+      "degree": 15,
+      "diameter": 3,
+      "table_order": 1620,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#153",
+      "result_id": "degree15-diameter3"
+    },
+    {
+      "degree": 15,
+      "diameter": 5,
+      "table_order": 102060,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155",
+      "result_id": "degree15-diameter5"
+    },
+    {
+      "degree": 16,
+      "diameter": 3,
+      "table_order": 1920,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163",
+      "result_id": "degree16-diameter3"
+    },
+    {
+      "degree": 16,
+      "diameter": 5,
+      "table_order": 153600,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#165",
+      "result_id": "paper-degree16-diameter5"
+    }
+  ],
+  "additional_table_entries": [
+    {
+      "degree": 3,
+      "diameter": 7,
+      "table_order": 200,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37"
+    },
+    {
+      "degree": 4,
+      "diameter": 6,
+      "table_order": 760,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g6.html#46"
+    },
+    {
+      "degree": 5,
+      "diameter": 5,
+      "table_order": 650,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55"
+    },
+    {
+      "degree": 6,
+      "diameter": 3,
+      "table_order": 120,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63"
+    }
+  ],
+  "incoming_repository_links": [
+    {
+      "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html",
+      "target_url": "https://github.com/rmizuno42/ddp/tree/main/results/degree15-diameter3",
+      "link_text": "\"degree16-diameter3\" github folder",
+      "preserved_repository_path": "results/degree15-diameter3"
+    },
+    {
+      "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html",
+      "target_url": "https://github.com/rmizuno42/ddp/tree/main/results/degree16-diameter3",
+      "link_text": "\"degree16-diameter3\" github folder",
+      "preserved_repository_path": "results/degree16-diameter3"
+    },
+    {
+      "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html",
+      "target_url": "https://github.com/rmizuno42/ddp/tree/main/results/degree12-diameter4",
+      "link_text": "\"degree16-diameter3\" github folder",
+      "preserved_repository_path": "results/degree12-diameter4"
+    },
+    {
+      "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html",
+      "target_url": "https://github.com/rmizuno42/ddp/tree/main/results/degree14-diameter5",
+      "link_text": "\"degree16-diameter3\" github folder",
+      "preserved_repository_path": "results/degree14-diameter5"
+    },
+    {
+      "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html",
+      "target_url": "https://github.com/rmizuno42/ddp/tree/main/results/degree15-diameter5",
+      "link_text": "\"degree16-diameter3\" github folder",
+      "preserved_repository_path": "results/degree15-diameter5"
+    }
+  ],
+  "detail_page_discrepancies": [
+    {
+      "degree": 12,
+      "diameter": 4,
+      "main_table_order": 6156,
+      "detail_page_order": 5832,
+      "detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124"
+    },
+    {
+      "degree": 15,
+      "diameter": 5,
+      "main_table_order": 102060,
+      "detail_page_order": 100132,
+      "detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155"
+    },
+    {
+      "degree": 16,
+      "diameter": 5,
+      "main_table_order": 153600,
+      "detail_page_order": 147456,
+      "detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#165"
+    }
+  ],
+  "historical_external_record_comparison": "verification/external-records-2026-10-23/comparison.json"
+}

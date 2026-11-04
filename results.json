@@ -2,11 +2,65 @@
   "comparison_source": {
     "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
     "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
-    "accessed_on": "2026-10-23",
-    "page_last_changed": "2026-10-22",
-    "snapshot": "verification/table-snapshot-2026-10-23.json"
+    "accessed_on": "2026-11-04",
+    "page_last_changed": "2026-11-03",
+    "snapshot": "verification/table-snapshot-2026-11-04.json"
   },
   "results": [
+    {
+      "id": "degree3-diameter7",
+      "category": "construction_result",
+      "added_on": "2026-11-04",
+      "degree": 3,
+      "diameter": 7,
+      "vertices": 208,
+      "edges": 312,
+      "degree_histogram": {
+        "3": 208
+      },
+      "table_order": 200,
+      "difference": 8,
+      "increase_percent": 4.0,
+      "status": "exceeds_table",
+      "summary": "results/degree3-diameter7/README.md",
+      "edge_file": "results/degree3-diameter7/certificate/graph.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "647216e9b06ed4a2be0431522ed00393c7201fcccc93b28d52bd9c53d22ad3eb",
+      "certificate_directory": "results/degree3-diameter7/certificate",
+      "construction": "results/degree3-diameter7/certificate/construct.py",
+      "proof": "results/degree3-diameter7/certificate/proof.md",
+      "construction_verifier": "results/degree3-diameter7/certificate/verify.py",
+      "full_automorphism_group_order": 16,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37",
+      "girth": 9
+    },
+    {
+      "id": "degree5-diameter5",
+      "category": "construction_result",
+      "added_on": "2026-11-04",
+      "degree": 5,
+      "diameter": 5,
+      "vertices": 660,
+      "edges": 1650,
+      "degree_histogram": {
+        "5": 660
+      },
+      "table_order": 650,
+      "difference": 10,
+      "increase_percent": 1.53846154,
+      "status": "exceeds_table",
+      "summary": "results/degree5-diameter5/README.md",
+      "edge_file": "results/degree5-diameter5/certificate/graph.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+      "certificate_directory": "results/degree5-diameter5/certificate",
+      "construction": "results/degree5-diameter5/certificate/construct.py",
+      "proof": "results/degree5-diameter5/certificate/proof.md",
+      "construction_verifier": "results/degree5-diameter5/certificate/verify.py",
+      "full_automorphism_group_order": 60,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55",
+      "variant": "Regular completion preserving all 60 automorphisms of the base graph."
+    },
     {
       "id": "degree12-diameter4",
       "category": "construction_result",
@@ -17,9 +71,9 @@
       "degree_histogram": {
         "12": 5832
       },
-      "table_order": 5832,
-      "difference": 0,
-      "increase_percent": 0.0,
+      "table_order": 6156,
+      "difference": -324,
+      "increase_percent": -5.26315789,
       "summary": "results/degree12-diameter4/README.md",
       "edge_file": "results/degree12-diameter4/certificate/graph_12_4_5832.edges",
       "edge_file_format": "headerless u v",
@@ -41,10 +95,17 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 5832,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
-      "status": "matches_table",
+      "status": "below_table",
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124"
     },
     {
@@ -75,6 +136,13 @@
         },
         {
           "accessed_on": "2026-10-13",
+          "table_order": 42342,
+          "difference": -7350,
+          "increase_percent": -17.35865098,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
           "table_order": 42342,
           "difference": -7350,
           "increase_percent": -17.35865098,
@@ -116,6 +184,13 @@
           "difference": 37035,
           "increase_percent": 72.02870646,
           "status": "exceeds_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 51417,
+          "difference": 37035,
+          "increase_percent": 72.02870646,
+          "status": "exceeds_table"
         }
       ]
     },
@@ -150,6 +225,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 94186,
+          "difference": -5734,
+          "increase_percent": -6.08795362,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -166,9 +248,9 @@
       "degree_histogram": {
         "15": 1458
       },
-      "table_order": 1539,
-      "difference": -81,
-      "increase_percent": -5.26315789,
+      "table_order": 1620,
+      "difference": -162,
+      "increase_percent": -10.0,
       "summary": "results/degree15-diameter3/README.md",
       "edge_file": "results/degree15-diameter3/certificate/graph_d15_D3_n1458.edges",
       "edge_file_format": "n m header, then u v",
@@ -182,6 +264,13 @@
         },
         {
           "accessed_on": "2026-10-13",
+          "table_order": 1539,
+          "difference": -81,
+          "increase_percent": -5.26315789,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
           "table_order": 1539,
           "difference": -81,
           "increase_percent": -5.26315789,
@@ -202,9 +291,9 @@
       "degree_histogram": {
         "15": 100000
       },
-      "table_order": 100132,
-      "difference": -132,
-      "increase_percent": -0.13182599,
+      "table_order": 102060,
+      "difference": -2060,
+      "increase_percent": -2.01842054,
       "summary": "results/degree15-diameter5/README.md",
       "edge_file": "results/degree15-diameter5/certificate/graph_d15_D5_n100000.edges",
       "edge_file_format": "n m header, then u v",
@@ -222,6 +311,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 100132,
+          "difference": -132,
+          "increase_percent": -0.13182599,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -258,6 +354,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 1920,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -275,10 +378,10 @@
       "degree_histogram": {
         "16": 147456
       },
-      "table_order": 147456,
-      "difference": 0,
-      "increase_percent": 0.0,
-      "status": "matches_table",
+      "table_order": 153600,
+      "difference": -6144,
+      "increase_percent": -4.0,
+      "status": "below_table",
       "summary": "results/diameter5-paper/README.md",
       "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/16_5_147456/final_graph_edges.tsv.gz",
       "edge_file_format": "gzip; n m header, then tab-separated u v",
@@ -296,6 +399,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-10-23",
+          "table_order": 147456,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -308,11 +418,13 @@
     "keep_largest_per_parameter_pair": true
   },
   "latest_update": {
-    "date": "2026-10-23",
-    "added_result_ids": [],
+    "date": "2026-11-04",
+    "added_result_ids": [
+      "degree3-diameter7",
+      "degree5-diameter5"
+    ],
     "preserve_published_paths": true,
-    "scope": "Refresh table comparisons and document external records based on the (14,5) and (15,5) repository graphs",
-    "external_record_comparison": "verification/external-records-2026-10-23/comparison.json"
+    "scope": "Publish the 208-vertex cubic graph and the 660-vertex 5-regular graph with an invariant matching, construction proofs, symmetry data, and independent verification."
   },
   "update_history": [
     {
@@ -321,6 +433,19 @@
         "degree13-diameter5"
       ],
       "preserve_published_paths": true
+    },
+    {
+      "date": "2026-10-23",
+      "added_result_ids": [],
+      "preserve_published_paths": true,
+      "scope": "Refresh table comparisons and document external records based on the (14,5) and (15,5) repository graphs",
+      "external_record_comparison": "verification/external-records-2026-10-23/comparison.json"
+    },
+    {
+      "date": "2026-11-03",
+      "added_result_ids": [],
+      "preserve_published_paths": true,
+      "scope": "Refresh current main-table comparisons, distinguish lagging detail pages, and retain the dated attribution of earlier external records."
     }
   ]
 }

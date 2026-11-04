@@ -3,7 +3,7 @@
 **$N(15,3)\ge 1{,}458$.** Simple undirected connected 15-regular graph;
 10,935 edges, diameter exactly 3.
 
-**Table status on 2026-10-23:** the published (15,3) record order is 1,539, above this graph's 1,458 vertices. This package and its published paths are retained. See the [dated repository comparison](../../verification/table-snapshot-2026-10-23.json).
+**Table status on 2026-11-04:** the published (15,3) record order is 1,620, above this graph's 1,458 vertices. This package and its published paths are retained. See the [dated repository comparison](../../verification/table-snapshot-2026-11-04.json).
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **1,224 → 1,458**, an increase of **234 vertices (19.12%)**.
 

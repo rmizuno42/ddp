@@ -1,0 +1,7 @@
+PASS: SHA-256 manifest.
+PASS: deterministic matrix reconstruction matches all frozen generated files.
+PASS: independent 12-point permutation verification of S^5 and all 660 words.
+PASS: both edge sets independently reconstructed as permutations.
+PASS: algebraic graph: 660 vertices, 1635 edges, maximum degree 5, diameter 5.
+PASS: regular graph: 660 vertices, 1650 edges, maximum degree 5, diameter 5.
+VERIFIED: N(5,5) >= 660; a simple 5-regular certificate is included.

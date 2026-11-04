@@ -3,7 +3,9 @@
 **$N(12,4)\ge 5{,}832$.** Simple undirected connected 12-regular graph,
 34,992 edges, diameter exactly 4.
 
-**Table status on 2026-10-23:** 5,832 vertices, matching the published (12,4) record order. See the [dated repository comparison](../../verification/table-snapshot-2026-10-23.json).
+**Table status on 2026-11-04:** the main table lists 6,156 vertices, above this
+graph's 5,832. The linked detail page still describes the earlier 5,832-vertex
+record. See the [dated repository comparison](../../verification/table-snapshot-2026-11-04.json).
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **5,184 → 5,832**, an increase of **648 vertices (12.50%)**.
 

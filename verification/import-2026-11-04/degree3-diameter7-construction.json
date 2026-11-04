@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "vertices": 208,
+  "edges": 312,
+  "degree": 3,
+  "diameter": 7,
+  "girth": 9,
+  "full_automorphism_group": "C16",
+  "full_automorphism_group_order": 16,
+  "tree_certificate": {
+    "vertices": 208,
+    "trees_checked": 13,
+    "parent_edges_checked": 2691,
+    "maximum_depth": 7,
+    "translation_automorphisms_checked": 16,
+    "moore_bound_degree3_diameter6": 190,
+    "diameter_exactly": 7,
+    "valid": true
+  },
+  "modular_reachability_pairs": 169
+}

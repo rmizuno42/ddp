@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "nauty_version": "2.9.3",
+  "exporter": "verification/automorphisms.cpp",
+  "exporter_sha256": "fbe35f68b12d7e28a584b201c25975f5f6466b67419f1613ec3a0acdf971ed24",
+  "runs": [
+    {
+      "input": "results/degree5-diameter5/certificate/graph.edges",
+      "input_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+      "report": "nauty.json",
+      "report_sha256": "a7aa113d129e40ec2654b383caf6e1bd0e0927f1041b1107f1fc5894a3042c48",
+      "full_group_order": 60
+    },
+    {
+      "input": "results/degree5-diameter5/certificate/algebraic.edges",
+      "input_sha256": "b41dbc8057c7fda228dbcdc1c05c35a789461afce81b67dacac594c3fb111630",
+      "report": "algebraic-nauty.json",
+      "report_sha256": "5771e15a6166372548c7336f39cefc2d7fb0cc7619f34eaf878cc42b896e2a08",
+      "full_group_order": 60
+    },
+    {
+      "input": "archive/n55_660_construction_2026-09-25.zip: n55_660/graphs/n55_660_regular.edges, header normalized to n m",
+      "input_sha256": "b4295286918807d72c5dec4fd7dcc2a6731e0b79d932ab4768cdafcfbba96993",
+      "report": "september-regular-nauty.json",
+      "report_sha256": "f859bbf0d9e1624ac747e18240b3eebc2c82b6dfa5acb2598c5369ca21b941fc",
+      "full_group_order": 12
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "publication_date": "2026-11-04",
+  "records": [
+    {
+      "archive": "n37_208_construction_2026-09-26.zip",
+      "sha256": "f6d792d5fec991e278ace58aa0214075d853c3234f8c7f21a990a75f931096ad",
+      "source_verification": "PASS",
+      "log": "verification/import-2026-11-04/n37_208-source.txt"
+    },
+    {
+      "archive": "n55_660_construction_2026-09-25.zip",
+      "sha256": "f7bdabd9a54527530a738d6b233b48848f06d08b061e1754d5cf6e1e73a9db44",
+      "source_verification": "PASS",
+      "log": "verification/import-2026-11-04/n55_660-source.txt"
+    },
+    {
+      "result_id": "degree3-diameter7",
+      "graph_source": "exploration/candidates/imported/n37_208/graphs/n37_208.edges",
+      "unchanged_vertex_labels_and_edges": true,
+      "format_change": "Header changes from n to n m; edge rows are unchanged.",
+      "published_edge_sha256": "647216e9b06ed4a2be0431522ed00393c7201fcccc93b28d52bd9c53d22ad3eb"
+    },
+    {
+      "result_id": "degree5-diameter5",
+      "graph_source": "exploration/symmetry-extension-2026-11-03/graphs/660-symmetric-regular.edges",
+      "unchanged_vertex_labels_and_edges": true,
+      "format_change": "Header changes from n to n m; edge rows are unchanged.",
+      "published_edge_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531"
+    }
+  ]
+}

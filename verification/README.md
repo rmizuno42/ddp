@@ -1,9 +1,9 @@
 # Final verification from edge lists
 
-All eight graphs in [results.json](../results.json) passed a direct check of
+All ten graphs in [results.json](../results.json) passed a direct check of
 their vertex count, edge count, maximum degree, degree distribution, simplicity,
 connectivity, and exact diameter. The [summary](final/summary.json) lists the
-eight reports. Each report includes the input file hash, verifier hash,
+ten reports. Each report includes the input file hash, verifier hash,
 execution time, ordered-pair distance histogram, and a pair of vertices at the
 claimed diameter.
 
@@ -58,4 +58,13 @@ that computes distances without a depth limit and reads no construction data
 or prior reports. Its measurements confirm order 88,452, regular degree 13,
 and diameter exactly 5.
 
-[Repository verification record](../VERIFICATION.md)
+On 2026-11-04, all ten indexed graphs passed the common verifier. The new
+208- and 660-vertex graphs also passed a separate ordinary-BFS implementation,
+with no construction data or symmetry reduction. Its complete distance
+histograms agree with the common verifier's reports. To reproduce those two
+checks using Python alone:
+
+    python3 verification/verify_small_graphs.py --output /tmp/ddp-small-checks
+
+See the [November reports](independent-2026-11-04/) and the
+[repository verification record](../VERIFICATION.md).

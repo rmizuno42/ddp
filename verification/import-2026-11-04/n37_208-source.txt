@@ -1,0 +1,8 @@
+PASS: SHA-256 checks for 232 frozen files.
+PASS: formula, full adjacency list, edge list, and independent neighbour function agree.
+PASS: independent all-pairs BFS: all 21,528 unordered pairs have distance at most 7.
+PASS: 169 complete modular reachability sets independently prove the upper bound.
+PASS: 13 depth-7 spanning trees and cyclic translation; 208 > 190 excludes diameter <=6.
+PASS: normalization is only a relabeling, with no vertices or edges added.
+PASS: girth 9 and full automorphism group C16.
+VERIFIED: N(3,7) >= 208; a simple cubic graph with diameter 7 and girth 9.

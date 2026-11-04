@@ -5,9 +5,11 @@ This package accompanies [arXiv:2606.15860](https://arxiv.org/abs/2606.15860), *
 This directory preserves arXiv:2606.15860 and its complete
 supplementary materials. Return to the [repository result index](../../README.md)
 for later constructions. The bounds below were improvements at the time of the
-paper: on 2026-10-23, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
-lists 42,342 for (12,5) and 147,456 for (16,5), so the former is now a historical
-result and the latter matches the table.
+paper: on 2026-11-04, the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
+lists 42,342 for (12,5) and 153,600 for (16,5), both above the orders in this
+package. The (16,5) detail page still describes the earlier 147,456-vertex
+record; comparisons here use the main table. See the
+[dated repository comparison](../../verification/table-snapshot-2026-11-04.json).
 
 📄 **[Download the paper (PDF)](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)** · 📚 **[arXiv:2606.15860](https://arxiv.org/abs/2606.15860)**
 

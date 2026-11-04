@@ -1,9 +1,13 @@
 {
   "prime": 11,
   "vertices": 660,
-  "edges": 1650,
-  "degree": 5,
+  "edges": 1635,
+  "maximum_degree": 5,
   "diameter": 5,
+  "degree_histogram": {
+    "4": 30,
+    "5": 630
+  },
   "vertex_order": "Lexicographically sorted normalized projective matrices of square determinant; first nonzero entry equals 1.",
   "h": [
     1,
@@ -43,7 +47,7 @@
       0
     ]
   ],
-  "base_edge_rule": "x -- h*x*s for s in S; remove loops.",
+  "edge_rule": "x -- h*x*s for s in S; remove loops.",
   "exact_product_set_sizes_k_0_to_5": [
     1,
     5,
@@ -53,11 +57,6 @@
     660
   ],
   "factorization_identity": "S^5 = PGL(2,11) minus PSL(2,11)",
-  "base_edges": 1635,
-  "base_degree_histogram": {
-    "4": 30,
-    "5": 630
-  },
   "A_centralizer_of_h": [
     [
       0,
@@ -156,113 +155,6 @@
       9,
       3,
       10
-    ]
-  ],
-  "matching_rule": "At a loop site x, set s=x^-1*h*x and join x to x*b_s.",
-  "matching_choices": [
-    {
-      "s": [
-        1,
-        0,
-        0,
-        10
-      ],
-      "b_s": [
-        0,
-        1,
-        8,
-        0
-      ]
-    },
-    {
-      "s": [
-        1,
-        1,
-        4,
-        10
-      ],
-      "b_s": [
-        1,
-        1,
-        5,
-        10
-      ]
-    },
-    {
-      "s": [
-        1,
-        5,
-        3,
-        10
-      ],
-      "b_s": [
-        1,
-        9,
-        3,
-        10
-      ]
-    }
-  ],
-  "matching_edges": [
-    [
-      0,
-      56
-    ],
-    [
-      11,
-      59
-    ],
-    [
-      22,
-      58
-    ],
-    [
-      33,
-      55
-    ],
-    [
-      44,
-      57
-    ],
-    [
-      115,
-      219
-    ],
-    [
-      127,
-      207
-    ],
-    [
-      133,
-      203
-    ],
-    [
-      139,
-      198
-    ],
-    [
-      158,
-      175
-    ],
-    [
-      453,
-      575
-    ],
-    [
-      474,
-      572
-    ],
-    [
-      477,
-      558
-    ],
-    [
-      483,
-      598
-    ],
-    [
-      490,
-      569
     ]
   ]
 }

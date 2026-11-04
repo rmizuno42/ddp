@@ -5,7 +5,74 @@
   "archive_preserved_byte_for_byte": true,
   "archive_members": 32,
   "published_edge_format": "n m header, then sorted undirected edges u v",
-  "published_edge_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+  "published_edge_sha256": "b41dbc8057c7fda228dbcdc1c05c35a789461afce81b67dacac594c3fb111630",
   "package_notes": "The source ZIP is preserved unchanged. Maintained construction and verification programs are outside the archive.",
-  "graph_relation_to_source": "Same PSL(2,11) labels and base edges. The main graph replaces the September regular completion by the invariant matching obtained on 2026-11-03."
+  "graph_relation_to_source": "Same PSL(2,11) vertex labels and edge rows as n55_660/graphs/n55_660_algebraic.edges in the source archive. Only the header is normalized to n m. No regularizing matching is added.",
+  "previous_main_graph": {
+    "edge_file_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+    "edges": 1650,
+    "revision": "3c74b2655db570b241288da271397d64d6bf539d",
+    "removed_matching_edges": [
+      [
+        0,
+        56
+      ],
+      [
+        11,
+        59
+      ],
+      [
+        22,
+        58
+      ],
+      [
+        33,
+        55
+      ],
+      [
+        44,
+        57
+      ],
+      [
+        115,
+        219
+      ],
+      [
+        127,
+        207
+      ],
+      [
+        133,
+        203
+      ],
+      [
+        139,
+        198
+      ],
+      [
+        158,
+        175
+      ],
+      [
+        453,
+        575
+      ],
+      [
+        474,
+        572
+      ],
+      [
+        477,
+        558
+      ],
+      [
+        483,
+        598
+      ],
+      [
+        490,
+        569
+      ]
+    ]
+  }
 }

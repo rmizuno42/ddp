@@ -42,7 +42,8 @@ All $n^2$ ordered pairs must be reached within the claimed diameter, and at
 least one pair must first be reached at that diameter. Together these establish
 connectivity and the exact diameter, without construction data or symmetry
 assumptions. The maximum degree and full degree distribution must also match
-the index; in particular, the (14,5) graph has degrees 13 and 14.
+the index; in particular, the (5,5) graph has degrees 4 and 5, and the (14,5)
+graph has degrees 13 and 14.
 
 Before the September run, the verifier was compared with ordinary Python queue BFS
 on 16 combinations of graphs, batch sizes, and thread counts, including partial
@@ -58,7 +59,11 @@ that computes distances without a depth limit and reads no construction data
 or prior reports. Its measurements confirm order 88,452, regular degree 13,
 and diameter exactly 5.
 
-On 2026-11-04, all ten indexed graphs passed the common verifier. The new
+On 2026-11-04, all ten indexed graphs passed the common verifier. Later that
+day, the 660-vertex main graph was changed to the loopless graph without the
+15 regularizing edges. It passed both verifiers again. The other nine common
+reports were retained after rechecking their input hashes and parameters;
+the summary records which report was refreshed. The new
 208- and 660-vertex graphs also passed a separate ordinary-BFS implementation,
 with no construction data or symmetry reduction. Its complete distance
 histograms agree with the common verifier's reports. To reproduce those two

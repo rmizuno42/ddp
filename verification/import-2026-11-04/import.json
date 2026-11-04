@@ -22,10 +22,15 @@
     },
     {
       "result_id": "degree5-diameter5",
-      "graph_source": "exploration/symmetry-extension-2026-11-03/graphs/660-symmetric-regular.edges",
+      "graph_source": "results/degree5-diameter5/certificate/archive/n55_660_construction_2026-09-25.zip:n55_660/graphs/n55_660_algebraic.edges",
       "unchanged_vertex_labels_and_edges": true,
       "format_change": "Header changes from n to n m; edge rows are unchanged.",
-      "published_edge_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531"
+      "published_edge_sha256": "b41dbc8057c7fda228dbcdc1c05c35a789461afce81b67dacac594c3fb111630",
+      "initial_regular_completion": {
+        "graph_source": "exploration/symmetry-extension-2026-11-03/graphs/660-symmetric-regular.edges",
+        "published_edge_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531"
+      },
+      "main_graph_update": "Removed the 15 regularizing matching edges; the main graph is the loopless algebraic graph of maximum degree 5 and diameter 5."
     }
   ]
 }

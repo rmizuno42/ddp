@@ -13,8 +13,24 @@
     "degree16-diameter3.json",
     "paper-degree16-diameter5.json"
   ],
-  "results_index_sha256": "8783e7bac68780bc71102492619ea5f8b8072c3578e49f6a668b2afa008a995f",
+  "results_index_sha256": "acef0231e64e507acd243147c7a21ddd1ac96e917f1269a54f314db609272603",
   "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
   "runner_source_sha256": "3b118ace6d404510a7972a941455d4fe77ffdec4296eb4e4c9a99381d6775e6e",
-  "completed_at_utc": "2026-11-04T03:40:34.061080+00:00"
+  "completed_at_utc": "2026-11-04T08:52:23.179742+00:00",
+  "initial_full_run_completed_at_utc": "2026-11-04T03:40:34.061080+00:00",
+  "verification_scope": "Incremental update: reran the common C++ verifier on the loopless 660-vertex graph; retained the other nine reports after verifying their input hashes, verifier hash, and parameters against the current index.",
+  "refreshed_reports": [
+    "degree5-diameter5.json"
+  ],
+  "retained_reports": [
+    "degree3-diameter7.json",
+    "degree12-diameter4.json",
+    "paper-degree12-diameter5.json",
+    "degree13-diameter5.json",
+    "degree14-diameter5.json",
+    "degree15-diameter3.json",
+    "degree15-diameter5.json",
+    "degree16-diameter3.json",
+    "paper-degree16-diameter5.json"
+  ]
 }

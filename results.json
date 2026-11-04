@@ -41,9 +41,10 @@
       "degree": 5,
       "diameter": 5,
       "vertices": 660,
-      "edges": 1650,
+      "edges": 1635,
       "degree_histogram": {
-        "5": 660
+        "4": 30,
+        "5": 630
       },
       "table_order": 650,
       "difference": 10,
@@ -52,14 +53,14 @@
       "summary": "results/degree5-diameter5/README.md",
       "edge_file": "results/degree5-diameter5/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
-      "edge_file_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+      "edge_file_sha256": "b41dbc8057c7fda228dbcdc1c05c35a789461afce81b67dacac594c3fb111630",
       "certificate_directory": "results/degree5-diameter5/certificate",
       "construction": "results/degree5-diameter5/certificate/construct.py",
       "proof": "results/degree5-diameter5/certificate/proof.md",
       "construction_verifier": "results/degree5-diameter5/certificate/verify.py",
       "full_automorphism_group_order": 60,
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55",
-      "variant": "Regular completion preserving all 60 automorphisms of the base graph."
+      "variant": "Loopless folded Cayley graph; no regularizing edges are added."
     },
     {
       "id": "degree12-diameter4",
@@ -424,7 +425,7 @@
       "degree5-diameter5"
     ],
     "preserve_published_paths": true,
-    "scope": "Publish the 208-vertex cubic graph and the 660-vertex 5-regular graph with an invariant matching, construction proofs, symmetry data, and independent verification."
+    "scope": "Publish the 208-vertex cubic graph and the loopless 660-vertex graph of maximum degree 5, with construction proofs, symmetry data, and independent verification."
   },
   "update_history": [
     {

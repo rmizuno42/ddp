@@ -10,7 +10,7 @@ certificate or graph symmetry. Previously published graph paths are preserved.
 | Result | Vertices | Edges | Measured degrees | Measured diameter | Report |
 |---|---:|---:|---|---:|---|
 | **(3,7), added 2026-11-04** | **208** | **312** | **3-regular** | **7** | [PASS](verification/final/degree3-diameter7.json) |
-| **(5,5), added 2026-11-04** | **660** | **1,650** | **5-regular** | **5** | [PASS](verification/final/degree5-diameter5.json) |
+| **(5,5), added 2026-11-04** | **660** | **1,635** | **30 vertices of degree 4; 630 of degree 5** | **5** | [PASS](verification/final/degree5-diameter5.json) |
 | (12,4) | 5,832 | 34,992 | 12-regular | 4 | [PASS](verification/final/degree12-diameter4.json) |
 | (12,5), arXiv:2606.15860 | 34,992 | 209,952 | 12-regular | 5 | [PASS](verification/final/paper-degree12-diameter5.json) |
 | **(13,5), added 2026-10-13** | **88,452** | **574,938** | **13-regular** | **5** | [PASS](verification/final/degree13-diameter5.json) |
@@ -25,6 +25,11 @@ connectivity, degree distributions, and exact diameters. Input hashes, exact
 ordered-pair distance histograms, and diameter witnesses are in the reports.
 See the [method and reproduction commands](verification/README.md) and
 [machine-readable run summary](verification/final/summary.json).
+After the initial ten-graph run, the 660-vertex input was changed to the
+loopless graph without the 15 regularizing edges and checked again. The other
+nine graph reports were retained after confirming their input hashes and
+parameters against the current index. The summary distinguishes this update
+from the initial full run.
 
 ## November import: (3,7), 208 vertices, and (5,5), 660 vertices
 
@@ -35,9 +40,11 @@ temporary copies, including the archived 660-vertex permutation certificate.
 
 The maintained packages reproduce their public edge lists directly from the
 construction formulas. The 208-vertex edge set and labels agree with the
-September source. The 660-vertex main graph agrees with the invariant matching
-constructed locally on 2026-11-03. For both, the edge-list header was changed
+September source. The 660-vertex main graph agrees with the loopless algebraic
+graph in the September source archive. For both, the edge-list header was changed
 from the vertex count alone to the vertex and edge counts; edge rows did not change.
+The initial import used a 15-edge regular completion; those additional edges
+have been removed from the maintained graph and its constructor.
 
 The [independent Python verifier](verification/verify_small_graphs.py) reads
 only these edge lists and performs unrestricted ordinary BFS from every
@@ -50,10 +57,11 @@ connectivity, and exact diameter.
 The 208-vertex package additionally checks 13 spanning trees, all 169 modular
 reachability sets, girth 9, and a proof that its full automorphism group is
 $C_{16}$. The 660-vertex package checks the projective-matrix identity, the
-15-edge matching, all 60 explicit automorphisms, and agreement with nauty's
+degree distribution, all 60 explicit automorphisms, and agreement with nauty's
 generators. The [full-group reports](results/degree5-diameter5/certificate/symmetry/)
-give orders 60, 60, and 12 for the main graph, base graph, and September
-regular variant, respectively.
+give order 60 for the loopless main graph and order 12 for the historical
+September regular variant. The algebraic edge-list URL remains an identical
+copy of the main edge list.
 
 ## October import: (13,5), 88,452 vertices (historical)
 

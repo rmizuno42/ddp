@@ -34,15 +34,15 @@ caught up with the main table.
   group is $C_{16}$. The package includes diagrams showing its 16-fold
   rotational symmetry and the quotient with its edge shifts.
 - **[(5,5), 660 vertices](results/degree5-diameter5/)**: a folded Cayley graph
-  with an added matching, exceeding the table order by **10 (+1.54%)**.
-  The main graph is 5-regular and has full automorphism-group order 60.
-  The base graph and the September regular completion are also preserved.
+  with loops removed, exceeding the table order by **10 (+1.54%)**.
+  It has 1,635 edges, 30 vertices of degree 4, 630 of degree 5, and full
+  automorphism-group order 60. Its maximum degree is 5 and diameter is 5.
 
 Both have the exact claimed diameter. Their published edge lists passed
 [independent ordinary BFS from every vertex](verification/independent-2026-11-04/)
 and the common C++ verifier. Each package includes an English construction
 proof, reproducible code, and its unmodified September source archive.
-The 660-vertex main graph uses the invariant matching obtained on 2026-11-03.
+The 660-vertex graph establishes the bound without adding edges to make it regular.
 
 ## Earlier addition — 2026-10-13
 
@@ -133,7 +133,7 @@ length $s$). The inverse map on labels is fixed-point-free in the paper.
 The (12,4), (13,5), (14,5), (15,3), (15,5), and (16,3) constructions
 use or extend this controller-and-fiber approach as specified in each summary.
 The (3,7) graph is a cyclic voltage construction. The (5,5) graph is obtained
-by folding a bipartite Cayley graph and adding a matching.
+by folding a bipartite Cayley graph and removing loops.
 
 The (13,5) construction also uses matching maps that are not all affine in the given fiber coordinates. Their diameter bounds are established
 by the accompanying certificates. Rank statements for the affine parts refer
@@ -163,11 +163,11 @@ construction with voltage group $\mathbb Z_{16}$.
 
 ### (5,5): 660 vertices — added 2026-11-04
 
-A simple 5-regular graph on $\mathrm{PSL}(2,11)$ with 1,650 edges and diameter
-exactly 5. The base adjacency $x\sim hxs$ folds a bipartite Cayley graph on
-$\mathrm{PGL}(2,11)$. A 15-edge matching on its degree-4 vertices makes it
-regular while retaining the full automorphism group, the direct product of
-the dihedral group of order 10 and $S_3$. The identity
+A simple graph on $\mathrm{PSL}(2,11)$ with 1,635 edges, maximum degree 5,
+and diameter exactly 5. The adjacency $x\sim hxs$, with loops removed, folds
+a bipartite Cayley graph on $\mathrm{PGL}(2,11)$. There are 30 vertices of
+degree 4 and 630 of degree 5. Its full automorphism group is the direct product
+of the dihedral group of order 10 and $S_3$. The identity
 $S^5=\mathrm{PGL}(2,11)\setminus\mathrm{PSL}(2,11)$ proves the diameter upper
 bound.
 [Construction, proof, and certificates](results/degree5-diameter5/).
@@ -273,7 +273,7 @@ verification/                   direct verifier, reports, and table snapshot
 results/
   diameter5-paper/              arXiv:2606.15860 and its supplementary materials
   degree3-diameter7/            summary, certificates, and symmetry diagrams
-  degree5-diameter5/            summary, certificates, and graph variants
+  degree5-diameter5/            summary and certificates for the folded Cayley graph
   degree12-diameter4/           summary and certificate package
   degree13-diameter5/           added 2026-10-13: summary and certificate package
   degree14-diameter5/           summary and certificate package

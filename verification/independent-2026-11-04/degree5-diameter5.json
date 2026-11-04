@@ -1,12 +1,13 @@
 {
   "status": "PASS",
   "vertices": 660,
-  "edges": 1650,
+  "edges": 1635,
   "simple": true,
   "connected": true,
   "maximum_degree": 5,
   "degree_histogram": {
-    "5": 660
+    "4": 30,
+    "5": 630
   },
   "diameter": 5,
   "diameter_witness": [
@@ -17,17 +18,17 @@
   "ordered_pairs_checked": 435600,
   "distance_histogram_ordered_pairs": [
     660,
-    3300,
-    13200,
-    51540,
-    185160,
-    181740
+    3270,
+    12960,
+    50460,
+    182520,
+    185730
   ],
   "eccentricity_histogram": {
     "5": 660
   },
   "edge_file": "results/degree5-diameter5/certificate/graph.edges",
-  "edge_file_sha256": "f3440f770ba15fc9e5a9d3553cfe7118df6301f6b3be14a2fa25870e2da1c531",
+  "edge_file_sha256": "b41dbc8057c7fda228dbcdc1c05c35a789461afce81b67dacac594c3fb111630",
   "verifier_source_sha256": "078ffe479bd920fb8f59c629d9c9b4fd6863b0538667e4474b1d99e6b6457d63",
   "method": "Ordinary all-pairs queue BFS without a depth limit or symmetry reduction."
 }

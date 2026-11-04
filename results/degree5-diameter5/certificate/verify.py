@@ -18,9 +18,9 @@ def order(x):
 
 
 def main():
-    vertices, base, edges, spec = construct.build()
+    vertices, edges, spec = construct.build()
     assert (ROOT / 'graph.edges').read_text() == construct.edge_text(660, edges)
-    assert (ROOT / 'algebraic.edges').read_text() == construct.edge_text(660, base)
+    assert (ROOT / 'algebraic.edges').read_text() == construct.edge_text(660, edges)
     assert json.loads((ROOT / 'construction.json').read_text()) == json.loads(json.dumps(spec))
     rows = (ROOT / 'vertices.tsv').read_text().splitlines()
     assert [list(map(int, row.split())) for row in rows[1:]] == [[i, *x] for i, x in enumerate(vertices)]
@@ -55,13 +55,13 @@ def main():
                 queue.append(q)
     assert generated == actions
     orbits = {frozenset(p[v] for p in actions) for v in range(660)}
-    print(json.dumps({'status': 'PASS', 'vertices': 660, 'edges': 1650, 'degree': 5,
+    print(json.dumps({'status': 'PASS', 'vertices': 660, 'edges': 1635, 'maximum_degree': 5,
+                     'degree_histogram': dict(Counter(map(len, adjacency))),
                      'diameter': 5, 'verified_automorphisms': 60,
                      'group': 'Dihedral group of order 10 x S3',
                      'vertex_orbit_size_counts': dict(Counter(map(len, orbits))),
                      'full_group_upper_bound': 'Saved nauty computation; see symmetry/README.md for reproduction.',
-                     'factorization_identity': spec['factorization_identity'],
-                     'matching_edges': 15}, indent=2))
+                     'factorization_identity': spec['factorization_identity']}, indent=2))
 
 
 if __name__ == '__main__':

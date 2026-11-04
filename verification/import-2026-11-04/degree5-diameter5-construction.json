@@ -1,8 +1,12 @@
 {
   "status": "PASS",
   "vertices": 660,
-  "edges": 1650,
-  "degree": 5,
+  "edges": 1635,
+  "maximum_degree": 5,
+  "degree_histogram": {
+    "4": 30,
+    "5": 630
+  },
   "diameter": 5,
   "verified_automorphisms": 60,
   "group": "Dihedral group of order 10 x S3",
@@ -11,6 +15,5 @@
     "30": 6
   },
   "full_group_upper_bound": "Saved nauty computation; see symmetry/README.md for reproduction.",
-  "factorization_identity": "S^5 = PGL(2,11) minus PSL(2,11)",
-  "matching_edges": 15
+  "factorization_identity": "S^5 = PGL(2,11) minus PSL(2,11)"
 }

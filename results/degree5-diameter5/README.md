@@ -33,9 +33,7 @@ The explicit actions and the [full-group computation](certificate/symmetry/)
 are both checked. The graph is not vertex-transitive.
 
 This construction folds a bipartite Cayley graph on $\mathrm{PGL}(2,11)$
-and then adds a matching. It uses a different method from the route-chart
-lift construction in [arXiv:2606.15860](../diameter5-paper/); it is not
-obtained by changing that paper's controller.
+and then adds a matching.
 See the [construction proof](certificate/proof.md).
 
 ## Variants

@@ -31,11 +31,10 @@ The graph is not vertex-transitive. The
 [proof and finite certificates](certificate/proof.md) establish both the
 diameter and the full automorphism group.
 
-This is a cyclic voltage construction with a quotient having a loop and a
-semiedge. It shares a fiber description with the constructions in
-[arXiv:2606.15860](../diameter5-paper/), but is not a route-chart lift graph
-as defined there: the fiber is $\mathbb Z_{16}$ and the edge maps are fixed
-translations, without the paper's field parameter or universal route chart.
+This is a cyclic voltage construction with voltage group $\mathbb Z_{16}$.
+The quotient has 13 vertices, a loop, and a semiedge. The directed-edge maps
+are translations $x\mapsto x+s$; the semiedge has voltage 8 and lifts to
+the matching at state 12.
 
 ![The 208-vertex graph with its 16-fold rotational symmetry](figures/n37_208_rotation.png)
 

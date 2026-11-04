@@ -132,8 +132,8 @@ length $s$). The inverse map on labels is fixed-point-free in the paper.
 
 The (12,4), (13,5), (14,5), (15,3), (15,5), and (16,3) constructions
 use or extend this controller-and-fiber approach as specified in each summary.
-The (3,7) cyclic voltage construction and the (5,5) folded Cayley construction
-use different methods, described separately below.
+The (3,7) graph is a cyclic voltage construction. The (5,5) graph is obtained
+by folding a bipartite Cayley graph and adding a matching.
 
 The (13,5) construction also uses matching maps that are not all affine in the given fiber coordinates. Their diameter bounds are established
 by the accompanying certificates. Rank statements for the affine parts refer
@@ -158,7 +158,7 @@ diameter exactly 7, and girth 9. A path through the 13 states, six translated
 chord families, one cycle, and one matching specify every edge. Its full
 automorphism group is $C_{16}$. Thirteen depth-7 spanning trees and cyclic
 translation give a finite diameter certificate. This is a cyclic voltage
-construction, rather than a route-chart lift as defined in arXiv:2606.15860.
+construction with voltage group $\mathbb Z_{16}$.
 [Construction, proof, certificates, and diagrams](results/degree3-diameter7/).
 
 ### (5,5): 660 vertices — added 2026-11-04
@@ -169,7 +169,7 @@ $\mathrm{PGL}(2,11)$. A 15-edge matching on its degree-4 vertices makes it
 regular while retaining the full automorphism group, the direct product of
 the dihedral group of order 10 and $S_3$. The identity
 $S^5=\mathrm{PGL}(2,11)\setminus\mathrm{PSL}(2,11)$ proves the diameter upper
-bound. This construction uses a different method from arXiv:2606.15860.
+bound.
 [Construction, proof, and certificates](results/degree5-diameter5/).
 
 ### (12,4): 5,832 vertices

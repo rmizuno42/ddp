@@ -38,6 +38,17 @@ of a finite group acting on a disjoint union of coset spaces — as the graph of
 on $G/A_4\sqcup G\sqcup G/C_2$ (9 + 108 + 54 points), a union of 7 orbitals. The search code is in
 [search/orbit-graphs](../../search/orbit-graphs/).
 
+![The 171-vertex graph drawn with dihedral symmetry D9](figures/n73_171_symmetry.png)
+
+All 171 vertices and 594 edges are shown; crossings without dots are not vertices. The rotation
+by 40° is the translation $(u,x)\mapsto(u,x+1)$, and the mirror in the vertical axis is the
+automorphism $(u,x)\mapsto(\sigma(u),m_u-x)$ recorded in [layout.json](figures/layout.json).
+The nine star tips are the hub fibre. [SVG](figures/n73_171_symmetry.svg) · [PDF](figures/n73_171_symmetry.pdf)
+
+![The 19-vertex base graph with its Z9 voltages](figures/n73_171_voltage.png)
+
+[Base graph SVG](figures/n73_171_voltage.svg) · [Base graph PDF](figures/n73_171_voltage.pdf)
+
 ## Data and verification
 
 - [Edge list](certificate/graph.edges): first line is the vertex count 171 and edge count 594,
@@ -62,3 +73,7 @@ The first command checks that the formula reproduces the published files, the 19
 the modular reachability of all 361 pairs of base vertices, the isomorphism with the orbit graph
 found by the search, and the automorphism generators. The last command independently checks the
 November additions by ordinary BFS from every vertex.
+
+The [figure generator](figures/draw.py) additionally requires Matplotlib. It checks that the
+drawing contains exactly the published edges, that both symmetries are automorphisms realised by
+the coordinates, and that no edge passes close to a vertex it does not contain.

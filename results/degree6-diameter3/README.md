@@ -46,6 +46,18 @@ SmallGroup(108,33) on $G/C_6\sqcup G/C_2\sqcup G/C_2$ (18 + 54 + 54 points). The
 isomorphism, also arose from SmallGroup(108,8) and SmallGroup(108,43). The search code is in
 [search/orbit-graphs](../../search/orbit-graphs/).
 
+![The 126-vertex graph drawn with dihedral symmetry D3](figures/n63_126_symmetry.png)
+
+All 126 vertices and 378 edges are shown; crossings without dots are not vertices. The rotation
+by 120° and the mirror in the vertical axis are automorphisms recorded in
+[layout.json](figures/layout.json); together they generate a dihedral group of order 6 that acts
+freely on the vertices. The three rings are the three vertex orbits of the automorphism group.
+[SVG](figures/n63_126_symmetry.svg) · [PDF](figures/n63_126_symmetry.pdf)
+
+![The 14-vertex base graph with its Z3 x Z3 voltages](figures/n63_126_voltage.png)
+
+[Base graph SVG](figures/n63_126_voltage.svg) · [Base graph PDF](figures/n63_126_voltage.pdf)
+
 ## Data and verification
 
 - [Edge list](certificate/graph.edges): first line is the vertex count 126 and edge count 378,
@@ -70,3 +82,7 @@ The first command checks that the formula reproduces the published files, the 14
 the modular reachability of all 196 pairs of base vertices, the isomorphism with the orbit graph
 found by the search, and the automorphism generators. The last command independently checks the
 November additions by ordinary BFS from every vertex, without a depth limit or construction data.
+
+The [figure generator](figures/draw.py) additionally requires Matplotlib. It checks that the
+drawing contains exactly the published edges, that both symmetries are automorphisms realised by
+the coordinates, and that no edge passes close to a vertex it does not contain.

@@ -1,0 +1,17 @@
+{
+ "publication_date": "2026-11-10",
+ "records": [
+  {
+   "result_id": "degree6-diameter3",
+   "graph_source": "orbit-graph search, SmallGroup(108,33), discovered edge list sha256 2c9b4cb1bb5c5f5f244a85725e871d2a026753311479d066ac458cbf33bae209",
+   "published_labelling": "Z3 x Z3 voltage-graph labelling; isomorphic to the discovered graph (orbit_graph_certificate.json)",
+   "published_edge_sha256": "5172914429db28371b26767260f383d9207b4ee50328a4032f4bb7ceb5210432"
+  },
+  {
+   "result_id": "degree7-diameter3",
+   "graph_source": "orbit-graph search, SmallGroup(108,19), discovered edge list sha256 e66455dfc30daaaf584605e5f19408828406b142432e62a20e996a859b69d4a5",
+   "published_labelling": "Z9 voltage-graph labelling; isomorphic to the discovered graph (orbit_graph_certificate.json)",
+   "published_edge_sha256": "2a83c106ea31ca86ca5e1194bf4722e50470f4f7da894b2e1a59bb9ddb6d9131"
+  }
+ ]
+}

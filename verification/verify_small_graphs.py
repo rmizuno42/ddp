@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independently measure the two November graphs using ordinary, unrestricted BFS.
+"""Independently measure the November graphs using ordinary, unrestricted BFS.
 
 Reads only the published edge lists and expected parameters from results.json.
 No construction formula, graph symmetry, or previously computed distances are used.
@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-IDS = {'degree3-diameter7', 'degree5-diameter5'}
+IDS = {'degree3-diameter7', 'degree5-diameter5', 'degree6-diameter3', 'degree7-diameter3'}
 
 
 def measure(path):

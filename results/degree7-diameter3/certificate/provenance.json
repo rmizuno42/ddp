@@ -1,0 +1,24 @@
+{
+  "found_on": "2026-11-10",
+  "search_code": "search/orbit-graphs (orbsearch2.cpp, gsets.g)",
+  "software": {
+    "GAP": "4.16.1 with the SmallGroups library",
+    "nauty": "2.9.3 (dreadnaut)",
+    "python": "3.13.0",
+    "compiler": "Apple clang 17.0.0"
+  },
+  "search_assistance": "The search programs were written and run with Claude Code (Anthropic) under the direction of the repository author.",
+  "published_edge_format": "n m header, then sorted undirected edges u v",
+  "result": "(7,3): 171 vertices, maximum degree 7, diameter 3",
+  "discovery": {
+    "group": "SmallGroup(108,19)",
+    "structure": "(C2 x C2) : (C9 : C3)",
+    "vertex_set": "G/A4 + G + G/C2 (9 + 108 + 54 points)",
+    "combo_in_examples_file": "search/orbit-graphs/examples/SG108_19.gs actions 10,16,17",
+    "search_stage": "screen (SC)",
+    "edge_orbits": 7
+  },
+  "discovered_edge_list_sha256": "e66455dfc30daaaf584605e5f19408828406b142432e62a20e996a859b69d4a5",
+  "published_edge_sha256": "2a83c106ea31ca86ca5e1194bf4722e50470f4f7da894b2e1a59bb9ddb6d9131",
+  "graph_relation_to_discovery": "The published labelling is the Z9 voltage-graph labelling 9u + x of the quotient by the freely acting normal subgroup C9 of the automorphism group. It is isomorphic to the discovered orbit graph; orbit_graph_certificate.json gives the isomorphism, checked by check_isomorphism.py (and by nauty canonical forms)."
+}

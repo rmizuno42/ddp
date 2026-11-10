@@ -1,0 +1,42 @@
+{
+ "status": "PASS",
+ "vertices": 171,
+ "edges": 594,
+ "degree": 7,
+ "degree_histogram": {
+  "6": 9,
+  "7": 162
+ },
+ "diameter": 3,
+ "girth": 4,
+ "full_automorphism_group": "SmallGroup(216,96) = (C2 x C2) : (C9 : C6)",
+ "full_automorphism_group_order": 216,
+ "automorphism_group_source": "computed with nauty 2.9.3 and identified with GAP 4.16.1; generators checked as automorphisms",
+ "construction_reproduces_published_files": true,
+ "tree_certificate": {
+  "vertices": 171,
+  "trees_checked": 19,
+  "parent_edges_checked": 3230,
+  "maximum_depth": 3,
+  "translation_automorphisms_checked": 9,
+  "moore_bound_degree7_diameter2": 50,
+  "diameter_exactly": 3,
+  "valid": true
+ },
+ "modular_reachability_pairs": 361,
+ "orbit_graph_isomorphism": {
+  "group": "SmallGroup(108,19)",
+  "edge_orbits": 7,
+  "valid": true
+ },
+ "verifier_output": [
+  "n=171 m=594 degrees=[6, 7] sha256(graph.edges)=2a83c106ea31ca86ca5e1194bf4722e50470f4f7da894b2e1a59bb9ddb6d9131",
+  "PASS: 19 trees of depth <= 3; translations preserve all 594 edges",
+  "PASS: all 361 ordered base pairs reach every voltage within 3 steps",
+  "PASS: orbit graph of SmallGroup(108,19) (7 edge orbits, 594 edges) maps onto the published graph",
+  "PASS: 5 automorphism generators preserve the edge set (group order 216 computed with nauty)",
+  "PASS: order 171, maximum degree 7, diameter exactly 3"
+ ],
+ "verifier_sha256": "f42207bd6901dbcfc7b4ba49b633b67de63dbd4e64a01d39d04c71b65c735c7d",
+ "published_edge_sha256": "2a83c106ea31ca86ca5e1194bf4722e50470f4f7da894b2e1a59bb9ddb6d9131"
+}

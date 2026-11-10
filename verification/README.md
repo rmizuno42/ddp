@@ -1,9 +1,9 @@
 # Final verification from edge lists
 
-All ten graphs in [results.json](../results.json) passed a direct check of
+All twelve graphs in [results.json](../results.json) passed a direct check of
 their vertex count, edge count, maximum degree, degree distribution, simplicity,
-connectivity, and exact diameter. The [summary](final/summary.json) lists the
-ten reports. Each report includes the input file hash, verifier hash,
+connectivity, and exact diameter (rerun on 2026-11-10 after adding the (6,3) and
+(7,3) graphs). The [summary](final/summary.json) lists the twelve reports. Each report includes the input file hash, verifier hash,
 execution time, ordered-pair distance histogram, and a pair of vertices at the
 claimed diameter.
 
@@ -53,6 +53,10 @@ Python BFS, and the five imported graphs' complete distance distributions
 matched their supplied BFS reports. On 2026-10-13, the unchanged verifier was
 rerun for all eight graphs, including the newly imported (13,5) graph; its
 distance histogram matched its supplied certificate.
+
+On 2026-11-10 the unchanged C++ verifier was rerun for all twelve graphs; for the ten earlier
+graphs only the run times and timestamps changed. The four November additions also passed the
+[ordinary-BFS verifier](independent-2026-11-10/), with identical distance histograms.
 
 The (13,5) graph also passed a [separately written ordinary-BFS verifier](independent-2026-10-13/)
 that computes distances without a depth limit and reads no construction data

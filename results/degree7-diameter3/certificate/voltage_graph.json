@@ -1,0 +1,334 @@
+{
+ "voltage_group": "Z9",
+ "base_vertices": 19,
+ "vertex_id": "9*u + x",
+ "edge_rule": "(u,x) ~ (v,x+a) for base edge u-v (u<v) with voltage a; loop at u with voltage a: (u,x) ~ (u,x+a)",
+ "base_edges": [
+  {
+   "u": 0,
+   "v": 13,
+   "voltage": 5
+  },
+  {
+   "u": 0,
+   "v": 14,
+   "voltage": 5
+  },
+  {
+   "u": 0,
+   "v": 15,
+   "voltage": 2
+  },
+  {
+   "u": 0,
+   "v": 16,
+   "voltage": 2
+  },
+  {
+   "u": 0,
+   "v": 17,
+   "voltage": 8
+  },
+  {
+   "u": 0,
+   "v": 18,
+   "voltage": 8
+  },
+  {
+   "u": 13,
+   "v": 14,
+   "voltage": 3
+  },
+  {
+   "u": 13,
+   "v": 14,
+   "voltage": 6
+  },
+  {
+   "u": 15,
+   "v": 16,
+   "voltage": 3
+  },
+  {
+   "u": 15,
+   "v": 16,
+   "voltage": 6
+  },
+  {
+   "u": 17,
+   "v": 18,
+   "voltage": 3
+  },
+  {
+   "u": 17,
+   "v": 18,
+   "voltage": 6
+  },
+  {
+   "u": 8,
+   "v": 13,
+   "voltage": 1
+  },
+  {
+   "u": 11,
+   "v": 13,
+   "voltage": 1
+  },
+  {
+   "u": 2,
+   "v": 14,
+   "voltage": 1
+  },
+  {
+   "u": 5,
+   "v": 14,
+   "voltage": 1
+  },
+  {
+   "u": 6,
+   "v": 15,
+   "voltage": 4
+  },
+  {
+   "u": 12,
+   "v": 15,
+   "voltage": 4
+  },
+  {
+   "u": 3,
+   "v": 16,
+   "voltage": 4
+  },
+  {
+   "u": 9,
+   "v": 16,
+   "voltage": 4
+  },
+  {
+   "u": 4,
+   "v": 17,
+   "voltage": 7
+  },
+  {
+   "u": 7,
+   "v": 17,
+   "voltage": 7
+  },
+  {
+   "u": 1,
+   "v": 18,
+   "voltage": 7
+  },
+  {
+   "u": 10,
+   "v": 18,
+   "voltage": 7
+  },
+  {
+   "u": 1,
+   "v": 5,
+   "voltage": 8
+  },
+  {
+   "u": 1,
+   "v": 6,
+   "voltage": 5
+  },
+  {
+   "u": 1,
+   "v": 8,
+   "voltage": 7
+  },
+  {
+   "u": 1,
+   "v": 10,
+   "voltage": 2
+  },
+  {
+   "u": 1,
+   "v": 10,
+   "voltage": 7
+  },
+  {
+   "u": 1,
+   "v": 12,
+   "voltage": 7
+  },
+  {
+   "u": 2,
+   "v": 4,
+   "voltage": 1
+  },
+  {
+   "u": 2,
+   "v": 5,
+   "voltage": 8
+  },
+  {
+   "u": 2,
+   "v": 5,
+   "voltage": 1
+  },
+  {
+   "u": 2,
+   "v": 7,
+   "voltage": 2
+  },
+  {
+   "u": 2,
+   "v": 9,
+   "voltage": 5
+  },
+  {
+   "u": 2,
+   "v": 12,
+   "voltage": 1
+  },
+  {
+   "u": 3,
+   "v": 4,
+   "voltage": 4
+  },
+  {
+   "u": 3,
+   "v": 8,
+   "voltage": 4
+  },
+  {
+   "u": 3,
+   "v": 9,
+   "voltage": 5
+  },
+  {
+   "u": 3,
+   "v": 9,
+   "voltage": 4
+  },
+  {
+   "u": 3,
+   "v": 10,
+   "voltage": 2
+  },
+  {
+   "u": 3,
+   "v": 11,
+   "voltage": 8
+  },
+  {
+   "u": 4,
+   "v": 7,
+   "voltage": 2
+  },
+  {
+   "u": 4,
+   "v": 7,
+   "voltage": 7
+  },
+  {
+   "u": 4,
+   "v": 9,
+   "voltage": 7
+  },
+  {
+   "u": 4,
+   "v": 11,
+   "voltage": 7
+  },
+  {
+   "u": 5,
+   "v": 9,
+   "voltage": 1
+  },
+  {
+   "u": 5,
+   "v": 10,
+   "voltage": 2
+  },
+  {
+   "u": 5,
+   "v": 12,
+   "voltage": 5
+  },
+  {
+   "u": 6,
+   "v": 7,
+   "voltage": 2
+  },
+  {
+   "u": 6,
+   "v": 8,
+   "voltage": 8
+  },
+  {
+   "u": 6,
+   "v": 11,
+   "voltage": 4
+  },
+  {
+   "u": 6,
+   "v": 12,
+   "voltage": 5
+  },
+  {
+   "u": 6,
+   "v": 12,
+   "voltage": 4
+  },
+  {
+   "u": 7,
+   "v": 11,
+   "voltage": 8
+  },
+  {
+   "u": 7,
+   "v": 12,
+   "voltage": 5
+  },
+  {
+   "u": 8,
+   "v": 10,
+   "voltage": 1
+  },
+  {
+   "u": 8,
+   "v": 11,
+   "voltage": 8
+  },
+  {
+   "u": 8,
+   "v": 11,
+   "voltage": 1
+  },
+  {
+   "u": 9,
+   "v": 10,
+   "voltage": 4
+  }
+ ],
+ "loops": [
+  {
+   "u": 13,
+   "voltage": 1
+  },
+  {
+   "u": 14,
+   "voltage": 1
+  },
+  {
+   "u": 15,
+   "voltage": 4
+  },
+  {
+   "u": 16,
+   "voltage": 4
+  },
+  {
+   "u": 17,
+   "voltage": 2
+  },
+  {
+   "u": 18,
+   "voltage": 2
+  }
+ ]
+}

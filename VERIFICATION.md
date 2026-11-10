@@ -1,11 +1,65 @@
-# Repository verification — 2026-11-04
+# Repository verification — 2026-11-10
 
-The November update adds **degree 3, diameter 7, order 208** and
+The 2026-11-10 update adds **degree 6, diameter 3, order 126** and
+**degree 7, diameter 3, order 171**. All twelve indexed graphs passed the common
+verifier directly from their edge lists, rerun on 2026-11-10. This check assumes no
+construction certificate or graph symmetry. Previously published graph paths are preserved.
+
+## Final direct verification of all twelve graphs
+
+| Result | Vertices | Edges | Measured degrees | Measured diameter | Report |
+|---|---:|---:|---|---:|---|
+| **(6,3), added 2026-11-10** | **126** | **378** | **6-regular** | **3** | [PASS](verification/final/degree6-diameter3.json) |
+| **(7,3), added 2026-11-10** | **171** | **594** | **9 vertices of degree 6; 162 of degree 7** | **3** | [PASS](verification/final/degree7-diameter3.json) |
+| (3,7), added 2026-11-04 | 208 | 312 | 3-regular | 7 | [PASS](verification/final/degree3-diameter7.json) |
+| (5,5), added 2026-11-04 | 660 | 1,635 | 30 vertices of degree 4; 630 of degree 5 | 5 | [PASS](verification/final/degree5-diameter5.json) |
+| (12,4) | 5,832 | 34,992 | 12-regular | 4 | [PASS](verification/final/degree12-diameter4.json) |
+| (12,5), arXiv:2606.15860 | 34,992 | 209,952 | 12-regular | 5 | [PASS](verification/final/paper-degree12-diameter5.json) |
+| (13,5), added 2026-10-13 | 88,452 | 574,938 | 13-regular | 5 | [PASS](verification/final/degree13-diameter5.json) |
+| (14,5) | 88,452 | 618,786 | 756 vertices of degree 13; 87,696 of degree 14 | 5 | [PASS](verification/final/degree14-diameter5.json) |
+| (15,3) | 1,458 | 10,935 | 15-regular | 3 | [PASS](verification/final/degree15-diameter3.json) |
+| (15,5) | 100,000 | 750,000 | 15-regular | 5 | [PASS](verification/final/degree15-diameter5.json) |
+| (16,3) | 1,920 | 15,360 | 16-regular | 3 | [PASS](verification/final/degree16-diameter3.json) |
+| (16,5), arXiv:2606.15860 | 147,456 | 1,179,648 | 16-regular | 5 | [PASS](verification/final/paper-degree16-diameter5.json) |
+
+The checks cover every vertex and every ordered pair. The [machine-readable summary](verification/final/summary.json)
+records the index and verifier hashes. For the ten earlier graphs only run times and timestamps changed
+relative to the 2026-11-04 reports.
+
+## November 10 additions: (6,3), 126 vertices, and (7,3), 171 vertices
+
+Both graphs were found on 2026-11-10 by the [orbit-graph search](search/orbit-graphs/) as unions of
+orbitals of SmallGroup(108,33) and SmallGroup(108,19). They are published in voltage-graph labellings:
+a regular $\mathbb Z_3^2$-cover of a 14-vertex base graph and a regular $\mathbb Z_9$-cover of a
+19-vertex base graph. The [import record](verification/import-2026-11-10/import.json) gives the hashes of
+the discovered edge lists. For each graph, `certificate/verify.py`
+([126](results/degree6-diameter3/certificate/verify.py), [171](results/degree7-diameter3/certificate/verify.py))
+checks:
+
+- the construction formula reproduces the published edge and adjacency lists byte for byte, and the graph is simple;
+- spanning trees of depth at most 3 from one vertex per fibre, with translation invariance (diameter at most 3);
+- modular reachability of every ordered pair of base vertices within 3 steps (an independent second certificate);
+- the Moore bound for diameter 2 (37 and 50) is below the order, so the diameter is exactly 3;
+- an explicit isomorphism from the discovered orbit graph, rebuilt from group generators and edge-orbit representatives;
+- every listed automorphism generator preserves the edge set (group orders 162 and 216 were computed with nauty and GAP).
+
+Records: [126](verification/import-2026-11-10/degree6-diameter3-construction.json),
+[171](verification/import-2026-11-10/degree7-diameter3-construction.json).
+The [ordinary-BFS verifier](verification/independent-2026-11-10/) measured all four November additions from
+their edge lists alone; its distance histograms agree with the C++ reports.
+
+Comparison: [Comellas's table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
+accessed 2026-11-10 (page last changed 2026-11-04), lists 120 for (6,3) and 170 for (7,3)
+([snapshot](verification/table-snapshot-2026-11-10.json)).
+
+## Update of 2026-11-04 (historical)
+
+The 2026-11-04 update added **degree 3, diameter 7, order 208** and
 **degree 5, diameter 5, order 660**. All ten indexed graphs passed the common
 verifier directly from their edge lists. This check assumes no construction
 certificate or graph symmetry. Previously published graph paths are preserved.
 
-## Final direct verification of all ten graphs
+## Final direct verification of all ten graphs — 2026-11-04 (historical)
 
 | Result | Vertices | Edges | Measured degrees | Measured diameter | Report |
 |---|---:|---:|---|---:|---|

@@ -2,11 +2,68 @@
   "comparison_source": {
     "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
     "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
-    "accessed_on": "2026-11-04",
-    "page_last_changed": "2026-11-03",
-    "snapshot": "verification/table-snapshot-2026-11-04.json"
+    "accessed_on": "2026-11-10",
+    "page_last_changed": "2026-11-04",
+    "snapshot": "verification/table-snapshot-2026-11-10.json"
   },
   "results": [
+    {
+      "id": "degree6-diameter3",
+      "category": "construction_result",
+      "added_on": "2026-11-10",
+      "degree": 6,
+      "diameter": 3,
+      "vertices": 126,
+      "edges": 378,
+      "degree_histogram": {
+        "6": 126
+      },
+      "table_order": 120,
+      "difference": 6,
+      "increase_percent": 5.0,
+      "status": "exceeds_table",
+      "summary": "results/degree6-diameter3/README.md",
+      "edge_file": "results/degree6-diameter3/certificate/graph.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "5172914429db28371b26767260f383d9207b4ee50328a4032f4bb7ceb5210432",
+      "certificate_directory": "results/degree6-diameter3/certificate",
+      "construction": "results/degree6-diameter3/certificate/construct.py",
+      "proof": "results/degree6-diameter3/certificate/proof.md",
+      "construction_verifier": "results/degree6-diameter3/certificate/verify.py",
+      "full_automorphism_group_order": 162,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63",
+      "girth": 3,
+      "construction_method": "Orbit graph of SmallGroup(108,33); regular Z3 x Z3 voltage cover of a 14-vertex base graph."
+    },
+    {
+      "id": "degree7-diameter3",
+      "category": "construction_result",
+      "added_on": "2026-11-10",
+      "degree": 7,
+      "diameter": 3,
+      "vertices": 171,
+      "edges": 594,
+      "degree_histogram": {
+        "6": 9,
+        "7": 162
+      },
+      "table_order": 170,
+      "difference": 1,
+      "increase_percent": 0.58823529,
+      "status": "exceeds_table",
+      "summary": "results/degree7-diameter3/README.md",
+      "edge_file": "results/degree7-diameter3/certificate/graph.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "2a83c106ea31ca86ca5e1194bf4722e50470f4f7da894b2e1a59bb9ddb6d9131",
+      "certificate_directory": "results/degree7-diameter3/certificate",
+      "construction": "results/degree7-diameter3/certificate/construct.py",
+      "proof": "results/degree7-diameter3/certificate/proof.md",
+      "construction_verifier": "results/degree7-diameter3/certificate/verify.py",
+      "full_automorphism_group_order": 216,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#73",
+      "girth": 4,
+      "construction_method": "Orbit graph of SmallGroup(108,19); regular Z9 voltage cover of a 19-vertex base graph."
+    },
     {
       "id": "degree3-diameter7",
       "category": "construction_result",
@@ -32,7 +89,16 @@
       "construction_verifier": "results/degree3-diameter7/certificate/verify.py",
       "full_automorphism_group_order": 16,
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37",
-      "girth": 9
+      "girth": 9,
+      "historical_comparisons": [
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 200,
+          "difference": 8,
+          "increase_percent": 4.0,
+          "status": "exceeds_table"
+        }
+      ]
     },
     {
       "id": "degree5-diameter5",
@@ -60,7 +126,16 @@
       "construction_verifier": "results/degree5-diameter5/certificate/verify.py",
       "full_automorphism_group_order": 60,
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55",
-      "variant": "Loopless folded Cayley graph; no regularizing edges are added."
+      "variant": "Loopless folded Cayley graph; no regularizing edges are added.",
+      "historical_comparisons": [
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 650,
+          "difference": 10,
+          "increase_percent": 1.53846154,
+          "status": "exceeds_table"
+        }
+      ]
     },
     {
       "id": "degree12-diameter4",
@@ -103,6 +178,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 6156,
+          "difference": -324,
+          "increase_percent": -5.26315789,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -144,6 +226,13 @@
         },
         {
           "accessed_on": "2026-10-23",
+          "table_order": 42342,
+          "difference": -7350,
+          "increase_percent": -17.35865098,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
           "table_order": 42342,
           "difference": -7350,
           "increase_percent": -17.35865098,
@@ -192,6 +281,13 @@
           "difference": 37035,
           "increase_percent": 72.02870646,
           "status": "exceeds_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 51417,
+          "difference": 37035,
+          "increase_percent": 72.02870646,
+          "status": "exceeds_table"
         }
       ]
     },
@@ -229,6 +325,13 @@
         },
         {
           "accessed_on": "2026-10-23",
+          "table_order": 94186,
+          "difference": -5734,
+          "increase_percent": -6.08795362,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
           "table_order": 94186,
           "difference": -5734,
           "increase_percent": -6.08795362,
@@ -276,6 +379,13 @@
           "difference": -81,
           "increase_percent": -5.26315789,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 1620,
+          "difference": -162,
+          "increase_percent": -10.0,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -319,6 +429,13 @@
           "difference": -132,
           "increase_percent": -0.13182599,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 102060,
+          "difference": -2060,
+          "increase_percent": -2.01842054,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -358,6 +475,13 @@
         },
         {
           "accessed_on": "2026-10-23",
+          "table_order": 1920,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
           "table_order": 1920,
           "difference": 0,
           "increase_percent": 0.0,
@@ -407,6 +531,13 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-11-04",
+          "table_order": 153600,
+          "difference": -6144,
+          "increase_percent": -4.0,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
@@ -419,13 +550,13 @@
     "keep_largest_per_parameter_pair": true
   },
   "latest_update": {
-    "date": "2026-11-04",
+    "date": "2026-11-10",
     "added_result_ids": [
-      "degree3-diameter7",
-      "degree5-diameter5"
+      "degree6-diameter3",
+      "degree7-diameter3"
     ],
     "preserve_published_paths": true,
-    "scope": "Publish the 208-vertex cubic graph and the loopless 660-vertex graph of maximum degree 5, with construction proofs, symmetry data, and independent verification."
+    "scope": "Publish the 126-vertex (6,3) graph and the 171-vertex (7,3) graph found by an orbit-graph search, with voltage-graph constructions, finite diameter certificates, isomorphism certificates to the discovered orbit graphs, and independent verification."
   },
   "update_history": [
     {
@@ -447,6 +578,15 @@
       "added_result_ids": [],
       "preserve_published_paths": true,
       "scope": "Refresh current main-table comparisons, distinguish lagging detail pages, and retain the dated attribution of earlier external records."
+    },
+    {
+      "date": "2026-11-04",
+      "added_result_ids": [
+        "degree3-diameter7",
+        "degree5-diameter5"
+      ],
+      "preserve_published_paths": true,
+      "scope": "Publish the 208-vertex cubic graph and the loopless 660-vertex graph of maximum degree 5, with construction proofs, symmetry data, and independent verification."
     }
   ]
 }

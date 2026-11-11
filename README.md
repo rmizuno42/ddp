@@ -326,6 +326,8 @@ preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 README.md                       current table status, updates, and summaries
 results.json                    machine-readable index and dated comparisons
 VERIFICATION.md                 checks performed and reproduction notes
+LICENSE-MIT                     MIT License for the source code
+LICENSE-CC-BY                   CC BY 4.0 license for all other material
 verification/                   direct verifier, reports, and table snapshot
 search/orbit-graphs/            orbit-graph search code that found the (6,3) and (7,3) graphs
 results/
@@ -358,3 +360,19 @@ The two 2026-11-10 packages were generated in this repository's workflow; each
 records its discovery in `certificate/provenance.json` and the discovered orbit
 graph in `certificate/orbit_graph_certificate.json`.
 Previously excluded candidates remain outside the published result index.
+
+## License
+
+The source code in this repository, namely the Python, C++ and GAP files
+(`*.py`, `*.cpp`, `*.g`), is licensed under the [MIT License](LICENSE-MIT).
+All other material, including graphs and edge lists, construction certificates,
+verification records, documentation and figures, is licensed under the
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE-CC-BY).
+
+To give credit, name Ryosuke Mizuno, link to this repository and to the package
+you used (for example `results/degree16-diameter3/`), and cite
+[arXiv:2606.15860](https://arxiv.org/abs/2606.15860) for the route-chart lift
+([citation formats](results/diameter5-paper/README.md#citation)).
+
+Record orders and graph descriptions by other authors, quoted in the table
+snapshots and comparisons, remain theirs and are not covered by these licenses.

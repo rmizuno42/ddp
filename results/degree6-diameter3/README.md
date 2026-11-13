@@ -3,10 +3,15 @@
 A simple **6-regular** graph of order **126**, size **378**, and diameter **exactly 3**.
 Thus $N(6,3)\ge126$.
 
-Added to this repository on **2026-11-10**. The order exceeds the **120** in
+Added to this repository on **2026-11-10**. The order exceeded the **120** in
 [Comellas's table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
 as accessed on 2026-11-10 (page last changed 2026-11-04) by **6 vertices (5%)**; the Moore bound
-is 187. It is not yet reflected in that table. This comparison does not assert optimality.
+is 187. This comparison does not assert optimality.
+
+**Table status on 2026-11-13:** the table (page last changed 2026-11-12) lists this graph for
+(6,3), and the [detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63) describes it as Mizuno_126 with a link to this
+package. The detail page also reports that Dharunish Yugeswardeenoo obtained the same graph
+independently (dated November 9, 2026). See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 ## Construction
 

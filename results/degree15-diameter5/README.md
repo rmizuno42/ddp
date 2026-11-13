@@ -3,7 +3,7 @@
 **$N(15,5)\ge 100{,}000$.** Simple undirected connected 15-regular graph;
 750,000 edges, diameter exactly 5.
 
-**Table status on 2026-11-04:** this 100,000-vertex graph is a former record;
+**Table status on 2026-11-13:** this 100,000-vertex graph is a former record;
 the main table now lists 102,060 vertices. The
 [detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155)
 still describes the earlier 100,132-vertex record. It
@@ -11,7 +11,7 @@ attributes SamSar_100132 to Sami Hani Badaoui and Sarah Ellen Mary Vaughan and
 describes it as a modification and extension of this graph. This description
 does not establish the construction of the current 102,060-vertex record. See the
 [source review and edge-file comparison](../../verification/external-records-2026-10-23/)
-and [dated repository comparison](../../verification/table-snapshot-2026-11-04.json).
+and [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **82,684 → 100,000**, an increase of **17,316 vertices (20.94%)**.
 

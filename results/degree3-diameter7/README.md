@@ -4,10 +4,14 @@ A simple cubic graph of order **208**, size **312**, diameter **exactly 7**,
 and girth **9**. Thus $N(3,7)\ge208$.
 
 Added to this repository on **2026-11-04** from the construction package dated
-2026-09-26. The order exceeds the **200** in
+2026-09-26. The order exceeded the **200** in
 [Comellas's table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
-as accessed on 2026-11-04 by **8 vertices (4%)**. It is not yet reflected in
-that table. This comparison does not assert optimality.
+as accessed on 2026-11-04 by **8 vertices (4%)**. This comparison does not assert
+optimality.
+
+**Table status on 2026-11-13:** the table (page last changed 2026-11-12) lists this
+graph for (3,7), and the [detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37) describes it as Mizuno_208
+with a link to this package. See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 ## Construction and symmetry
 

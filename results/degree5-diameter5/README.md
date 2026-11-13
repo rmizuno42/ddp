@@ -5,10 +5,14 @@ diameter **exactly 5**. There are **30 vertices of degree 4** and **630 of
 degree 5**. Thus $N(5,5)\ge660$; regularity is not required for this bound.
 
 Added to this repository on **2026-11-04**. The underlying construction
-package is dated 2026-09-25. The order exceeds the **650** in
+package is dated 2026-09-25. The order exceeded the **650** in
 [Comellas's table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
-as accessed on 2026-11-04 by **10 vertices (1.54%)**. It is not yet reflected
-in that table. This comparison does not assert optimality.
+as accessed on 2026-11-04 by **10 vertices (1.54%)**. This comparison does not
+assert optimality.
+
+**Table status on 2026-11-13:** the main table (page last changed 2026-11-12) lists
+**660** for (5,5), credited to Ryosuke Mizuno. The [detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55)
+still describes the earlier 650-vertex graph. See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 ## Construction and symmetry
 

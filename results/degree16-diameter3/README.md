@@ -3,7 +3,7 @@
 **$N(16,3)\ge 1{,}920$.** Simple undirected connected 16-regular graph;
 15,360 edges, diameter exactly 3.
 
-**Table status on 2026-11-04:** 1,920 vertices, matching the published (16,3) record order. See the [dated repository comparison](../../verification/table-snapshot-2026-11-04.json).
+**Table status on 2026-11-13:** 1,920 vertices, matching the published (16,3) record order; the [detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163) describes this graph as Mizuno_1920. See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 Compared with the [Comellas table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) accessed on **2026-09-25** (page last changed 2026-09-24): **1,610 → 1,920**, an increase of **310 vertices (19.25%)**.
 

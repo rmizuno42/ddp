@@ -155,13 +155,15 @@ records all measurements and hashes of the input and verification programs.
 
 ## Public-table status and link preservation
 
-The [current snapshot](verification/table-snapshot-2026-11-04.json) records
-the main-table values read on 2026-11-04, the page's stated last-change date
-2026-11-03, source-page hashes, and five incoming GitHub links. All five linked
-directories and their graph files retain their existing public paths.
-The README identifies (3,7), (5,5), and (13,5) as exceeding their table entries,
-and (16,3) as matching its entry. It uses the main table when a detail page
-still describes an earlier record. Earlier dated snapshots remain available.
+The [current snapshot](verification/table-snapshot-2026-11-13.json) records
+the main-table values read on 2026-11-13, the page's stated last-change date
+2026-11-12, six source-page hashes, the cell colours that credit entries, and
+eight incoming GitHub links: seven package directories and the repository root.
+All linked directories and their graph files retain their existing public paths.
+The README identifies (6,3), (3,7), (5,5), (13,5), and (16,3) as listed in the
+main table, and (7,3) as below the table's new entry of 176. It uses the main
+table when a detail page still describes an earlier record. Earlier dated
+snapshots remain available.
 
 Only the 208- and 660-vertex source archives are included in the November
 import. The other root archives and local exploration files are not published.

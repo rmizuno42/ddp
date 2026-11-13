@@ -3,10 +3,13 @@
 **$N(13,5)\ge 88{,}452$.** Simple undirected connected 13-regular graph;
 574,938 edges, diameter exactly 5. **Added to this repository on 2026-10-13.**
 
-The [Comellas table entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135)
-is **51,417** as accessed on **2026-11-04**: this construction has **37,035
-more vertices (+72.03%)**. Its order is not yet reflected in that table.
-The dated comparison is recorded in the [repository snapshot](../../verification/table-snapshot-2026-11-04.json).
+When this package was added, the [Comellas table entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135)
+was **51,417** (also as accessed on 2026-11-04): this construction has **37,035
+more vertices (+72.03%)**.
+
+**Table status on 2026-11-13:** the main table (page last changed 2026-11-12) lists
+**88,452** for (13,5), in the colour of Ryosuke Mizuno's entries. The detail page still
+describes the earlier 51,417-vertex graph. See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 ## Construction and relation to arXiv:2606.15860
 

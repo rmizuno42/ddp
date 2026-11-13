@@ -3,10 +3,15 @@
 A simple graph of order **171**, size **594**, maximum degree **7**, and diameter **exactly 3**.
 Thus $N(7,3)\ge171$. Nine vertices have degree 6; the other 162 have degree 7.
 
-Added to this repository on **2026-11-10**. The order exceeds the **170** in
+Added to this repository on **2026-11-10**. The order exceeded the **170** in
 [Comellas's table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html)
 as accessed on 2026-11-10 (page last changed 2026-11-04) by **1 vertex**; the Moore bound is 302.
-It is not yet reflected in that table. This comparison does not assert optimality.
+This comparison does not assert optimality.
+
+**Table status on 2026-11-13:** the main table (page last changed 2026-11-12) lists **176** for
+(7,3), above this graph's 171, and credits it to Dharunish Yugeswardeenoo. The
+[detail page](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#73) still describes the earlier 170-vertex graph. This package and
+its published paths are retained. See the [dated repository comparison](../../verification/table-snapshot-2026-11-13.json).
 
 ## Construction
 

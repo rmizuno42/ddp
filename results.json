@@ -2,9 +2,9 @@
   "comparison_source": {
     "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
     "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
-    "accessed_on": "2026-11-10",
-    "page_last_changed": "2026-11-04",
-    "snapshot": "verification/table-snapshot-2026-11-10.json"
+    "accessed_on": "2026-11-13",
+    "page_last_changed": "2026-11-12",
+    "snapshot": "verification/table-snapshot-2026-11-13.json"
   },
   "results": [
     {
@@ -18,10 +18,10 @@
       "degree_histogram": {
         "6": 126
       },
-      "table_order": 120,
-      "difference": 6,
-      "increase_percent": 5.0,
-      "status": "exceeds_table",
+      "table_order": 126,
+      "difference": 0,
+      "increase_percent": 0.0,
+      "status": "matches_table",
       "summary": "results/degree6-diameter3/README.md",
       "edge_file": "results/degree6-diameter3/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
@@ -33,7 +33,17 @@
       "full_automorphism_group_order": 162,
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63",
       "girth": 3,
-      "construction_method": "Orbit graph of SmallGroup(108,33); regular Z3 x Z3 voltage cover of a 14-vertex base graph."
+      "construction_method": "Orbit graph of SmallGroup(108,33); regular Z3 x Z3 voltage cover of a 14-vertex base graph.",
+      "historical_comparisons": [
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 120,
+          "difference": 6,
+          "increase_percent": 5.0,
+          "status": "exceeds_table"
+        }
+      ],
+      "main_table_lists_repository_graph": true
     },
     {
       "id": "degree7-diameter3",
@@ -47,10 +57,10 @@
         "6": 9,
         "7": 162
       },
-      "table_order": 170,
-      "difference": 1,
-      "increase_percent": 0.58823529,
-      "status": "exceeds_table",
+      "table_order": 176,
+      "difference": -5,
+      "increase_percent": -2.84090909,
+      "status": "below_table",
       "summary": "results/degree7-diameter3/README.md",
       "edge_file": "results/degree7-diameter3/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
@@ -62,7 +72,17 @@
       "full_automorphism_group_order": 216,
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#73",
       "girth": 4,
-      "construction_method": "Orbit graph of SmallGroup(108,19); regular Z9 voltage cover of a 19-vertex base graph."
+      "construction_method": "Orbit graph of SmallGroup(108,19); regular Z9 voltage cover of a 19-vertex base graph.",
+      "historical_comparisons": [
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 170,
+          "difference": 1,
+          "increase_percent": 0.58823529,
+          "status": "exceeds_table"
+        }
+      ],
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "degree3-diameter7",
@@ -75,10 +95,10 @@
       "degree_histogram": {
         "3": 208
       },
-      "table_order": 200,
-      "difference": 8,
-      "increase_percent": 4.0,
-      "status": "exceeds_table",
+      "table_order": 208,
+      "difference": 0,
+      "increase_percent": 0.0,
+      "status": "matches_table",
       "summary": "results/degree3-diameter7/README.md",
       "edge_file": "results/degree3-diameter7/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
@@ -97,8 +117,16 @@
           "difference": 8,
           "increase_percent": 4.0,
           "status": "exceeds_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 200,
+          "difference": 8,
+          "increase_percent": 4.0,
+          "status": "exceeds_table"
         }
-      ]
+      ],
+      "main_table_lists_repository_graph": true
     },
     {
       "id": "degree5-diameter5",
@@ -112,10 +140,10 @@
         "4": 30,
         "5": 630
       },
-      "table_order": 650,
-      "difference": 10,
-      "increase_percent": 1.53846154,
-      "status": "exceeds_table",
+      "table_order": 660,
+      "difference": 0,
+      "increase_percent": 0.0,
+      "status": "matches_table",
       "summary": "results/degree5-diameter5/README.md",
       "edge_file": "results/degree5-diameter5/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
@@ -134,8 +162,16 @@
           "difference": 10,
           "increase_percent": 1.53846154,
           "status": "exceeds_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 650,
+          "difference": 10,
+          "increase_percent": 1.53846154,
+          "status": "exceeds_table"
         }
-      ]
+      ],
+      "main_table_lists_repository_graph": true
     },
     {
       "id": "degree12-diameter4",
@@ -185,11 +221,19 @@
           "difference": -324,
           "increase_percent": -5.26315789,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 6156,
+          "difference": -324,
+          "increase_percent": -5.26315789,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
       "status": "below_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124",
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "paper-degree12-diameter5",
@@ -202,9 +246,9 @@
       "degree_histogram": {
         "12": 34992
       },
-      "table_order": 42342,
-      "difference": -7350,
-      "increase_percent": -17.35865098,
+      "table_order": 42352,
+      "difference": -7360,
+      "increase_percent": -17.37816396,
       "status": "below_table",
       "summary": "results/diameter5-paper/README.md",
       "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/12_5_34992/final_graph_edges.tsv.gz",
@@ -237,10 +281,18 @@
           "difference": -7350,
           "increase_percent": -17.35865098,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 42342,
+          "difference": -7350,
+          "increase_percent": -17.35865098,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#125"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#125",
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "degree13-diameter5",
@@ -262,10 +314,10 @@
       "construction": "results/degree13-diameter5/certificate/data/controller_affine_chart.txt",
       "proof": "results/degree13-diameter5/certificate/CONSTRUCTION.md",
       "construction_verifier": "results/degree13-diameter5/certificate/generate_graph.py",
-      "table_order": 51417,
-      "difference": 37035,
-      "increase_percent": 72.02870646,
-      "status": "exceeds_table",
+      "table_order": 88452,
+      "difference": 0,
+      "increase_percent": 0.0,
+      "status": "matches_table",
       "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135",
       "historical_comparisons": [
         {
@@ -288,8 +340,16 @@
           "difference": 37035,
           "increase_percent": 72.02870646,
           "status": "exceeds_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 51417,
+          "difference": 37035,
+          "increase_percent": 72.02870646,
+          "status": "exceeds_table"
         }
-      ]
+      ],
+      "main_table_lists_repository_graph": true
     },
     {
       "id": "degree14-diameter5",
@@ -336,11 +396,19 @@
           "difference": -5734,
           "increase_percent": -6.08795362,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 94186,
+          "difference": -5734,
+          "increase_percent": -6.08795362,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
       "status": "below_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145",
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "degree15-diameter3",
@@ -386,11 +454,19 @@
           "difference": -162,
           "increase_percent": -10.0,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 1620,
+          "difference": -162,
+          "increase_percent": -10.0,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
       "status": "below_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#153"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#153",
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "degree15-diameter5",
@@ -436,11 +512,19 @@
           "difference": -2060,
           "increase_percent": -2.01842054,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 102060,
+          "difference": -2060,
+          "increase_percent": -2.01842054,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
       "status": "below_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155",
+      "main_table_lists_repository_graph": false
     },
     {
       "id": "degree16-diameter3",
@@ -486,11 +570,19 @@
           "difference": 0,
           "increase_percent": 0.0,
           "status": "matches_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 1920,
+          "difference": 0,
+          "increase_percent": 0.0,
+          "status": "matches_table"
         }
       ],
       "added_on": "2026-09-25",
       "status": "matches_table",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163",
+      "main_table_lists_repository_graph": true
     },
     {
       "id": "paper-degree16-diameter5",
@@ -503,9 +595,9 @@
       "degree_histogram": {
         "16": 147456
       },
-      "table_order": 153600,
-      "difference": -6144,
-      "increase_percent": -4.0,
+      "table_order": 159744,
+      "difference": -12288,
+      "increase_percent": -7.69230769,
       "status": "below_table",
       "summary": "results/diameter5-paper/README.md",
       "edge_file": "results/diameter5-paper/anc/route_chart_clean_package/graphs/16_5_147456/final_graph_edges.tsv.gz",
@@ -538,10 +630,18 @@
           "difference": -6144,
           "increase_percent": -4.0,
           "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-10",
+          "table_order": 153600,
+          "difference": -6144,
+          "increase_percent": -4.0,
+          "status": "below_table"
         }
       ],
       "added_on": "2026-09-25",
-      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#165"
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#165",
+      "main_table_lists_repository_graph": false
     }
   ],
   "september_2026_selection": {
@@ -550,13 +650,11 @@
     "keep_largest_per_parameter_pair": true
   },
   "latest_update": {
-    "date": "2026-11-10",
-    "added_result_ids": [
-      "degree6-diameter3",
-      "degree7-diameter3"
-    ],
+    "date": "2026-11-13",
+    "added_result_ids": [],
     "preserve_published_paths": true,
-    "scope": "Publish the 126-vertex (6,3) graph and the 171-vertex (7,3) graph found by an orbit-graph search, with voltage-graph constructions, finite diameter certificates, isomorphism certificates to the discovered orbit graphs, and independent verification."
+    "scope": "Refresh table comparisons after the table update of 2026-11-12: the main table now lists the (6,3), (3,7), (5,5) and (13,5) graphs, the (7,3) entry is now 176, and the (12,5) and (16,5) entries increased.",
+    "snapshot": "verification/table-snapshot-2026-11-13.json"
   },
   "update_history": [
     {
@@ -587,6 +685,15 @@
       ],
       "preserve_published_paths": true,
       "scope": "Publish the 208-vertex cubic graph and the loopless 660-vertex graph of maximum degree 5, with construction proofs, symmetry data, and independent verification."
+    },
+    {
+      "date": "2026-11-10",
+      "added_result_ids": [
+        "degree6-diameter3",
+        "degree7-diameter3"
+      ],
+      "preserve_published_paths": true,
+      "scope": "Publish the 126-vertex (6,3) graph and the 171-vertex (7,3) graph found by an orbit-graph search, with voltage-graph constructions, finite diameter certificates, isomorphism certificates to the discovered orbit graphs, and independent verification."
     }
   ]
 }

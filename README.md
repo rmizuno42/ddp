@@ -5,41 +5,45 @@ degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of 
 simple undirected connected graph with maximum degree at most $\Delta$ and
 diameter at most $D$.
 
-## Published records and latest additions — 2026-11-10
+## Published records — 2026-11-13
 
-The following repository constructions match or exceed the record orders in
+The following repository constructions attain the record orders listed in
 [Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
-accessed **2026-11-10** (page last changed **2026-11-04**).
-The **(6,3) and (7,3) graphs added on 2026-11-10**, the (3,7) and (5,5) graphs
-added on 2026-11-04, and the (13,5) graph added on 2026-10-13 exceed their
-entries and are not yet reflected in that table. The (16,3) graph matches its
-table entry.
+accessed **2026-11-13** (page last changed **2026-11-12**).
+Since the previous check on 2026-11-10, the main table has added the orders of the
+**(6,3), (3,7), (5,5) and (13,5)** graphs; the (16,3) graph was already listed. The (7,3) graph
+added on 2026-11-10 exceeded the order 170 listed then, but the table now lists
+176 for (7,3), credited to Dharunish Yugeswardeenoo.
 This dated overview does not assert optimality. See the
-[saved comparison and incoming links](verification/table-snapshot-2026-11-10.json).
+[saved comparison and incoming links](verification/table-snapshot-2026-11-13.json).
 
 Comparisons use the main table: some linked detail pages still describe earlier
-records. In particular, their orders for (15,5) and (16,5) have not yet caught
-up with the main table; the (12,4) detail page has caught up since 2026-11-04.
+records. The (6,3) and (3,7) detail pages now describe the repository graphs and
+link to their packages. The (5,5) and (13,5) detail pages still describe the
+previous records of 650 and 51,417 vertices, and the (7,3), (12,5), (15,5) and
+(16,5) detail pages also lag behind the main table.
 
 | $(\Delta,D)$ | Vertices | Published table order | Status | Construction and data |
 |---|---:|---:|---|---|
-| **(6,3)** | **126** | 120 | **New; exceeds table** | [Degree 6, diameter 3](results/degree6-diameter3/) |
-| **(7,3)** | **171** | 170 | **New; exceeds table** | [Degree 7, diameter 3](results/degree7-diameter3/) |
-| **(3,7)** | **208** | 200 | **Added 2026-11-04; exceeds table** | [Degree 3, diameter 7](results/degree3-diameter7/) |
-| **(5,5)** | **660** | 650 | **Added 2026-11-04; exceeds table** | [Degree 5, diameter 5](results/degree5-diameter5/) |
-| **(13,5)** | **88,452** | 51,417 | **Added 2026-10-13; exceeds table** | [Degree 13, diameter 5](results/degree13-diameter5/) |
-| (16,3) | **1,920** | 1,920 | Matches table | [Degree 16, diameter 3](results/degree16-diameter3/) |
+| **(6,3)** | **126** | 126 | **Listed in table; added 2026-11-10** | [Degree 6, diameter 3](results/degree6-diameter3/) |
+| **(3,7)** | **208** | 208 | **Listed in table; added 2026-11-04** | [Degree 3, diameter 7](results/degree3-diameter7/) |
+| **(5,5)** | **660** | 660 | **Listed in table; added 2026-11-04** | [Degree 5, diameter 5](results/degree5-diameter5/) |
+| **(13,5)** | **88,452** | 88,452 | **Listed in table; added 2026-10-13** | [Degree 13, diameter 5](results/degree13-diameter5/) |
+| (16,3) | **1,920** | 1,920 | Listed in table | [Degree 16, diameter 3](results/degree16-diameter3/) |
 
 ## Latest additions — 2026-11-10
 
 - **[(6,3), 126 vertices](results/degree6-diameter3/)**: a 6-regular graph of
-  diameter 3, exceeding the table order 120 by **6 (+5%)**; the Moore bound is 187.
+  diameter 3, exceeding the table order 120 of the time by **6 (+5%)**; the Moore
+  bound is 187. The table now lists it; its detail page also reports that Dharunish
+  Yugeswardeenoo obtained the same graph independently (dated November 9, 2026).
   It is a regular $\mathbb Z_3\times\mathbb Z_3$ voltage cover of a 14-vertex base
   graph with two hubs, two triangles and two copies of $K_{3,3}$; its parallel
   voltages are relative difference sets in $\mathbb F_3^2$. Full automorphism
   group of order 162.
 - **[(7,3), 171 vertices](results/degree7-diameter3/)**: maximum degree 7
-  (9 vertices of degree 6), diameter 3, exceeding the table order 170 by **1**.
+  (9 vertices of degree 6), diameter 3, exceeding the table order 170 of the time
+  by **1**. The table has since listed 176 for (7,3).
   It is a regular $\mathbb Z_9$ voltage cover of a 19-vertex base graph (a hub, six
   spokes and a 12-vertex core). Full automorphism group of order 216.
 
@@ -55,11 +59,13 @@ and the common C++ verifier.
 ## Earlier additions — 2026-11-04
 
 - **[(3,7), 208 vertices](results/degree3-diameter7/)**: a cubic cyclic voltage
-  graph, exceeding the table order by **8 (+4%)**. Its full automorphism
+  graph, exceeding the table order of the time by **8 (+4%)**; now listed in the
+  table. Its full automorphism
   group is $C_{16}$. The package includes diagrams showing its 16-fold
   rotational symmetry and the quotient with its edge shifts.
 - **[(5,5), 660 vertices](results/degree5-diameter5/)**: a folded Cayley graph
-  with loops removed, exceeding the table order by **10 (+1.54%)**.
+  with loops removed, exceeding the table order of the time by **10 (+1.54%)**;
+  now listed in the main table.
   It has 1,635 edges, 30 vertices of degree 4, 630 of degree 5, and full
   automorphism-group order 60. Its maximum degree is 5 and diameter is 5.
 
@@ -75,13 +81,14 @@ The 660-vertex graph establishes the bound without adding edges to make it regul
 The graph is simple and 13-regular, with diameter exactly 5. It has the same
 order and diameter as the existing (14,5) graph, with a smaller maximum degree.
 
-This graph exceeds the published order by **37,035 vertices (+72.03%)**.
+This graph exceeded the previously published order 51,417 by **37,035 vertices (+72.03%)**.
 A [separate ordinary-BFS verification](verification/independent-2026-10-13/)
 measured its order, every vertex degree, and exact diameter from the edge list,
 without a search-depth limit or any construction data.
 
-This result **exceeds the table entry and is not yet reflected in the table**
-as accessed on 2026-11-10. This package was added on 2026-10-13.
+The main table **lists this graph's order 88,452 for (13,5)** as accessed on
+2026-11-13; its detail page still describes the 51,417-vertex graph. This package
+was added on 2026-10-13.
 Its finite construction data, proof, edge list, and verification programs are
 in [the certificate directory](results/degree13-diameter5/certificate/).
 
@@ -108,23 +115,23 @@ Both repository packages retain their published paths as former records.
 
 ## Complete result index
 
-All comparisons below use the same **2026-11-10** table snapshot.
+All comparisons below use the same **2026-11-13** table snapshot.
 The package locations remain stable when their record status changes.
 
 | $(\Delta,D)$ | Repository order | Table order | Status | Package |
 |---|---:|---:|---|---|
-| **(6,3)** | **126** | 120 | **Added 2026-11-10; exceeds table** | [Summary](results/degree6-diameter3/) |
-| **(7,3)** | **171** | 170 | **Added 2026-11-10; exceeds table** | [Summary](results/degree7-diameter3/) |
-| **(3,7)** | **208** | 200 | **Added 2026-11-04; exceeds table** | [Summary](results/degree3-diameter7/) |
-| **(5,5)** | **660** | 650 | **Added 2026-11-04; exceeds table** | [Summary](results/degree5-diameter5/) |
+| **(6,3)** | **126** | 126 | **Added 2026-11-10; listed in table** | [Summary](results/degree6-diameter3/) |
+| (7,3) | 171 | 176 | Added 2026-11-10; below table (exceeded the earlier 170) | [Summary](results/degree7-diameter3/) |
+| **(3,7)** | **208** | 208 | **Added 2026-11-04; listed in table** | [Summary](results/degree3-diameter7/) |
+| **(5,5)** | **660** | 660 | **Added 2026-11-04; listed in table** | [Summary](results/degree5-diameter5/) |
 | (12,4) | 5,832 | 6,156 | Below table | [Summary](results/degree12-diameter4/) |
-| (12,5) | 34,992 | 42,342 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
-| (13,5) | 88,452 | 51,417 | **Added 2026-10-13; exceeds table** | [Summary](results/degree13-diameter5/) |
+| (12,5) | 34,992 | 42,352 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
+| **(13,5)** | **88,452** | 88,452 | **Added 2026-10-13; listed in table** | [Summary](results/degree13-diameter5/) |
 | (14,5) | 88,452 | 94,186 | Below table; basis of the current record | [Summary](results/degree14-diameter5/) |
 | (15,3) | 1,458 | 1,620 | Below table | [Summary](results/degree15-diameter3/) |
 | (15,5) | 100,000 | 102,060 | Below table; basis of the earlier 100,132-vertex record | [Summary](results/degree15-diameter5/) |
-| (16,3) | 1,920 | 1,920 | Matches table | [Summary](results/degree16-diameter3/) |
-| (16,5) | 147,456 | 153,600 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
+| (16,3) | 1,920 | 1,920 | Listed in table | [Summary](results/degree16-diameter3/) |
+| (16,5) | 147,456 | 159,744 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
 
 All twelve indexed graphs passed
 [verification directly from their edge lists](verification/README.md):
@@ -310,10 +317,10 @@ It also documents the discovery process through a browser-based ChatGPT
 dialogue. The paper, bibliography, transcript, and supplementary packages are
 preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 
-| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-11-10 | Status on that date |
+| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-11-13 | Status on that date |
 |---|---:|---:|---|
-| (12,5) | 34,992 | 42,342 | Below the table order |
-| (16,5) | 147,456 | 153,600 | Below the table order |
+| (12,5) | 34,992 | 42,352 | Below the table order |
+| (16,5) | 147,456 | 159,744 | Below the table order |
 
 [Paper PDF](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)
 · [arXiv:2606.15860](https://arxiv.org/abs/2606.15860)
@@ -345,7 +352,7 @@ results/
 ```
 
 Existing result directories and graph files keep their published paths,
-including the five directories linked from the Comellas detail pages.
+including the seven directories linked from the Comellas detail pages.
 Results that fall below later table entries remain alongside the other
 packages; the overview and index identify their status.
 

@@ -24,11 +24,7 @@ diameter at most $D$.
    commutative ring of order $\equiv 2 \pmod 4$ carries one. Theorem 1 is therefore the full
    range of this construction.
 
-For $n=3,4$ these are the paper's graphs on 34,992 and 147,456 vertices. For $n=5$ the
-lift is 20-regular on 450,000 vertices. Its edge list was checked directly by
-breadth-first search from every vertex: diameter 5. Comellas's table stops at
-$\Delta=16$. The CombinatoricsWiki table, last modified 2022-02-18, lists 281,820 for
-$(20,5)$; later results have not been checked.
+For $n=3,4$ these are the paper's graphs on 34,992 and 147,456 vertices.
 
 ### How Theorems 1 and 2 differ
 

@@ -63,9 +63,7 @@ For $n\ge 2$ the order $144\,n^5$ exceeds the Moore bound
 $\Delta^4-2\Delta^3+2\Delta^2+1<\Delta^4=256\,n^4$ for maximum degree
 $\Delta=4n$ and diameter $4$, so these graphs have diameter exactly $5$.
 For $n=3$ and $n=4$ they are the graphs of arXiv:2606.15860 on $34{,}992$ and
-$147{,}456$ vertices. For $n=5$ the graph has degree $20$ and $450{,}000$ vertices.
-Its edge list was checked directly, by breadth-first search from every vertex
-(Section~\ref{sec:verify}).
+$147{,}456$ vertices.
 
 The construction in arXiv:2606.15860 is stated for finite fields. Our second
 result says that the field version also works for every $q\ge 3$.
@@ -390,19 +388,15 @@ axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound};
 a passing run is run~43580643533 of 14 November 2026. Theorem~\ref{thm:field} and
 Proposition~\ref{prop:two} are not formalized.
 
-\paragraph{The case $n=5$.} The lift over $\Z/5\Z$ (equal to $\F_5$) has $450{,}000$
-vertices and $4{,}500{,}000$ edges. Its edge list was checked with the
-repository's exact bit-parallel breadth-first search from every vertex:
-it is $20$-regular, connected, and of diameter $5$. The same construction
-program reproduces the published $(12,5)$ and $(16,5)$ edge lists of
+\paragraph{Construction program.} The script \texttt{scripts/build\_graph.py}
+builds the lift graph of a chart. Applied to the charts over $\F_3$ and $\F_4$,
+it reproduces the published $(12,5)$ and $(16,5)$ edge lists of
 arXiv:2606.15860 exactly.
 
-\paragraph{Comparison.} The table of F.~Comellas covers $\Delta\le 16$. In
-the CombinatoricsWiki degree--diameter table (last modified 18 February 2022)
-the entry for $(20,5)$ is $281{,}820$. We have not compared with later results.
-For $\Delta=4n\ge 28$ we know of no table, and we have not reviewed the
-literature on large-degree constructions of diameter $5$; the family gives
-$N(\Delta,5)\ge (144/1024)\,\Delta^5\approx 0.14\,\Delta^5$ for these $\Delta$.
+\paragraph{Comparison.} The table of F.~Comellas covers $\Delta\le 16$, that
+is, the cases $n=3$ and $n=4$. We have not reviewed the literature on
+large-degree constructions of diameter $5$; the family gives
+$N(\Delta,5)\ge (144/1024)\,\Delta^5\approx 0.14\,\Delta^5$ for $\Delta=4n$.
 
 \section*{Acknowledgements}
 The controller and the charts over $\F_3$ and $\F_4$ come from
@@ -416,8 +410,6 @@ author's direction.
 via interaction with a browser-accessible LLM}, arXiv:2606.15860 (2026).
 \bibitem{C} F.~Comellas, \emph{The (Degree, Diameter) Problem for Graphs},
 \url{https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html}.
-\bibitem{CW} Combinatorics Wiki, \emph{The Degree Diameter Problem for General
-Graphs}, \url{http://combinatoricswiki.org/wiki/The_Degree_Diameter_Problem_for_General_Graphs}.
 \end{thebibliography}
 
 \end{document}

@@ -235,22 +235,36 @@ def gen_int():
         prods.append(math.prod(abs(d) for d in dets))
         name = f'IntChart{i}'
         names.append(name)
+
+        def enc(x):
+            if isinstance(x, list):
+                return [enc(y) for y in x]
+            return 2 * x if x >= 0 else -2 * x - 1
+
         write(os.path.join(LEAN, 'Charts', f'{name}.lean'), HEADER + f'''import DDPGeneralQ.Instances
 
 /-! Integer chart {i} (`data/charts/integer_charts.json`) with determinant and adjugate
-certificates. -/
+certificates. Integers are stored as natural numbers and decoded by `decZ`. -/
 
 namespace DDP.{name}
 
 set_option maxRecDepth 100000
 
-def chart : CodeChart ℤ := ⟨{lst(A)}, {lst(b)}⟩
+def rawA : List (List (List ℕ)) := {lst(enc(A))}
 
-def dets : List ℤ :=
-  {lst(dets)}
+def rawb : List (List ℕ) := {lst(enc(b))}
 
-def adjs : List (List (List ℤ)) :=
-  {lst(adjs)}
+def rawDets : List ℕ :=
+  {lst(enc(dets))}
+
+def rawAdjs : List (List (List ℕ)) :=
+  {lst(enc(adjs))}
+
+def chart : CodeChart ℤ := ⟨rawA.map (List.map (List.map decZ)), rawb.map (List.map decZ)⟩
+
+def dets : List ℤ := rawDets.map decZ
+
+def adjs : List (List (List ℤ)) := rawAdjs.map (List.map (List.map decZ))
 
 theorem check : chart.checkB intOps = true := by decide +kernel
 

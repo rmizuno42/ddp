@@ -30,6 +30,11 @@ lemma natModOps_hom (p : ℕ) : (natModOps p).Hom (fun n : ℕ => (n : ZMod p)) 
 /-- Integer arithmetic. -/
 def intOps : CodeOps ℤ := ⟨(· + ·), (· * ·), 0, 1⟩
 
+/-- Decode an integer stored as a natural number: `2 x ↦ x` and `2 x + 1 ↦ -(x + 1)`.
+The integer chart data are stored this way so that the data files contain only
+natural-number literals. -/
+def decZ (n : ℕ) : ℤ := if n % 2 = 0 then ((n / 2 : ℕ) : ℤ) else -(((n + 1) / 2 : ℕ) : ℤ)
+
 lemma intOps_hom {R : Type} [CommRing R] : intOps.Hom (fun n : ℤ => (n : R)) where
   map_add x y := by simp [intOps]
   map_mul x y := by simp [intOps]

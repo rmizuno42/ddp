@@ -30,6 +30,24 @@ breadth-first search from every vertex: diameter 5. Comellas's table stops at
 $\Delta=16$. The CombinatoricsWiki table, last modified 2022-02-18, lists 281,820 for
 $(20,5)$; later results have not been checked.
 
+### How Theorems 1 and 2 differ
+
+For a prime power $q\ge 3$ both theorems give the same bound $N(4q,5)\ge 144\,q^5$. As a
+lower bound, Theorem 2 adds nothing to Theorem 1. The two differ in the graph.
+
+| | Theorem 1 (formalized in Lean) | Theorem 2 (not formalized) |
+|---|---|---|
+| Ring used for the lift | some commutative ring with $q$ elements | the field $\mathbb F_q$, as in the paper |
+| $q=9$ | $\mathbb Z/3\times\mathbb Z/3$ | $\mathrm{GF}(9)$ |
+| $q=32$ | $\mathrm{GF}(8)\times\mathrm{GF}(4)$ | $\mathrm{GF}(32)$ |
+| Charts needed | $\mathrm{GF}(4)$, $\mathrm{GF}(8)$, $\mathbb Z/p$ | also $\mathrm{GF}(32)$, $\mathrm{GF}(128)$, $\mathrm{GF}(2048)$, $\mathrm{GF}(8192)$ |
+| Further arguments | products of rings | field extensions, Schwartz–Zippel |
+
+For $q$ prime and for $q=4,8$ the two graphs coincide; they differ only for
+$q=9,16,25,27,32,\dots$ Theorem 1 uses products of rings to avoid the large fields and the
+Schwartz–Zippel argument, which would be costly to formalize. This is why Theorem 1, not
+Theorem 2, is the one formalized in Lean.
+
 ## How each part is verified
 
 | Part | Finite facts checked by | Formalized in Lean |

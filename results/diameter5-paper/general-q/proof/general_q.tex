@@ -76,6 +76,25 @@ For every prime power $q\ge 3$ there is a universal route chart on $\F_q^5$
 $\F_q$ is a $4q$-regular graph of order $144\,q^5$ and diameter $5$.
 \end{theorem}
 
+\begin{remark}[How Theorems~\ref{thm:main} and~\ref{thm:field} differ]\label{rem:diff}
+For a prime power $q\ge 3$ both theorems give the same bound
+$N(4q,5)\ge 144\,q^5$. As a lower bound, Theorem~\ref{thm:field} adds nothing to
+Corollary~\ref{cor:pp}. The two theorems differ in the graph.
+Theorem~\ref{thm:main} uses \emph{some} commutative ring with $q$ elements. In our
+proof this is a product of copies of $\F_4$, $\F_8$ and $\Z/p\Z$, for example
+$\Z/3\Z\times\Z/3\Z$ for $q=9$ and $\F_8\times\F_4$ for $q=32$.
+Theorem~\ref{thm:field} uses the field $\F_q$ itself, that is, the construction of
+arXiv:2606.15860 with $\F_q$ in place of $\F_3$ or $\F_4$. For $q$ prime and for
+$q=4,8$ the two graphs coincide; they differ for $q=9,16,25,27,32,\dots$
+
+The proof of Theorem~\ref{thm:field} needs three further ingredients
+(Section~\ref{sec:field}): field extensions; explicit charts over $\F_{32}$,
+$\F_{128}$, $\F_{2048}$ and $\F_{8192}$; and a Schwartz--Zippel argument for the
+remaining fields $\F_{2^m}$. Theorem~\ref{thm:main} avoids all three by passing to
+products of rings, so that only $\F_4$, $\F_8$ and $\Z/p\Z$ are needed. This is why
+Theorem~\ref{thm:main}, and not Theorem~\ref{thm:field}, is formalized in Lean.
+\end{remark}
+
 \begin{proposition}\label{prop:two}
 There is no universal route chart on $\F_2^5$. Consequently no finite
 commutative ring of order $n\equiv 2\pmod 4$ carries a universal route chart,

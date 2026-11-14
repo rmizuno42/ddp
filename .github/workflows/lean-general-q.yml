@@ -27,11 +27,20 @@ jobs:
           sh elan-init.sh -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
 
+      - name: Add swap space
+        working-directory: /
+        run: |
+          sudo fallocate -l 12G /mnt/swapfile-lean
+          sudo chmod 600 /mnt/swapfile-lean
+          sudo mkswap /mnt/swapfile-lean
+          sudo swapon /mnt/swapfile-lean
+          free -m
+
       - name: Download the Mathlib build cache
         run: lake exe cache get
 
-      - name: Build (every finite check is evaluated by the Lean kernel)
-        run: lake build
+      - name: Build module by module (every finite check is evaluated by the Lean kernel)
+        run: ./ci_build.sh
 
       - name: Check the axioms of the main theorems
         run: |

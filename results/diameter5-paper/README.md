@@ -35,6 +35,16 @@ The paper makes two contributions that can be read independently:
 1. **Improved mathematical lower bounds.** Explicit simple-graph constructions and finite certificates for $N(12,5)$ and $N(16,5)$ (Appendix A). Their correctness can be verified from the construction alone, independently of how they were discovered.
 2. **A record and analysis of the discovery process.** A description of the roughly six-day dialogue — including unsuccessful intervals — and of the author's meta-level interventions near the junctures at which the search moved toward abstraction and finite-certificate design, based on the visible transcript.
 
+## Later extension: general q
+
+The construction is not limited to $\mathbb F_3$ and $\mathbb F_4$. The
+[`general-q`](general-q/) folder proves $N(4n,5)\ge 144\,n^5$ for every $n\ge 1$ with
+$n\not\equiv 2 \pmod 4$, in particular for every prime power $q\ge 3$, using the same
+controller. It shows that universal charts exist over every $\mathbb F_q$ with
+$q\ge 3$ but not over $\mathbb F_2$. It contains an
+[English proof](general-q/proof/general_q.pdf) and a Lean 4 formalization of the
+first statement, including all finite checks.
+
 ## arXiv:2606.15860
 
 - **[paper.pdf](https://github.com/rmizuno42/ddp/releases/latest/download/paper.pdf)** — the compiled paper, attached to the latest [GitHub Release](https://github.com/rmizuno42/ddp/releases/latest). Also available on [arXiv](https://arxiv.org/abs/2606.15860).

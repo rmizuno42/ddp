@@ -89,7 +89,11 @@ theorem good_large_prime (p : ℕ) (hp : p.Prime) (h : 79 < p) : Good p := by
   by_cases h6 : p ∣ prodAbs IntChart6.dets
   swap
   · exact good_of_not_dvd_prodAbs p hp _ _ _ IntChart6.check IntChart6.adj IntChart6.dets_length h6
-  exact absurd (Nat.dvd_gcd h1 (Nat.dvd_gcd h2 (Nat.dvd_gcd h3 (Nat.dvd_gcd h4
-    (Nat.dvd_gcd h5 h6))))) (not_dvd_G hp h)
+  -- Unfold `G` first so that the divisibility statement matches syntactically; otherwise
+  -- elaboration may try to evaluate the large products.
+  have hG : p ∣ G := by
+    unfold G
+    exact Nat.dvd_gcd h1 (Nat.dvd_gcd h2 (Nat.dvd_gcd h3 (Nat.dvd_gcd h4 (Nat.dvd_gcd h5 h6))))
+  exact absurd hG (not_dvd_G hp h)
 
 end DDP

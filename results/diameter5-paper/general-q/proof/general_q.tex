@@ -1,0 +1,402 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\GL}{\mathrm{GL}}
+
+\title{Route-chart lifts over finite rings:\\
+$N(4n,5)\ge 144\,n^5$ for every $n\not\equiv 2 \pmod 4$}
+\author{Ryosuke Mizuno}
+\date{November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The route-chart lift of arXiv:2606.15860 combines a $4$-regular
+\emph{controller} on $144$ vertices with a \emph{universal route chart} on
+$\F_q^5$ and gives graphs of maximum degree $4q$ and diameter at most $5$
+on $144\,q^5$ vertices. The paper gives universal charts for $q=3$ and $q=4$.
+We show that the construction works over any finite commutative ring that
+carries a universal chart, and that such rings exist in every order
+$n\not\equiv 2\pmod 4$. Hence $N(4n,5)\ge 144\,n^5$ for every $n\ge 1$ with
+$n\not\equiv 2 \pmod 4$, in particular for every prime power $q\ge 3$. We also
+show that universal charts exist over every finite field $\F_q$ with $q\ge 3$,
+and that none exists over $\F_2$. The first statement is formalized in Lean~4
+with Mathlib, including all finite checks, which the Lean kernel verifies.
+\end{abstract}
+
+\section{Results}
+
+Let $N(\Delta,D)$ be the largest order of a graph with maximum degree at most
+$\Delta$ and diameter at most $D$.
+
+\begin{theorem}\label{thm:main}
+For every integer $n\ge 1$ with $n\not\equiv 2\pmod 4$ there is a graph with
+$144\,n^5$ vertices and maximum degree at most $4n$ in which every two
+vertices are joined by a walk of length at most $5$. Hence
+\[
+  N(4n,5)\ \ge\ 144\,n^5 \qquad (n\ge 1,\ n\not\equiv 2 \pmod 4).
+\]
+\end{theorem}
+
+Every prime power $q\ge 3$ is odd or divisible by $4$, so:
+
+\begin{corollary}\label{cor:pp}
+$N(4q,5)\ge 144\,q^5$ for every prime power $q\ge 3$.
+\end{corollary}
+
+For $n\ge 2$ the order $144\,n^5$ exceeds the Moore bound
+$\Delta^4-2\Delta^3+2\Delta^2+1<\Delta^4=256\,n^4$ for maximum degree
+$\Delta=4n$ and diameter $4$, so these graphs have diameter exactly $5$.
+For $n=3$ and $n=4$ they are the graphs of arXiv:2606.15860 on $34{,}992$ and
+$147{,}456$ vertices. For $n=5$ the graph has degree $20$ and $450{,}000$ vertices.
+Its edge list was checked directly, by breadth-first search from every vertex
+(Section~\ref{sec:verify}).
+
+The construction in arXiv:2606.15860 is stated for finite fields. Our second
+result says that the field version also works for every $q\ge 3$.
+
+\begin{theorem}\label{thm:field}
+For every prime power $q\ge 3$ there is a universal route chart on $\F_q^5$
+(Definition~\ref{def:chart}). With the $144$-vertex controller, the route-chart lift over
+$\F_q$ is a $4q$-regular graph of order $144\,q^5$ and diameter $5$.
+\end{theorem}
+
+\begin{proposition}\label{prop:two}
+There is no universal route chart on $\F_2^5$. Consequently no finite
+commutative ring of order $n\equiv 2\pmod 4$ carries a universal route chart,
+and Theorem~\ref{thm:main} is the full range of orders reached by route-chart
+lifts over finite commutative rings.
+\end{proposition}
+
+Theorem~\ref{thm:main} is proved in Sections~\ref{sec:lift}--\ref{sec:proof} and is
+formalized in Lean (Section~\ref{sec:lean}). Theorem~\ref{thm:field} and
+Proposition~\ref{prop:two} are proved in Sections~\ref{sec:field}
+and~\ref{sec:two}. They rely on further computer checks, not on the Lean
+formalization.
+
+\section{Route charts over commutative rings}\label{sec:lift}
+
+Throughout, $R$ is a finite commutative ring. Let $S=\{a,a^{-1},b,b^{-1}\}$,
+with the involution $t\mapsto t^{-1}$. A word $t_1t_2t_3t_4t_5$ over $S$ is
+\emph{reduced} if $t_{i+1}\ne t_i^{-1}$ for $1\le i\le 4$; there are
+$4\cdot 3^4=324$ reduced words of length $5$.
+
+\begin{definition}[Controller]
+A \emph{controller} on a finite set $C$ is a family of maps
+$\sigma_t\colon C\to C$ ($t\in S$) with
+$\sigma_{t^{-1}}(\sigma_t(u))=u$ for all $t$ and $u$. It is
+\emph{exact-NB-$5$} if for all $u,v\in C$ there is a reduced word
+$t_1\cdots t_5$ with $\sigma_{t_5}\cdots\sigma_{t_1}(u)=v$.
+\end{definition}
+
+The controller of arXiv:2606.15860, \S A.5, is a simple $4$-regular graph on
+$144$ vertices. Its arcs are labelled by $S$ so that every vertex has
+exactly one outgoing arc with each label and the reverse of an arc with label
+$t$ has label $t^{-1}$ (\S A.3). Writing $\sigma_t(u)$ for the head of the arc
+with label $t$ leaving $u$ gives a controller in the above sense. A walk is
+nonbacktracking exactly when its label word is reduced. The paper verifies
+that this controller is exact-NB-$5$, and we verify it again
+(Section~\ref{sec:verify}).
+
+\begin{definition}[Route chart]\label{def:chart}
+A \emph{route chart} on $R^5$ assigns to every $t\in S$ a matrix
+$A_t\in M_5(R)$ and a vector $b_t\in R^5$ with
+\begin{equation}\label{eq:A1}
+  A_{t^{-1}}A_t = I, \qquad b_{t^{-1}} = A_{t^{-1}}\,b_t \qquad (t\in S).
+\end{equation}
+For a word $w=t_1\cdots t_5$ let
+\begin{equation}\label{eq:A2}
+  M_w=\bigl[\,A_{t_5}A_{t_4}A_{t_3}A_{t_2}b_{t_1}\ \big|\ A_{t_5}A_{t_4}A_{t_3}b_{t_2}\ \big|\
+  A_{t_5}A_{t_4}b_{t_3}\ \big|\ A_{t_5}b_{t_4}\ \big|\ b_{t_5}\,\bigr]\in M_5(R).
+\end{equation}
+The chart is \emph{universal} if $M_w$ has a right inverse for every reduced
+word $w$ of length $5$. Over a commutative ring this means that $\det M_w$
+is a unit, and over a field that $M_w$ is nonsingular, as in
+arXiv:2606.15860.
+\end{definition}
+
+\begin{definition}[Lift graph]
+Given a controller on $C$ and a route chart on $R^5$, the graph $G$ has vertex
+set $C\times R^5$. Two distinct vertices $(u,x)$ and $(v,y)$ are adjacent if
+$v=\sigma_t(u)$ and $y=A_tx+\lambda b_t$ for some $t\in S$ and $\lambda\in R$.
+\end{definition}
+
+This relation is symmetric. If $v=\sigma_t(u)$ and $y=A_tx+\lambda b_t$, then
+$\sigma_{t^{-1}}(v)=u$ and, by~\eqref{eq:A1},
+$A_{t^{-1}}y+(-\lambda)b_{t^{-1}}=x+\lambda A_{t^{-1}}b_t-\lambda b_{t^{-1}}=x$.
+When the controller is a simple graph and $R$ is a field, this is the
+route-chart lift graph of arXiv:2606.15860, \S A.4.
+
+\begin{lemma}\label{lem:lift}
+\begin{enumerate}[label=(\alph*)]
+\item Every vertex of $G$ has at most $4|R|$ neighbours.
+\item If the controller is exact-NB-$5$ and the chart is universal, every two
+vertices of $G$ are joined by a walk of length at most $5$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(a) The neighbours of $(u,x)$ lie in
+$\{(\sigma_t(u),A_tx+\lambda b_t): t\in S,\ \lambda\in R\}$.
+
+(b) Let $(u,x)$ and $(v,y)$ be vertices. Choose a reduced word
+$w=t_1\cdots t_5$ with $\sigma_{t_5}\cdots\sigma_{t_1}(u)=v$, and a right
+inverse $N$ of $M_w$. Put $A_w=A_{t_5}\cdots A_{t_1}$ and
+$\lambda=N(y-A_wx)\in R^5$. Define $x_0=x$, $u_0=u$ and, for
+$i=1,\dots,5$, $u_i=\sigma_{t_i}(u_{i-1})$ and
+$x_i=A_{t_i}x_{i-1}+\lambda_ib_{t_i}$. Expanding,
+\[
+  x_5=A_wx+\sum_{j=1}^5\lambda_j\,A_{t_5}\cdots A_{t_{j+1}}b_{t_j}
+     =A_wx+M_w\lambda=A_wx+(y-A_wx)=y,
+\]
+and $u_5=v$. Consecutive vertices $(u_{i-1},x_{i-1})$ and $(u_i,x_i)$ are
+equal or adjacent, so deleting repetitions from
+$(u_0,x_0),\dots,(u_5,x_5)$ gives a walk of length at most $5$ from $(u,x)$
+to $(v,y)$.
+\end{proof}
+
+\section{Transport, products and the orders reached}
+
+\begin{lemma}\label{lem:transport}
+Let $f\colon R\to R'$ be a homomorphism of commutative rings. Applying $f$ to
+all entries maps a route chart on $R^5$ to a route chart on $R'^5$, maps each
+$M_w$ to the corresponding matrix of the image chart, and preserves
+universality.
+\end{lemma}
+
+\begin{proof}
+Entrywise application of $f$ commutes with sums and products of matrices and
+vectors, so~\eqref{eq:A1}, \eqref{eq:A2} and the equations $M_wN=I$ are preserved.
+\end{proof}
+
+\begin{lemma}\label{lem:prod}
+If $R_1$ and $R_2$ carry universal route charts, so does $R_1\times R_2$.
+\end{lemma}
+
+\begin{proof}
+Pair the two charts entrywise: $A_t=(A_t^{(1)},A_t^{(2)})$ and
+$b_t=(b_t^{(1)},b_t^{(2)})$. All identities hold componentwise, and the pair
+$(N^{(1)},N^{(2)})$ of right inverses is a right inverse of $M_w$.
+\end{proof}
+
+Call $n$ \emph{good} if some commutative ring with $n$ elements carries a
+universal route chart. The zero ring shows that $1$ is good, since every
+matrix over it is the identity. By Lemma~\ref{lem:prod}, if $m$ and $n$ are
+good then so is $mn$.
+
+\begin{lemma}\label{lem:reduce}
+If $4$, $8$ and every odd prime are good, then every $n\ge 1$ with
+$n\not\equiv 2\pmod 4$ is good.
+\end{lemma}
+
+\begin{proof}
+Strong induction on $n$. The case $n=1$ is done. If $n>1$ is odd, write
+$n=pk$ with $p$ the smallest prime factor of $n$. Then $p$ is odd and $k<n$
+is odd, so $n$ is good. If $n$ is even, then $4\mid n$. Write $n=4k$. If
+$k\not\equiv 2\pmod 4$, use $k$. Otherwise $n=8m$ with $m=k/2$ odd, and we use $m$.
+\end{proof}
+
+\section{Charts for the building blocks}\label{sec:blocks}
+
+All charts below are given in the data files of \texttt{general-q/data/charts}
+(Section~\ref{sec:verify}).
+
+\paragraph{$\F_4$ and $\F_8$.} The chart on $\F_4^5$ is the chart of
+arXiv:2606.15860, \S A.6.2. The chart on $\F_8^5$ was found by simulated
+annealing. For each of the $324$ reduced words, an inverse of $M_w$ is
+recorded, and the products $M_wN_w=I$ are checked.
+
+\paragraph{$\Z/p\Z$ for odd primes $p\le 79$.} For $p=3$ we use the chart of
+arXiv:2606.15860, \S A.6.1. For $p=43$ we use the reduction modulo $43$ of
+integer chart~1 below. Every other odd prime $p\le 79$ has a chart found by
+simulated annealing. Each comes with inverse certificates as above.
+
+\paragraph{Primes $p>79$.} We use six \emph{integer charts}: matrices
+$A_a,A_b\in\GL_5(\Z)$ of determinant $\pm1$ with integer inverses, integer
+vectors $b_a,b_b$, and $A_{t^{-1}}=A_t^{-1}$, $b_{t^{-1}}=A_{t^{-1}}b_t$, so
+that~\eqref{eq:A1} holds over $\Z$. For every reduced word $w$, an integer
+$d_w$ and an integer matrix $\mathrm{adj}_w$ are recorded with
+$M_w\,\mathrm{adj}_w=d_wI$; here $d_w=\det M_w\ne 0$ and $\mathrm{adj}_w$ is the
+adjugate. If a prime $p$ divides none of the $d_w$ of one chart, the
+reduction of that chart modulo $p$ is universal by
+Lemma~\ref{lem:transport}: $d_w$ is a unit of $\Z/p\Z$, and
+$d_w^{-1}\mathrm{adj}_w$ is a right inverse of $M_w$. Let $P_i=\prod_w |d_w|$ for
+chart $i$ and
+\[
+  \begin{aligned}
+  g=\gcd(P_1,\dots,P_6)={}&2^{338}\,3^{146}\,5^{74}\,7^{34}\,11^{24}\,13^{22}\,17^{10}\,19^{12}\,23^{10}\\
+  &\cdot 29^2\,31^2\,37^4\,41^2\,47^2\,53^2\,59^4\,61^2\,67^2\,71^2\,73^2\,79^4 .
+  \end{aligned}
+\]
+A prime $p>79$ does not divide $g$, so it does not divide some $P_i$, and
+chart~$i$ works modulo $p$. (The prime $43$ does not divide $g$ either.)
+
+\begin{corollary}\label{cor:blocks}
+$4$, $8$ and every odd prime are good.
+\end{corollary}
+
+\section{Proof of Theorem~\ref{thm:main}}\label{sec:proof}
+
+By Corollary~\ref{cor:blocks} and Lemma~\ref{lem:reduce}, every $n\ge 1$ with
+$n\not\equiv 2\pmod 4$ is good. Let $R$ be a ring with $n$ elements carrying
+a universal chart, and let $C$ be the $144$-vertex controller, which is
+exact-NB-$5$. By Lemma~\ref{lem:lift}, the lift graph on $C\times R^5$ has
+$144\,n^5$ vertices and maximum degree at most $4n$, and every two vertices
+are joined by a walk of length at most $5$. \qed
+
+Explicitly, $R$ is a product of copies of $\F_4$ and $\F_8$ (at most one
+$\F_8$) and of $\Z/p\Z$ for odd primes $p$ dividing $n$. For $n=q$ a prime
+power one may instead take the field $\F_q$; this is
+Theorem~\ref{thm:field}.
+
+\section{The field version: proof of Theorem~\ref{thm:field}}\label{sec:field}
+
+By Lemma~\ref{lem:transport} applied to the inclusion of a subfield, a
+universal chart on $K^5$ is universal on $L^5$ for every field extension
+$L\supseteq K$.
+
+\begin{itemize}
+\item $q=p^m$ with $p$ odd: $\F_q\supseteq\F_p$, and $\F_p$ carries a universal chart
+by Section~\ref{sec:blocks}.
+\item $q=2^m$ with $m$ even: $\F_q\supseteq\F_4$.
+\item $q=2^m$ with $m$ odd and a prime factor $r\in\{3,5,7,11,13\}$:
+$\F_q\supseteq\F_{2^r}$. Universal charts on $\F_8^5$, $\F_{32}^5$ and
+$\F_{128}^5$ were found by simulated annealing, and on $\F_{2048}^5$ and
+$\F_{8192}^5$ by random sampling. Each is checked on all $324$ reduced words.
+\item $q=2^m$ with every prime factor of $m$ at least $17$: then
+$q\ge 2^{17}$, and we use the Schwartz--Zippel lemma as follows.
+\end{itemize}
+
+Treat the $60$ entries of $A_a$, $A_b$, $b_a$, $b_b$ as indeterminates and
+set $A_{t^{-1}}=\mathrm{adj}(A_t)/\det A_t$ and
+$b_{t^{-1}}=\mathrm{adj}(A_t)b_t/\det A_t$ for $t\in\{a,b\}$. Multiply column $j$
+of $M_w$ by $\det A_a$ once for each occurrence of $a^{-1}$ among
+$t_{j+1},\dots,t_5$, and once more if $t_j=a^{-1}$; do the same for $b$. The
+result has polynomial entries. Each factor $A_t$ contributes degree $1$ and
+each $\mathrm{adj}(A_t)$ degree $4$, and the last factor $b_t$ or
+$\mathrm{adj}(A_t)b_t$ has degree at most $5$. So column $j$ has degree at most
+$4(5-j)+5$. The determinant $D_w$ of the modified matrix therefore has degree
+at most $\sum_{j=1}^5\bigl(4(5-j)+5\bigr)=65$, and it equals $\det M_w$ times
+powers of $\det A_a$ and $\det A_b$. The polynomial
+\[
+  P=\det A_a\cdot\det A_b\cdot\prod_{w}D_w
+\]
+has degree at most $10+324\cdot 65=21{,}070$ and integer coefficients. It does
+not vanish at the $\F_4$ chart, so its reduction modulo $2$ is a nonzero
+polynomial over $\F_2$. For $q=2^m>21{,}070$, the Schwartz--Zippel lemma gives
+a point of $\F_q^{60}$ where $P\ne 0$. There $A_a$ and $A_b$ are invertible and
+every $\det M_w\ne 0$, which is a universal chart on $\F_q^5$.
+
+The graph statement follows from Lemma~\ref{lem:lift} and the Moore bound
+remark after Corollary~\ref{cor:pp}. The graph is $4q$-regular: the
+controller is simple, so distinct labels lead to distinct controller
+vertices, and $b_t\ne 0$ because $b_t$ is the last column of the nonsingular
+matrix $M_{ttttt}$. \qed
+
+\section{The case $\F_2$: proof of Proposition~\ref{prop:two}}\label{sec:two}
+
+Suppose $(A_t,b_t)$ is a universal chart on $\F_2^5$. Since $M_{aaaaa}$ is
+nonsingular, $b_a$ is a cyclic vector of $A_a$, so $A_a$ is cyclic.
+Simultaneous conjugation by $Q\in\GL_5(\F_2)$, that is
+$(A_t,b_t)\mapsto(QA_tQ^{-1},Qb_t)$, preserves universality because
+$M_w\mapsto QM_w$. So we may assume that $A_a$ is the companion matrix of its
+characteristic polynomial $f$, of degree $5$ with $f(0)=1$ ($16$
+possibilities). The centralizer of a cyclic matrix acts simply transitively on
+its cyclic vectors, so we may further assume that $b_a=e_0$. An exhaustive
+search over all $9{,}999{,}360$ matrices $A_b\in\GL_5(\F_2)$ and all $31$
+nonzero $b_b$, for each $f$, finds no universal chart
+(\texttt{scripts/f2exhaust.c}). Its evaluation of the $324$ words was
+cross-checked against an independent implementation on random charts.
+
+A finite commutative ring is a product of finite local rings, each of prime
+power order. If $|R|\equiv 2\pmod 4$, exactly one factor has even order, and
+that order is $2$, so the factor is $\F_2$. The projection $R\to\F_2$ would map
+a universal chart on $R^5$ to one on $\F_2^5$ (Lemma~\ref{lem:transport}). \qed
+
+\section{Data, verification and the Lean formalization}\label{sec:verify}\label{sec:lean}
+
+The folder \texttt{general-q}, inside \texttt{results/diameter5-paper} of the
+repository \url{https://github.com/rmizuno42/ddp} next to the materials of
+arXiv:2606.15860, contains:
+
+\begin{itemize}
+\item \texttt{data/controller.json}: the arc maps $\sigma_t$ of the $144$-vertex
+controller, exported from the paper's supplementary code, and for every
+ordered pair of vertices a reduced word of length $5$ joining them.
+\item \texttt{data/charts/}: the charts over $\F_4$, $\F_8$, $\Z/p\Z$
+($3\le p\le 79$), the six integer charts, and the extension-field charts of
+Section~\ref{sec:field}.
+\item \texttt{scripts/}: independent Python checks of the charts, the
+certificate generator, the search programs, and the $\F_2$ search.
+\item \texttt{lean/}: the Lean~4 formalization of Theorem~\ref{thm:main}.
+\end{itemize}
+
+\paragraph{Lean.} The formalization (Lean $4.32.2$, Mathlib) defines
+controllers, route charts over arbitrary commutative rings and lift graphs,
+and proves Lemmas~\ref{lem:lift}--\ref{lem:reduce} and the argument for primes
+$p>79$ in general. The finite facts are proved by \texttt{decide +kernel},
+that is, evaluated by the Lean kernel itself:
+\begin{itemize}
+\item the controller identities $\sigma_{t^{-1}}\sigma_t=\mathrm{id}$, and the
+certificate words for all $144^2$ ordered pairs;
+\item for each chart, relations~\eqref{eq:A1} and, for every reduced word, the
+certificate identity $M_wN_w=I$ (or $M_w\,\mathrm{adj}_w=d_wI$);
+\item the factorization of $g$.
+\end{itemize}
+To keep the kernel computation small, the checks run on lists of
+natural numbers or integers, and lemmas proved once show that this list
+arithmetic agrees with the corresponding matrix operations over the ring.
+$\F_4$ and $\F_8$ are defined by their addition and multiplication tables, and
+their ring axioms are checked by \texttt{decide}. The main theorem is
+\texttt{DDP.main} (and \texttt{DDP.main\_prime\_power} for prime powers). It has
+no hypotheses beyond its statement, and \texttt{native\_decide} is not used.
+\emph{[Draft note: the full build of all chart checks and the
+\texttt{\#print axioms} check are still to be run.]} Theorem~\ref{thm:field} and
+Proposition~\ref{prop:two} are not formalized.
+
+\paragraph{The case $n=5$.} The lift over $\Z/5\Z$ (equal to $\F_5$) has $450{,}000$
+vertices and $4{,}500{,}000$ edges. Its edge list was checked with the
+repository's exact bit-parallel breadth-first search from every vertex:
+it is $20$-regular, connected, and of diameter $5$. The same construction
+program reproduces the published $(12,5)$ and $(16,5)$ edge lists of
+arXiv:2606.15860 exactly.
+
+\paragraph{Comparison.} The table of F.~Comellas covers $\Delta\le 16$. In
+the CombinatoricsWiki degree--diameter table (last modified 18 February 2022)
+the entry for $(20,5)$ is $281{,}820$. We have not compared with later results.
+For $\Delta=4n\ge 28$ we know of no table, and we have not reviewed the
+literature on large-degree constructions of diameter $5$; the family gives
+$N(\Delta,5)\ge (144/1024)\,\Delta^5\approx 0.14\,\Delta^5$ for these $\Delta$.
+
+\section*{Acknowledgements}
+The controller and the charts over $\F_3$ and $\F_4$ come from
+arXiv:2606.15860, where they were found through interaction with ChatGPT
+(OpenAI). The extension in this note, the chart searches, the certificates and
+the Lean formalization were produced with Claude Code (Anthropic) under the
+author's direction.
+
+\begin{thebibliography}{9}
+\bibitem{M} R.~Mizuno, \emph{New lower bounds for the degree/diameter problem
+via interaction with a browser-accessible LLM}, arXiv:2606.15860 (2026).
+\bibitem{C} F.~Comellas, \emph{The (Degree, Diameter) Problem for Graphs},
+\url{https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html}.
+\bibitem{CW} Combinatorics Wiki, \emph{The Degree Diameter Problem for General
+Graphs}, \url{http://combinatoricswiki.org/wiki/The_Degree_Diameter_Problem_for_General_Graphs}.
+\end{thebibliography}
+
+\end{document}

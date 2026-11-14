@@ -1,0 +1,49 @@
+name: Lean build (general-q)
+
+on:
+  push:
+    paths:
+      - 'results/diameter5-paper/general-q/lean/**'
+      - '.github/workflows/lean-general-q.yml'
+  pull_request:
+    paths:
+      - 'results/diameter5-paper/general-q/lean/**'
+      - '.github/workflows/lean-general-q.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    defaults:
+      run:
+        working-directory: results/diameter5-paper/general-q/lean
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          sh elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Download the Mathlib build cache
+        run: lake exe cache get
+
+      - name: Build (every finite check is evaluated by the Lean kernel)
+        run: lake build
+
+      - name: Check the axioms of the main theorems
+        run: |
+          lake env lean AxiomsCheck.lean | tee axioms.txt
+          python3 - <<'PY'
+          import re
+          txt = open('axioms.txt').read()
+          allowed = {'propext', 'Classical.choice', 'Quot.sound'}
+          found = re.findall(r"'(\S+)' depends on axioms: \[([^\]]*)\]", txt)
+          assert len(found) == 2, txt
+          for name, ax in found:
+              axs = {a.strip() for a in ax.split(',') if a.strip()}
+              assert axs <= allowed, (name, axs)
+              print(name, 'depends only on', sorted(axs))
+          PY

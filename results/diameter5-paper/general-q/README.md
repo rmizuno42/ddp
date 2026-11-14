@@ -65,7 +65,10 @@ In Lean the finite facts are proved by `decide +kernel`, so the kernel itself ev
 **Continuous integration.** The [GitHub Actions workflow](../../../.github/workflows/lean-general-q.yml)
 builds the whole project, every chart check included, and runs `#print axioms`. It fails if
 `DDP.main` or `DDP.main_prime_power` depends on anything other than Lean's standard axioms
-`propext`, `Classical.choice` and `Quot.sound`. On a GitHub runner the build takes about
+`propext`, `Classical.choice` and `Quot.sound`. A passing run is
+[run 43580643533](https://github.com/rmizuno42/ddp/actions/runs/43580643533) (2026-11-14). Its
+annotations report `'DDP.main' depends on axioms: [propext, Classical.choice, Quot.sound]`,
+and the same for `DDP.main_prime_power`. On a GitHub runner the build takes about
 20 minutes. The heaviest
 check, the controller, needs about 10 GB of memory, and each chart check needs 5–8 GB.
 

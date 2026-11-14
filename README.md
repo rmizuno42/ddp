@@ -370,11 +370,15 @@ Previously excluded candidates remain outside the published result index.
 
 ## License
 
-The source code in this repository, namely the Python, C++ and GAP files
-(`*.py`, `*.cpp`, `*.g`), is licensed under the [MIT License](LICENSE-MIT).
-All other material, including graphs and edge lists, construction certificates,
-verification records, documentation and figures, is licensed under the
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE-CC-BY).
+- **Code** is licensed under the [MIT License](LICENSE-MIT). This covers all
+  programs, scripts and formal proofs (`*.py`, `*.c`, `*.cpp`, `*.g`, `*.lean`)
+  and their build and CI configuration (`lakefile.toml`, `lake-manifest.json`,
+  `lean-toolchain`, `.github/workflows/`).
+- **All other material** is licensed under the
+  [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE-CC-BY).
+  This includes graphs and edge lists, charts, construction data and certificates,
+  verification records and logs, documentation, the papers and their LaTeX sources,
+  and figures.
 
 To give credit, name Ryosuke Mizuno, link to this repository and to the package
 you used (for example `results/degree16-diameter3/`), and cite

@@ -89,3 +89,10 @@ theorem DDP.main (n : ℕ) (hn : 0 < n) (h : n % 4 ≠ 2) :
       Fintype.card V = 144 * n ^ 5 ∧ (∀ v, G.degree v ≤ 4 * n) ∧
         ∀ u v, ∃ w : G.Walk u v, w.length ≤ 5
 ```
+
+## License
+
+As in the rest of the repository: the code in this folder (`scripts/`, and the Lean sources
+and build files in `lean/`) is licensed under the [MIT License](../../../LICENSE-MIT); the data,
+the proof document and the other material are licensed under
+[CC BY 4.0](../../../LICENSE-CC-BY).

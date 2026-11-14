@@ -44,9 +44,12 @@ $(20,5)$; later results have not been checked.
 In Lean the finite facts are proved by `decide +kernel`, so the kernel itself evaluates them.
 `native_decide` is not used, and `DDP.main` has no hypotheses beyond its statement.
 
-> **Status (2026-11-14):** the general modules and the GF(3) and controller checks compile.
-> The full `lake build` of all chart checks and the `#print axioms DDP.main` check have not
-> been run yet, because they are too heavy for the author's local machine.
+**Continuous integration.** The [GitHub Actions workflow](../../../.github/workflows/lean-general-q.yml)
+builds the whole project, every chart check included, and runs `#print axioms`. It fails if
+`DDP.main` or `DDP.main_prime_power` depends on anything other than Lean's standard axioms
+`propext`, `Classical.choice` and `Quot.sound`. On a GitHub runner the build takes about
+20 minutes. The heaviest
+check, the controller, needs about 10 GB of memory, and each chart check needs 5–8 GB.
 
 ## Contents
 
@@ -78,7 +81,8 @@ lean/                       Lean 4 project (Lean 4.32.2, Mathlib)
 cd results/diameter5-paper/general-q
 python3 scripts/verify_all.py --f2
 python3 scripts/gen_lean_data.py        # regenerates lean/DDPGeneralQ/Charts/*.lean
-cd lean && lake exe cache get && lake build
+cd lean && lake exe cache get && ./ci_build.sh   # or `lake build`; see the memory note above
+lake env lean AxiomsCheck.lean
 ```
 
 The Lean statement of Theorem 1:

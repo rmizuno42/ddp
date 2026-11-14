@@ -365,8 +365,10 @@ $\F_4$ and $\F_8$ are defined by their addition and multiplication tables, and
 their ring axioms are checked by \texttt{decide}. The main theorem is
 \texttt{DDP.main} (and \texttt{DDP.main\_prime\_power} for prime powers). It has
 no hypotheses beyond its statement, and \texttt{native\_decide} is not used.
-\emph{[Draft note: the full build of all chart checks and the
-\texttt{\#print axioms} check are still to be run.]} Theorem~\ref{thm:field} and
+A GitHub Actions workflow builds the whole project and checks with
+\texttt{\#print axioms} that both theorems depend only on Lean's standard
+axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+Theorem~\ref{thm:field} and
 Proposition~\ref{prop:two} are not formalized.
 
 \paragraph{The case $n=5$.} The lift over $\Z/5\Z$ (equal to $\F_5$) has $450{,}000$

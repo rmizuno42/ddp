@@ -56,3 +56,4 @@ jobs:
               assert axs <= allowed, (name, axs)
               print(name, 'depends only on', sorted(axs))
           PY
+          echo "::notice title=Axioms of the main theorems::$(grep 'depends on axioms' axioms.txt | tr '\n' ' ')"

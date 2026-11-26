@@ -26,7 +26,7 @@ For each scale $s_r=1,2,4$, join $C_i(x)$ to $A_r(x+s_ra_i)$ and $B_r(x+s_rb_i)$
 
 ## Full symmetry group
 
-The full automorphism group has order **252** and is isomorphic to $C_6\times\operatorname{AGL}(1,7)$, identified by GAP as `SmallGroup(252,28)`. The translation above and a multiplier acting by $x\mapsto-2x$ on the centres generate the affine factor of order 42. A commuting symmetry of order 6 generates the other direct factor. Only vertices **0 and 4** are fixed by the entire group. The 17 vertices in the inset are fixed by the translation.
+The full automorphism group has order **252** and is isomorphic to C₆ × AGL(1,7), identified by GAP as `SmallGroup(252,28)`. The translation above and a multiplier acting by $x\mapsto-2x$ on the centres generate the affine factor of order 42. A commuting symmetry of order 6 generates the other direct factor. Only vertices **0 and 4** are fixed by the entire group. The 17 vertices in the inset are fixed by the translation.
 
 ![Ten vertex orbits, their vertex IDs and sizes, and the number of neighbours in each orbit.](figures/n112_108_orbits.png)
 

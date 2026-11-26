@@ -24,7 +24,7 @@ The entries total 5,184, exactly $\binom{108}{2}-594$. Every nonedge thus has a 
 
 Let $T$ translate all fibre coordinates by 1 while fixing vertices 0–16. Define $M$ to fix those 17 vertices, send $C_i(x)$ to $C_i(-2x)$ and send $A_r(x)$ to $B_{r+1}(-2x+s_{r+1})$ and $B_r(x)$ to $A_{r+1}(-2x+s_{r+1})$. The subscript is taken modulo 3. The shift identities $a_i+b_i=1$ and $2\{0,3,5,6\}=\{0,3,5,6\}$ in $\mathbb F_7$ show that $M$ preserves the construction. On all 108 labels one has $T^7=M^6=1$ and $MTM^{-1}=T^5$. Since 5 has order 6 modulo 7, these permutations generate the affine group of order 42.
 
-On the uncoloured graph, nauty 2.9.3 returns order 252 and five generators. Closing the five permutations gives exactly 252 distinct automorphisms. Their centre is cyclic of order 6 and meets the affine subgroup only in the identity. A generator of the centre together with $T,M$ generates all 252 elements. Thus the full group is $C_6\times\operatorname{AGL}(1,7)$. The [raw nauty output](automorphisms.json) and [derived permutations and orbits](orbits.json) use the same vertex IDs as the edge list.
+On the uncoloured graph, nauty 2.9.3 returns order 252 and five generators. Closing the five permutations gives exactly 252 distinct automorphisms. Their centre is cyclic of order 6 and meets the affine subgroup only in the identity. A generator of the centre together with $T,M$ generates all 252 elements. Thus the full group is C₆ × AGL(1,7). The [raw nauty output](automorphisms.json) and [derived permutations and orbits](orbits.json) use the same vertex IDs as the edge list.
 
 In the published labels, the saved central generator acts on the 17 fixed-subgraph vertices as
 

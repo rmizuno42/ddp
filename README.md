@@ -18,22 +18,20 @@ two symmetry diagrams. [Full graph](results/degree11-diameter2/figures/n112_108_
 
 ## Published records — 2026-11-26
 
-Five repository graphs appear at the record orders in the November 25 update of
-Comellas’s degree/diameter table. Each graph has a named entry on its detail page
-with a link to this repository. The orders in the main table and the detail pages
-agree for all 13 indexed constructions as checked on November 26.
-[Comellas’s table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) · [Saved comparison](verification/table-snapshot-2026-11-26.json)
+**The new (11,2) graph has 108 vertices, two more than the published record of 106.**
+As of November 26, Comellas’s table still lists Dhar_106 for (11,2). The other
+five constructions below are already listed at their respective record orders.
 
-| $(\Delta,D)$ | Vertices | Published entry | Construction and data |
-|---|---:|---|---|
-| (3,7) | **208** | [Mizuno_208](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37) | [Degree 3, diameter 7](results/degree3-diameter7/) |
-| (5,5) | **660** | [Mizuno_660](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55) | [Degree 5, diameter 5](results/degree5-diameter5/) |
-| (6,3) | **126** | [Mizuno_126](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63) | [Degree 6, diameter 3](results/degree6-diameter3/) |
-| (13,5) | **88,452** | [Mizuno_88452](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135) | [Degree 13, diameter 5](results/degree13-diameter5/) |
-| (16,3) | **1,920** | [Mizuno_1920](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163) | [Degree 16, diameter 3](results/degree16-diameter3/) |
+| Status in Comellas’s table | $(\Delta,D)$ | Vertices in this repository | Vertices in the published table | Published entry |
+|---|---|---:|---:|---|
+| **New · unlisted (+2)** | **(11,2)** | **[108](results/degree11-diameter2/)** | 106 | [Dhar_106](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html#112) |
+| Listed · matches | (3,7) | [208](results/degree3-diameter7/) | 208 | [Mizuno_208](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37) |
+| Listed · matches | (5,5) | [660](results/degree5-diameter5/) | 660 | [Mizuno_660](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55) |
+| Listed · matches | (6,3) | [126](results/degree6-diameter3/) | 126 | [Mizuno_126](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63) |
+| Listed · matches | (13,5) | [88,452](results/degree13-diameter5/) | 88,452 | [Mizuno_88452](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135) |
+| Listed · matches | (16,3) | [1,920](results/degree16-diameter3/) | 1,920 | [Mizuno_1920](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163) |
 
-For **(11,2)**, the repository construction has **108 vertices**, two above the
-**106** listed for Dhar_106 in the November 25 table. [108-vertex construction](results/degree11-diameter2/) · [Published (11,2) entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html#112)
+The comparison uses the November 25 edition of Comellas’s table. [Published table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) · [Saved comparison for all 13 constructions](verification/table-snapshot-2026-11-26.json)
 
 ## Earlier additions — 2026-11-10
 

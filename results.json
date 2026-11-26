@@ -2,9 +2,9 @@
   "comparison_source": {
     "title": "Francesc Comellas: The (Degree, Diameter) Problem for Graphs",
     "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
-    "accessed_on": "2026-11-13",
-    "page_last_changed": "2026-11-12",
-    "snapshot": "verification/table-snapshot-2026-11-13.json"
+    "accessed_on": "2026-11-26",
+    "page_last_changed": "2026-11-25",
+    "snapshot": "verification/table-snapshot-2026-11-26.json"
   },
   "results": [
     {
@@ -23,7 +23,7 @@
       "increase_percent": 1.8867924528301887,
       "status": "exceeds_table",
       "comparison_accessed_on": "2026-11-26",
-      "comparison_snapshot": "verification/table-cell-2026-11-26-degree11-diameter2.json",
+      "comparison_snapshot": "verification/table-snapshot-2026-11-26.json",
       "summary": "results/degree11-diameter2/README.md",
       "edge_file": "results/degree11-diameter2/certificate/graph.edges",
       "edge_file_format": "n m header, then u v",
@@ -397,9 +397,9 @@
         "13": 756,
         "14": 87696
       },
-      "table_order": 94186,
-      "difference": -5734,
-      "increase_percent": -6.08795362,
+      "table_order": 95715,
+      "difference": -7263,
+      "increase_percent": -7.588152327221438,
       "summary": "results/degree14-diameter5/README.md",
       "edge_file": "results/degree14-diameter5/certificate/graph_d14_D5_n88452.edges",
       "edge_file_format": "n m header, then u v",
@@ -434,6 +434,13 @@
         },
         {
           "accessed_on": "2026-11-10",
+          "table_order": 94186,
+          "difference": -5734,
+          "increase_percent": -6.08795362,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-13",
           "table_order": 94186,
           "difference": -5734,
           "increase_percent": -6.08795362,
@@ -513,9 +520,9 @@
       "degree_histogram": {
         "15": 100000
       },
-      "table_order": 102060,
-      "difference": -2060,
-      "increase_percent": -2.01842054,
+      "table_order": 103190,
+      "difference": -3190,
+      "increase_percent": -3.0913848241108632,
       "summary": "results/degree15-diameter5/README.md",
       "edge_file": "results/degree15-diameter5/certificate/graph_d15_D5_n100000.edges",
       "edge_file_format": "n m header, then u v",
@@ -550,6 +557,13 @@
         },
         {
           "accessed_on": "2026-11-10",
+          "table_order": 102060,
+          "difference": -2060,
+          "increase_percent": -2.01842054,
+          "status": "below_table"
+        },
+        {
+          "accessed_on": "2026-11-13",
           "table_order": 102060,
           "difference": -2060,
           "increase_percent": -2.01842054,
@@ -690,8 +704,8 @@
       "degree11-diameter2"
     ],
     "preserve_published_paths": true,
-    "scope": "Add the 108-vertex degree-11 diameter-2 graph, its orbit diagrams and verification.",
-    "snapshot": "verification/table-cell-2026-11-26-degree11-diameter2.json"
+    "scope": "Add the 108-vertex degree-11 diameter-2 graph, its orbit diagrams and verification. Refresh all thirteen comparisons against the November 25 main table and its linked descriptions.",
+    "snapshot": "verification/table-snapshot-2026-11-26.json"
   },
   "update_history": [
     {

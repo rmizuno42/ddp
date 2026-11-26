@@ -16,31 +16,24 @@ two symmetry diagrams. [Full graph](results/degree11-diameter2/figures/n112_108_
 [Vertex orbits](results/degree11-diameter2/figures/n112_108_orbits.svg) ·
 [Dated table comparison](verification/table-cell-2026-11-26-degree11-diameter2.json)
 
-## Published records — 2026-11-13
+## Published records — 2026-11-26
 
-The following repository constructions attain the record orders listed in
-[Francesc Comellas's degree/diameter table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html),
-accessed **2026-11-13** (page last changed **2026-11-12**).
-Since the previous check on 2026-11-10, the main table has added the orders of the
-**(6,3), (3,7), (5,5) and (13,5)** graphs; the (16,3) graph was already listed. The (7,3) graph
-added on 2026-11-10 exceeded the order 170 listed then, but the table now lists
-176 for (7,3), credited to Dharunish Yugeswardeenoo.
-This dated overview does not assert optimality. See the
-[saved comparison and incoming links](verification/table-snapshot-2026-11-13.json).
+Five repository graphs appear at the record orders in the November 25 update of
+Comellas’s degree/diameter table. Each graph has a named entry on its detail page
+with a link to this repository. The orders in the main table and the detail pages
+agree for all 13 indexed constructions as checked on November 26.
+[Comellas’s table](https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html) · [Saved comparison](verification/table-snapshot-2026-11-26.json)
 
-Comparisons use the main table: some linked detail pages still describe earlier
-records. The (6,3) and (3,7) detail pages now describe the repository graphs and
-link to their packages. The (5,5) and (13,5) detail pages still describe the
-previous records of 650 and 51,417 vertices, and the (7,3), (12,5), (15,5) and
-(16,5) detail pages also lag behind the main table.
+| $(\Delta,D)$ | Vertices | Published entry | Construction and data |
+|---|---:|---|---|
+| (3,7) | **208** | [Mizuno_208](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37) | [Degree 3, diameter 7](results/degree3-diameter7/) |
+| (5,5) | **660** | [Mizuno_660](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55) | [Degree 5, diameter 5](results/degree5-diameter5/) |
+| (6,3) | **126** | [Mizuno_126](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63) | [Degree 6, diameter 3](results/degree6-diameter3/) |
+| (13,5) | **88,452** | [Mizuno_88452](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135) | [Degree 13, diameter 5](results/degree13-diameter5/) |
+| (16,3) | **1,920** | [Mizuno_1920](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163) | [Degree 16, diameter 3](results/degree16-diameter3/) |
 
-| $(\Delta,D)$ | Vertices | Published table order | Status | Construction and data |
-|---|---:|---:|---|---|
-| **(6,3)** | **126** | 126 | **Listed in table; added 2026-11-10** | [Degree 6, diameter 3](results/degree6-diameter3/) |
-| **(3,7)** | **208** | 208 | **Listed in table; added 2026-11-04** | [Degree 3, diameter 7](results/degree3-diameter7/) |
-| **(5,5)** | **660** | 660 | **Listed in table; added 2026-11-04** | [Degree 5, diameter 5](results/degree5-diameter5/) |
-| **(13,5)** | **88,452** | 88,452 | **Listed in table; added 2026-10-13** | [Degree 13, diameter 5](results/degree13-diameter5/) |
-| (16,3) | **1,920** | 1,920 | Listed in table | [Degree 16, diameter 3](results/degree16-diameter3/) |
+For **(11,2)**, the repository construction has **108 vertices**, two above the
+**106** listed for Dhar_106 in the November 25 table. [108-vertex construction](results/degree11-diameter2/) · [Published (11,2) entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html#112)
 
 ## Earlier additions — 2026-11-10
 
@@ -97,9 +90,9 @@ A [separate ordinary-BFS verification](verification/independent-2026-10-13/)
 measured its order, every vertex degree, and exact diameter from the edge list,
 without a search-depth limit or any construction data.
 
-The main table **lists this graph's order 88,452 for (13,5)** as accessed on
-2026-11-13; its detail page still describes the 51,417-vertex graph. This package
-was added on 2026-10-13.
+The November 25 table lists **88,452** for (13,5). Its detail page names the graph
+Mizuno_88452 and links to the repository package and compressed edge list.
+[Published (13,5) entry](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135)
 Its finite construction data, proof, edge list, and verification programs are
 in [the certificate directory](results/degree13-diameter5/certificate/).
 
@@ -107,26 +100,24 @@ in [the certificate directory](results/degree13-diameter5/certificate/).
 
 The detail pages describe two larger graphs by Sami Hani Badaoui and Sarah
 Ellen Mary Vaughan, communicated on 2026-10-22, as modifications and extensions
-of the corresponding Mizuno graphs below. One remains the table record; the
-other has since been surpassed.
+of the corresponding Mizuno graphs below. Both extensions are listed as former records.
 
 | $(\Delta,D)$ | Repository graph | Described extension | Current table order |
 |---|---:|---|---:|
-| (14,5) | [88,452](results/degree14-diameter5/) | [SamSar_94186: 94,186](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145) | 94,186 |
-| (15,5) | [100,000](results/degree15-diameter5/) | [SamSar_100132: 100,132](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155) | 102,060 |
+| (14,5) | [88,452](results/degree14-diameter5/) | [SamSar_94186: 94,186](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145) | 95,715 |
+| (15,5) | [100,000](results/degree15-diameter5/) | [SamSar_100132: 100,132](https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155) | 103,190 |
 
 The former edge lists linked on that site have exactly the same labeled edge
 sets as the repository graphs. The attribution above follows the published
 descriptions; a vertex correspondence to the new graphs has not been
 reconstructed. See the [source review and edge-file comparison](verification/external-records-2026-10-23/).
-The (15,5) detail page still describes the 100,132-vertex graph, so this
-attribution does not establish that the current 102,060-vertex graph is based
-on the repository construction.
+The November 23 records for both cells are credited to Dharunish Yugeswardeenoo.
+The detail pages describe each as an extension of a 40,560-vertex (8,6) graph.
 Both repository packages retain their published paths as former records.
 
 ## Complete result index
 
-The (11,2) comparison is dated **2026-11-26**. The other rows use the **2026-11-13** table snapshot.
+All 13 rows use the [2026-11-26 table comparison](verification/table-snapshot-2026-11-26.json).
 The package locations remain stable when their record status changes.
 
 | $(\Delta,D)$ | Repository order | Table order | Status | Package |
@@ -139,9 +130,9 @@ The package locations remain stable when their record status changes.
 | (12,4) | 5,832 | 6,156 | Below table | [Summary](results/degree12-diameter4/) |
 | (12,5) | 34,992 | 42,352 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
 | **(13,5)** | **88,452** | 88,452 | **Added 2026-10-13; listed in table** | [Summary](results/degree13-diameter5/) |
-| (14,5) | 88,452 | 94,186 | Below table; basis of the current record | [Summary](results/degree14-diameter5/) |
+| (14,5) | 88,452 | 95,715 | Below table (basis of the earlier 94,186-vertex record) | [Summary](results/degree14-diameter5/) |
 | (15,3) | 1,458 | 1,620 | Below table | [Summary](results/degree15-diameter3/) |
-| (15,5) | 100,000 | 102,060 | Below table; basis of the earlier 100,132-vertex record | [Summary](results/degree15-diameter5/) |
+| (15,5) | 100,000 | 103,190 | Below table (basis of the earlier 100,132-vertex record) | [Summary](results/degree15-diameter5/) |
 | (16,3) | 1,920 | 1,920 | Listed in table | [Summary](results/degree16-diameter3/) |
 | (16,5) | 147,456 | 159,744 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
 
@@ -337,7 +328,7 @@ It also documents the discovery process through a browser-based ChatGPT
 dialogue. The paper, bibliography, transcript, and supplementary packages are
 preserved together in [the arXiv:2606.15860 package](results/diameter5-paper/).
 
-| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-11-13 | Status on that date |
+| $(\Delta,D)$ | Order in arXiv:2606.15860 | Table order on 2026-11-26 | Status on that date |
 |---|---:|---:|---|
 | (12,5) | 34,992 | 42,352 | Below the table order |
 | (16,5) | 147,456 | 159,744 | Below the table order |

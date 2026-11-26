@@ -16,8 +16,9 @@
     "degree16-diameter3.json",
     "paper-degree16-diameter5.json"
   ],
-  "results_index_sha256": "544b1251fa014374597f72d1ec4ed3b1ebb6ed20a8b29a85f7046e621958477a",
+  "results_index_sha256": "a2aea3812fc474cd0fcf8718e51a1d91f1a51dce8cb4f52db9bf3c6e038630b1",
   "verifier_source_sha256": "bd97e4b1587cc932d2641471b071593d9d079609f520ef20d9b69cdd9b14a35d",
   "runner_source_sha256": "3b118ace6d404510a7972a941455d4fe77ffdec4296eb4e4c9a99381d6775e6e",
-  "completed_at_utc": "2026-11-26T01:52:15.796361+00:00"
+  "completed_at_utc": "2026-11-26T04:48:13.403494+00:00",
+  "retained_report_run_completed_at_utc": "2026-11-26T01:52:15.796361+00:00"
 }

@@ -1,0 +1,196 @@
+{
+  "accessed_on": "2026-11-26",
+  "table_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+  "page_last_changed": "2026-11-25",
+  "comparison_policy": "Table orders are read from the main table. Graph names and repository links are taken from each corresponding parameter section on the detail pages.",
+  "source_pages": [
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+      "sha256": "3dd8c34d4e63b6107ba2f2eb81a214ea50b5646d535d47dc7d3c8d373861c755"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html",
+      "sha256": "3edc6611e9ac7d8d6e6d34d8714ed6081b557b2c75a43c99020d1873889a6c3b"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html",
+      "sha256": "3386b54b95cba1f3c409bba811cee3fce2e5ae4f5c44505b0d174af0c7a6104d"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html",
+      "sha256": "7e835121eea771fd003dd2eea0575a39bc7799036482355adbc043f83b032b55"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html",
+      "sha256": "ba1f7665ba20196d66992b0239bf8f6faf40ba4408a863690f5b25d5fe1d8bb4"
+    },
+    {
+      "url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html",
+      "sha256": "be5ef16a63fc8521451a8ba49917883705064a4baf62a09c3e83e03587a50e5b"
+    }
+  ],
+  "entries": [
+    {
+      "result_id": "degree11-diameter2",
+      "degree": 11,
+      "diameter": 2,
+      "repository_order": 108,
+      "table_order": 106,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html#112",
+      "detail_page_order": 106,
+      "detail_graph_name": "Dhar_106",
+      "repository_links_from_detail_section": []
+    },
+    {
+      "result_id": "degree6-diameter3",
+      "degree": 6,
+      "diameter": 3,
+      "repository_order": 126,
+      "table_order": 126,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#63",
+      "detail_page_order": 126,
+      "detail_graph_name": "Mizuno_126",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree6-diameter3#readme"
+      ]
+    },
+    {
+      "result_id": "degree7-diameter3",
+      "degree": 7,
+      "diameter": 3,
+      "repository_order": 171,
+      "table_order": 176,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#73",
+      "detail_page_order": 176,
+      "detail_graph_name": "Dhar_176",
+      "repository_links_from_detail_section": []
+    },
+    {
+      "result_id": "degree3-diameter7",
+      "degree": 3,
+      "diameter": 7,
+      "repository_order": 208,
+      "table_order": 208,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g7.html#37",
+      "detail_page_order": 208,
+      "detail_graph_name": "Mizuno_208",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree3-diameter7"
+      ]
+    },
+    {
+      "result_id": "degree5-diameter5",
+      "degree": 5,
+      "diameter": 5,
+      "repository_order": 660,
+      "table_order": 660,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#55",
+      "detail_page_order": 660,
+      "detail_graph_name": "Mizuno_660",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree5-diameter5#readme"
+      ]
+    },
+    {
+      "result_id": "degree12-diameter4",
+      "degree": 12,
+      "diameter": 4,
+      "repository_order": 5832,
+      "table_order": 6156,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g4.html#124",
+      "detail_page_order": 6156,
+      "detail_graph_name": "Bhakar_6156",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree12-diameter4"
+      ]
+    },
+    {
+      "result_id": "paper-degree12-diameter5",
+      "degree": 12,
+      "diameter": 5,
+      "repository_order": 34992,
+      "table_order": 42352,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#125",
+      "detail_page_order": 42352,
+      "detail_graph_name": "Dhar_42352",
+      "repository_links_from_detail_section": []
+    },
+    {
+      "result_id": "degree13-diameter5",
+      "degree": 13,
+      "diameter": 5,
+      "repository_order": 88452,
+      "table_order": 88452,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#135",
+      "detail_page_order": 88452,
+      "detail_graph_name": "Mizuno_88452",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/blob/main/results/degree13-diameter5/README.md",
+        "https://github.com/rmizuno42/ddp/blob/main/results/degree13-diameter5/certificate/graph.edges.gz"
+      ]
+    },
+    {
+      "result_id": "degree14-diameter5",
+      "degree": 14,
+      "diameter": 5,
+      "repository_order": 88452,
+      "table_order": 95715,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#145",
+      "detail_page_order": 95715,
+      "detail_graph_name": "Dhar_95715",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree14-diameter5"
+      ]
+    },
+    {
+      "result_id": "degree15-diameter3",
+      "degree": 15,
+      "diameter": 3,
+      "repository_order": 1458,
+      "table_order": 1620,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#153",
+      "detail_page_order": 1620,
+      "detail_graph_name": "deg15D3_1620",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree15-diameter3"
+      ]
+    },
+    {
+      "result_id": "degree15-diameter5",
+      "degree": 15,
+      "diameter": 5,
+      "repository_order": 100000,
+      "table_order": 103190,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#155",
+      "detail_page_order": 103190,
+      "detail_graph_name": "Dhar_103190",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree15-diameter5"
+      ]
+    },
+    {
+      "result_id": "degree16-diameter3",
+      "degree": 16,
+      "diameter": 3,
+      "repository_order": 1920,
+      "table_order": 1920,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g3.html#163",
+      "detail_page_order": 1920,
+      "detail_graph_name": "Mizuno_1920",
+      "repository_links_from_detail_section": [
+        "https://github.com/rmizuno42/ddp/tree/main/results/degree16-diameter3"
+      ]
+    },
+    {
+      "result_id": "paper-degree16-diameter5",
+      "degree": 16,
+      "diameter": 5,
+      "repository_order": 147456,
+      "table_order": 159744,
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g5.html#165",
+      "detail_page_order": 159744,
+      "detail_graph_name": "Dhar_159744",
+      "repository_links_from_detail_section": []
+    }
+  ]
+}

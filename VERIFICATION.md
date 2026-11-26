@@ -1,14 +1,18 @@
-# Repository verification — 2026-11-10
+# Repository verification — 2026-11-26
 
-The 2026-11-10 update adds **degree 6, diameter 3, order 126** and
-**degree 7, diameter 3, order 171**. All twelve indexed graphs passed the common
-verifier directly from their edge lists, rerun on 2026-11-10. This check assumes no
-construction certificate or graph symmetry. Previously published graph paths are preserved.
+The 108-vertex graph for (11,2) passed two independent full-distance computations.
+Both the original Python bitset and C++ queue implementations give 5,184 unordered
+pairs at distance 2 and 594 at distance 1. Their distance matrices agree byte for byte.
+The package also verifies all 252 permutations of the full automorphism group.
+[Construction and reproduction](results/degree11-diameter2/) · [Orbit certificate](results/degree11-diameter2/certificate/orbits.json)
 
-## Final direct verification of all twelve graphs
+## Final direct verification of all thirteen graphs
+
+The common verifier was rerun on 2026-11-26 for every indexed edge list.
 
 | Result | Vertices | Edges | Measured degrees | Measured diameter | Report |
 |---|---:|---:|---|---:|---|
+| **(11,2), added 2026-11-26** | **108** | **594** | **11-regular** | **2** | [PASS](verification/final/degree11-diameter2.json) |
 | **(6,3), added 2026-11-10** | **126** | **378** | **6-regular** | **3** | [PASS](verification/final/degree6-diameter3.json) |
 | **(7,3), added 2026-11-10** | **171** | **594** | **9 vertices of degree 6; 162 of degree 7** | **3** | [PASS](verification/final/degree7-diameter3.json) |
 | (3,7), added 2026-11-04 | 208 | 312 | 3-regular | 7 | [PASS](verification/final/degree3-diameter7.json) |
@@ -23,8 +27,7 @@ construction certificate or graph symmetry. Previously published graph paths are
 | (16,5), arXiv:2606.15860 | 147,456 | 1,179,648 | 16-regular | 5 | [PASS](verification/final/paper-degree16-diameter5.json) |
 
 The checks cover every vertex and every ordered pair. The [machine-readable summary](verification/final/summary.json)
-records the index and verifier hashes. For the ten earlier graphs only run times and timestamps changed
-relative to the 2026-11-04 reports.
+records the index and verifier hashes. The twelve earlier graphs reproduce their saved distance histograms.
 
 ## November 10 additions: (6,3), 126 vertices, and (7,3), 171 vertices
 

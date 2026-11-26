@@ -5,6 +5,17 @@ degree/diameter problem. Let $N(\Delta,D)$ denote the largest possible order of 
 simple undirected connected graph with maximum degree at most $\Delta$ and
 diameter at most $D$.
 
+## Latest addition — 2026-11-26
+
+**[(11,2), 108 vertices](results/degree11-diameter2/)**. An 11-regular graph with
+594 edges and diameter 2, two vertices above the order 106 listed on 2026-11-26.
+A cyclic translation fixes 17 vertices and moves the other 91 in thirteen fibres
+of size seven. The full automorphism group has order 252. The package includes
+the edge list, a reproducible construction, independent distance checks and
+two symmetry diagrams. [Full graph](results/degree11-diameter2/figures/n112_108_symmetry.svg) ·
+[Vertex orbits](results/degree11-diameter2/figures/n112_108_orbits.svg) ·
+[Dated table comparison](verification/table-cell-2026-11-26-degree11-diameter2.json)
+
 ## Published records — 2026-11-13
 
 The following repository constructions attain the record orders listed in
@@ -31,7 +42,7 @@ previous records of 650 and 51,417 vertices, and the (7,3), (12,5), (15,5) and
 | **(13,5)** | **88,452** | 88,452 | **Listed in table; added 2026-10-13** | [Degree 13, diameter 5](results/degree13-diameter5/) |
 | (16,3) | **1,920** | 1,920 | Listed in table | [Degree 16, diameter 3](results/degree16-diameter3/) |
 
-## Latest additions — 2026-11-10
+## Earlier additions — 2026-11-10
 
 - **[(6,3), 126 vertices](results/degree6-diameter3/)**: a 6-regular graph of
   diameter 3, exceeding the table order 120 of the time by **6 (+5%)**; the Moore
@@ -115,11 +126,12 @@ Both repository packages retain their published paths as former records.
 
 ## Complete result index
 
-All comparisons below use the same **2026-11-13** table snapshot.
+The (11,2) comparison is dated **2026-11-26**. The other rows use the **2026-11-13** table snapshot.
 The package locations remain stable when their record status changes.
 
 | $(\Delta,D)$ | Repository order | Table order | Status | Package |
 |---|---:|---:|---|---|
+| **(11,2)** | **108** | 106 | **Exceeds the table by 2 (2026-11-26)** | [Summary](results/degree11-diameter2/) |
 | **(6,3)** | **126** | 126 | **Added 2026-11-10; listed in table** | [Summary](results/degree6-diameter3/) |
 | (7,3) | 171 | 176 | Added 2026-11-10; below table (exceeded the earlier 170) | [Summary](results/degree7-diameter3/) |
 | **(3,7)** | **208** | 208 | **Added 2026-11-04; listed in table** | [Summary](results/degree3-diameter7/) |
@@ -133,7 +145,7 @@ The package locations remain stable when their record status changes.
 | (16,3) | 1,920 | 1,920 | Listed in table | [Summary](results/degree16-diameter3/) |
 | (16,5) | 147,456 | 159,744 | Below table | [arXiv:2606.15860](results/diameter5-paper/) |
 
-All twelve indexed graphs passed
+All thirteen indexed graphs passed
 [verification directly from their edge lists](verification/README.md):
 vertex counts, degrees, connectivity, and exact diameters were checked over
 every ordered pair of vertices. See the [verification record](VERIFICATION.md)
@@ -189,6 +201,14 @@ the $q+1$ hyperplanes containing a fixed subspace of codimension two. These
 hyperplanes, and their translates by a common vector, cover $\mathbb F_q^s$.
 
 ## Construction summaries
+
+### (11,2): 108 vertices — added 2026-11-26
+
+Seventeen vertices induce a 4-regular graph. Each is joined to a whole
+seven-point centre fibre. Three pairs of outer fibres use the same matching
+rule at the scales 1, 2 and 4 modulo 7. Every nonadjacent pair has at least
+one common neighbour, giving diameter exactly 2. [Construction, symmetry
+figures and verification](results/degree11-diameter2/).
 
 ### (6,3): 126 vertices — added 2026-11-10
 
@@ -339,6 +359,7 @@ verification/                   direct verifier, reports, and table snapshot
 search/orbit-graphs/            orbit-graph search code that found the (6,3) and (7,3) graphs
 results/
   diameter5-paper/              arXiv:2606.15860 and its supplementary materials
+  degree11-diameter2/           added 2026-11-26: construction, symmetry figures and verification
   degree6-diameter3/            added 2026-11-10: summary, voltage construction, certificates
   degree7-diameter3/            added 2026-11-10: summary, voltage construction, certificates
   degree3-diameter7/            summary, certificates, and symmetry diagrams

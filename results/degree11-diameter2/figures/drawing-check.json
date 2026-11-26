@@ -1,0 +1,21 @@
+{
+  "vertices": 108,
+  "edges": 594,
+  "svg_edge_ids_match": true,
+  "vertex_ids_match": true,
+  "moving_vertices_checked": 91,
+  "rotated_edge_paths_checked": 441,
+  "minimum_edge_to_nonincident_vertex": 5.2905,
+  "edge_counts_by_role": {
+    "1-2": 294,
+    "0-1": 119,
+    "1-1": 63,
+    "2-2": 84,
+    "0-0": 34
+  },
+  "roles": [
+    "fixed",
+    "centre",
+    "outer"
+  ]
+}

@@ -1,9 +1,10 @@
 # Final verification from edge lists
 
-All twelve graphs in [results.json](../results.json) passed a direct check of
-their vertex count, edge count, maximum degree, degree distribution, simplicity,
-connectivity, and exact diameter (rerun on 2026-11-10 after adding the (6,3) and
-(7,3) graphs). The [summary](final/summary.json) lists the twelve reports. Each report includes the input file hash, verifier hash,
+All thirteen graphs in [results.json](../results.json) passed the common verifier on 2026-11-26.
+It checked vertex and edge counts, the complete degree distribution, simplicity,
+connectivity and exact diameter from each published edge list. The new
+[(11,2) package](../results/degree11-diameter2/) also compares two complete distance matrices.
+The [summary](final/summary.json) links all thirteen reports. Each report includes the input file hash, verifier hash,
 execution time, ordered-pair distance histogram, and a pair of vertices at the
 claimed diameter.
 

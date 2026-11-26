@@ -8,6 +8,41 @@
   },
   "results": [
     {
+      "id": "degree11-diameter2",
+      "category": "construction_result",
+      "added_on": "2026-11-26",
+      "degree": 11,
+      "diameter": 2,
+      "vertices": 108,
+      "edges": 594,
+      "degree_histogram": {
+        "11": 108
+      },
+      "table_order": 106,
+      "difference": 2,
+      "increase_percent": 1.8867924528301887,
+      "status": "exceeds_table",
+      "comparison_accessed_on": "2026-11-26",
+      "comparison_snapshot": "verification/table-cell-2026-11-26-degree11-diameter2.json",
+      "summary": "results/degree11-diameter2/README.md",
+      "edge_file": "results/degree11-diameter2/certificate/graph.edges",
+      "edge_file_format": "n m header, then u v",
+      "edge_file_sha256": "31bb595ec83b36f6bc0e5eb4dd8daee36d36c07f0adfa3384f196d7d2af2ed41",
+      "certificate_directory": "results/degree11-diameter2/certificate",
+      "construction": "results/degree11-diameter2/certificate/construct.py",
+      "proof": "results/degree11-diameter2/certificate/proof.md",
+      "construction_verifier": "results/degree11-diameter2/certificate/check.sh",
+      "full_automorphism_group_order": 252,
+      "automorphism_small_group_id": [
+        252,
+        28
+      ],
+      "table_detail_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/desc_g/desc_g2.html#112",
+      "girth": 3,
+      "construction_method": "17 fixed vertices and 13 seven-point fibres with cyclic matching shifts.",
+      "main_table_lists_repository_graph": false
+    },
+    {
       "id": "degree6-diameter3",
       "category": "construction_result",
       "added_on": "2026-11-10",
@@ -650,11 +685,13 @@
     "keep_largest_per_parameter_pair": true
   },
   "latest_update": {
-    "date": "2026-11-13",
-    "added_result_ids": [],
+    "date": "2026-11-26",
+    "added_result_ids": [
+      "degree11-diameter2"
+    ],
     "preserve_published_paths": true,
-    "scope": "Refresh table comparisons after the table update of 2026-11-12: the main table now lists the (6,3), (3,7), (5,5) and (13,5) graphs, the (7,3) entry is now 176, and the (12,5) and (16,5) entries increased.",
-    "snapshot": "verification/table-snapshot-2026-11-13.json"
+    "scope": "Add the 108-vertex degree-11 diameter-2 graph, its orbit diagrams and verification.",
+    "snapshot": "verification/table-cell-2026-11-26-degree11-diameter2.json"
   },
   "update_history": [
     {
@@ -694,6 +731,13 @@
       ],
       "preserve_published_paths": true,
       "scope": "Publish the 126-vertex (6,3) graph and the 171-vertex (7,3) graph found by an orbit-graph search, with voltage-graph constructions, finite diameter certificates, isomorphism certificates to the discovered orbit graphs, and independent verification."
+    },
+    {
+      "date": "2026-11-13",
+      "added_result_ids": [],
+      "preserve_published_paths": true,
+      "scope": "Refresh table comparisons after the table update of 2026-11-12: the main table now lists the (6,3), (3,7), (5,5) and (13,5) graphs, the (7,3) entry is now 176, and the (12,5) and (16,5) entries increased.",
+      "snapshot": "verification/table-snapshot-2026-11-13.json"
     }
   ]
 }
